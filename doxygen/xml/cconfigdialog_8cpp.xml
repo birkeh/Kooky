@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cconfigdialog_8cpp" kind="file" language="C++">
+    <compoundname>cconfigdialog.cpp</compoundname>
+    <includes refid="cconfigdialog_8h" local="yes">cconfigdialog.h</includes>
+    <includes local="yes">ui_cconfigdialog.h</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QCloseEvent</includes>
+    <incdepgraph>
+      <node id="573">
+        <label>QCloseEvent</label>
+      </node>
+      <node id="576">
+        <label>QSettings</label>
+      </node>
+      <node id="575">
+        <label>QMessageBox</label>
+      </node>
+      <node id="574">
+        <label>ui_cconfigdialog.h</label>
+      </node>
+      <node id="571">
+        <label>cconfigdialog.h</label>
+        <link refid="cconfigdialog_8h"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="570">
+        <label>dMySQL/cconfigdialog.cpp</label>
+        <link refid="cconfigdialog.cpp"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>QDialog</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cconfigdialog_8h" kindref="compound">cconfigdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_cconfigdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCloseEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" refkind="member"><highlight class="normal"><ref refid="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" kindref="member">cConfigDialog::cConfigDialog</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="classc_config_dialog" kindref="compound">cConfigDialog</ref>),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>m_bPasswordChanged(false)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" refkind="member"><highlight class="normal"><ref refid="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" kindref="member">cConfigDialog::~cConfigDialog</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" kindref="member">cConfigDialog::setHostname</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szHostname)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpHostname-&gt;setText(szHostname);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" kindref="member">cConfigDialog::setDatabase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szDatabase)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpDatabase-&gt;setText(szDatabase);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" kindref="member">cConfigDialog::setUserName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szUserName)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpUsername-&gt;setText(szUserName);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" kindref="member">cConfigDialog::setPassword</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szPassword)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword-&gt;setText(szPassword);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword2-&gt;setText(szPassword);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" kindref="member">cConfigDialog::hostname</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpHostname-&gt;text());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" kindref="member">cConfigDialog::database</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpDatabase-&gt;text());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" kindref="member">cConfigDialog::userName</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpUsername-&gt;text());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" kindref="member">cConfigDialog::password</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword-&gt;text());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classc_config_dialog_1a7fb2127745f898b2c7fd8306ea7df149" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1a7fb2127745f898b2c7fd8306ea7df149" kindref="member">cConfigDialog::on_m_lpTestButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" kindref="member">cConfigDialog::on_m_lpOKButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword-&gt;text()<sp/>!=<sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword2-&gt;text())</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::critical(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Database&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;password<sp/>does<sp/>not<sp/>match&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accept();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classc_config_dialog_1ac70b6c699e0eb5af4397a5a2ff29789a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1ac70b6c699e0eb5af4397a5a2ff29789a" kindref="member">cConfigDialog::on_m_lpCancelButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>reject();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" kindref="member">cConfigDialog::on_m_lpPassword_textChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;</highlight><highlight class="comment">/*arg1*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" kindref="member">m_bPasswordChanged</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword-&gt;text()<sp/>!=<sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword2-&gt;text())</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPasswordMatch-&gt;setText(</highlight><highlight class="stringliteral">&quot;password<sp/>does<sp/>not<sp/>match&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPasswordMatch-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" kindref="member">cConfigDialog::on_m_lpPassword2_textChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;</highlight><highlight class="comment">/*arg1*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" kindref="member">m_bPasswordChanged</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword-&gt;text()<sp/>!=<sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPassword2-&gt;text())</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPasswordMatch-&gt;setText(</highlight><highlight class="stringliteral">&quot;password<sp/>does<sp/>not<sp/>match&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kindref="member">ui</ref>-&gt;m_lpPasswordMatch-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="dMySQL/cconfigdialog.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cimportinterface_8h" kind="file" language="C++">
+    <compoundname>cimportinterface.h</compoundname>
+    <includes refid="cingredient_8h" local="yes">cingredient.h</includes>
+    <includes refid="c_interface_8h" local="yes">cInterface.h</includes>
+    <includes local="no">QtPlugin</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QStringList</includes>
+    <includes local="no">QMap</includes>
+    <includedby refid="cbleibfitplugin_8h" local="yes">iBleibFit/cbleibfitplugin.h</includedby>
+    <includedby refid="cernaehrungplugin_8h" local="yes">iErnaehrung/cernaehrungplugin.h</includedby>
+    <includedby refid="cplugin_8h" local="yes">Kooky/cplugin.h</includedby>
+    <includedby refid="cimportinterface_8cpp" local="yes">Kooky/cimportinterface.cpp</includedby>
+    <includedby refid="cmainwindow_8cpp" local="yes">Kooky/cmainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="825">
+        <label>QMap</label>
+      </node>
+      <node id="816">
+        <label>Kooky/cimportinterface.h</label>
+        <link refid="cimportinterface.h"/>
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="822" relation="include">
+        </childnode>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+      </node>
+      <node id="823">
+        <label>QtPlugin</label>
+      </node>
+      <node id="817">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+      </node>
+      <node id="821">
+        <label>QDomDocument</label>
+      </node>
+      <node id="818">
+        <label>QDate</label>
+      </node>
+      <node id="822">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="819" relation="include">
+        </childnode>
+      </node>
+      <node id="819">
+        <label>QString</label>
+      </node>
+      <node id="820">
+        <label>QFile</label>
+      </node>
+      <node id="824">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="843">
+        <label>Kooky/cimportinterface.cpp</label>
+        <link refid="cimportinterface_8cpp"/>
+      </node>
+      <node id="826">
+        <label>Kooky/cimportinterface.h</label>
+        <link refid="cimportinterface.h"/>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="832">
+        <label>Kooky/cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+      </node>
+      <node id="841">
+        <label>Kooky/coptionsplugins.cpp</label>
+        <link refid="coptionsplugins_8cpp"/>
+      </node>
+      <node id="831">
+        <label>iErnaehrung/moc_cernaehrungplugin.cpp</label>
+        <link refid="moc__cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="828">
+        <label>iBleibFit/cbleibfitplugin.cpp</label>
+        <link refid="cbleibfitplugin_8cpp"/>
+      </node>
+      <node id="840">
+        <label>Kooky/coptionsplugins.h</label>
+        <link refid="coptionsplugins_8h"/>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+      </node>
+      <node id="835">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow_8cpp"/>
+      </node>
+      <node id="827">
+        <label>iBleibFit/cbleibfitplugin.h</label>
+        <link refid="cbleibfitplugin_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="834">
+        <label>Kooky/cimportingredientdialog.cpp</label>
+        <link refid="cimportingredientdialog_8cpp"/>
+      </node>
+      <node id="830">
+        <label>iErnaehrung/cernaehrungplugin.cpp</label>
+        <link refid="cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="829">
+        <label>iErnaehrung/cernaehrungplugin.h</label>
+        <link refid="cernaehrungplugin_8h"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="833">
+        <label>Kooky/cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog_8h"/>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="836">
+        <label>Kooky/cmainwindow.h</label>
+        <link refid="cmainwindow_8h"/>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+      </node>
+      <node id="837">
+        <label>Kooky/coptions.h</label>
+        <link refid="coptions_8h"/>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>Kooky/coptions.cpp</label>
+        <link refid="coptions_8cpp"/>
+      </node>
+      <node id="842">
+        <label>Kooky/cplugin.cpp</label>
+        <link refid="cplugin_8cpp"/>
+      </node>
+      <node id="839">
+        <label>Kooky/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_import_interface" prot="public">cImportInterface</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cimportinterface_8h_1a5e2e6f092a0173e8efde59a0bfd00ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QT_BEGIN_NAMESPACE</type>
+        <definition>QT_BEGIN_NAMESPACE Q_DECLARE_INTERFACE</definition>
+        <argsstring>(cImportInterface,&quot;WIN-DESIGN.cImportInterface/1.0&quot;)</argsstring>
+        <name>Q_DECLARE_INTERFACE</name>
+        <param>
+          <type><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref></type>
+        </param>
+        <param>
+          <type>&quot;WIN-DESIGN.cImportInterface/1.0&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportinterface.h" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#ifndef<sp/>CIMPORTINTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIMPORTINTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cingredient_8h" kindref="compound">cingredient.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="c_interface_8h" kindref="compound">cInterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtPlugin&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classc_import_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classc_interface" kindref="compound">cInterface</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177" kindref="member">cImportInterface</ref>()<sp/>:<sp/><ref refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" kindref="member">m_bLoaded</ref>(false)<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QMap&lt;QString,<sp/>QString&gt;<sp/><sp/><ref refid="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d" kindref="member">detailsCapability</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f" kindref="member">search</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szSearch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szDetails<sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">))<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983" kindref="member">load</ref>(qint16<sp/>iIndex)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63" refid="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb" kindref="member">loaded</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" kindref="member">m_bLoaded</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>qreal<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42" kindref="member">value</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" kindref="member">valueStr</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" kindref="member">name</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" kindref="member">group</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1af3f569b605787021a919816978f229bc" kindref="member">ingredientName</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99" refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" kindref="member">m_bLoaded</ref>;<sp/></highlight></codeline>
+<codeline lineno="100" refid="classc_import_interface_1ab18dd3e9cf49a07f23f376362fdf317b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface_1ab18dd3e9cf49a07f23f376362fdf317b" kindref="member">m_iLoadedIndex</ref>;<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cimportinterface_8h_1a5e2e6f092a0173e8efde59a0bfd00ede" kindref="member">Q_DECLARE_INTERFACE</ref>(<ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>,<sp/></highlight><highlight class="stringliteral">&quot;WIN-DESIGN.cImportInterface/1.0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CIMPORTINTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cimportinterface.h"/>
+  </compounddef>
+</doxygen>

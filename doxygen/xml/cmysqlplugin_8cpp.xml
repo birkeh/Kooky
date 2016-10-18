@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmysqlplugin_8cpp" kind="file" language="C++">
+    <compoundname>cmysqlplugin.cpp</compoundname>
+    <includes refid="cmysqlplugin_8h" local="yes">cmysqlplugin.h</includes>
+    <includes refid="cconfigdialog_8h" local="yes">cconfigdialog.h</includes>
+    <includes local="no">QSqlError</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QSqlQuery</includes>
+    <includes local="no">QMessageBox</includes>
+    <incdepgraph>
+      <node id="596">
+        <label>QCloseEvent</label>
+      </node>
+      <node id="598">
+        <label>QSettings</label>
+      </node>
+      <node id="600">
+        <label>QMessageBox</label>
+      </node>
+      <node id="586">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>QObject</label>
+      </node>
+      <node id="594">
+        <label>cconfigdialog.h</label>
+        <link refid="cconfigdialog_8h"/>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>QtPlugin</label>
+      </node>
+      <node id="584">
+        <label>dMySQL/cmysqlplugin.cpp</label>
+        <link refid="cmysqlplugin.cpp"/>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>QtCore</label>
+      </node>
+      <node id="593">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="595">
+        <label>QDialog</label>
+      </node>
+      <node id="588">
+        <label>QString</label>
+      </node>
+      <node id="587">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>QSqlError</label>
+      </node>
+      <node id="599">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="585">
+        <label>cmysqlplugin.h</label>
+        <link refid="cmysqlplugin_8h"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmysqlplugin_8h" kindref="compound">cmysqlplugin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cconfigdialog_8h" kindref="compound">cconfigdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlError&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlQuery&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" kindref="member">cMySQLPlugin::connect</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref><sp/><sp/><sp/><sp/>=<sp/>QSqlDatabase::addDatabase(</highlight><highlight class="stringliteral">&quot;QMYSQL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setHostName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/hostName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setDatabaseName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/databaseName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setUserName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/userName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setPassword(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/password&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" kindref="member">open</ref>());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" kindref="member">cMySQLPlugin::init</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref><sp/><sp/><sp/><sp/>=<sp/>QSqlDatabase::addDatabase(</highlight><highlight class="stringliteral">&quot;QMYSQL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setHostName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/hostName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setDatabaseName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/databaseName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setUserName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/userName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setPassword(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/password&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.open();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>tables<sp/><sp/>=<sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.tables();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tables.count())</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/></highlight><highlight class="stringliteral">&quot;Tables<sp/>exist&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Database<sp/>not<sp/>empty.\nExisting<sp/>tables<sp/>will<sp/>be<sp/>deleted.\nContinue?&quot;</highlight><highlight class="normal">,<sp/>QMessageBox::Yes<sp/>|<sp/>QMessageBox::No,<sp/>QMessageBox::No)<sp/>==<sp/>QMessageBox::No)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSqlQuery<sp/><sp/><sp/>query(<ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>tables.count();z++)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>query.exec(QString(</highlight><highlight class="stringliteral">&quot;DROP<sp/>TABLE<sp/>%1;&quot;</highlight><highlight class="normal">).arg(tables.at(z)));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!query.exec(</highlight><highlight class="stringliteral">&quot;CREATE<sp/>TABLE<sp/>`kooky`.settings<sp/>(<sp/>`var`<sp/>VARCHAR(100)<sp/>NOT<sp/>NULL<sp/>,<sp/>`val`<sp/>VARCHAR(100)<sp/>NOT<sp/>NULL<sp/>)<sp/>ENGINE<sp/>=<sp/>InnoDB;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref><sp/><sp/><sp/>=<sp/>query.lastError().text();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.close();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!query.exec(</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`kooky`.settings<sp/>values<sp/>(&apos;version&apos;,<sp/>&apos;1.0&apos;);&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref><sp/><sp/><sp/>=<sp/>query.lastError().text();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.close();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref><sp/><sp/><sp/>=<sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.lastError().text();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" kindref="member">cMySQLPlugin::open</ref>()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.open();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSqlQuery<sp/><sp/><sp/>query(<ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!query.exec(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>*<sp/>FROM<sp/>settings&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref><sp/><sp/><sp/>=<sp/>query.lastError().text();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.close();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref><sp/><sp/><sp/>=<sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.lastError().text();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" kindref="member">cMySQLPlugin::lastError</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" kindref="member">cMySQLPlugin::config</ref>()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_config_dialog" kindref="compound">cConfigDialog</ref><sp/><sp/><sp/>dlg;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dlg.<ref refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" kindref="member">setHostname</ref>(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/hostName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>dlg.<ref refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" kindref="member">setDatabase</ref>(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/databaseName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>dlg.<ref refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" kindref="member">setUserName</ref>(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/userName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>dlg.<ref refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" kindref="member">setPassword</ref>(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/password&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dlg.exec()<sp/>==<sp/>QDialog::Accepted)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.close();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/hostName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>()),<sp/>dlg.<ref refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" kindref="member">hostname</ref>());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/databaseName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>()),<sp/>dlg.<ref refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" kindref="member">database</ref>());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/userName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>()),<sp/>dlg.<ref refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" kindref="member">userName</ref>());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/password&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>()),<sp/>dlg.<ref refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" kindref="member">password</ref>());</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setHostName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/hostName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setDatabaseName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/databaseName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setUserName(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/userName&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>.setPassword(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/password&quot;</highlight><highlight class="normal">).arg(<ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>())).toString());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" kindref="member">open</ref>());</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kindref="member">m_bConnected</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="dMySQL/cmysqlplugin.cpp"/>
+  </compounddef>
+</doxygen>

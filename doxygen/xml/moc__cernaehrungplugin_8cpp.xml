@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="moc__cernaehrungplugin_8cpp" kind="file" language="C++">
+    <compoundname>moc_cernaehrungplugin.cpp</compoundname>
+    <includes refid="cernaehrungplugin_8h" local="yes">cernaehrungplugin.h</includes>
+    <includes local="no">QtCore/qbytearray.h</includes>
+    <includes local="no">QtCore/qmetatype.h</includes>
+    <includes local="no">QtCore/qplugin.h</includes>
+    <incdepgraph>
+      <node id="724">
+        <label>QMap</label>
+      </node>
+      <node id="714">
+        <label>QObject</label>
+      </node>
+      <node id="716">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="724" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>iErnaehrung/moc_cernaehrungplugin.cpp</label>
+        <link refid="moc_cernaehrungplugin.cpp"/>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="727" relation="include">
+        </childnode>
+      </node>
+      <node id="722">
+        <label>QtPlugin</label>
+      </node>
+      <node id="727">
+        <label>QtCore/qplugin.h</label>
+      </node>
+      <node id="717">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>QtCore</label>
+      </node>
+      <node id="720">
+        <label>QDomDocument</label>
+      </node>
+      <node id="712">
+        <label>cernaehrungplugin.h</label>
+        <link refid="cernaehrungplugin_8h"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+      </node>
+      <node id="718">
+        <label>QDate</label>
+      </node>
+      <node id="721">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>QString</label>
+      </node>
+      <node id="719">
+        <label>QFile</label>
+      </node>
+      <node id="725">
+        <label>QtCore/qbytearray.h</label>
+      </node>
+      <node id="726">
+        <label>QtCore/qmetatype.h</label>
+      </node>
+      <node id="723">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" prot="public">qt_meta_stringdata_cErnaehrungPlugin_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="moc__cernaehrungplugin_8cpp_1a75bb9482d242cde0a06c9dbdc6b83abe" prot="public" static="no">
+        <name>QT_MOC_LITERAL</name>
+        <param><defname>idx</defname></param>
+        <param><defname>ofs</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    offsetof(<ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" kindref="compound">qt_meta_stringdata_cErnaehrungPlugin_t</ref>, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="26" column="9" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="moc__cernaehrungplugin_8cpp_1adf31064a60000fa2ac258e822bd1c09f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" kindref="compound">qt_meta_stringdata_cErnaehrungPlugin_t</ref></type>
+        <definition>const qt_meta_stringdata_cErnaehrungPlugin_t qt_meta_stringdata_cErnaehrungPlugin</definition>
+        <argsstring></argsstring>
+        <name>qt_meta_stringdata_cErnaehrungPlugin</name>
+        <initializer>= {
+    {
+
+    },
+    &quot;cErnaehrungPlugin\0&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="31" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83" prot="public" static="yes" mutable="no">
+        <type>const uint</type>
+        <definition>const uint qt_meta_data_cErnaehrungPlugin[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_meta_data_cErnaehrungPlugin</name>
+        <initializer>= {
+
+ 
+       7,       
+       0,       
+       0,    0, 
+       0,    0, 
+       0,    0, 
+       0,    0, 
+       0,    0, 
+       0,       
+       0,       
+
+       0        
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="39" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="moc__cernaehrungplugin_8cpp_1a5224d929b42accc7ffdaf4969e5eca8c" prot="public" static="no" mutable="no">
+        <type>QT_PLUGIN_METADATA_SECTION const uint</type>
+        <definition>QT_PLUGIN_METADATA_SECTION const uint qt_section_alignment_dummy</definition>
+        <argsstring></argsstring>
+        <name>qt_section_alignment_dummy</name>
+        <initializer>= 42</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="94" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54" prot="public" static="yes" mutable="no">
+        <type>QT_PLUGIN_METADATA_SECTION const unsigned char</type>
+        <definition>QT_PLUGIN_METADATA_SECTION const unsigned char qt_pluginMetaData[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_pluginMetaData</name>
+        <initializer>= {
+    &apos;Q&apos;, &apos;T&apos;, &apos;M&apos;, &apos;E&apos;, &apos;T&apos;, &apos;A&apos;, &apos;D&apos;, &apos;A&apos;, &apos;T&apos;, &apos;A&apos;, &apos; &apos;, &apos; &apos;,
+    0x71, 0x62, 0x6a, 0x73, 0x01, 0x00, 0x00, 0x00,
+    0xb8, 0x00, 0x00, 0x00, 0x0b, 0x00, 0x00, 0x00,
+    0xa4, 0x00, 0x00, 0x00, 0x1b, 0x03, 0x00, 0x00,
+    0x03, 0x00, 0x49, 0x49, 0x44, 0x00, 0x00, 0x00,
+    0x11, 0x00, 0x63, 0x45, 0x72, 0x6e, 0x61, 0x65,
+    0x68, 0x72, 0x75, 0x6e, 0x67, 0x50, 0x6c, 0x75,
+    0x67, 0x69, 0x6e, 0x00, 0x95, 0x07, 0x00, 0x00,
+    0x08, 0x00, 0x4d, 0x65, 0x74, 0x61, 0x44, 0x61,
+    0x74, 0x61, 0x00, 0x00, 0x28, 0x00, 0x00, 0x00,
+    0x03, 0x00, 0x00, 0x00, 0x24, 0x00, 0x00, 0x00,
+    0x14, 0x03, 0x00, 0x00, 0x04, 0x00, 0x4b, 0x65,
+    0x79, 0x73, 0x00, 0x00, 0x0c, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x0c, 0x00, 0x00, 0x00, 0x9b, 0x0e, 0x00, 0x00,
+    0x09, 0x00, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x4e,
+    0x61, 0x6d, 0x65, 0x00, 0x11, 0x00, 0x63, 0x45,
+    0x72, 0x6e, 0x61, 0x65, 0x68, 0x72, 0x75, 0x6e,
+    0x67, 0x50, 0x6c, 0x75, 0x67, 0x69, 0x6e, 0x00,
+    0x31, 0x00, 0x00, 0x00, 0x05, 0x00, 0x64, 0x65,
+    0x62, 0x75, 0x67, 0x00, 0x3a, 0x40, 0xa0, 0x00,
+    0x07, 0x00, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6f,
+    0x6e, 0x00, 0x00, 0x00, 0x0c, 0x00, 0x00, 0x00,
+    0x2c, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00,
+    0x88, 0x00, 0x00, 0x00, 0x94, 0x00, 0x00, 0x00
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="130" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Meta<sp/>object<sp/>code<sp/>from<sp/>reading<sp/>C++<sp/>file<sp/>&apos;cernaehrungplugin.h&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created<sp/>by:<sp/>The<sp/>Qt<sp/>Meta<sp/>Object<sp/>Compiler<sp/>version<sp/>67<sp/>(Qt<sp/>5.2.1)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cernaehrungplugin_8h" kindref="compound">cernaehrungplugin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/qbytearray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/qmetatype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/qplugin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(Q_MOC_OUTPUT_REVISION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;The<sp/>header<sp/>file<sp/>&apos;cernaehrungplugin.h&apos;<sp/>doesn&apos;t<sp/>include<sp/>&lt;QObject&gt;.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>Q_MOC_OUTPUT_REVISION<sp/>!=<sp/>67</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;This<sp/>file<sp/>was<sp/>generated<sp/>using<sp/>the<sp/>moc<sp/>from<sp/>5.2.1.<sp/>It&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;cannot<sp/>be<sp/>used<sp/>with<sp/>the<sp/>include<sp/>files<sp/>from<sp/>this<sp/>version<sp/>of<sp/>Qt.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;(The<sp/>moc<sp/>has<sp/>changed<sp/>too<sp/>much.)&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">QT_BEGIN_MOC_NAMESPACE</highlight></codeline>
+<codeline lineno="22" refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" kindref="compound">qt_meta_stringdata_cErnaehrungPlugin_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QByteArrayData<sp/><ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" kindref="member">data</ref>[1];</highlight></codeline>
+<codeline lineno="24" refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" kindref="member">stringdata</ref>[19];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26" refid="moc__cernaehrungplugin_8cpp_1a75bb9482d242cde0a06c9dbdc6b83abe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QT_MOC_LITERAL(idx,<sp/>ofs,<sp/>len)<sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len,<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>offsetof(qt_meta_stringdata_cErnaehrungPlugin_t,<sp/>stringdata)<sp/>+<sp/>ofs<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>idx<sp/>*<sp/>sizeof(QByteArrayData)<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="moc__cernaehrungplugin_8cpp_1adf31064a60000fa2ac258e822bd1c09f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" kindref="compound">qt_meta_stringdata_cErnaehrungPlugin_t</ref><sp/><ref refid="moc__cernaehrungplugin_8cpp_1adf31064a60000fa2ac258e822bd1c09f" kindref="member">qt_meta_stringdata_cErnaehrungPlugin</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="moc__cernaehrungplugin_8cpp_1a75bb9482d242cde0a06c9dbdc6b83abe" kindref="member">QT_MOC_LITERAL</ref>(0,<sp/>0,<sp/>17)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cErnaehrungPlugin\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>QT_MOC_LITERAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/><ref refid="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83" kindref="member">qt_meta_data_cErnaehrungPlugin</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>content:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>revision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>classname</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>classinfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>enums/sets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signalCount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cErnaehrungPlugin::qt_static_metacall(QObject<sp/>*_o,<sp/>QMetaObject::Call<sp/>_c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**_a)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(_o);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(_id);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(_c);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(_a);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>cErnaehrungPlugin::staticMetaObject<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>&amp;QObject::staticMetaObject,<sp/>qt_meta_stringdata_cErnaehrungPlugin.<ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" kindref="member">data</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83" kindref="member">qt_meta_data_cErnaehrungPlugin</ref>,<sp/><sp/>qt_static_metacall,<sp/>0,<sp/>0}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>*cErnaehrungPlugin::metaObject()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="70"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QObject::d_ptr-&gt;metaObject<sp/>?<sp/>QObject::d_ptr-&gt;dynamicMetaObject()<sp/>:<sp/>&amp;staticMetaObject;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cErnaehrungPlugin::qt_metacast(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_clname)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_clname)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(_clname,<sp/>qt_meta_stringdata_cErnaehrungPlugin.<ref refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" kindref="member">stringdata</ref>))</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="classc_ernaehrung_plugin" kindref="compound">cErnaehrungPlugin</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(_clname,<sp/></highlight><highlight class="stringliteral">&quot;cImportInterface&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>static_cast&lt;<sp/>cImportInterface*&gt;(const_cast&lt;<sp/>cErnaehrungPlugin*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(_clname,<sp/></highlight><highlight class="stringliteral">&quot;WIN-DESIGN.cImportInterface/1.0&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>static_cast&lt;<sp/>cImportInterface*&gt;(const_cast&lt;<sp/>cErnaehrungPlugin*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QObject::qt_metacast(_clname);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cErnaehrungPlugin::qt_metacall(QMetaObject::Call<sp/>_c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**_a)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>_id<sp/>=<sp/>QObject::qt_metacall(_c,<sp/>_id,<sp/>_a);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_id<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="moc__cernaehrungplugin_8cpp_1a5224d929b42accc7ffdaf4969e5eca8c" refkind="member"><highlight class="normal">QT_PLUGIN_METADATA_SECTION<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/><ref refid="moc__cernaehrungplugin_8cpp_1a5224d929b42accc7ffdaf4969e5eca8c" kindref="member">qt_section_alignment_dummy</ref><sp/>=<sp/>42;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>QT_NO_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">QT_PLUGIN_METADATA_SECTION</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54" kindref="member">qt_pluginMetaData</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;Q&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;D&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>0x71,<sp/>0x62,<sp/>0x6a,<sp/>0x73,<sp/>0x01,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb8,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x0b,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa4,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x1b,<sp/>0x03,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>0x03,<sp/>0x00,<sp/>0x49,<sp/>0x49,<sp/>0x44,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>0x11,<sp/>0x00,<sp/>0x63,<sp/>0x45,<sp/>0x72,<sp/>0x6e,<sp/>0x61,<sp/>0x65,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>0x68,<sp/>0x72,<sp/>0x75,<sp/>0x6e,<sp/>0x67,<sp/>0x50,<sp/>0x6c,<sp/>0x75,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>0x67,<sp/>0x69,<sp/>0x6e,<sp/>0x00,<sp/>0x9b,<sp/>0x07,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>0x09,<sp/>0x00,<sp/>0x63,<sp/>0x6c,<sp/>0x61,<sp/>0x73,<sp/>0x73,<sp/>0x4e,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>0x61,<sp/>0x6d,<sp/>0x65,<sp/>0x00,<sp/>0x11,<sp/>0x00,<sp/>0x63,<sp/>0x45,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>0x72,<sp/>0x6e,<sp/>0x61,<sp/>0x65,<sp/>0x68,<sp/>0x72,<sp/>0x75,<sp/>0x6e,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>0x67,<sp/>0x50,<sp/>0x6c,<sp/>0x75,<sp/>0x67,<sp/>0x69,<sp/>0x6e,<sp/>0x00,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>0x3a,<sp/>0x40,<sp/>0xa0,<sp/>0x00,<sp/>0x07,<sp/>0x00,<sp/>0x76,<sp/>0x65,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>0x72,<sp/>0x73,<sp/>0x69,<sp/>0x6f,<sp/>0x6e,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>0x11,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x05,<sp/>0x00,<sp/>0x64,<sp/>0x65,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>0x62,<sp/>0x75,<sp/>0x67,<sp/>0x00,<sp/>0x95,<sp/>0x0f,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,<sp/>0x00,<sp/>0x4d,<sp/>0x65,<sp/>0x74,<sp/>0x61,<sp/>0x44,<sp/>0x61,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>0x74,<sp/>0x61,<sp/>0x00,<sp/>0x00,<sp/>0x28,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>0x03,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x24,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>0x14,<sp/>0x03,<sp/>0x00,<sp/>0x00,<sp/>0x04,<sp/>0x00,<sp/>0x4b,<sp/>0x65,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>0x79,<sp/>0x73,<sp/>0x00,<sp/>0x00,<sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6c,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x2c,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>0x60,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x50,<sp/>0x00,<sp/>0x00,<sp/>0x00</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>QT_NO_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">QT_PLUGIN_METADATA_SECTION</highlight></codeline>
+<codeline lineno="130" refid="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54" kindref="member">qt_pluginMetaData</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;Q&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;D&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>0x71,<sp/>0x62,<sp/>0x6a,<sp/>0x73,<sp/>0x01,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb8,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x0b,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa4,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x1b,<sp/>0x03,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>0x03,<sp/>0x00,<sp/>0x49,<sp/>0x49,<sp/>0x44,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>0x11,<sp/>0x00,<sp/>0x63,<sp/>0x45,<sp/>0x72,<sp/>0x6e,<sp/>0x61,<sp/>0x65,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>0x68,<sp/>0x72,<sp/>0x75,<sp/>0x6e,<sp/>0x67,<sp/>0x50,<sp/>0x6c,<sp/>0x75,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>0x67,<sp/>0x69,<sp/>0x6e,<sp/>0x00,<sp/>0x95,<sp/>0x07,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>0x08,<sp/>0x00,<sp/>0x4d,<sp/>0x65,<sp/>0x74,<sp/>0x61,<sp/>0x44,<sp/>0x61,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>0x74,<sp/>0x61,<sp/>0x00,<sp/>0x00,<sp/>0x28,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>0x03,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x24,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>0x14,<sp/>0x03,<sp/>0x00,<sp/>0x00,<sp/>0x04,<sp/>0x00,<sp/>0x4b,<sp/>0x65,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>0x79,<sp/>0x73,<sp/>0x00,<sp/>0x00,<sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x9b,<sp/>0x0e,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>0x09,<sp/>0x00,<sp/>0x63,<sp/>0x6c,<sp/>0x61,<sp/>0x73,<sp/>0x73,<sp/>0x4e,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>0x61,<sp/>0x6d,<sp/>0x65,<sp/>0x00,<sp/>0x11,<sp/>0x00,<sp/>0x63,<sp/>0x45,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>0x72,<sp/>0x6e,<sp/>0x61,<sp/>0x65,<sp/>0x68,<sp/>0x72,<sp/>0x75,<sp/>0x6e,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>0x67,<sp/>0x50,<sp/>0x6c,<sp/>0x75,<sp/>0x67,<sp/>0x69,<sp/>0x6e,<sp/>0x00,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>0x31,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x05,<sp/>0x00,<sp/>0x64,<sp/>0x65,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>0x62,<sp/>0x75,<sp/>0x67,<sp/>0x00,<sp/>0x3a,<sp/>0x40,<sp/>0xa0,<sp/>0x00,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>0x07,<sp/>0x00,<sp/>0x76,<sp/>0x65,<sp/>0x72,<sp/>0x73,<sp/>0x69,<sp/>0x6f,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6e,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x0c,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>0x2c,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x64,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>0x88,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x94,<sp/>0x00,<sp/>0x00,<sp/>0x00</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>QT_NO_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">QT_MOC_EXPORT_PLUGIN(<ref refid="classc_ernaehrung_plugin" kindref="compound">cErnaehrungPlugin</ref>,<sp/><ref refid="classc_ernaehrung_plugin" kindref="compound">cErnaehrungPlugin</ref>)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">QT_END_MOC_NAMESPACE</highlight></codeline>
+    </programlisting>
+    <location file="iErnaehrung/moc_cernaehrungplugin.cpp"/>
+  </compounddef>
+</doxygen>

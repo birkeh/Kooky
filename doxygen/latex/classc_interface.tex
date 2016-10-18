@@ -1,0 +1,235 @@
+\hypertarget{classc_interface}{}\section{c\+Interface Class Reference}
+\label{classc_interface}\index{c\+Interface@{c\+Interface}}
+
+
+This is the base class for all plugins.  
+
+
+
+
+{\ttfamily \#include $<$c\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for c\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_interface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \{ \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a}{i\+Type\+Import} = 0, 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f}{i\+Type\+Export} = 1, 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a}{i\+Type\+DB} = 2
+ \}\begin{DoxyCompactList}\small\item\em Defines the type of the interface. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual qint16 \hyperlink{classc_interface_a615b50a526c2d4ca73b13f8991371813}{plugin\+A\+P\+I\+Version} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the version of the A\+PI. \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{plugin\+Name} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the name of the plugin. \end{DoxyCompactList}\item 
+virtual qint16 \hyperlink{classc_interface_aadc382036174c2a25bb2c23733830d33}{plugin\+Version} ()=0
+\begin{DoxyCompactList}\small\item\em Version of the plugin. \end{DoxyCompactList}\item 
+virtual \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \hyperlink{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{plugin\+Type} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the type of the plugin. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{config} ()=0
+\begin{DoxyCompactList}\small\item\em Calls the configuration dialog (if any). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements basic interface functionality for all Kooky plugins. All functions may be overwritten by derriving classes.
+
+\begin{DoxyNote}{Note}
+Do not subclass this class directly, always use the appropriate subclass\+: \hyperlink{classc_d_b_interface}{c\+D\+B\+Interface} for database connectors, \hyperlink{classc_import_interface}{c\+Import\+Interface} for import plugins and c\+Export\+Interface for export plugins.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Member Enumeration Documentation}
+\index{c\+Interface@{c\+Interface}!i\+Type@{i\+Type}}
+\index{i\+Type@{i\+Type}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{i\+Type}{iType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf c\+Interface\+::i\+Type}}\hypertarget{classc_interface_a41462a3131755963add9ba3026e7d31a}{}\label{classc_interface_a41462a3131755963add9ba3026e7d31a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{i\+Type\+Import@{i\+Type\+Import}!c\+Interface@{c\+Interface}}\index{c\+Interface@{c\+Interface}!i\+Type\+Import@{i\+Type\+Import}}\item[{\em 
+i\+Type\+Import\hypertarget{classc_interface_a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a}{}\label{classc_interface_a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a}
+}]import plugin \index{i\+Type\+Export@{i\+Type\+Export}!c\+Interface@{c\+Interface}}\index{c\+Interface@{c\+Interface}!i\+Type\+Export@{i\+Type\+Export}}\item[{\em 
+i\+Type\+Export\hypertarget{classc_interface_a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f}{}\label{classc_interface_a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f}
+}]export plugin \index{i\+Type\+DB@{i\+Type\+DB}!c\+Interface@{c\+Interface}}\index{c\+Interface@{c\+Interface}!i\+Type\+DB@{i\+Type\+DB}}\item[{\em 
+i\+Type\+DB\hypertarget{classc_interface_a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a}{}\label{classc_interface_a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a}
+}]database connector \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{c\+Interface@{c\+Interface}!config@{config}}
+\index{config@{config}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{config()=0}{config()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool c\+Interface\+::config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{}\label{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+bool true on success, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441}{c\+My\+S\+Q\+L\+Plugin}, \hyperlink{classc_s_q_lite_plugin_a0ebe7b647b44908f2717c86900ac679d}{c\+S\+Q\+Lite\+Plugin}, \hyperlink{classc_bleib_fit_plugin_a4ae455b66593fa29d82025b084c2639b}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_acbadba8cb20826f22cce60af8f4be98f}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Main\+Window\+::plugin\+D\+B\+Triggered(), and c\+Options\+Plugins\+::show\+Config\+Dlg().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Interface@{c\+Interface}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()=0}{pluginAPIVersion()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual qint16 c\+Interface\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_interface_a615b50a526c2d4ca73b13f8991371813}{}\label{classc_interface_a615b50a526c2d4ca73b13f8991371813}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+qint16 version of the A\+PI 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_afbcc9dc99700cecd230b70d0384b0fd2}{c\+My\+S\+Q\+L\+Plugin}, \hyperlink{classc_s_q_lite_plugin_abe6689a26729e68d2167eb87e3bc2768}{c\+S\+Q\+Lite\+Plugin}, \hyperlink{classc_bleib_fit_plugin_aad11be7cf80b28becc6024e3827d4f75}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a44195e21ed764afb56bbcb4d64af1f3a}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Plugin\+::plugin\+A\+P\+I\+Version().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_interface_a615b50a526c2d4ca73b13f8991371813_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Interface@{c\+Interface}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{plugin\+Name()=0}{pluginName()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+String c\+Interface\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{}\label{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass. 
+
+The name must be unique and will also be used to store configuration settings.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Q\+String name of the plugin. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_ae8eed8a248ddbb3f8372290571ddfb24}{c\+My\+S\+Q\+L\+Plugin}, \hyperlink{classc_s_q_lite_plugin_a073f7e6b4fa9804c58bdb4a5a758ffa4}{c\+S\+Q\+Lite\+Plugin}, \hyperlink{classc_bleib_fit_plugin_aca281bc00f83bc4cd4b620a448825147}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a67ea2bef7e9d68fe3705baff59c9fec5}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Main\+Window\+::plugin\+D\+B\+Triggered(), and c\+Plugin\+::plugin\+Name().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Interface@{c\+Interface}!plugin\+Type@{plugin\+Type}}
+\index{plugin\+Type@{plugin\+Type}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{plugin\+Type()=0}{pluginType()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf i\+Type} c\+Interface\+::plugin\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{}\label{classc_interface_af5e408cdaff527a872ce6d02a96301a4}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+i\+Type type of the plugin (see enum i\+Type). 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_a76618f3bd8846fab6e3572e30df6fae7}{c\+My\+S\+Q\+L\+Plugin}, \hyperlink{classc_s_q_lite_plugin_a1ba9b4a2e7dc962bbc67a89dc928fcee}{c\+S\+Q\+Lite\+Plugin}, \hyperlink{classc_bleib_fit_plugin_af2fc76ea7b59899780c5384721a88ebd}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_aadc57be2d4fa422a9cadcbf647926700}{c\+Ernaehrung\+Plugin}.
+
+\index{c\+Interface@{c\+Interface}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+Interface@{c\+Interface}}
+\subsubsection[{\texorpdfstring{plugin\+Version()=0}{pluginVersion()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual qint16 c\+Interface\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_interface_aadc382036174c2a25bb2c23733830d33}{}\label{classc_interface_aadc382036174c2a25bb2c23733830d33}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+qint16 version of the plugin. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_af9f85d9af71685b373b114d8d2d98c6a}{c\+My\+S\+Q\+L\+Plugin}, \hyperlink{classc_s_q_lite_plugin_a680ffa394cab1bd545080c4ea72bd442}{c\+S\+Q\+Lite\+Plugin}, \hyperlink{classc_bleib_fit_plugin_acb4fbabe875079913c8bbbbe7d9089f6}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a9f94e9684b541b55e67b87bff7a0a028}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Plugin\+::plugin\+Version().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_interface_aadc382036174c2a25bb2c23733830d33_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{c_interface_8h}{c\+Interface.\+h}\end{DoxyCompactItemize}

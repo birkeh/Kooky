@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtag_m_a_p_p_e_r" kind="struct" language="C++" prot="public">
+    <compoundname>tagMAPPER</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString tagMAPPER::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.cpp" line="12" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" compoundref="cbleibfitplugin_8cpp" startline="165" endline="236">cBleibFitPlugin::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" prot="public" static="no" mutable="no">
+        <type>qint16</type>
+        <definition>qint16 tagMAPPER::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.cpp" line="13" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" compoundref="cbleibfitplugin_8cpp" startline="165" endline="236">cBleibFitPlugin::load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="iBleibFit/cbleibfitplugin.cpp" line="11" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" prot="public" virt="non-virtual"><scope>tagMAPPER</scope><name>key</name></member>
+      <member refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" prot="public" virt="non-virtual"><scope>tagMAPPER</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,452 @@
+\hypertarget{classc_config_dialog}{}\section{c\+Config\+Dialog Class Reference}
+\label{classc_config_dialog}\index{c\+Config\+Dialog@{c\+Config\+Dialog}}
+
+
+Configuration Dialog for d\+My\+S\+QL.  
+
+
+
+
+{\ttfamily \#include $<$cconfigdialog.\+h$>$}
+
+
+
+Inheritance diagram for c\+Config\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classc_config_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Config\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classc_config_dialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_config_dialog_aa89869d702a4d9a2dd94086bc8d700ee}{c\+Config\+Dialog} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classc_config_dialog_ae88187dcf8dfc433b53b26bd5e54f871}{$\sim$c\+Config\+Dialog} ()
+\item 
+void \hyperlink{classc_config_dialog_acb0a82e1653578edc43855af17154f24}{set\+Hostname} (const Q\+String \&sz\+Hostname)
+\item 
+void \hyperlink{classc_config_dialog_abcb15989a34c945128e8624b93b5c272}{set\+Database} (const Q\+String \&sz\+Database)
+\item 
+void \hyperlink{classc_config_dialog_ae3238bbd8055b58066046840fef448b4}{set\+User\+Name} (const Q\+String \&sz\+User\+Name)
+\item 
+void \hyperlink{classc_config_dialog_a1eecd4be7061043a3ae60473013edfb1}{set\+Password} (const Q\+String \&sz\+Password)
+\item 
+Q\+String \hyperlink{classc_config_dialog_a77e56b372e8914cf531d64054cbaea2c}{hostname} ()
+\item 
+Q\+String \hyperlink{classc_config_dialog_a1ab3c4cf07b4bb84624ddfe4395a1935}{database} ()
+\item 
+Q\+String \hyperlink{classc_config_dialog_ad1f4eda37fec241ffbcc158c039accea}{user\+Name} ()
+\item 
+Q\+String \hyperlink{classc_config_dialog_aea1dfbe7eae14e7949a15631ed2df8a5}{password} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_config_dialog_a7fb2127745f898b2c7fd8306ea7df149}{on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked} ()
+\item 
+void \hyperlink{classc_config_dialog_a06a5e35e33fe97b46813ecb70fddb1ef}{on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed} (const Q\+String \&arg1)
+\item 
+void \hyperlink{classc_config_dialog_aaf2c308f17983e14ac6ea8824ffa99c4}{on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed} (const Q\+String \&arg1)
+\item 
+void \hyperlink{classc_config_dialog_ab1dd081ac31a02ff0d53d2f271fdeed5}{on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked} ()
+\item 
+void \hyperlink{classc_config_dialog_ac70b6c699e0eb5af4397a5a2ff29789a}{on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::c\+Config\+Dialog $\ast$ \hyperlink{classc_config_dialog_a57a160e7fe62e54d86b7f3592aaee2f6}{ui}
+\item 
+bool \hyperlink{classc_config_dialog_a68daa09e2f01b7f7108b5d91fcd32df1}{m\+\_\+b\+Password\+Changed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements basic import functionality for Kooky. All functions may be overwritten by derriving classes.
+
+\begin{DoxyNote}{Note}
+Attempts at zen rarely work.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{c\+Config\+Dialog(\+Q\+Widget $\ast$parent=0)}{cConfigDialog(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Config\+Dialog\+::c\+Config\+Dialog (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classc_config_dialog_aa89869d702a4d9a2dd94086bc8d700ee}{}\label{classc_config_dialog_aa89869d702a4d9a2dd94086bc8d700ee}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!````~c\+Config\+Dialog@{$\sim$c\+Config\+Dialog}}
+\index{````~c\+Config\+Dialog@{$\sim$c\+Config\+Dialog}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Config\+Dialog()}{~cConfigDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Config\+Dialog\+::$\sim$c\+Config\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_ae88187dcf8dfc433b53b26bd5e54f871}{}\label{classc_config_dialog_ae88187dcf8dfc433b53b26bd5e54f871}
+
+
+References ui.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!database@{database}}
+\index{database@{database}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{database()}{database()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Config\+Dialog\+::database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_a1ab3c4cf07b4bb84624ddfe4395a1935}{}\label{classc_config_dialog_a1ab3c4cf07b4bb84624ddfe4395a1935}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_a1ab3c4cf07b4bb84624ddfe4395a1935_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!hostname@{hostname}}
+\index{hostname@{hostname}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{hostname()}{hostname()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Config\+Dialog\+::hostname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_a77e56b372e8914cf531d64054cbaea2c}{}\label{classc_config_dialog_a77e56b372e8914cf531d64054cbaea2c}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_a77e56b372e8914cf531d64054cbaea2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked}}
+\index{on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked}{on_m_lpCancelButton_clicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::on\+\_\+m\+\_\+lp\+Cancel\+Button\+\_\+clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_config_dialog_ac70b6c699e0eb5af4397a5a2ff29789a}{}\label{classc_config_dialog_ac70b6c699e0eb5af4397a5a2ff29789a}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked}}
+\index{on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked}{on_m_lpOKButton_clicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_config_dialog_ab1dd081ac31a02ff0d53d2f271fdeed5}{}\label{classc_config_dialog_ab1dd081ac31a02ff0d53d2f271fdeed5}
+
+
+References ui.
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed}}
+\index{on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed}{on_m_lpPassword2_textChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{arg1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_config_dialog_aaf2c308f17983e14ac6ea8824ffa99c4}{}\label{classc_config_dialog_aaf2c308f17983e14ac6ea8824ffa99c4}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+b\+Password\+Changed, and ui.
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed}}
+\index{on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed}{on_m_lpPassword_textChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{arg1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_config_dialog_a06a5e35e33fe97b46813ecb70fddb1ef}{}\label{classc_config_dialog_a06a5e35e33fe97b46813ecb70fddb1ef}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+b\+Password\+Changed, and ui.
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked}}
+\index{on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked}{on_m_lpTestButton_clicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::on\+\_\+m\+\_\+lp\+Test\+Button\+\_\+clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_config_dialog_a7fb2127745f898b2c7fd8306ea7df149}{}\label{classc_config_dialog_a7fb2127745f898b2c7fd8306ea7df149}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!password@{password}}
+\index{password@{password}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{password()}{password()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Config\+Dialog\+::password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_aea1dfbe7eae14e7949a15631ed2df8a5}{}\label{classc_config_dialog_aea1dfbe7eae14e7949a15631ed2df8a5}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_aea1dfbe7eae14e7949a15631ed2df8a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!set\+Database@{set\+Database}}
+\index{set\+Database@{set\+Database}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Database(const Q\+String \&sz\+Database)}{setDatabase(const QString &szDatabase)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::set\+Database (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Database}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_abcb15989a34c945128e8624b93b5c272}{}\label{classc_config_dialog_abcb15989a34c945128e8624b93b5c272}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Database} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_abcb15989a34c945128e8624b93b5c272_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!set\+Hostname@{set\+Hostname}}
+\index{set\+Hostname@{set\+Hostname}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Hostname(const Q\+String \&sz\+Hostname)}{setHostname(const QString &szHostname)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::set\+Hostname (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Hostname}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_acb0a82e1653578edc43855af17154f24}{}\label{classc_config_dialog_acb0a82e1653578edc43855af17154f24}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Hostname} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_acb0a82e1653578edc43855af17154f24_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Password(const Q\+String \&sz\+Password)}{setPassword(const QString &szPassword)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::set\+Password (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Password}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_a1eecd4be7061043a3ae60473013edfb1}{}\label{classc_config_dialog_a1eecd4be7061043a3ae60473013edfb1}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Password} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_a1eecd4be7061043a3ae60473013edfb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!set\+User\+Name@{set\+User\+Name}}
+\index{set\+User\+Name@{set\+User\+Name}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+User\+Name(const Q\+String \&sz\+User\+Name)}{setUserName(const QString &szUserName)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Config\+Dialog\+::set\+User\+Name (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+User\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_ae3238bbd8055b58066046840fef448b4}{}\label{classc_config_dialog_ae3238bbd8055b58066046840fef448b4}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+User\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_ae3238bbd8055b58066046840fef448b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!user\+Name@{user\+Name}}
+\index{user\+Name@{user\+Name}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{user\+Name()}{userName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Config\+Dialog\+::user\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_config_dialog_ad1f4eda37fec241ffbcc158c039accea}{}\label{classc_config_dialog_ad1f4eda37fec241ffbcc158c039accea}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References ui.
+
+
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_config_dialog_ad1f4eda37fec241ffbcc158c039accea_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!m\+\_\+b\+Password\+Changed@{m\+\_\+b\+Password\+Changed}}
+\index{m\+\_\+b\+Password\+Changed@{m\+\_\+b\+Password\+Changed}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+b\+Password\+Changed}{m_bPasswordChanged}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Config\+Dialog\+::m\+\_\+b\+Password\+Changed\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_config_dialog_a68daa09e2f01b7f7108b5d91fcd32df1}{}\label{classc_config_dialog_a68daa09e2f01b7f7108b5d91fcd32df1}
+T\+O\+DO\+: describe 
+
+Referenced by on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed(), and on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed().
+
+\index{c\+Config\+Dialog@{c\+Config\+Dialog}!ui@{ui}}
+\index{ui@{ui}!c\+Config\+Dialog@{c\+Config\+Dialog}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::c\+Config\+Dialog$\ast$ c\+Config\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_config_dialog_a57a160e7fe62e54d86b7f3592aaee2f6}{}\label{classc_config_dialog_a57a160e7fe62e54d86b7f3592aaee2f6}
+T\+O\+DO\+: describe 
+
+Referenced by c\+Config\+Dialog(), database(), hostname(), on\+\_\+m\+\_\+lp\+O\+K\+Button\+\_\+clicked(), on\+\_\+m\+\_\+lp\+Password2\+\_\+text\+Changed(), on\+\_\+m\+\_\+lp\+Password\+\_\+text\+Changed(), password(), set\+Database(), set\+Hostname(), set\+Password(), set\+User\+Name(), user\+Name(), and $\sim$c\+Config\+Dialog().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+d\+My\+S\+Q\+L/\hyperlink{cconfigdialog_8h}{cconfigdialog.\+h}\item 
+d\+My\+S\+Q\+L/\hyperlink{cconfigdialog_8cpp}{cconfigdialog.\+cpp}\end{DoxyCompactItemize}

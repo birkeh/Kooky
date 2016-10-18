@@ -1,0 +1,471 @@
+.TH "cIngredient" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cIngredient \- This class holds data of an ingredient\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cingredient\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBiIngredient\fP { \fBiIngredientBreadUnits\fP = 0, \fBiIngredientCalories\fP = 1, \fBiIngredientProtein\fP = 2, \fBiIngredientFat\fP = 3, \fBiIngredientCarbohydrates\fP = 4, \fBiIngredientAlcohol\fP = 5, \fBiIngredientWater\fP = 6, \fBiIngredientTotalDietaryFibre\fP = 7, \fBiIngredientCholesterol\fP = 8, \fBiIngredientMineral\fP = 9, \fBiIngredientVitaminARetinol\fP = 10, \fBiIngredientVitaminD\fP = 11, \fBiIngredientVitaminEactiv\fP = 12, \fBiIngredientFolicacid\fP = 13, \fBiIngredientVitaminB1\fP = 14, \fBiIngredientVitaminB2\fP = 15, \fBiIngredientVitaminB6\fP = 16, \fBiIngredientVitaminC\fP = 17, \fBiIngredientaTocopherol\fP = 18, \fBiIngredientVitaminK\fP = 19, \fBiIngredientNicotinamide\fP = 20, \fBiIngredientPantothenicacid\fP = 21, \fBiIngredientBiotin\fP = 22, \fBiIngredientVitaminB12\fP = 23, \fBiIngredientRetinolequivalent\fP = 24, \fBiIngredientbCarotene\fP = 25, \fBiIngredientNiacinequivalent\fP = 26, \fBiIngredientfreefolicacidequivalent\fP = 27, \fBiIngredientfreefolicacid\fP = 28, \fBiIngredientSodium\fP = 29, \fBiIngredientPotassium\fP = 30, \fBiIngredientMagnesium\fP = 31, \fBiIngredientCalcium\fP = 32, \fBiIngredientIron\fP = 33, \fBiIngredientPhosphorus\fP = 34, \fBiIngredientCopper\fP = 35, \fBiIngredientZinc\fP = 36, \fBiIngredientChloride\fP = 37, \fBiIngredientFluoride\fP = 38, \fBiIngredientIodide\fP = 39, \fBiIngredientSelenium\fP = 40, \fBiIngredientManganese\fP = 41, \fBiIngredientSulphur\fP = 42, \fBiIngredientArginine\fP = 43, \fBiIngredientCystine\fP = 44, \fBiIngredientHistidine\fP = 45, \fBiIngredientIsoleucine\fP = 46, \fBiIngredientLeucine\fP = 47, \fBiIngredientLysine\fP = 48, \fBiIngredientMethionine\fP = 49, \fBiIngredientPhenylalanine\fP = 50, \fBiIngredientThreonine\fP = 51, \fBiIngredientTryptophane\fP = 52, \fBiIngredientTyrosine\fP = 53, \fBiIngredientValine\fP = 54, \fBiIngredientAlanine\fP = 55, \fBiIngredientAsparticacid\fP = 56, \fBiIngredientGlutamicacid\fP = 57, \fBiIngredientGlycine\fP = 58, \fBiIngredientProline\fP = 59, \fBiIngredientSerine\fP = 60, \fBiIngredientotheressent_aminoacids\fP = 61, \fBiIngredientessent_aminoacids\fP = 62, \fBiIngredientothernonessent_aminoacids\fP = 63, \fBiIngredientnonessent_aminoacids\fP = 64, \fBiIngredientSaturatedfattyacids\fP = 65, \fBiIngredientMonounsaturatedfattyacids\fP = 66, \fBiIngredientPolyunsaturatedfattyacids\fP = 67, \fBiIngredientButyricacid\fP = 68, \fBiIngredientCaproicacid\fP = 69, \fBiIngredientCaprylicacid\fP = 70, \fBiIngredientCapricacid\fP = 71, \fBiIngredientLauricacid\fP = 72, \fBiIngredientMyristicacid\fP = 73, \fBiIngredientC15_O_fattyacid\fP = 74, \fBiIngredientPalmiticacid\fP = 75, \fBiIngredientMargaricacid\fP = 76, \fBiIngredientStearicacid\fP = 77, \fBiIngredientArachicacid\fP = 78, \fBiIngredientBehenicacid\fP = 79, \fBiIngredientLignocericacid\fP = 80, \fBiIngredientPalmitoleicacid\fP = 81, \fBiIngredientOleicacid\fP = 82, \fBiIngredientEicosenicacid\fP = 83, \fBiIngredientC22_1_fattyacid\fP = 84, \fBiIngredientC14_1_fattyacid\fP = 85, \fBiIngredientC24_1_fattyacid\fP = 86, \fBiIngredientLinoleicacid\fP = 87, \fBiIngredientLinolenicacid\fP = 88, \fBiIngredientArachidonicacid\fP = 89, \fBiIngredientC18_4_fattyacid\fP = 90, \fBiIngredientC20_5_N_3fattyacid\fP = 91, \fBiIngredientC22_5_N_3fattyacid\fP = 92, \fBiIngredientC22_6_N_3fattyacid\fP = 93, \fBiIngredientC16_2_fattyacid\fP = 94, \fBiIngredientothersaturatedfattyacids\fP = 95, \fBiIngredientothermonounsaturatedfattyacids\fP = 96, \fBiIngredientNonadecatrienicacid\fP = 97, \fBiIngredientEicosadienicacid\fP = 98, \fBiIngredientEicosatrienicacid\fP = 99, \fBiIngredientDocosadienicacid\fP = 100, \fBiIngredientDocosatrienicacid\fP = 101, \fBiIngredientDocosatetraenicacid\fP = 102, \fBiIngredientotherpolyunsat_fattyacids\fP = 103, \fBiIngredientothershort_chainfattyacids\fP = 104, \fBiIngredientshort_chainfattyacids\fP = 105, \fBiIngredientothermedium_chainfattyacids\fP = 106, \fBiIngredientmedium_chainfattyacids\fP = 107, \fBiIngredientotherlong_chainfattyacids\fP = 108, \fBiIngredientlong_chainfattyacids\fP = 109, \fBiIngredientGlycerolandLipoides\fP = 110, \fBiIngredientSorbitol\fP = 111, \fBiIngredientGlucose\fP = 112, \fBiIngredientFructose\fP = 113, \fBiIngredientSucrose\fP = 114, \fBiIngredientLactose\fP = 115, \fBiIngredientStarch\fP = 116, \fBiIngredientMaltose\fP = 117, \fBiIngredientGalactose\fP = 118, \fBiIngredientGlycogene\fP = 119, \fBiIngredientPentosan\fP = 120, \fBiIngredientHexosan\fP = 121, \fBiIngredientCellulose\fP = 122, \fBiIngredientPolyuronicacid\fP = 123, \fBiIngredientMannitol\fP = 124, \fBiIngredientXylitol\fP = 125, \fBiIngredientothersugaralcohols\fP = 126, \fBiIngredientTotalsugaralcohols\fP = 127, \fBiIngredientothermonosaccharides\fP = 128, \fBiIngredientMonosaccharides\fP = 129, \fBiIngredientotherdisaccharides\fP = 130, \fBiIngredientDisaccharides\fP = 131, \fBiIngredientOligosaccharidesresorb\fP = 132, \fBiIngredientOligosaccharidesnonresorb\fP = 133, \fBiIngredientotherpolysaccharides\fP = 134, \fBiIngredientPolysaccharides\fP = 135, \fBiIngredientDietaryfibrewatersoluble\fP = 136, \fBiIngredientDietaryfibrewaterinsoluble\fP = 137, \fBiIngredientLignin\fP = 138, \fBiIngredientPurinebasesnitrogen\fP = 139, \fBiIngredientSodiumchloride\fP = 140, \fBiIngredientWaste\fP = 141, \fBiIngredientotherproteins\fP = 142, \fBiIngredientanimalprotein\fP = 143, \fBiIngredientplantprotein\fP = 144, \fBiIngredientUricacid\fP = 145, \fBiIngredientotherorganicacids\fP = 146, \fBiIngredientMol_diff_cations_anions\fP = 147, \fBiIngredientNitrogenfactor\fP = 148, \fBiIngredientFattyacidpart\fP = 149, \fBiIngredientMineralspart\fP = 150, \fBiIngredientPS_Ratio\fP = 151, \fBiIngredientBiologicalvalue\fP = 152, \fBiIngredientFructosefreebreadunits\fP = 153, \fBiIngredientaverageconsumption\fP = 154, \fBiIngredientJoule\fP = 155, \fBiIngredientSugar\fP = 156, \fBiIngredientAspartid\fP = 157, \fBiIngredientGlutamid\fP = 158, \fBiIngredientMax\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcIngredient\fP (const QString &szFileName)"
+.br
+.ti -1c
+.RI "bool \fBreload\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsave\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static QString \fBgroup\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.ti -1c
+.RI "static QString \fBname\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString \fBm_szFileName\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class holds data of an ingredient\&.
+.PP
+\fBNote:\fP
+.RS 4
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBcIngredient::iIngredient\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIiIngredientBreadUnits \fP\fP
+.TP
+\fB\fIiIngredientCalories \fP\fP
+.TP
+\fB\fIiIngredientProtein \fP\fP
+.TP
+\fB\fIiIngredientFat \fP\fP
+.TP
+\fB\fIiIngredientCarbohydrates \fP\fP
+.TP
+\fB\fIiIngredientAlcohol \fP\fP
+.TP
+\fB\fIiIngredientWater \fP\fP
+.TP
+\fB\fIiIngredientTotalDietaryFibre \fP\fP
+.TP
+\fB\fIiIngredientCholesterol \fP\fP
+.TP
+\fB\fIiIngredientMineral \fP\fP
+.TP
+\fB\fIiIngredientVitaminARetinol \fP\fP
+.TP
+\fB\fIiIngredientVitaminD \fP\fP
+.TP
+\fB\fIiIngredientVitaminEactiv \fP\fP
+.TP
+\fB\fIiIngredientFolicacid \fP\fP
+.TP
+\fB\fIiIngredientVitaminB1 \fP\fP
+.TP
+\fB\fIiIngredientVitaminB2 \fP\fP
+.TP
+\fB\fIiIngredientVitaminB6 \fP\fP
+.TP
+\fB\fIiIngredientVitaminC \fP\fP
+.TP
+\fB\fIiIngredientaTocopherol \fP\fP
+.TP
+\fB\fIiIngredientVitaminK \fP\fP
+.TP
+\fB\fIiIngredientNicotinamide \fP\fP
+.TP
+\fB\fIiIngredientPantothenicacid \fP\fP
+.TP
+\fB\fIiIngredientBiotin \fP\fP
+.TP
+\fB\fIiIngredientVitaminB12 \fP\fP
+.TP
+\fB\fIiIngredientRetinolequivalent \fP\fP
+.TP
+\fB\fIiIngredientbCarotene \fP\fP
+.TP
+\fB\fIiIngredientNiacinequivalent \fP\fP
+.TP
+\fB\fIiIngredientfreefolicacidequivalent \fP\fP
+.TP
+\fB\fIiIngredientfreefolicacid \fP\fP
+.TP
+\fB\fIiIngredientSodium \fP\fP
+.TP
+\fB\fIiIngredientPotassium \fP\fP
+.TP
+\fB\fIiIngredientMagnesium \fP\fP
+.TP
+\fB\fIiIngredientCalcium \fP\fP
+.TP
+\fB\fIiIngredientIron \fP\fP
+.TP
+\fB\fIiIngredientPhosphorus \fP\fP
+.TP
+\fB\fIiIngredientCopper \fP\fP
+.TP
+\fB\fIiIngredientZinc \fP\fP
+.TP
+\fB\fIiIngredientChloride \fP\fP
+.TP
+\fB\fIiIngredientFluoride \fP\fP
+.TP
+\fB\fIiIngredientIodide \fP\fP
+.TP
+\fB\fIiIngredientSelenium \fP\fP
+.TP
+\fB\fIiIngredientManganese \fP\fP
+.TP
+\fB\fIiIngredientSulphur \fP\fP
+.TP
+\fB\fIiIngredientArginine \fP\fP
+.TP
+\fB\fIiIngredientCystine \fP\fP
+.TP
+\fB\fIiIngredientHistidine \fP\fP
+.TP
+\fB\fIiIngredientIsoleucine \fP\fP
+.TP
+\fB\fIiIngredientLeucine \fP\fP
+.TP
+\fB\fIiIngredientLysine \fP\fP
+.TP
+\fB\fIiIngredientMethionine \fP\fP
+.TP
+\fB\fIiIngredientPhenylalanine \fP\fP
+.TP
+\fB\fIiIngredientThreonine \fP\fP
+.TP
+\fB\fIiIngredientTryptophane \fP\fP
+.TP
+\fB\fIiIngredientTyrosine \fP\fP
+.TP
+\fB\fIiIngredientValine \fP\fP
+.TP
+\fB\fIiIngredientAlanine \fP\fP
+.TP
+\fB\fIiIngredientAsparticacid \fP\fP
+.TP
+\fB\fIiIngredientGlutamicacid \fP\fP
+.TP
+\fB\fIiIngredientGlycine \fP\fP
+.TP
+\fB\fIiIngredientProline \fP\fP
+.TP
+\fB\fIiIngredientSerine \fP\fP
+.TP
+\fB\fIiIngredientotheressent_aminoacids \fP\fP
+.TP
+\fB\fIiIngredientessent_aminoacids \fP\fP
+.TP
+\fB\fIiIngredientothernonessent_aminoacids \fP\fP
+.TP
+\fB\fIiIngredientnonessent_aminoacids \fP\fP
+.TP
+\fB\fIiIngredientSaturatedfattyacids \fP\fP
+.TP
+\fB\fIiIngredientMonounsaturatedfattyacids \fP\fP
+.TP
+\fB\fIiIngredientPolyunsaturatedfattyacids \fP\fP
+.TP
+\fB\fIiIngredientButyricacid \fP\fP
+.TP
+\fB\fIiIngredientCaproicacid \fP\fP
+.TP
+\fB\fIiIngredientCaprylicacid \fP\fP
+.TP
+\fB\fIiIngredientCapricacid \fP\fP
+.TP
+\fB\fIiIngredientLauricacid \fP\fP
+.TP
+\fB\fIiIngredientMyristicacid \fP\fP
+.TP
+\fB\fIiIngredientC15_O_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientPalmiticacid \fP\fP
+.TP
+\fB\fIiIngredientMargaricacid \fP\fP
+.TP
+\fB\fIiIngredientStearicacid \fP\fP
+.TP
+\fB\fIiIngredientArachicacid \fP\fP
+.TP
+\fB\fIiIngredientBehenicacid \fP\fP
+.TP
+\fB\fIiIngredientLignocericacid \fP\fP
+.TP
+\fB\fIiIngredientPalmitoleicacid \fP\fP
+.TP
+\fB\fIiIngredientOleicacid \fP\fP
+.TP
+\fB\fIiIngredientEicosenicacid \fP\fP
+.TP
+\fB\fIiIngredientC22_1_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC14_1_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC24_1_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientLinoleicacid \fP\fP
+.TP
+\fB\fIiIngredientLinolenicacid \fP\fP
+.TP
+\fB\fIiIngredientArachidonicacid \fP\fP
+.TP
+\fB\fIiIngredientC18_4_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC20_5_N_3fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC22_5_N_3fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC22_6_N_3fattyacid \fP\fP
+.TP
+\fB\fIiIngredientC16_2_fattyacid \fP\fP
+.TP
+\fB\fIiIngredientothersaturatedfattyacids \fP\fP
+.TP
+\fB\fIiIngredientothermonounsaturatedfattyacids \fP\fP
+.TP
+\fB\fIiIngredientNonadecatrienicacid \fP\fP
+.TP
+\fB\fIiIngredientEicosadienicacid \fP\fP
+.TP
+\fB\fIiIngredientEicosatrienicacid \fP\fP
+.TP
+\fB\fIiIngredientDocosadienicacid \fP\fP
+.TP
+\fB\fIiIngredientDocosatrienicacid \fP\fP
+.TP
+\fB\fIiIngredientDocosatetraenicacid \fP\fP
+.TP
+\fB\fIiIngredientotherpolyunsat_fattyacids \fP\fP
+.TP
+\fB\fIiIngredientothershort_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientshort_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientothermedium_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientmedium_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientotherlong_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientlong_chainfattyacids \fP\fP
+.TP
+\fB\fIiIngredientGlycerolandLipoides \fP\fP
+.TP
+\fB\fIiIngredientSorbitol \fP\fP
+.TP
+\fB\fIiIngredientGlucose \fP\fP
+.TP
+\fB\fIiIngredientFructose \fP\fP
+.TP
+\fB\fIiIngredientSucrose \fP\fP
+.TP
+\fB\fIiIngredientLactose \fP\fP
+.TP
+\fB\fIiIngredientStarch \fP\fP
+.TP
+\fB\fIiIngredientMaltose \fP\fP
+.TP
+\fB\fIiIngredientGalactose \fP\fP
+.TP
+\fB\fIiIngredientGlycogene \fP\fP
+.TP
+\fB\fIiIngredientPentosan \fP\fP
+.TP
+\fB\fIiIngredientHexosan \fP\fP
+.TP
+\fB\fIiIngredientCellulose \fP\fP
+.TP
+\fB\fIiIngredientPolyuronicacid \fP\fP
+.TP
+\fB\fIiIngredientMannitol \fP\fP
+.TP
+\fB\fIiIngredientXylitol \fP\fP
+.TP
+\fB\fIiIngredientothersugaralcohols \fP\fP
+.TP
+\fB\fIiIngredientTotalsugaralcohols \fP\fP
+.TP
+\fB\fIiIngredientothermonosaccharides \fP\fP
+.TP
+\fB\fIiIngredientMonosaccharides \fP\fP
+.TP
+\fB\fIiIngredientotherdisaccharides \fP\fP
+.TP
+\fB\fIiIngredientDisaccharides \fP\fP
+.TP
+\fB\fIiIngredientOligosaccharidesresorb \fP\fP
+.TP
+\fB\fIiIngredientOligosaccharidesnonresorb \fP\fP
+.TP
+\fB\fIiIngredientotherpolysaccharides \fP\fP
+.TP
+\fB\fIiIngredientPolysaccharides \fP\fP
+.TP
+\fB\fIiIngredientDietaryfibrewatersoluble \fP\fP
+.TP
+\fB\fIiIngredientDietaryfibrewaterinsoluble \fP\fP
+.TP
+\fB\fIiIngredientLignin \fP\fP
+.TP
+\fB\fIiIngredientPurinebasesnitrogen \fP\fP
+.TP
+\fB\fIiIngredientSodiumchloride \fP\fP
+.TP
+\fB\fIiIngredientWaste \fP\fP
+.TP
+\fB\fIiIngredientotherproteins \fP\fP
+.TP
+\fB\fIiIngredientanimalprotein \fP\fP
+.TP
+\fB\fIiIngredientplantprotein \fP\fP
+.TP
+\fB\fIiIngredientUricacid \fP\fP
+.TP
+\fB\fIiIngredientotherorganicacids \fP\fP
+.TP
+\fB\fIiIngredientMol_diff_cations_anions \fP\fP
+.TP
+\fB\fIiIngredientNitrogenfactor \fP\fP
+.TP
+\fB\fIiIngredientFattyacidpart \fP\fP
+.TP
+\fB\fIiIngredientMineralspart \fP\fP
+.TP
+\fB\fIiIngredientPS_Ratio \fP\fP
+.TP
+\fB\fIiIngredientBiologicalvalue \fP\fP
+.TP
+\fB\fIiIngredientFructosefreebreadunits \fP\fP
+.TP
+\fB\fIiIngredientaverageconsumption \fP\fP
+.TP
+\fB\fIiIngredientJoule \fP\fP
+.TP
+\fB\fIiIngredientSugar \fP\fP
+.TP
+\fB\fIiIngredientAspartid \fP\fP
+.TP
+\fB\fIiIngredientGlutamid \fP\fP
+.TP
+\fB\fIiIngredientMax \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cIngredient::cIngredient (const QString & szFileName)"
+
+.PP
+References reload()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString cIngredient::group (\fBcIngredient::iIngredient\fP i)\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Referenced by cImportInterface::group()\&.
+.SS "QString cIngredient::name (\fBcIngredient::iIngredient\fP i)\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Referenced by cImportInterface::name()\&.
+.SS "bool cIngredient::reload ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Referenced by cIngredient()\&.
+.SS "bool cIngredient::save ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+References m_szFileName\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QString cIngredient::m_szFileName\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by save()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

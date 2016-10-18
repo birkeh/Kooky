@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_mdi_area">
+<title>cMdiArea class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cmdiarea_8h">&lt;cmdiarea.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cMdiArea</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_mdi_area__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cMdiArea</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_mdi_area__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QImage m_background</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_mdi_area_1a8638403fcff001f5f707c610ed391525">cMdiArea</link> (
+QWidget * parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d">paintEvent</link> (
+QPaintEvent * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

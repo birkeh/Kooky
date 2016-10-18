@@ -1,0 +1,9 @@
+<map id="cOptions::cOptions" name="cOptions::cOptions">
+<area shape="rect" id="node2" href="$classc_options.html#a2b71f5c334967a6eb3ec85cc20162cf9" title="cOptions::init" alt="" coords="231,13,336,39"/>
+<area shape="rect" id="node8" href="$classc_main_window.html#ae82e278f9aa88d228cd049392a314251" title="Returns the list of loaded plugins. " alt="" coords="196,63,371,90"/>
+<area shape="rect" id="node3" href="$classc_options.html#ac38dce7a12374ec291023a724c8d30ac" title="cOptions::onOptionsTreeSelection\lChanged" alt="" coords="419,5,657,47"/>
+<area shape="rect" id="node4" href="$classc_options_plugins.html#ab6ef94ac452b34fad3bfc8b3a2362c53" title="cOptionsPlugins::setPlugins" alt="" coords="705,13,901,39"/>
+<area shape="rect" id="node5" href="$classc_options_plugins.html#a41dfaea4a44e2eed173402bcaa42d0d7" title="cOptionsPlugins::onOptions\lPluginTreePluginToggled" alt="" coords="949,5,1145,47"/>
+<area shape="rect" id="node6" href="$classc_plugin.html#a73b42f8c99d83faa8a2fe3ed994937a1" title="cPlugin::pluginName" alt="" coords="1193,13,1345,39"/>
+<area shape="rect" id="node7" href="$classc_interface.html#a17e5a0cf99317ab45f624e68b4a6ecca" title="Returns the name of the plugin. " alt="" coords="1393,13,1564,39"/>
+</map>

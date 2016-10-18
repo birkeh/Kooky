@@ -1,0 +1,6 @@
+<map id="cMainWindow::onIngredientsListImport" name="cMainWindow::onIngredientsListImport">
+<area shape="rect" id="node2" href="$classc_import_ingredient_dialog.html#ad710be68582d34c43a399b4764c0434a" title="cImportIngredientDialog\l::setPluginList" alt="" coords="255,23,429,65"/>
+<area shape="rect" id="node3" href="$classc_plugin.html#a4e1ee6c29cb94d72b8ddc222dd1e4d5a" title="cPlugin::capability" alt="" coords="486,5,621,32"/>
+<area shape="rect" id="node4" href="$classc_plugin.html#a73b42f8c99d83faa8a2fe3ed994937a1" title="cPlugin::pluginName" alt="" coords="477,56,629,83"/>
+<area shape="rect" id="node5" href="$classc_interface.html#a17e5a0cf99317ab45f624e68b4a6ecca" title="Returns the name of the plugin. " alt="" coords="677,56,848,83"/>
+</map>

@@ -1,0 +1,156 @@
+.TH "cDBInterface" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cDBInterface \- This is the base class for all database connector plugins\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cdbinterface\&.h>\fP
+.PP
+Inherits \fBcInterface\fP\&.
+.PP
+Inherited by \fBcMySQLPlugin\fP, and \fBcSQLitePlugin\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcDBInterface\fP ()"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "virtual \fB~cDBInterface\fP ()"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "virtual bool \fBconnect\fP ()=0"
+.br
+.RI "\fIOpens a connection to the database\&. \fP"
+.ti -1c
+.RI "virtual bool \fBinit\fP ()=0"
+.br
+.RI "\fIInitializes the module with default values\&. \fP"
+.ti -1c
+.RI "bool \fBconnected\fP ()"
+.br
+.RI "\fIReturns the current connection status\&. \fP"
+.ti -1c
+.RI "QString \fBlastError\fP ()"
+.br
+.RI "\fIReturns the last error message of the last operation\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBm_bConnected\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class implements basic interface functionality for all Kooky database connector plugins\&. All functions may be overwritten by derriving classes\&.
+.PP
+\fBNote:\fP
+.RS 4
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cDBInterface::cDBInterface ()\fC [inline]\fP"
+
+.SS "virtual cDBInterface::~cDBInterface ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+References connect(), and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool cDBInterface::connect ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool true on success, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, and \fBcSQLitePlugin\fP\&.
+.PP
+Referenced by ~cDBInterface()\&.
+.SS "bool cDBInterface::connected ()\fC [inline]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool true if connected, false otherwise\&. 
+.RE
+.PP
+
+.PP
+References m_bConnected\&.
+.SS "virtual bool cDBInterface::init ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool true on success, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, and \fBcSQLitePlugin\fP\&.
+.PP
+Referenced by cMainWindow::pluginDBTriggered(), and ~cDBInterface()\&.
+.SS "QString cDBInterface::lastError ()\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString error message of the last operation\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool cDBInterface::m_bConnected\fC [protected]\fP"
+holds the current connection status\&. 
+.PP
+Referenced by cMySQLPlugin::config(), connected(), cSQLitePlugin::init(), cMySQLPlugin::init(), cSQLitePlugin::open(), and cMySQLPlugin::open()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

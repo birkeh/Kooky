@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classc_bleib_fit_plugin" kind="class"><name>cBleibFitPlugin</name>
+    <member refid="classc_bleib_fit_plugin_1ada1ca6d46ebd839f6f86bfee1ed0abb8" kind="variable"><name>m_szUrls</name></member>
+    <member refid="classc_bleib_fit_plugin_1a255890766758afcab2c358bfb8695a15" kind="variable"><name>m_szIngredients</name></member>
+    <member refid="classc_bleib_fit_plugin_1aa9bed63f126286a26ef3b45bfa5fbdcb" kind="variable"><name>m_rValues</name></member>
+    <member refid="classc_bleib_fit_plugin_1a381f973f2b98c90e22314a5e1855f3df" kind="variable"><name>m_iLoadedIndex</name></member>
+    <member refid="classc_bleib_fit_plugin_1aad11be7cf80b28becc6024e3827d4f75" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_bleib_fit_plugin_1aca281bc00f83bc4cd4b620a448825147" kind="function"><name>pluginName</name></member>
+    <member refid="classc_bleib_fit_plugin_1acb4fbabe875079913c8bbbbe7d9089f6" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" kind="function"><name>pluginType</name></member>
+    <member refid="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" kind="function"><name>config</name></member>
+    <member refid="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" kind="function"><name>detailsCapability</name></member>
+    <member refid="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" kind="function"><name>search</name></member>
+    <member refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" kind="function"><name>load</name></member>
+    <member refid="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" kind="function"><name>value</name></member>
+    <member refid="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" kind="function"><name>ingredientName</name></member>
+  </compound>
+  <compound refid="classc_config_dialog" kind="class"><name>cConfigDialog</name>
+    <member refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" kind="variable"><name>ui</name></member>
+    <member refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" kind="variable"><name>m_bPasswordChanged</name></member>
+    <member refid="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" kind="function"><name>cConfigDialog</name></member>
+    <member refid="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" kind="function"><name>~cConfigDialog</name></member>
+    <member refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" kind="function"><name>setHostname</name></member>
+    <member refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" kind="function"><name>setDatabase</name></member>
+    <member refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" kind="function"><name>setUserName</name></member>
+    <member refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" kind="function"><name>setPassword</name></member>
+    <member refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" kind="function"><name>hostname</name></member>
+    <member refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" kind="function"><name>database</name></member>
+    <member refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" kind="function"><name>userName</name></member>
+    <member refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" kind="function"><name>password</name></member>
+    <member refid="classc_config_dialog_1a7fb2127745f898b2c7fd8306ea7df149" kind="slot"><name>on_m_lpTestButton_clicked</name></member>
+    <member refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" kind="slot"><name>on_m_lpPassword_textChanged</name></member>
+    <member refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" kind="slot"><name>on_m_lpPassword2_textChanged</name></member>
+    <member refid="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" kind="slot"><name>on_m_lpOKButton_clicked</name></member>
+    <member refid="classc_config_dialog_1ac70b6c699e0eb5af4397a5a2ff29789a" kind="slot"><name>on_m_lpCancelButton_clicked</name></member>
+  </compound>
+  <compound refid="classc_d_b_interface" kind="class"><name>cDBInterface</name>
+    <member refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" kind="variable"><name>m_bConnected</name></member>
+    <member refid="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257" kind="function"><name>cDBInterface</name></member>
+    <member refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" kind="function"><name>~cDBInterface</name></member>
+    <member refid="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b" kind="function"><name>connect</name></member>
+    <member refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9" kind="function"><name>init</name></member>
+    <member refid="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" kind="function"><name>connected</name></member>
+    <member refid="classc_d_b_interface_1a280fe85549741179ce3a23b9f417c689" kind="function"><name>lastError</name></member>
+  </compound>
+  <compound refid="classc_ernaehrung_plugin" kind="class"><name>cErnaehrungPlugin</name>
+    <member refid="classc_ernaehrung_plugin_1a58692dcfff3d8f9da462b90fbf12db06" kind="variable"><name>m_szUrls</name></member>
+    <member refid="classc_ernaehrung_plugin_1aa586d90efc11b68dce605fdf1a45910d" kind="variable"><name>m_szIngredients</name></member>
+    <member refid="classc_ernaehrung_plugin_1a947339aef16691c4165c7eb1869d3b7e" kind="variable"><name>m_iLoadedIndex</name></member>
+    <member refid="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5" kind="function"><name>pluginName</name></member>
+    <member refid="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" kind="function"><name>pluginType</name></member>
+    <member refid="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f" kind="function"><name>config</name></member>
+    <member refid="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e" kind="function"><name>detailsCapability</name></member>
+    <member refid="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d" kind="function"><name>search</name></member>
+    <member refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" kind="function"><name>load</name></member>
+    <member refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" kind="function"><name>value</name></member>
+    <member refid="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed" kind="function"><name>ingredientName</name></member>
+  </compound>
+  <compound refid="classc_import_ingredient_dialog" kind="class"><name>cImportIngredientDialog</name>
+    <member refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kind="variable"><name>ui</name></member>
+    <member refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kind="variable"><name>m_lpIngredientListModel</name></member>
+    <member refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kind="variable"><name>m_lpIngredientDetailsModel</name></member>
+    <member refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" kind="variable"><name>m_pluginList</name></member>
+    <member refid="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" kind="function"><name>cImportIngredientDialog</name></member>
+    <member refid="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" kind="function"><name>~cImportIngredientDialog</name></member>
+    <member refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" kind="function"><name>setPluginList</name></member>
+    <member refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" kind="slot"><name>on_m_lpSearchButton_clicked</name></member>
+    <member refid="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" kind="slot"><name>on_m_lpSearchString_textChanged</name></member>
+    <member refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" kind="slot"><name>onIngredientListSelectionChanged</name></member>
+    <member refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" kind="function"><name>addGroup</name></member>
+    <member refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" kind="function"><name>init</name></member>
+    <member refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" kind="function"><name>initIngredientList</name></member>
+    <member refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" kind="function"><name>initIngredientDetails</name></member>
+  </compound>
+  <compound refid="classc_import_interface" kind="class"><name>cImportInterface</name>
+    <member refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" kind="variable"><name>m_bLoaded</name></member>
+    <member refid="classc_import_interface_1ab18dd3e9cf49a07f23f376362fdf317b" kind="variable"><name>m_iLoadedIndex</name></member>
+    <member refid="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177" kind="function"><name>cImportInterface</name></member>
+    <member refid="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d" kind="function"><name>detailsCapability</name></member>
+    <member refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f" kind="function"><name>search</name></member>
+    <member refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983" kind="function"><name>load</name></member>
+    <member refid="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb" kind="function"><name>loaded</name></member>
+    <member refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42" kind="function"><name>value</name></member>
+    <member refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" kind="function"><name>valueStr</name></member>
+    <member refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" kind="function"><name>name</name></member>
+    <member refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" kind="function"><name>group</name></member>
+    <member refid="classc_import_interface_1af3f569b605787021a919816978f229bc" kind="function"><name>ingredientName</name></member>
+  </compound>
+  <compound refid="classc_ingredient" kind="class"><name>cIngredient</name>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kind="enum"><name>iIngredient</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab889d4026db11760a8e057c915273a53" kind="enumvalue"><name>iIngredientBreadUnits</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a910139fbdcbe825cbd17ab1f8d98bda1" kind="enumvalue"><name>iIngredientCalories</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac3f49bc5d113ba83ea943fe3a31265f7" kind="enumvalue"><name>iIngredientProtein</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9a2354be9de0652de3c6bb1ae7a33a93" kind="enumvalue"><name>iIngredientFat</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a35bb83890a3eb685973a8707315508df" kind="enumvalue"><name>iIngredientCarbohydrates</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afcb5c053eb33e8e56a5b3bf127532647" kind="enumvalue"><name>iIngredientAlcohol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0f72bda1254d2141e405950d9dcade7b" kind="enumvalue"><name>iIngredientWater</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af59a88854cae0b1af5fcd2b570d2dd13" kind="enumvalue"><name>iIngredientTotalDietaryFibre</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a7ec96f96b0f551c1d230179b25616049" kind="enumvalue"><name>iIngredientCholesterol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a76a0f875f665179f0fd36721e9efddbd" kind="enumvalue"><name>iIngredientMineral</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a4b16ea58a637ce7b240ab9ad8b6d68a7" kind="enumvalue"><name>iIngredientVitaminARetinol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a70b8df3c383ad6e9e061bef56c83f8c8" kind="enumvalue"><name>iIngredientVitaminD</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a7ff27cf0752a8e9fc3e4e358e081755b" kind="enumvalue"><name>iIngredientVitaminEactiv</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a881210ff9a4177b7e151ef8085e1751d" kind="enumvalue"><name>iIngredientFolicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a49f919b43eb5f147736e3133fc4f385d" kind="enumvalue"><name>iIngredientVitaminB1</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2fb127fa831f02a27875c02851db8764" kind="enumvalue"><name>iIngredientVitaminB2</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af0156caa11e5353cb687ebc881e80922" kind="enumvalue"><name>iIngredientVitaminB6</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8b5e038c3ad0a7605a27630164982864" kind="enumvalue"><name>iIngredientVitaminC</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ae0e1b7c0890dc77f315eb60c0d789089" kind="enumvalue"><name>iIngredientaTocopherol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ae1ff727a62d0f163557b5a3dbefe40ce" kind="enumvalue"><name>iIngredientVitaminK</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5916521018873bec57d2c7a91d6347ec" kind="enumvalue"><name>iIngredientNicotinamide</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad7c79dde65210ba6c2e811243ed7829a" kind="enumvalue"><name>iIngredientPantothenicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a52c745c583d4fc8b5194f178ba0834e9" kind="enumvalue"><name>iIngredientBiotin</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0a4de4ebce28077f038baaac5fee9d2f" kind="enumvalue"><name>iIngredientVitaminB12</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a218329a4594d4988725272a2c4a87a4d" kind="enumvalue"><name>iIngredientRetinolequivalent</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af3cd3db8335e1223c652a23d440616be" kind="enumvalue"><name>iIngredientbCarotene</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9d9f987e05a0ffc8644fb4036c6be480" kind="enumvalue"><name>iIngredientNiacinequivalent</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a43e6fb27807b430a6cceee76d989193c" kind="enumvalue"><name>iIngredientfreefolicacidequivalent</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa4e139610f2e38d6c22e03a844cfef95" kind="enumvalue"><name>iIngredientfreefolicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad76591a16a66949039b02da8a61ef378" kind="enumvalue"><name>iIngredientSodium</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28accb496dea754be1236d4bc4e35fa4439" kind="enumvalue"><name>iIngredientPotassium</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8987b05ab52c74db67ab9313fe5fe5f6" kind="enumvalue"><name>iIngredientMagnesium</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a6f3b6c1922e7b292f1222eeb42519447" kind="enumvalue"><name>iIngredientCalcium</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3aa8d784a3eb5f5e1863750ba938018d" kind="enumvalue"><name>iIngredientIron</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aae2b5c1c5bb2f26101c055720d4ae8af" kind="enumvalue"><name>iIngredientPhosphorus</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa575feb1988d88257a3b7a3b40ac32e7" kind="enumvalue"><name>iIngredientCopper</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a68b838d89f0fb06d6fd65b62ca20ec9d" kind="enumvalue"><name>iIngredientZinc</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8b091180a03701ca24b1e891c0969217" kind="enumvalue"><name>iIngredientChloride</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a6ff2dddeb57d086a2bc058a3a74cdef3" kind="enumvalue"><name>iIngredientFluoride</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac861571fd28e2df233dacd88324bac6a" kind="enumvalue"><name>iIngredientIodide</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a4dbcf6fe36b41c6f4c01c3fd1052ab0d" kind="enumvalue"><name>iIngredientSelenium</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac056a0fec98b61404431df043113c982" kind="enumvalue"><name>iIngredientManganese</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a93e3218838a4b5e075b56b95b32deeb9" kind="enumvalue"><name>iIngredientSulphur</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9345328c74371d01848d64548ad7c466" kind="enumvalue"><name>iIngredientArginine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a1083401ab5de70a27301732b847718b4" kind="enumvalue"><name>iIngredientCystine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9549bb9630b1221e5bdc1a80293c3f7a" kind="enumvalue"><name>iIngredientHistidine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a1ae6ac395f68de753e7adb50356eceb5" kind="enumvalue"><name>iIngredientIsoleucine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aadb4f09db8e42fbbdd881c1f3b3532da" kind="enumvalue"><name>iIngredientLeucine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9991e7fe09e369b53f52caf24df9af92" kind="enumvalue"><name>iIngredientLysine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a82409d11be70fad72f67c2708ed5d1d9" kind="enumvalue"><name>iIngredientMethionine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a39e996e7f3c8a37e2b5d72ce7798a74d" kind="enumvalue"><name>iIngredientPhenylalanine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5e65797e36f038762724b774c569ddf8" kind="enumvalue"><name>iIngredientThreonine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa340d12dc57b915994e32f65077e60db" kind="enumvalue"><name>iIngredientTryptophane</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a353072b963b0f6046faba6bccb92b49d" kind="enumvalue"><name>iIngredientTyrosine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0c4c8e1becc5aa57b0cc3984c224f37f" kind="enumvalue"><name>iIngredientValine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3fb4963f0122e92a809da09f085d5c52" kind="enumvalue"><name>iIngredientAlanine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afd077d0758072c1f5f0a2d714db3f05b" kind="enumvalue"><name>iIngredientAsparticacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28adf74c2decbc70446c48d67e689b7a279" kind="enumvalue"><name>iIngredientGlutamicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a167e93b3f6c6dc93f7039560f85ab012" kind="enumvalue"><name>iIngredientGlycine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5c3a99695101ab5ec03f857de0d95b41" kind="enumvalue"><name>iIngredientProline</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a59d14f1459dfbbbb77981d2e71421f0c" kind="enumvalue"><name>iIngredientSerine</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a69613f771b1c7cf26f92a759199c8a4b" kind="enumvalue"><name>iIngredientotheressent_aminoacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a36bc0e09ea7fb674c966a0e9119af1dc" kind="enumvalue"><name>iIngredientessent_aminoacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad2abdc24e35f5c426e7bc863b6bbac93" kind="enumvalue"><name>iIngredientothernonessent_aminoacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28adb3576143315c89dcd6f8b9c966ac90e" kind="enumvalue"><name>iIngredientnonessent_aminoacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a591316fc7fe5c6778775f36bad2a8dca" kind="enumvalue"><name>iIngredientSaturatedfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a89a1465bb3b76c48ef44cc332e84423a" kind="enumvalue"><name>iIngredientMonounsaturatedfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aaf4003b09f76c987429d6fea98238467" kind="enumvalue"><name>iIngredientPolyunsaturatedfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a942fc1e6e413911bd745b2acdf1dd06a" kind="enumvalue"><name>iIngredientButyricacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5326b2fd5d295b236b3cb7be2977f1d6" kind="enumvalue"><name>iIngredientCaproicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a82dd67551a737f5301a53c86f939988f" kind="enumvalue"><name>iIngredientCaprylicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2fd7c6a53fb43dc9e633db61c00032f2" kind="enumvalue"><name>iIngredientCapricacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af85cccb425177f7374106606ceba393c" kind="enumvalue"><name>iIngredientLauricacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aeded608952bb23f11a01895970ca1f59" kind="enumvalue"><name>iIngredientMyristicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2fae399acaceb64d05432ca3e38b0944" kind="enumvalue"><name>iIngredientC15_O_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ade4a770413e3603e863def4f802522e8" kind="enumvalue"><name>iIngredientPalmiticacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3e75cb2b2d09874b66e630753498f891" kind="enumvalue"><name>iIngredientMargaricacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afd515d5572361bfdd720f1473061a3db" kind="enumvalue"><name>iIngredientStearicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aaf0cea20577f3b650cf8758d9da49c0d" kind="enumvalue"><name>iIngredientArachicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afacb6cef6f0d87bcc97ab5c762994481" kind="enumvalue"><name>iIngredientBehenicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a30e6116fa9d436d0108c2f1029c1859a" kind="enumvalue"><name>iIngredientLignocericacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0e0714c0da7a9dbef94f5a0fcf3d688b" kind="enumvalue"><name>iIngredientPalmitoleicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac2a46ae5345d41ce9c45d73542a3c692" kind="enumvalue"><name>iIngredientOleicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac55b60fa0be84edbaca1ba0da40f57ad" kind="enumvalue"><name>iIngredientEicosenicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa3b8ce47efc997861868e8f8ae3801a9" kind="enumvalue"><name>iIngredientC22_1_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a96fd9a8cc558c0ec0aeb55feb4fb457d" kind="enumvalue"><name>iIngredientC14_1_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3dc86ea9fb09c42c7e6bc85d51d22e83" kind="enumvalue"><name>iIngredientC24_1_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a332a679312930de5d21fbe0cb2f4fe9a" kind="enumvalue"><name>iIngredientLinoleicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aed713f19bc40f3d60600b226df98f7a5" kind="enumvalue"><name>iIngredientLinolenicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8a5dfd5cfe85585989fb6de3562ffded" kind="enumvalue"><name>iIngredientArachidonicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad975359fe53da49c660c81723fb3366e" kind="enumvalue"><name>iIngredientC18_4_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5764ee1a83e8505330a05ed9ca37bc24" kind="enumvalue"><name>iIngredientC20_5_N_3fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8a1456b580267698cfb8975d3a31aeaa" kind="enumvalue"><name>iIngredientC22_5_N_3fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a43a641432d2c93f12afcbc9ad70f3bd7" kind="enumvalue"><name>iIngredientC22_6_N_3fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab1b899776c5f43887a0febe39ee6691c" kind="enumvalue"><name>iIngredientC16_2_fattyacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a25b062ca780a92132ccf8785b6c0a5c4" kind="enumvalue"><name>iIngredientothersaturatedfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab65eadfeb19407c8fb560d4b6512907d" kind="enumvalue"><name>iIngredientothermonounsaturatedfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a016514ea639f56cc2ac7a3af6431749d" kind="enumvalue"><name>iIngredientNonadecatrienicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a56682525d3d3ca82378ffbf73df4ca1a" kind="enumvalue"><name>iIngredientEicosadienicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a49af0cb4eaba6f6da178ebeaf29f149d" kind="enumvalue"><name>iIngredientEicosatrienicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8098a2f56a1d0e685225c78f574b2a91" kind="enumvalue"><name>iIngredientDocosadienicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a58ba719cec3667a7ceeaff295fc2e0bd" kind="enumvalue"><name>iIngredientDocosatrienicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a07e156df1f5e60d52ecffb3f138c09c4" kind="enumvalue"><name>iIngredientDocosatetraenicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a6df77a1b34e039a29851b2b7690e069e" kind="enumvalue"><name>iIngredientotherpolyunsat_fattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af708abc1e5e137faba9185be6bb49c8b" kind="enumvalue"><name>iIngredientothershort_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ada40302d23b00216247056f1a3e97b62" kind="enumvalue"><name>iIngredientshort_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ae80b0d082d024e6524d135d2b6352069" kind="enumvalue"><name>iIngredientothermedium_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aee0b7d86346b780395cd4cac815fabd8" kind="enumvalue"><name>iIngredientmedium_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a887209512f15ab96a2180d65f3301b26" kind="enumvalue"><name>iIngredientotherlong_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aec6c1a65bf88f810fc5c3c02377a05d1" kind="enumvalue"><name>iIngredientlong_chainfattyacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad6bacbe32835e769cfc90aa6f04f3618" kind="enumvalue"><name>iIngredientGlycerolandLipoides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afd5f062d8ba69f2d580c326161e60e19" kind="enumvalue"><name>iIngredientSorbitol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af83c04e37f2608f1d2ac612b4ad7b21d" kind="enumvalue"><name>iIngredientGlucose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a639abbf28178778b366d7dd41a8c7ebd" kind="enumvalue"><name>iIngredientFructose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ae7fecb8f5fb4c06d1730350c74f8b215" kind="enumvalue"><name>iIngredientSucrose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a1018e8af75a6a07b529c8c11cc41e932" kind="enumvalue"><name>iIngredientLactose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab32a864fc1f4fdd4b7bedaab933a6b42" kind="enumvalue"><name>iIngredientStarch</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac895ad9c9dde7f4a3c58f23bb49b7c97" kind="enumvalue"><name>iIngredientMaltose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a664e4e1db582a189f4b848e6bfea3a9b" kind="enumvalue"><name>iIngredientGalactose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a68ba63752c69731b2d708376289fce23" kind="enumvalue"><name>iIngredientGlycogene</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac59e332623ab05bf82d1eb7e6d186d76" kind="enumvalue"><name>iIngredientPentosan</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aab90a3c63609365ad8b6fc3c8f0f9103" kind="enumvalue"><name>iIngredientHexosan</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3b9d9d71d107d264af3f8bee4f2a384e" kind="enumvalue"><name>iIngredientCellulose</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a25949457dfad8b8331f423566e7c8d64" kind="enumvalue"><name>iIngredientPolyuronicacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a93eca79204fe858515802e941bc77e0e" kind="enumvalue"><name>iIngredientMannitol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28adfef8e93ba15a5356d7539a9e76a187b" kind="enumvalue"><name>iIngredientXylitol</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a07f05e0ffd2037c6bbd9714dbdf96ee7" kind="enumvalue"><name>iIngredientothersugaralcohols</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aaade4acd6f1b980f2b0317dbbd51a4b9" kind="enumvalue"><name>iIngredientTotalsugaralcohols</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a82ef2583537e9a903df2ec707fa9d0fb" kind="enumvalue"><name>iIngredientothermonosaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aeefb8a28e98ec1da70adbe6617a1faad" kind="enumvalue"><name>iIngredientMonosaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a165b1cf238f7ce68224412e7d0fa69c7" kind="enumvalue"><name>iIngredientotherdisaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2d78d0f7e70e9244bc9b6ae75155735a" kind="enumvalue"><name>iIngredientDisaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af5da412c6dc0f3b19897dc2226436a01" kind="enumvalue"><name>iIngredientOligosaccharidesresorb</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac49158f9cea656f34fcd13d4089edcb7" kind="enumvalue"><name>iIngredientOligosaccharidesnonresorb</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aba97776d0d8c6de8f56dfcdc257b0e74" kind="enumvalue"><name>iIngredientotherpolysaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a78797a52dc1e0dc82cf2ec14f2edfe76" kind="enumvalue"><name>iIngredientPolysaccharides</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a62fc94918e4f1dc58760de6ed949252a" kind="enumvalue"><name>iIngredientDietaryfibrewatersoluble</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a011a64e0222cee4ad3acc62ffbacc90a" kind="enumvalue"><name>iIngredientDietaryfibrewaterinsoluble</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ace7250abca1041861a85c252b9ac8952" kind="enumvalue"><name>iIngredientLignin</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3bc1a7c6afe125f80538280aed717472" kind="enumvalue"><name>iIngredientPurinebasesnitrogen</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2cef9f1b39359722591d95fa6639a1e4" kind="enumvalue"><name>iIngredientSodiumchloride</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad69c3a2c34ab4830b90ef9486d0d474d" kind="enumvalue"><name>iIngredientWaste</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a55582204f16cbab3bf742d19762cf54d" kind="enumvalue"><name>iIngredientotherproteins</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac0e3face0d91579d4f810440ae33e083" kind="enumvalue"><name>iIngredientanimalprotein</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28acf48addfc2e3ddbdf228e7bda74aa611" kind="enumvalue"><name>iIngredientplantprotein</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa31fa58c4c16cc5915e3642c586752df" kind="enumvalue"><name>iIngredientUricacid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac05c0b6ac3b88bf738577788237c55a6" kind="enumvalue"><name>iIngredientotherorganicacids</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a41d752c909e14ef6ab7540de98afe9ad" kind="enumvalue"><name>iIngredientMol_diff_cations_anions</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab1a681aa881bc253f988d88011abbab5" kind="enumvalue"><name>iIngredientNitrogenfactor</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad6f8b04caab7f292d000aca79440c9a9" kind="enumvalue"><name>iIngredientFattyacidpart</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a68e2311fb455ee89fd0786e55f261525" kind="enumvalue"><name>iIngredientMineralspart</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9dbe14a8f5d71d9577d9fa85b5167a0e" kind="enumvalue"><name>iIngredientPS_Ratio</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac04300edc67ee695a2d8e56960ce08ff" kind="enumvalue"><name>iIngredientBiologicalvalue</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aee6ded1fd3e9cb00391296f718eadfd6" kind="enumvalue"><name>iIngredientFructosefreebreadunits</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab3b6f3bf9bae7e80709eb89b395e5cdb" kind="enumvalue"><name>iIngredientaverageconsumption</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a48d0fa4c3d86c962711ea0ded41e7a93" kind="enumvalue"><name>iIngredientJoule</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a600d648d15d843d36ea211d6e38bbb08" kind="enumvalue"><name>iIngredientSugar</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab472c81eef7b44522e799032108449be" kind="enumvalue"><name>iIngredientAspartid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aac8fc02dc3355f64ab71bddf857af745" kind="enumvalue"><name>iIngredientGlutamid</name></member>
+    <member refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509" kind="enumvalue"><name>iIngredientMax</name></member>
+    <member refid="classc_ingredient_1af52301d7db3ff89d1af599408aaf06ea" kind="variable"><name>m_szFileName</name></member>
+    <member refid="classc_ingredient_1ab7d4cee251dc104cf633c4199731f65d" kind="function"><name>cIngredient</name></member>
+    <member refid="classc_ingredient_1aaeb73aa8ba4aec026afde7aef7c0be93" kind="function"><name>reload</name></member>
+    <member refid="classc_ingredient_1a0f31754644654df8840c4960cfad1250" kind="function"><name>save</name></member>
+    <member refid="classc_ingredient_1aa0da12658feecfd205c20e3a0335e9b0" kind="function"><name>group</name></member>
+    <member refid="classc_ingredient_1a64d6e9c85a6b1527de28ed1f1185be29" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="classc_interface" kind="class"><name>cInterface</name>
+    <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kind="enum"><name>iType</name></member>
+    <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" kind="enumvalue"><name>iTypeImport</name></member>
+    <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" kind="enumvalue"><name>iTypeExport</name></member>
+    <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" kind="enumvalue"><name>iTypeDB</name></member>
+    <member refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca" kind="function"><name>pluginName</name></member>
+    <member refid="classc_interface_1aadc382036174c2a25bb2c23733830d33" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4" kind="function"><name>pluginType</name></member>
+    <member refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" kind="function"><name>config</name></member>
+  </compound>
+  <compound refid="classc_main_window" kind="class"><name>cMainWindow</name>
+    <member refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kind="variable"><name>ui</name></member>
+    <member refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kind="variable"><name>m_pluginList</name></member>
+    <member refid="classc_main_window_1a839ead885151027601d9be7d87aade26" kind="variable"><name>m_lpIngredientsListModel</name></member>
+    <member refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kind="variable"><name>m_lpIngredientsListNew</name></member>
+    <member refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" kind="variable"><name>m_lpIngredientsListImport</name></member>
+    <member refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kind="variable"><name>m_lpIngredientsListDelete</name></member>
+    <member refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kind="variable"><name>m_lpIngredientsListEdit</name></member>
+    <member refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kind="variable"><name>m_lpIngredientsListMenu</name></member>
+    <member refid="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" kind="function"><name>cMainWindow</name></member>
+    <member refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" kind="function"><name>~cMainWindow</name></member>
+    <member refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" kind="function"><name>pluginList</name></member>
+    <member refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" kind="slot"><name>pluginImportTriggered</name></member>
+    <member refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" kind="slot"><name>pluginExportTriggered</name></member>
+    <member refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" kind="slot"><name>pluginDBTriggered</name></member>
+    <member refid="classc_main_window_1a3345add8cf20de78da3c67080188608d" kind="slot"><name>on_m_lpMenu_File_Exit_triggered</name></member>
+    <member refid="classc_main_window_1a39a2aa4bfa1303da62f3599c77be4762" kind="slot"><name>on_m_lpMenu_Tools_Options_triggered</name></member>
+    <member refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" kind="slot"><name>onIngredientsListCustomContextMenu</name></member>
+    <member refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" kind="slot"><name>onIngredientsListNew</name></member>
+    <member refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" kind="slot"><name>onIngredientsListImport</name></member>
+    <member refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" kind="slot"><name>onIngredientsListDelete</name></member>
+    <member refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" kind="slot"><name>onIngredientsListEdit</name></member>
+    <member refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" kind="function"><name>init</name></member>
+    <member refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" kind="function"><name>initDefaultSettings</name></member>
+    <member refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" kind="function"><name>loadPlugins</name></member>
+    <member refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" kind="function"><name>plugin</name></member>
+  </compound>
+  <compound refid="classc_mdi_area" kind="class"><name>cMdiArea</name>
+    <member refid="classc_mdi_area_1a94875ece3a5f527abcad372d535f0c7f" kind="variable"><name>m_background</name></member>
+    <member refid="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" kind="function"><name>cMdiArea</name></member>
+    <member refid="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d" kind="function"><name>paintEvent</name></member>
+  </compound>
+  <compound refid="classc_m_d_i_area" kind="class"><name>cMDIArea</name>
+  </compound>
+  <compound refid="classc_message_animate_dialog" kind="class"><name>cMessageAnimateDialog</name>
+    <member refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" kind="variable"><name>ui</name></member>
+    <member refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" kind="variable"><name>m_szMessage</name></member>
+    <member refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kind="variable"><name>m_lpTimer</name></member>
+    <member refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kind="variable"><name>m_iCount</name></member>
+    <member refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" kind="variable"><name>m_iDirection</name></member>
+    <member refid="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" kind="function"><name>cMessageAnimateDialog</name></member>
+    <member refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" kind="function"><name>~cMessageAnimateDialog</name></member>
+    <member refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" kind="function"><name>setTitle</name></member>
+    <member refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" kind="function"><name>setMessage</name></member>
+    <member refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" kind="slot"><name>update</name></member>
+  </compound>
+  <compound refid="classc_my_s_q_l_plugin" kind="class"><name>cMySQLPlugin</name>
+    <member refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kind="variable"><name>m_db</name></member>
+    <member refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kind="variable"><name>m_szLastError</name></member>
+    <member refid="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kind="function"><name>pluginName</name></member>
+    <member refid="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" kind="function"><name>pluginType</name></member>
+    <member refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" kind="function"><name>connect</name></member>
+    <member refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" kind="function"><name>init</name></member>
+    <member refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" kind="function"><name>lastError</name></member>
+    <member refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" kind="function"><name>config</name></member>
+    <member refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" kind="function"><name>open</name></member>
+  </compound>
+  <compound refid="classc_options" kind="class"><name>cOptions</name>
+    <member refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" kind="variable"><name>ui</name></member>
+    <member refid="classc_options_1a19b1ed8dd34f5fcde6dd4ac6167f3b42" kind="variable"><name>m_lpMainWindow</name></member>
+    <member refid="classc_options_1a9891a847c04b7581120a51989ff73328" kind="variable"><name>m_pluginList</name></member>
+    <member refid="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" kind="variable"><name>m_lpOptionsTreeModel</name></member>
+    <member refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" kind="function"><name>cOptions</name></member>
+    <member refid="classc_options_1a7bf237a91867bc8875ee3b09cdfa3d1c" kind="function"><name>~cOptions</name></member>
+    <member refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" kind="slot"><name>onOptionsTreeSelectionChanged</name></member>
+    <member refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" kind="function"><name>init</name></member>
+  </compound>
+  <compound refid="classc_options_plugins" kind="class"><name>cOptionsPlugins</name>
+    <member refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kind="variable"><name>ui</name></member>
+    <member refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kind="variable"><name>m_lpPluginsListModel</name></member>
+    <member refid="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" kind="function"><name>cOptionsPlugins</name></member>
+    <member refid="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" kind="function"><name>~cOptionsPlugins</name></member>
+    <member refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" kind="function"><name>setPlugins</name></member>
+    <member refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" kind="slot"><name>onOptionsPluginTreeSelectionChanged</name></member>
+    <member refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" kind="slot"><name>onOptionsPluginTreeDoubleClicked</name></member>
+    <member refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" kind="slot"><name>onOptionsPluginTreePluginToggled</name></member>
+    <member refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" kind="slot"><name>on_m_lpButtonConfigure_clicked</name></member>
+    <member refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" kind="function"><name>init</name></member>
+    <member refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" kind="function"><name>showConfigDlg</name></member>
+  </compound>
+  <compound refid="classc_plugin" kind="class"><name>cPlugin</name>
+    <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" kind="enum"><name>PluginCap</name></member>
+    <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" kind="enumvalue"><name>PluginCapNone</name></member>
+    <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" kind="enumvalue"><name>PluginCapImport</name></member>
+    <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" kind="enumvalue"><name>PluginCapExport</name></member>
+    <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" kind="enumvalue"><name>PluginCapDB</name></member>
+    <member refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" kind="variable"><name>m_lpPluginLoader</name></member>
+    <member refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" kind="variable"><name>m_lpImportInterface</name></member>
+    <member refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" kind="variable"><name>m_lpDBInterface</name></member>
+    <member refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" kind="variable"><name>m_lpAction</name></member>
+    <member refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" kind="function"><name>cPlugin</name></member>
+    <member refid="classc_plugin_1a38d0e25a6bcd3207902799b783212287" kind="function"><name>~cPlugin</name></member>
+    <member refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" kind="function"><name>isValid</name></member>
+    <member refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" kind="function"><name>capability</name></member>
+    <member refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kind="function"><name>pluginName</name></member>
+    <member refid="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" kind="function"><name>setAction</name></member>
+    <member refid="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee" kind="function"><name>action</name></member>
+    <member refid="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55" kind="function"><name>pluginFile</name></member>
+    <member refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" kind="function"><name>importInterface</name></member>
+    <member refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" kind="function"><name>dbInterface</name></member>
+  </compound>
+  <compound refid="classc_s_q_lite_plugin" kind="class"><name>cSQLitePlugin</name>
+    <member refid="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" kind="variable"><name>m_db</name></member>
+    <member refid="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" kind="variable"><name>m_szLastError</name></member>
+    <member refid="classc_s_q_lite_plugin_1abe6689a26729e68d2167eb87e3bc2768" kind="function"><name>pluginAPIVersion</name></member>
+    <member refid="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4" kind="function"><name>pluginName</name></member>
+    <member refid="classc_s_q_lite_plugin_1a680ffa394cab1bd545080c4ea72bd442" kind="function"><name>pluginVersion</name></member>
+    <member refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" kind="function"><name>pluginType</name></member>
+    <member refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" kind="function"><name>connect</name></member>
+    <member refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" kind="function"><name>init</name></member>
+    <member refid="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8" kind="function"><name>lastError</name></member>
+    <member refid="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d" kind="function"><name>config</name></member>
+    <member refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" kind="function"><name>open</name></member>
+  </compound>
+  <compound refid="structqt__meta__stringdata__c_ernaehrung_plugin__t" kind="struct"><name>qt_meta_stringdata_cErnaehrungPlugin_t</name>
+    <member refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" kind="variable"><name>data</name></member>
+    <member refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" kind="variable"><name>stringdata</name></member>
+  </compound>
+  <compound refid="structtag_g_r_o_u_p_n_a_m_e" kind="struct"><name>tagGROUPNAME</name>
+    <member refid="structtag_g_r_o_u_p_n_a_m_e_1a9edbd20fb9240c9cfb7692434113b1ce" kind="variable"><name>szName</name></member>
+    <member refid="structtag_g_r_o_u_p_n_a_m_e_1a01edd24854885980180ce90800478f59" kind="variable"><name>szGroup</name></member>
+    <member refid="structtag_g_r_o_u_p_n_a_m_e_1a5c93bf2c7557248a7080f54200d81cb4" kind="variable"><name>iIngredient</name></member>
+  </compound>
+  <compound refid="structtag_m_a_p_p_e_r" kind="struct"><name>tagMAPPER</name>
+    <member refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" kind="variable"><name>key</name></member>
+    <member refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="structtag_v_a_l_u_e_s" kind="struct"><name>tagVALUES</name>
+    <member refid="structtag_v_a_l_u_e_s_1a1af4ef8b1eb53303b473be2e9dfe4cdf" kind="variable"><name>szSearch</name></member>
+    <member refid="structtag_v_a_l_u_e_s_1a7ff96fb996a57c44a72cd72be967064e" kind="variable"><name>iIngredient</name></member>
+    <member refid="structtag_v_a_l_u_e_s_1a725904e5427d2d89fc28bac836ebe270" kind="variable"><name>dValue</name></member>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="cconfigdialog_8cpp" kind="file"><name>cconfigdialog.cpp</name>
+  </compound>
+  <compound refid="cconfigdialog_8h" kind="file"><name>cconfigdialog.h</name>
+  </compound>
+  <compound refid="cmysqlplugin_8cpp" kind="file"><name>cmysqlplugin.cpp</name>
+  </compound>
+  <compound refid="cmysqlplugin_8h" kind="file"><name>cmysqlplugin.h</name>
+  </compound>
+  <compound refid="csqliteplugin_8cpp" kind="file"><name>csqliteplugin.cpp</name>
+  </compound>
+  <compound refid="csqliteplugin_8h" kind="file"><name>csqliteplugin.h</name>
+  </compound>
+  <compound refid="cbleibfitplugin_8cpp" kind="file"><name>cbleibfitplugin.cpp</name>
+    <member refid="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f" kind="typedef"><name>MAPPER</name></member>
+    <member refid="cbleibfitplugin_8cpp_1a2f672fed9a71bbdcf8e2e61e4278dc32" kind="variable"><name>g_ingredientMapper</name></member>
+  </compound>
+  <compound refid="cbleibfitplugin_8h" kind="file"><name>cbleibfitplugin.h</name>
+  </compound>
+  <compound refid="cernaehrungplugin_8cpp" kind="file"><name>cernaehrungplugin.cpp</name>
+    <member refid="cernaehrungplugin_8cpp_1a2990e408ffc5d0b655cfcdd44baf79bb" kind="typedef"><name>VALUES</name></member>
+    <member refid="cernaehrungplugin_8cpp_1a8ee72542273e948e0e3f6d6d722ffe9b" kind="variable"><name>g_values</name></member>
+    <member refid="cernaehrungplugin_8cpp_1afb1a8d57387321ded0ace161ae4b5298" kind="function"><name>toValue</name></member>
+  </compound>
+  <compound refid="cernaehrungplugin_8h" kind="file"><name>cernaehrungplugin.h</name>
+  </compound>
+  <compound refid="moc__cernaehrungplugin_8cpp" kind="file"><name>moc_cernaehrungplugin.cpp</name>
+    <member refid="moc__cernaehrungplugin_8cpp_1a75bb9482d242cde0a06c9dbdc6b83abe" kind="define"><name>QT_MOC_LITERAL</name></member>
+    <member refid="moc__cernaehrungplugin_8cpp_1adf31064a60000fa2ac258e822bd1c09f" kind="variable"><name>qt_meta_stringdata_cErnaehrungPlugin</name></member>
+    <member refid="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83" kind="variable"><name>qt_meta_data_cErnaehrungPlugin</name></member>
+    <member refid="moc__cernaehrungplugin_8cpp_1a5224d929b42accc7ffdaf4969e5eca8c" kind="variable"><name>qt_section_alignment_dummy</name></member>
+    <member refid="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54" kind="variable"><name>qt_pluginMetaData</name></member>
+  </compound>
+  <compound refid="cdbinterface_8cpp" kind="file"><name>cdbinterface.cpp</name>
+  </compound>
+  <compound refid="cdbinterface_8h" kind="file"><name>cdbinterface.h</name>
+    <member refid="cdbinterface_8h_1a43cdb680fe773bf2a94ea7022b852a0e" kind="function"><name>Q_DECLARE_INTERFACE</name></member>
+  </compound>
+  <compound refid="cimportingredientdialog_8cpp" kind="file"><name>cimportingredientdialog.cpp</name>
+  </compound>
+  <compound refid="cimportingredientdialog_8h" kind="file"><name>cimportingredientdialog.h</name>
+  </compound>
+  <compound refid="cimportinterface_8cpp" kind="file"><name>cimportinterface.cpp</name>
+  </compound>
+  <compound refid="cimportinterface_8h" kind="file"><name>cimportinterface.h</name>
+    <member refid="cimportinterface_8h_1a5e2e6f092a0173e8efde59a0bfd00ede" kind="function"><name>Q_DECLARE_INTERFACE</name></member>
+  </compound>
+  <compound refid="cingredient_8cpp" kind="file"><name>cingredient.cpp</name>
+    <member refid="cingredient_8cpp_1abf6b2f6e8f8f712614bf99cf7955d8b8" kind="typedef"><name>GROUPNAME</name></member>
+    <member refid="cingredient_8cpp_1ac2d3207c36c3ff8e71bf47bbbc32c4dd" kind="variable"><name>g_groupname</name></member>
+  </compound>
+  <compound refid="cingredient_8h" kind="file"><name>cingredient.h</name>
+  </compound>
+  <compound refid="c_interface_8h" kind="file"><name>cInterface.h</name>
+  </compound>
+  <compound refid="cmainwindow_8cpp" kind="file"><name>cmainwindow.cpp</name>
+  </compound>
+  <compound refid="cmainwindow_8h" kind="file"><name>cmainwindow.h</name>
+  </compound>
+  <compound refid="cmdiarea_8cpp" kind="file"><name>cmdiarea.cpp</name>
+  </compound>
+  <compound refid="cmdiarea_8h" kind="file"><name>cmdiarea.h</name>
+  </compound>
+  <compound refid="cmessageanimatedialog_8cpp" kind="file"><name>cmessageanimatedialog.cpp</name>
+  </compound>
+  <compound refid="cmessageanimatedialog_8h" kind="file"><name>cmessageanimatedialog.h</name>
+  </compound>
+  <compound refid="coptions_8cpp" kind="file"><name>coptions.cpp</name>
+  </compound>
+  <compound refid="coptions_8h" kind="file"><name>coptions.h</name>
+  </compound>
+  <compound refid="coptionsplugins_8cpp" kind="file"><name>coptionsplugins.cpp</name>
+  </compound>
+  <compound refid="coptionsplugins_8h" kind="file"><name>coptionsplugins.h</name>
+  </compound>
+  <compound refid="cplugin_8cpp" kind="file"><name>cplugin.cpp</name>
+  </compound>
+  <compound refid="cplugin_8h" kind="file"><name>cplugin.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="group___m_y_s_q_l" kind="group"><name>MYSQL</name>
+  </compound>
+  <compound refid="group___k_o_o_k_y" kind="group"><name>KOOKY</name>
+  </compound>
+  <compound refid="dir_9ed999e56751bb499ba9c47b2e71a527" kind="dir"><name>dMySQL</name>
+  </compound>
+  <compound refid="dir_c1520e63b907081b195081b69f113080" kind="dir"><name>dSQLite</name>
+  </compound>
+  <compound refid="dir_c3eefea8429a54a17a803ea027aebedf" kind="dir"><name>iBleibFit</name>
+  </compound>
+  <compound refid="dir_764c326d297e784e1611592102f3909a" kind="dir"><name>iErnaehrung</name>
+  </compound>
+  <compound refid="dir_bb42744f2a7f9443d09426b2c9103c41" kind="dir"><name>Kooky</name>
+  </compound>
+</doxygenindex>

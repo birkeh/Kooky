@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_ernaehrung_plugin">
+<title>cErnaehrungPlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cernaehrungplugin_8h">&lt;cernaehrungplugin.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cErnaehrungPlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_ernaehrung_plugin__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cErnaehrungPlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_ernaehrung_plugin__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList m_szUrls</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList m_szIngredients</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 m_iLoadedIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a">pluginAPIVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5">pluginName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028">pluginVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> <link linkend="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700">pluginType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f">config</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QMap&lt; QString, QString &gt; <link linkend="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e">detailsCapability</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList <link linkend="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d">search</link> (
+const QString &amp; szSearch, const QString &amp; szDetails)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d">load</link> (
+qint16 iIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qreal <link linkend="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25">value</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed">ingredientName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QStringList cErnaehrungPlugin::m_szUrls</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 89 of file cernaehrungplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cernaehrungplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QStringList cErnaehrungPlugin::m_szIngredients</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 90 of file cernaehrungplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cernaehrungplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>qint16 cErnaehrungPlugin::m_iLoadedIndex</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 91 of file cernaehrungplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cernaehrungplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a">
+                <title>qint16 cErnaehrungPlugin::pluginAPIVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5">
+                <title>QString cErnaehrungPlugin::pluginName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028">
+                <title>qint16 cErnaehrungPlugin::pluginVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700">
+                <title>iType cErnaehrungPlugin::pluginType ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>iType </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f">
+                <title>bool cErnaehrungPlugin::config ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e">
+                <title>QMap&lt; QString, QString &gt; cErnaehrungPlugin::detailsCapability ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QMap&lt;QString, QString&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d">
+                <title>QStringList cErnaehrungPlugin::search (const QString &amp;szSearch, const QString &amp;szDetails=QString(&quot;&quot;))</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szSearch</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>szDetails</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>QStringList </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d">
+                <title>bool cErnaehrungPlugin::load (qint16 iIndex)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>iIndex</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25">
+                <title>qreal cErnaehrungPlugin::value (cIngredient::iIngredient i)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>qreal </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed">
+                <title>QString cErnaehrungPlugin::ingredientName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

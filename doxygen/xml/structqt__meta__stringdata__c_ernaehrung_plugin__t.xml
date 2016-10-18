@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structqt__meta__stringdata__c_ernaehrung_plugin__t" kind="struct" language="C++" prot="public">
+    <compoundname>qt_meta_stringdata_cErnaehrungPlugin_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" prot="public" static="no" mutable="no">
+        <type>QByteArrayData</type>
+        <definition>QByteArrayData qt_meta_stringdata_cErnaehrungPlugin_t::data[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="23" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char qt_meta_stringdata_cErnaehrungPlugin_t::stringdata[19]</definition>
+        <argsstring>[19]</argsstring>
+        <name>stringdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="24" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="iErnaehrung/moc_cernaehrungplugin.cpp" line="22" column="1" bodyfile="iErnaehrung/moc_cernaehrungplugin.cpp" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1ab751921bc4979101275003e865982c9e" prot="public" virt="non-virtual"><scope>qt_meta_stringdata_cErnaehrungPlugin_t</scope><name>data</name></member>
+      <member refid="structqt__meta__stringdata__c_ernaehrung_plugin__t_1adc7272a800db98fd08e9d093f108ea99" prot="public" virt="non-virtual"><scope>qt_meta_stringdata_cErnaehrungPlugin_t</scope><name>stringdata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

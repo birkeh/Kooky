@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_m_d_i_area">
+<title>cMDIArea class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cmdiarea_8h">&lt;cmdiarea.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cMDIArea</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_m_d_i_area__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cMDIArea</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_m_d_i_area__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class overwrites the default MDI area of the main window. It also adds the capability to display a background image in the MDI area.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para></para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 2 of file cmdiarea.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmdiarea.h</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

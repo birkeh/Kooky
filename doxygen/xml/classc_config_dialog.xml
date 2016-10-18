@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_config_dialog" kind="class" language="C++" prot="public">
+    <compoundname>cConfigDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="cconfigdialog_8h" local="no">cconfigdialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" prot="private" static="no" mutable="no">
+        <type>Ui::cConfigDialog *</type>
+        <definition>Ui::cConfigDialog* cConfigDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="128" column="1" bodyfile="dMySQL/cconfigdialog.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" compoundref="cconfigdialog_8cpp" startline="8" endline="14">cConfigDialog</referencedby>
+        <referencedby refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" compoundref="cconfigdialog_8cpp" startline="47" endline="50">database</referencedby>
+        <referencedby refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" compoundref="cconfigdialog_8cpp" startline="42" endline="45">hostname</referencedby>
+        <referencedby refid="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" compoundref="cconfigdialog_8cpp" startline="66" endline="72">on_m_lpOKButton_clicked</referencedby>
+        <referencedby refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" compoundref="cconfigdialog_8cpp" startline="88" endline="95">on_m_lpPassword2_textChanged</referencedby>
+        <referencedby refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" compoundref="cconfigdialog_8cpp" startline="79" endline="86">on_m_lpPassword_textChanged</referencedby>
+        <referencedby refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" compoundref="cconfigdialog_8cpp" startline="57" endline="60">password</referencedby>
+        <referencedby refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" compoundref="cconfigdialog_8cpp" startline="26" endline="29">setDatabase</referencedby>
+        <referencedby refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" compoundref="cconfigdialog_8cpp" startline="21" endline="24">setHostname</referencedby>
+        <referencedby refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" compoundref="cconfigdialog_8cpp" startline="36" endline="40">setPassword</referencedby>
+        <referencedby refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" compoundref="cconfigdialog_8cpp" startline="31" endline="34">setUserName</referencedby>
+        <referencedby refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" compoundref="cconfigdialog_8cpp" startline="52" endline="55">userName</referencedby>
+        <referencedby refid="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" compoundref="cconfigdialog_8cpp" startline="16" endline="19">~cConfigDialog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cConfigDialog::m_bPasswordChanged</definition>
+        <argsstring></argsstring>
+        <name>m_bPasswordChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="129" column="1" bodyfile="dMySQL/cconfigdialog.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" compoundref="cconfigdialog_8cpp" startline="88" endline="95">on_m_lpPassword2_textChanged</referencedby>
+        <referencedby refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" compoundref="cconfigdialog_8cpp" startline="79" endline="86">on_m_lpPassword_textChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cConfigDialog::cConfigDialog</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cConfigDialog</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="41" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="8" bodyend="14"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cConfigDialog::~cConfigDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~cConfigDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="46" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="16" bodyend="19"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::setHostname</definition>
+        <argsstring>(const QString &amp;szHostname)</argsstring>
+        <name>setHostname</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szHostname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szHostname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="53" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="21" bodyend="24"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::setDatabase</definition>
+        <argsstring>(const QString &amp;szDatabase)</argsstring>
+        <name>setDatabase</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szDatabase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szDatabase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="59" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="26" bodyend="29"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::setUserName</definition>
+        <argsstring>(const QString &amp;szUserName)</argsstring>
+        <name>setUserName</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szUserName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szUserName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="65" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="31" bodyend="34"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::setPassword</definition>
+        <argsstring>(const QString &amp;szPassword)</argsstring>
+        <name>setPassword</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szPassword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="71" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="36" bodyend="40"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cConfigDialog::hostname</definition>
+        <argsstring>()</argsstring>
+        <name>hostname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="77" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="42" bodyend="45"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cConfigDialog::database</definition>
+        <argsstring>()</argsstring>
+        <name>database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="83" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="47" bodyend="50"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cConfigDialog::userName</definition>
+        <argsstring>()</argsstring>
+        <name>userName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="89" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="52" bodyend="55"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cConfigDialog::password</definition>
+        <argsstring>()</argsstring>
+        <name>password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="95" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="57" bodyend="60"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_config_dialog_1a7fb2127745f898b2c7fd8306ea7df149" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::on_m_lpTestButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpTestButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="103" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="slot" id="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::on_m_lpPassword_textChanged</definition>
+        <argsstring>(const QString &amp;arg1)</argsstring>
+        <name>on_m_lpPassword_textChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="109" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="79" bodyend="86"/>
+        <references refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" compoundref="cconfigdialog_8h" startline="129">m_bPasswordChanged</references>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::on_m_lpPassword2_textChanged</definition>
+        <argsstring>(const QString &amp;arg1)</argsstring>
+        <name>on_m_lpPassword2_textChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="115" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="88" bodyend="95"/>
+        <references refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" compoundref="cconfigdialog_8h" startline="129">m_bPasswordChanged</references>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::on_m_lpOKButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpOKButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="120" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="66" bodyend="72"/>
+        <references refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" compoundref="cconfigdialog_8h" startline="128">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classc_config_dialog_1ac70b6c699e0eb5af4397a5a2ff29789a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cConfigDialog::on_m_lpCancelButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpCancelButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cconfigdialog.h" line="125" column="1" bodyfile="dMySQL/cconfigdialog.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration Dialog for dMySQL. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements basic import functionality for Kooky. All functions may be overwritten by derriving classes.</para><para><simplesect kind="note"><para>Attempts at zen rarely work.</para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="108">
+        <label>QDialog</label>
+      </node>
+      <node id="107">
+        <label>cConfigDialog</label>
+        <link refid="classc_config_dialog"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="110">
+        <label>QDialog</label>
+      </node>
+      <node id="109">
+        <label>cConfigDialog</label>
+        <link refid="classc_config_dialog"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dMySQL/cconfigdialog.h" line="32" column="1" bodyfile="dMySQL/cconfigdialog.h" bodystart="31" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>cConfigDialog</name></member>
+      <member refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>database</name></member>
+      <member refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>hostname</name></member>
+      <member refid="classc_config_dialog_1a68daa09e2f01b7f7108b5d91fcd32df1" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>m_bPasswordChanged</name></member>
+      <member refid="classc_config_dialog_1ac70b6c699e0eb5af4397a5a2ff29789a" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>on_m_lpCancelButton_clicked</name></member>
+      <member refid="classc_config_dialog_1ab1dd081ac31a02ff0d53d2f271fdeed5" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>on_m_lpOKButton_clicked</name></member>
+      <member refid="classc_config_dialog_1aaf2c308f17983e14ac6ea8824ffa99c4" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>on_m_lpPassword2_textChanged</name></member>
+      <member refid="classc_config_dialog_1a06a5e35e33fe97b46813ecb70fddb1ef" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>on_m_lpPassword_textChanged</name></member>
+      <member refid="classc_config_dialog_1a7fb2127745f898b2c7fd8306ea7df149" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>on_m_lpTestButton_clicked</name></member>
+      <member refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>password</name></member>
+      <member refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>setDatabase</name></member>
+      <member refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>setHostname</name></member>
+      <member refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>setPassword</name></member>
+      <member refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>setUserName</name></member>
+      <member refid="classc_config_dialog_1a57a160e7fe62e54d86b7f3592aaee2f6" prot="private" virt="non-virtual"><scope>cConfigDialog</scope><name>ui</name></member>
+      <member refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>userName</name></member>
+      <member refid="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871" prot="public" virt="non-virtual"><scope>cConfigDialog</scope><name>~cConfigDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

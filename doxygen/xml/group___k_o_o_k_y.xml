@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group___k_o_o_k_y" kind="group">
+    <compoundname>KOOKY</compoundname>
+    <title>Kooky Main Program</title>
+    <innerclass refid="classc_d_b_interface" prot="public">cDBInterface</innerclass>
+    <innerclass refid="classc_import_ingredient_dialog" prot="public">cImportIngredientDialog</innerclass>
+    <innerclass refid="classc_import_interface" prot="public">cImportInterface</innerclass>
+    <innerclass refid="classc_ingredient" prot="public">cIngredient</innerclass>
+    <innerclass refid="classc_interface" prot="public">cInterface</innerclass>
+    <innerclass refid="classc_main_window" prot="public">cMainWindow</innerclass>
+    <innerclass refid="classc_m_d_i_area" prot="public">cMDIArea</innerclass>
+    <innerclass refid="classc_message_animate_dialog" prot="public">cMessageAnimateDialog</innerclass>
+    <innerclass refid="classc_options" prot="public">cOptions</innerclass>
+    <innerclass refid="classc_options_plugins" prot="public">cOptionsPlugins</innerclass>
+    <innerclass refid="classc_plugin" prot="public">cPlugin</innerclass>
+    <briefdescription>
+<para>This is the main program of Kooky. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

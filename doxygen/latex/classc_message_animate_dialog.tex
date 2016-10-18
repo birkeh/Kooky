@@ -1,0 +1,253 @@
+\hypertarget{classc_message_animate_dialog}{}\section{c\+Message\+Animate\+Dialog Class Reference}
+\label{classc_message_animate_dialog}\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+
+
+Class to display a modal message dialog.  
+
+
+
+
+{\ttfamily \#include $<$cmessageanimatedialog.\+h$>$}
+
+
+
+Inheritance diagram for c\+Message\+Animate\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classc_message_animate_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Message\+Animate\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classc_message_animate_dialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_message_animate_dialog_a44afe4f9219101f7ec076e29b950afca}{c\+Message\+Animate\+Dialog} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em constructor. \end{DoxyCompactList}\item 
+\hyperlink{classc_message_animate_dialog_ab38388f68f789315665dbdee912d3a47}{$\sim$c\+Message\+Animate\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classc_message_animate_dialog_a60b9bf7a04298fe0ccb98f46b16e9a5e}{set\+Title} (const Q\+String \&sz\+Title)
+\begin{DoxyCompactList}\small\item\em Sets the title of the dialog. \end{DoxyCompactList}\item 
+void \hyperlink{classc_message_animate_dialog_af6cae719996f9bf2d683f4cfdbd7b985}{set\+Message} (const Q\+String \&sz\+Message)
+\begin{DoxyCompactList}\small\item\em Sets the message of the dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{classc_message_animate_dialog_a4ae818deecaac97f7bb1914bf2dda607}{m\+\_\+sz\+Message}
+\item 
+Q\+Timer $\ast$ \hyperlink{classc_message_animate_dialog_a20a1bf68933e455dd515562f63976495}{m\+\_\+lp\+Timer}
+\item 
+int \hyperlink{classc_message_animate_dialog_a0208fa559f41307f125fa7f80b97871a}{m\+\_\+i\+Count}
+\item 
+int \hyperlink{classc_message_animate_dialog_a3f26bb00ddbedafdfad24c0c3a7fdfdc}{m\+\_\+i\+Direction}
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_message_animate_dialog_a09ea517229b2b01be6dc407911628441}{update} ()
+\begin{DoxyCompactList}\small\item\em This function is called twice a second to update the displayed message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::c\+Message\+Animate\+Dialog $\ast$ \hyperlink{classc_message_animate_dialog_a9975d744633e4f1eb1604128cbfd7b50}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to display a modal message dialog. Title and message can be configured. The dialog displays the message and adds up to 3 points zwice a second to the message.
+
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+\$\+Date\+: 2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{c\+Message\+Animate\+Dialog(\+Q\+Widget $\ast$parent=0)}{cMessageAnimateDialog(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message\+Animate\+Dialog\+::c\+Message\+Animate\+Dialog (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classc_message_animate_dialog_a44afe4f9219101f7ec076e29b950afca}{}\label{classc_message_animate_dialog_a44afe4f9219101f7ec076e29b950afca}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!````~c\+Message\+Animate\+Dialog@{$\sim$c\+Message\+Animate\+Dialog}}
+\index{````~c\+Message\+Animate\+Dialog@{$\sim$c\+Message\+Animate\+Dialog}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Message\+Animate\+Dialog()}{~cMessageAnimateDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Message\+Animate\+Dialog\+::$\sim$c\+Message\+Animate\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_message_animate_dialog_ab38388f68f789315665dbdee912d3a47}{}\label{classc_message_animate_dialog_ab38388f68f789315665dbdee912d3a47}
+
+
+References m\+\_\+lp\+Timer, and ui.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Message(const Q\+String \&sz\+Message)}{setMessage(const QString &szMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Message\+Animate\+Dialog\+::set\+Message (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_message_animate_dialog_af6cae719996f9bf2d683f4cfdbd7b985}{}\label{classc_message_animate_dialog_af6cae719996f9bf2d683f4cfdbd7b985}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Message} & Message text \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Timer, m\+\_\+sz\+Message, ui, and update().
+
+
+
+Referenced by c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_message_animate_dialog_af6cae719996f9bf2d683f4cfdbd7b985_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_message_animate_dialog_af6cae719996f9bf2d683f4cfdbd7b985_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Title(const Q\+String \&sz\+Title)}{setTitle(const QString &szTitle)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Message\+Animate\+Dialog\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Title}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_message_animate_dialog_a60b9bf7a04298fe0ccb98f46b16e9a5e}{}\label{classc_message_animate_dialog_a60b9bf7a04298fe0ccb98f46b16e9a5e}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Title} & Title text \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_message_animate_dialog_a60b9bf7a04298fe0ccb98f46b16e9a5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!update@{update}}
+\index{update@{update}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{update}{update}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Message\+Animate\+Dialog\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_message_animate_dialog_a09ea517229b2b01be6dc407911628441}{}\label{classc_message_animate_dialog_a09ea517229b2b01be6dc407911628441}
+
+
+References m\+\_\+i\+Count, m\+\_\+i\+Direction, m\+\_\+sz\+Message, and ui.
+
+
+
+Referenced by set\+Message().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_message_animate_dialog_a09ea517229b2b01be6dc407911628441_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!m\+\_\+i\+Count@{m\+\_\+i\+Count}}
+\index{m\+\_\+i\+Count@{m\+\_\+i\+Count}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+i\+Count}{m_iCount}}]{\setlength{\rightskip}{0pt plus 5cm}int c\+Message\+Animate\+Dialog\+::m\+\_\+i\+Count\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_message_animate_dialog_a0208fa559f41307f125fa7f80b97871a}{}\label{classc_message_animate_dialog_a0208fa559f41307f125fa7f80b97871a}
+Number of points currently being displayed 
+
+Referenced by update().
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!m\+\_\+i\+Direction@{m\+\_\+i\+Direction}}
+\index{m\+\_\+i\+Direction@{m\+\_\+i\+Direction}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+i\+Direction}{m_iDirection}}]{\setlength{\rightskip}{0pt plus 5cm}int c\+Message\+Animate\+Dialog\+::m\+\_\+i\+Direction\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_message_animate_dialog_a3f26bb00ddbedafdfad24c0c3a7fdfdc}{}\label{classc_message_animate_dialog_a3f26bb00ddbedafdfad24c0c3a7fdfdc}
+Increase / decrease number of points 
+
+Referenced by update().
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!m\+\_\+lp\+Timer@{m\+\_\+lp\+Timer}}
+\index{m\+\_\+lp\+Timer@{m\+\_\+lp\+Timer}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Timer}{m_lpTimer}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Timer$\ast$ c\+Message\+Animate\+Dialog\+::m\+\_\+lp\+Timer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_message_animate_dialog_a20a1bf68933e455dd515562f63976495}{}\label{classc_message_animate_dialog_a20a1bf68933e455dd515562f63976495}
+Timer object 
+
+Referenced by set\+Message(), and $\sim$c\+Message\+Animate\+Dialog().
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!m\+\_\+sz\+Message@{m\+\_\+sz\+Message}}
+\index{m\+\_\+sz\+Message@{m\+\_\+sz\+Message}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Message}{m_szMessage}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Message\+Animate\+Dialog\+::m\+\_\+sz\+Message\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_message_animate_dialog_a4ae818deecaac97f7bb1914bf2dda607}{}\label{classc_message_animate_dialog_a4ae818deecaac97f7bb1914bf2dda607}
+Message to be displayed 
+
+Referenced by set\+Message(), and update().
+
+\index{c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}!ui@{ui}}
+\index{ui@{ui}!c\+Message\+Animate\+Dialog@{c\+Message\+Animate\+Dialog}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::c\+Message\+Animate\+Dialog$\ast$ c\+Message\+Animate\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_message_animate_dialog_a9975d744633e4f1eb1604128cbfd7b50}{}\label{classc_message_animate_dialog_a9975d744633e4f1eb1604128cbfd7b50}
+User interface of the dialog. 
+
+Referenced by c\+Message\+Animate\+Dialog(), set\+Message(), update(), and $\sim$c\+Message\+Animate\+Dialog().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cmessageanimatedialog_8h}{cmessageanimatedialog.\+h}\item 
+Kooky/\hyperlink{cmessageanimatedialog_8cpp}{cmessageanimatedialog.\+cpp}\end{DoxyCompactItemize}

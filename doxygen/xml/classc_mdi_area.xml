@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_mdi_area" kind="class" language="C++" prot="public">
+    <compoundname>cMdiArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMdiArea</basecompoundref>
+    <includes refid="cmdiarea_8h" local="no">cmdiarea.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_mdi_area_1a94875ece3a5f527abcad372d535f0c7f" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage cMdiArea::m_background</definition>
+        <argsstring></argsstring>
+        <name>m_background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmdiarea.h" line="32" column="1" bodyfile="Kooky/cmdiarea.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" compoundref="cmdiarea_8cpp" startline="6" endline="11">cMdiArea</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cMdiArea::cMdiArea</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cMdiArea</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmdiarea.h" line="30" column="1" bodyfile="Kooky/cmdiarea.cpp" bodystart="6" bodyend="11"/>
+        <references refid="classc_mdi_area_1a94875ece3a5f527abcad372d535f0c7f" compoundref="cmdiarea_8h" startline="32">m_background</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMdiArea::paintEvent</definition>
+        <argsstring>(QPaintEvent *event)</argsstring>
+        <name>paintEvent</name>
+        <param>
+          <type>QPaintEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmdiarea.h" line="34" column="1" bodyfile="Kooky/cmdiarea.cpp" bodystart="13" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="150">
+        <label>QMdiArea</label>
+      </node>
+      <node id="149">
+        <label>cMdiArea</label>
+        <link refid="classc_mdi_area"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="152">
+        <label>QMdiArea</label>
+      </node>
+      <node id="151">
+        <label>cMdiArea</label>
+        <link refid="classc_mdi_area"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cmdiarea.h" line="28" column="1" bodyfile="Kooky/cmdiarea.h" bodystart="27" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" prot="public" virt="non-virtual"><scope>cMdiArea</scope><name>cMdiArea</name></member>
+      <member refid="classc_mdi_area_1a94875ece3a5f527abcad372d535f0c7f" prot="private" virt="non-virtual"><scope>cMdiArea</scope><name>m_background</name></member>
+      <member refid="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d" prot="protected" virt="non-virtual"><scope>cMdiArea</scope><name>paintEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,159 @@
+.TH "cMessageAnimateDialog" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cMessageAnimateDialog \- Class to display a modal message dialog\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmessageanimatedialog\&.h>\fP
+.PP
+Inherits QDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcMessageAnimateDialog\fP (QWidget *parent=0)"
+.br
+.RI "\fIconstructor\&. \fP"
+.ti -1c
+.RI "\fB~cMessageAnimateDialog\fP ()"
+.br
+.RI "\fIdestructor\&. \fP"
+.ti -1c
+.RI "void \fBsetTitle\fP (const QString &szTitle)"
+.br
+.RI "\fISets the title of the dialog\&. \fP"
+.ti -1c
+.RI "void \fBsetMessage\fP (const QString &szMessage)"
+.br
+.RI "\fISets the message of the dialog\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString \fBm_szMessage\fP"
+.br
+.ti -1c
+.RI "QTimer * \fBm_lpTimer\fP"
+.br
+.ti -1c
+.RI "int \fBm_iCount\fP"
+.br
+.ti -1c
+.RI "int \fBm_iDirection\fP"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.RI "\fIThis function is called twice a second to update the displayed message\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cMessageAnimateDialog * \fBui\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class to display a modal message dialog\&. Title and message can be configured\&. The dialog displays the message and adds up to 3 points zwice a second to the message\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+$Date: 2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cMessageAnimateDialog::cMessageAnimateDialog (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.SS "cMessageAnimateDialog::~cMessageAnimateDialog ()"
+
+.PP
+References m_lpTimer, and ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void cMessageAnimateDialog::setMessage (const QString & szMessage)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszMessage\fP Message text 
+.RE
+.PP
+
+.PP
+References m_lpTimer, m_szMessage, ui, and update()\&.
+.PP
+Referenced by cImportIngredientDialog::on_m_lpSearchButton_clicked(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SS "void cMessageAnimateDialog::setTitle (const QString & szTitle)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszTitle\fP Title text 
+.RE
+.PP
+
+.PP
+Referenced by cImportIngredientDialog::on_m_lpSearchButton_clicked(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SS "void cMessageAnimateDialog::update ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References m_iCount, m_iDirection, m_szMessage, and ui\&.
+.PP
+Referenced by setMessage()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int cMessageAnimateDialog::m_iCount\fC [protected]\fP"
+Number of points currently being displayed 
+.PP
+Referenced by update()\&.
+.SS "int cMessageAnimateDialog::m_iDirection\fC [protected]\fP"
+Increase / decrease number of points 
+.PP
+Referenced by update()\&.
+.SS "QTimer* cMessageAnimateDialog::m_lpTimer\fC [protected]\fP"
+Timer object 
+.PP
+Referenced by setMessage(), and ~cMessageAnimateDialog()\&.
+.SS "QString cMessageAnimateDialog::m_szMessage\fC [protected]\fP"
+Message to be displayed 
+.PP
+Referenced by setMessage(), and update()\&.
+.SS "Ui::cMessageAnimateDialog* cMessageAnimateDialog::ui\fC [private]\fP"
+User interface of the dialog\&. 
+.PP
+Referenced by cMessageAnimateDialog(), setMessage(), update(), and ~cMessageAnimateDialog()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

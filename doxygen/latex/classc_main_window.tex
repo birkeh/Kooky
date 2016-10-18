@@ -1,0 +1,627 @@
+\hypertarget{classc_main_window}{}\section{c\+Main\+Window Class Reference}
+\label{classc_main_window}\index{c\+Main\+Window@{c\+Main\+Window}}
+
+
+This is the class that implements the main window.  
+
+
+
+
+{\ttfamily \#include $<$cmainwindow.\+h$>$}
+
+
+
+Inheritance diagram for c\+Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classc_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classc_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_main_window_a04f0ed523c7265f8d8b304e33aaa7d6d}{c\+Main\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classc_main_window_a5b40588af59f559083925f3f491da1e1}{$\sim$c\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+Q\+List$<$ \hyperlink{classc_plugin}{c\+Plugin} $\ast$ $>$ \hyperlink{classc_main_window_ae82e278f9aa88d228cd049392a314251}{plugin\+List} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of loaded plugins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_main_window_ab3ff57870f54e4655aef149e9746035a}{plugin\+Import\+Triggered} ()
+\begin{DoxyCompactList}\small\item\em Testing of import trigger raised by import plugins. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a203dfd9cd3c6b69acb33695a576907fa}{plugin\+Export\+Triggered} ()
+\begin{DoxyCompactList}\small\item\em Testing of export trigger raised by export plugins. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a70fa99ff98426a5cc888a2de3ea83b07}{plugin\+D\+B\+Triggered} ()
+\begin{DoxyCompactList}\small\item\em Testing of database trigger raised by database connector plugins. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a3345add8cf20de78da3c67080188608d}{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered} ()
+\begin{DoxyCompactList}\small\item\em Menu entry \char`\"{}\+File -\/$>$ Exit\char`\"{} triggered. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a39a2aa4bfa1303da62f3599c77be4762}{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered} ()
+\begin{DoxyCompactList}\small\item\em Menu entry \char`\"{}\+Tools -\/$>$ Options\char`\"{} triggered. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a933380437ebf1ee1abd2be9165f76f68}{on\+Ingredients\+List\+Custom\+Context\+Menu} (const Q\+Point \&point)
+\begin{DoxyCompactList}\small\item\em Custom contest menu of ingredients list has been requested. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a6d1fb1143d310ce85ac4c1924ec9f1f5}{on\+Ingredients\+List\+New} ()
+\begin{DoxyCompactList}\small\item\em New ingredient has been requested. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a1a0b99b15c690785791074ae0d13131d}{on\+Ingredients\+List\+Import} ()
+\begin{DoxyCompactList}\small\item\em Import of ingredient has been requested. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a4bd73b0f35d28db5c4eb970fb188a3b4}{on\+Ingredients\+List\+Delete} ()
+\begin{DoxyCompactList}\small\item\em Delete of ingredient has been requested. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a0dff97e5ba837d5b9ba04f7bde41dd1c}{on\+Ingredients\+List\+Edit} ()
+\begin{DoxyCompactList}\small\item\em Edit of ingredient has been requested. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_main_window_a3cc20776b1fd699783bcb1a0e2a33415}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialized main windows. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_ac76cac25666ea2a0dc106b7829d560c7}{init\+Default\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Initializes default settings for Kooky. \end{DoxyCompactList}\item 
+void \hyperlink{classc_main_window_a514f42d460641e3295b40867da99c50b}{load\+Plugins} (const Q\+String \&sz\+Plugin\+Dir)
+\begin{DoxyCompactList}\small\item\em Loads plugins in the given path. \end{DoxyCompactList}\item 
+\hyperlink{classc_plugin}{c\+Plugin} $\ast$ \hyperlink{classc_main_window_a24aea0791cf5bca5bd044bfbb72ef224}{plugin} (Q\+Action $\ast$lp\+Action)
+\begin{DoxyCompactList}\small\item\em Finds a plugin with the given action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::c\+Main\+Window $\ast$ \hyperlink{classc_main_window_a03739e420b7f4f4d85f9c7a373050507}{ui}
+\item 
+Q\+List$<$ \hyperlink{classc_plugin}{c\+Plugin} $\ast$ $>$ \hyperlink{classc_main_window_ae3d9b84c671559f4ff864f89c7892216}{m\+\_\+plugin\+List}
+\item 
+Q\+Standard\+Item\+Model $\ast$ \hyperlink{classc_main_window_a839ead885151027601d9be7d87aade26}{m\+\_\+lp\+Ingredients\+List\+Model}
+\item 
+Q\+Action $\ast$ \hyperlink{classc_main_window_aff7c0651707a2c73cfdc49d709419f1e}{m\+\_\+lp\+Ingredients\+List\+New}
+\item 
+Q\+Action $\ast$ \hyperlink{classc_main_window_ab62a9cfd83899a679715cb0f0acc254d}{m\+\_\+lp\+Ingredients\+List\+Import}
+\item 
+Q\+Action $\ast$ \hyperlink{classc_main_window_a94ed27f09d49c080ad6e1d7235122a78}{m\+\_\+lp\+Ingredients\+List\+Delete}
+\item 
+Q\+Action $\ast$ \hyperlink{classc_main_window_a13b40e0849a4897ffffe041a825b8452}{m\+\_\+lp\+Ingredients\+List\+Edit}
+\item 
+Q\+Menu $\ast$ \hyperlink{classc_main_window_a67c09407f3fc781eb743a395f86dc44c}{m\+\_\+lp\+Ingredients\+List\+Menu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the main window and main functionality of Kooky.
+
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Main\+Window@{c\+Main\+Window}!c\+Main\+Window@{c\+Main\+Window}}
+\index{c\+Main\+Window@{c\+Main\+Window}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{c\+Main\+Window(\+Q\+Widget $\ast$parent=0)}{cMainWindow(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Main\+Window\+::c\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classc_main_window_a04f0ed523c7265f8d8b304e33aaa7d6d}{}\label{classc_main_window_a04f0ed523c7265f8d8b304e33aaa7d6d}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a04f0ed523c7265f8d8b304e33aaa7d6d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!````~c\+Main\+Window@{$\sim$c\+Main\+Window}}
+\index{````~c\+Main\+Window@{$\sim$c\+Main\+Window}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Main\+Window()}{~cMainWindow()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Main\+Window\+::$\sim$c\+Main\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_main_window_a5b40588af59f559083925f3f491da1e1}{}\label{classc_main_window_a5b40588af59f559083925f3f491da1e1}
+
+
+References m\+\_\+lp\+Ingredients\+List\+Delete, m\+\_\+lp\+Ingredients\+List\+Edit, m\+\_\+lp\+Ingredients\+List\+New, and ui.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Main\+Window@{c\+Main\+Window}!init@{init}}
+\index{init@{init}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a3cc20776b1fd699783bcb1a0e2a33415}{}\label{classc_main_window_a3cc20776b1fd699783bcb1a0e2a33415}
+
+
+References init\+Default\+Settings(), load\+Plugins(), m\+\_\+lp\+Ingredients\+List\+Delete, m\+\_\+lp\+Ingredients\+List\+Edit, m\+\_\+lp\+Ingredients\+List\+Import, m\+\_\+lp\+Ingredients\+List\+Menu, m\+\_\+lp\+Ingredients\+List\+Model, m\+\_\+lp\+Ingredients\+List\+New, on\+Ingredients\+List\+Custom\+Context\+Menu(), on\+Ingredients\+List\+Delete(), on\+Ingredients\+List\+Edit(), on\+Ingredients\+List\+Import(), on\+Ingredients\+List\+New(), and ui.
+
+
+
+Referenced by c\+Main\+Window().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a3cc20776b1fd699783bcb1a0e2a33415_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a3cc20776b1fd699783bcb1a0e2a33415_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!init\+Default\+Settings@{init\+Default\+Settings}}
+\index{init\+Default\+Settings@{init\+Default\+Settings}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{init\+Default\+Settings()}{initDefaultSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::init\+Default\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_ac76cac25666ea2a0dc106b7829d560c7}{}\label{classc_main_window_ac76cac25666ea2a0dc106b7829d560c7}
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_ac76cac25666ea2a0dc106b7829d560c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!load\+Plugins@{load\+Plugins}}
+\index{load\+Plugins@{load\+Plugins}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{load\+Plugins(const Q\+String \&sz\+Plugin\+Dir)}{loadPlugins(const QString &szPluginDir)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::load\+Plugins (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Plugin\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a514f42d460641e3295b40867da99c50b}{}\label{classc_main_window_a514f42d460641e3295b40867da99c50b}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Plugin\+Dir} & Path to plugins \\
+\hline
+\end{DoxyParams}
+
+
+References c\+Plugin\+::is\+Valid(), m\+\_\+plugin\+List, plugin\+D\+B\+Triggered(), plugin\+Export\+Triggered(), plugin\+Import\+Triggered(), c\+Plugin\+::plugin\+Name(), c\+Plugin\+::set\+Action(), and ui.
+
+
+
+Referenced by init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a514f42d460641e3295b40867da99c50b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a514f42d460641e3295b40867da99c50b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered@{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered}}
+\index{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered@{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered}{on_m_lpMenu_File_Exit_triggered}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+\_\+m\+\_\+lp\+Menu\+\_\+\+File\+\_\+\+Exit\+\_\+triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a3345add8cf20de78da3c67080188608d}{}\label{classc_main_window_a3345add8cf20de78da3c67080188608d}
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered@{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered}}
+\index{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered@{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered}{on_m_lpMenu_Tools_Options_triggered}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+\_\+m\+\_\+lp\+Menu\+\_\+\+Tools\+\_\+\+Options\+\_\+triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a39a2aa4bfa1303da62f3599c77be4762}{}\label{classc_main_window_a39a2aa4bfa1303da62f3599c77be4762}
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+Ingredients\+List\+Custom\+Context\+Menu@{on\+Ingredients\+List\+Custom\+Context\+Menu}}
+\index{on\+Ingredients\+List\+Custom\+Context\+Menu@{on\+Ingredients\+List\+Custom\+Context\+Menu}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+Ingredients\+List\+Custom\+Context\+Menu}{onIngredientsListCustomContextMenu}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+Ingredients\+List\+Custom\+Context\+Menu (
+\begin{DoxyParamCaption}
+\item[{const Q\+Point \&}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a933380437ebf1ee1abd2be9165f76f68}{}\label{classc_main_window_a933380437ebf1ee1abd2be9165f76f68}
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Current position of mouse cursor. \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Ingredients\+List\+Delete, m\+\_\+lp\+Ingredients\+List\+Edit, m\+\_\+lp\+Ingredients\+List\+Menu, m\+\_\+lp\+Ingredients\+List\+New, and ui.
+
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a933380437ebf1ee1abd2be9165f76f68_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+Ingredients\+List\+Delete@{on\+Ingredients\+List\+Delete}}
+\index{on\+Ingredients\+List\+Delete@{on\+Ingredients\+List\+Delete}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+Ingredients\+List\+Delete}{onIngredientsListDelete}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+Ingredients\+List\+Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a4bd73b0f35d28db5c4eb970fb188a3b4}{}\label{classc_main_window_a4bd73b0f35d28db5c4eb970fb188a3b4}
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a4bd73b0f35d28db5c4eb970fb188a3b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+Ingredients\+List\+Edit@{on\+Ingredients\+List\+Edit}}
+\index{on\+Ingredients\+List\+Edit@{on\+Ingredients\+List\+Edit}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+Ingredients\+List\+Edit}{onIngredientsListEdit}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+Ingredients\+List\+Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a0dff97e5ba837d5b9ba04f7bde41dd1c}{}\label{classc_main_window_a0dff97e5ba837d5b9ba04f7bde41dd1c}
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a0dff97e5ba837d5b9ba04f7bde41dd1c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+Ingredients\+List\+Import@{on\+Ingredients\+List\+Import}}
+\index{on\+Ingredients\+List\+Import@{on\+Ingredients\+List\+Import}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+Ingredients\+List\+Import}{onIngredientsListImport}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+Ingredients\+List\+Import (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a1a0b99b15c690785791074ae0d13131d}{}\label{classc_main_window_a1a0b99b15c690785791074ae0d13131d}
+
+
+References m\+\_\+plugin\+List, and c\+Import\+Ingredient\+Dialog\+::set\+Plugin\+List().
+
+
+
+Referenced by init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a1a0b99b15c690785791074ae0d13131d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a1a0b99b15c690785791074ae0d13131d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!on\+Ingredients\+List\+New@{on\+Ingredients\+List\+New}}
+\index{on\+Ingredients\+List\+New@{on\+Ingredients\+List\+New}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{on\+Ingredients\+List\+New}{onIngredientsListNew}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::on\+Ingredients\+List\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a6d1fb1143d310ce85ac4c1924ec9f1f5}{}\label{classc_main_window_a6d1fb1143d310ce85ac4c1924ec9f1f5}
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a6d1fb1143d310ce85ac4c1924ec9f1f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!plugin@{plugin}}
+\index{plugin@{plugin}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{plugin(\+Q\+Action $\ast$lp\+Action)}{plugin(QAction *lpAction)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+Plugin} $\ast$ c\+Main\+Window\+::plugin (
+\begin{DoxyParamCaption}
+\item[{Q\+Action $\ast$}]{lp\+Action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a24aea0791cf5bca5bd044bfbb72ef224}{}\label{classc_main_window_a24aea0791cf5bca5bd044bfbb72ef224}
+
+\begin{DoxyParams}{Parameters}
+{\em lp\+Action} & Action of the plugin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classc_plugin}{c\+Plugin} Plugin corresponding to the action, N\+U\+LL if not found. 
+\end{DoxyReturn}
+
+
+References m\+\_\+plugin\+List.
+
+
+
+Referenced by plugin\+D\+B\+Triggered().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a24aea0791cf5bca5bd044bfbb72ef224_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!plugin\+D\+B\+Triggered@{plugin\+D\+B\+Triggered}}
+\index{plugin\+D\+B\+Triggered@{plugin\+D\+B\+Triggered}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{plugin\+D\+B\+Triggered}{pluginDBTriggered}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::plugin\+D\+B\+Triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a70fa99ff98426a5cc888a2de3ea83b07}{}\label{classc_main_window_a70fa99ff98426a5cc888a2de3ea83b07}
+
+
+References c\+Interface\+::config(), c\+Plugin\+::db\+Interface(), c\+D\+B\+Interface\+::init(), plugin(), c\+Interface\+::plugin\+Name(), and c\+Plugin\+::plugin\+Name().
+
+
+
+Referenced by load\+Plugins().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a70fa99ff98426a5cc888a2de3ea83b07_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a70fa99ff98426a5cc888a2de3ea83b07_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!plugin\+Export\+Triggered@{plugin\+Export\+Triggered}}
+\index{plugin\+Export\+Triggered@{plugin\+Export\+Triggered}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{plugin\+Export\+Triggered}{pluginExportTriggered}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::plugin\+Export\+Triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_a203dfd9cd3c6b69acb33695a576907fa}{}\label{classc_main_window_a203dfd9cd3c6b69acb33695a576907fa}
+
+
+Referenced by load\+Plugins().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_a203dfd9cd3c6b69acb33695a576907fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!plugin\+Import\+Triggered@{plugin\+Import\+Triggered}}
+\index{plugin\+Import\+Triggered@{plugin\+Import\+Triggered}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{plugin\+Import\+Triggered}{pluginImportTriggered}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Main\+Window\+::plugin\+Import\+Triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_main_window_ab3ff57870f54e4655aef149e9746035a}{}\label{classc_main_window_ab3ff57870f54e4655aef149e9746035a}
+
+
+Referenced by load\+Plugins().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_ab3ff57870f54e4655aef149e9746035a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Main\+Window@{c\+Main\+Window}!plugin\+List@{plugin\+List}}
+\index{plugin\+List@{plugin\+List}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{plugin\+List()}{pluginList()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf c\+Plugin} $\ast$ $>$ c\+Main\+Window\+::plugin\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_main_window_ae82e278f9aa88d228cd049392a314251}{}\label{classc_main_window_ae82e278f9aa88d228cd049392a314251}
+\begin{DoxyReturn}{Returns}
+Q\+List$<$c\+Plugin $\ast$$>$ List of loaded plugins. 
+\end{DoxyReturn}
+
+
+References m\+\_\+plugin\+List.
+
+
+
+Referenced by c\+Options\+::c\+Options().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_main_window_ae82e278f9aa88d228cd049392a314251_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+Delete@{m\+\_\+lp\+Ingredients\+List\+Delete}}
+\index{m\+\_\+lp\+Ingredients\+List\+Delete@{m\+\_\+lp\+Ingredients\+List\+Delete}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+Delete}{m_lpIngredientsListDelete}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+Delete\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a94ed27f09d49c080ad6e1d7235122a78}{}\label{classc_main_window_a94ed27f09d49c080ad6e1d7235122a78}
+\char`\"{}\+Delee Ingredient\char`\"{} Action for ingredients context menu 
+
+Referenced by init(), on\+Ingredients\+List\+Custom\+Context\+Menu(), and $\sim$c\+Main\+Window().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+Edit@{m\+\_\+lp\+Ingredients\+List\+Edit}}
+\index{m\+\_\+lp\+Ingredients\+List\+Edit@{m\+\_\+lp\+Ingredients\+List\+Edit}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+Edit}{m_lpIngredientsListEdit}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+Edit\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a13b40e0849a4897ffffe041a825b8452}{}\label{classc_main_window_a13b40e0849a4897ffffe041a825b8452}
+\char`\"{}\+Edit Ingredient\char`\"{} Action for ingredients context menu 
+
+Referenced by init(), on\+Ingredients\+List\+Custom\+Context\+Menu(), and $\sim$c\+Main\+Window().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+Import@{m\+\_\+lp\+Ingredients\+List\+Import}}
+\index{m\+\_\+lp\+Ingredients\+List\+Import@{m\+\_\+lp\+Ingredients\+List\+Import}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+Import}{m_lpIngredientsListImport}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+Import\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_ab62a9cfd83899a679715cb0f0acc254d}{}\label{classc_main_window_ab62a9cfd83899a679715cb0f0acc254d}
+\char`\"{}\+Import Ingredient\char`\"{} Action for ingredients context menu 
+
+Referenced by init().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+Menu@{m\+\_\+lp\+Ingredients\+List\+Menu}}
+\index{m\+\_\+lp\+Ingredients\+List\+Menu@{m\+\_\+lp\+Ingredients\+List\+Menu}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+Menu}{m_lpIngredientsListMenu}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Menu$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+Menu\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a67c09407f3fc781eb743a395f86dc44c}{}\label{classc_main_window_a67c09407f3fc781eb743a395f86dc44c}
+Context menu for ingredients list 
+
+Referenced by init(), and on\+Ingredients\+List\+Custom\+Context\+Menu().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+Model@{m\+\_\+lp\+Ingredients\+List\+Model}}
+\index{m\+\_\+lp\+Ingredients\+List\+Model@{m\+\_\+lp\+Ingredients\+List\+Model}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+Model}{m_lpIngredientsListModel}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Standard\+Item\+Model$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a839ead885151027601d9be7d87aade26}{}\label{classc_main_window_a839ead885151027601d9be7d87aade26}
+standard item model for ingredients list 
+
+Referenced by init().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+lp\+Ingredients\+List\+New@{m\+\_\+lp\+Ingredients\+List\+New}}
+\index{m\+\_\+lp\+Ingredients\+List\+New@{m\+\_\+lp\+Ingredients\+List\+New}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredients\+List\+New}{m_lpIngredientsListNew}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ c\+Main\+Window\+::m\+\_\+lp\+Ingredients\+List\+New\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_aff7c0651707a2c73cfdc49d709419f1e}{}\label{classc_main_window_aff7c0651707a2c73cfdc49d709419f1e}
+\char`\"{}\+New Ingredient\char`\"{} Action for ingredients context menu 
+
+Referenced by init(), on\+Ingredients\+List\+Custom\+Context\+Menu(), and $\sim$c\+Main\+Window().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!m\+\_\+plugin\+List@{m\+\_\+plugin\+List}}
+\index{m\+\_\+plugin\+List@{m\+\_\+plugin\+List}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{m\+\_\+plugin\+List}{m_pluginList}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<${\bf c\+Plugin}$\ast$$>$ c\+Main\+Window\+::m\+\_\+plugin\+List\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_ae3d9b84c671559f4ff864f89c7892216}{}\label{classc_main_window_ae3d9b84c671559f4ff864f89c7892216}
+List of loaded plugins 
+
+Referenced by load\+Plugins(), on\+Ingredients\+List\+Import(), plugin(), and plugin\+List().
+
+\index{c\+Main\+Window@{c\+Main\+Window}!ui@{ui}}
+\index{ui@{ui}!c\+Main\+Window@{c\+Main\+Window}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::c\+Main\+Window$\ast$ c\+Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_main_window_a03739e420b7f4f4d85f9c7a373050507}{}\label{classc_main_window_a03739e420b7f4f4d85f9c7a373050507}
+the main window G\+UI 
+
+Referenced by init(), load\+Plugins(), on\+Ingredients\+List\+Custom\+Context\+Menu(), and $\sim$c\+Main\+Window().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cmainwindow_8h}{cmainwindow.\+h}\item 
+Kooky/\hyperlink{cmainwindow_8cpp}{cmainwindow.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cingredient_8cpp">
+    <title>cingredient.cpp File Reference</title>
+    <programlisting>#include &quot;cingredient.h&quot;</programlisting>
+    <programlisting>#include &lt;QFile&gt;</programlisting>
+    <programlisting>#include &lt;QXmlStreamWriter&gt;</programlisting>
+<para>Include dependency diagram for cingredient.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cingredient_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cingredient.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cingredient_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structtag_g_r_o_u_p_n_a_m_e">tagGROUPNAME</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structtag_g_r_o_u_p_n_a_m_e">tagGROUPNAME</link>  <link linkend="cingredient_8cpp_1abf6b2f6e8f8f712614bf99cf7955d8b8">GROUPNAME</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="cingredient_8cpp_1abf6b2f6e8f8f712614bf99cf7955d8b8">GROUPNAME</link> <link linkend="cingredient_8cpp_1ac2d3207c36c3ff8e71bf47bbbc32c4dd">g_groupname</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/Kooky/cingredient.cpp</para>
+    </simplesect>
+</section>

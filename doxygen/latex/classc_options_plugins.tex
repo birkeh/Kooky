@@ -1,0 +1,421 @@
+\hypertarget{classc_options_plugins}{}\section{c\+Options\+Plugins Class Reference}
+\label{classc_options_plugins}\index{c\+Options\+Plugins@{c\+Options\+Plugins}}
+
+
+This dialog displays all plugins.  
+
+
+
+
+{\ttfamily \#include $<$coptionsplugins.\+h$>$}
+
+
+
+Inheritance diagram for c\+Options\+Plugins\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classc_options_plugins__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Options\+Plugins\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classc_options_plugins__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_options_plugins_a6742f672003c2b9255964f908a6981f2}{c\+Options\+Plugins} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classc_options_plugins_a4360b27b58c0d10739c6c3bda1c02971}{$\sim$c\+Options\+Plugins} ()
+\item 
+void \hyperlink{classc_options_plugins_ab6ef94ac452b34fad3bfc8b3a2362c53}{set\+Plugins} (Q\+List$<$ \hyperlink{classc_plugin}{c\+Plugin} $\ast$ $>$ \&plugins)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_options_plugins_acca2bbe1e1858e0038bb72416087687f}{init} ()
+\item 
+void \hyperlink{classc_options_plugins_a102ea2333b1b8cdb69135dbd2ca10bed}{show\+Config\+Dlg} (const Q\+Model\+Index \&index)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_options_plugins_a5e2c5668263a06190103ed275a7f5df4}{on\+Options\+Plugin\+Tree\+Selection\+Changed} (const Q\+Item\+Selection \&selected, const Q\+Item\+Selection \&deselected)
+\item 
+void \hyperlink{classc_options_plugins_a60d4d685600b74b3bd8b6a3973270db3}{on\+Options\+Plugin\+Tree\+Double\+Clicked} (const Q\+Model\+Index \&index)
+\item 
+void \hyperlink{classc_options_plugins_a41dfaea4a44e2eed173402bcaa42d0d7}{on\+Options\+Plugin\+Tree\+Plugin\+Toggled} (bool b)
+\item 
+void \hyperlink{classc_options_plugins_a55f1014d084453544ac054379094ebdb}{on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::c\+Options\+Plugins $\ast$ \hyperlink{classc_options_plugins_aa5588423bcff87a624b984653a9cce6a}{ui}
+\item 
+Q\+Standard\+Item\+Model $\ast$ \hyperlink{classc_options_plugins_ab32e360c0936198360a2e48a431878da}{m\+\_\+lp\+Plugins\+List\+Model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{c\+Options\+Plugins(\+Q\+Widget $\ast$parent=0)}{cOptionsPlugins(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Options\+Plugins\+::c\+Options\+Plugins (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classc_options_plugins_a6742f672003c2b9255964f908a6981f2}{}\label{classc_options_plugins_a6742f672003c2b9255964f908a6981f2}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a6742f672003c2b9255964f908a6981f2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!````~c\+Options\+Plugins@{$\sim$c\+Options\+Plugins}}
+\index{````~c\+Options\+Plugins@{$\sim$c\+Options\+Plugins}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Options\+Plugins()}{~cOptionsPlugins()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Options\+Plugins\+::$\sim$c\+Options\+Plugins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_options_plugins_a4360b27b58c0d10739c6c3bda1c02971}{}\label{classc_options_plugins_a4360b27b58c0d10739c6c3bda1c02971}
+
+
+References ui.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!init@{init}}
+\index{init@{init}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_options_plugins_acca2bbe1e1858e0038bb72416087687f}{}\label{classc_options_plugins_acca2bbe1e1858e0038bb72416087687f}
+
+
+References m\+\_\+lp\+Plugins\+List\+Model, on\+Options\+Plugin\+Tree\+Double\+Clicked(), on\+Options\+Plugin\+Tree\+Selection\+Changed(), and ui.
+
+
+
+Referenced by c\+Options\+Plugins().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_acca2bbe1e1858e0038bb72416087687f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_acca2bbe1e1858e0038bb72416087687f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked}}
+\index{on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked}{on_m_lpButtonConfigure_clicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_options_plugins_a55f1014d084453544ac054379094ebdb}{}\label{classc_options_plugins_a55f1014d084453544ac054379094ebdb}
+
+
+References m\+\_\+lp\+Plugins\+List\+Model, show\+Config\+Dlg(), and ui.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a55f1014d084453544ac054379094ebdb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!on\+Options\+Plugin\+Tree\+Double\+Clicked@{on\+Options\+Plugin\+Tree\+Double\+Clicked}}
+\index{on\+Options\+Plugin\+Tree\+Double\+Clicked@{on\+Options\+Plugin\+Tree\+Double\+Clicked}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{on\+Options\+Plugin\+Tree\+Double\+Clicked}{onOptionsPluginTreeDoubleClicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::on\+Options\+Plugin\+Tree\+Double\+Clicked (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_options_plugins_a60d4d685600b74b3bd8b6a3973270db3}{}\label{classc_options_plugins_a60d4d685600b74b3bd8b6a3973270db3}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Plugins\+List\+Model, and show\+Config\+Dlg().
+
+
+
+Referenced by init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a60d4d685600b74b3bd8b6a3973270db3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a60d4d685600b74b3bd8b6a3973270db3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!on\+Options\+Plugin\+Tree\+Plugin\+Toggled@{on\+Options\+Plugin\+Tree\+Plugin\+Toggled}}
+\index{on\+Options\+Plugin\+Tree\+Plugin\+Toggled@{on\+Options\+Plugin\+Tree\+Plugin\+Toggled}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{on\+Options\+Plugin\+Tree\+Plugin\+Toggled}{onOptionsPluginTreePluginToggled}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::on\+Options\+Plugin\+Tree\+Plugin\+Toggled (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_options_plugins_a41dfaea4a44e2eed173402bcaa42d0d7}{}\label{classc_options_plugins_a41dfaea4a44e2eed173402bcaa42d0d7}
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Plugins\+List\+Model, c\+Plugin\+::plugin\+Name(), and ui.
+
+
+
+Referenced by set\+Plugins().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a41dfaea4a44e2eed173402bcaa42d0d7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a41dfaea4a44e2eed173402bcaa42d0d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!on\+Options\+Plugin\+Tree\+Selection\+Changed@{on\+Options\+Plugin\+Tree\+Selection\+Changed}}
+\index{on\+Options\+Plugin\+Tree\+Selection\+Changed@{on\+Options\+Plugin\+Tree\+Selection\+Changed}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{on\+Options\+Plugin\+Tree\+Selection\+Changed}{onOptionsPluginTreeSelectionChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::on\+Options\+Plugin\+Tree\+Selection\+Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\+Item\+Selection \&}]{selected, }
+\item[{const Q\+Item\+Selection \&}]{deselected}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_options_plugins_a5e2c5668263a06190103ed275a7f5df4}{}\label{classc_options_plugins_a5e2c5668263a06190103ed275a7f5df4}
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & \\
+\hline
+{\em deselected} & \\
+\hline
+\end{DoxyParams}
+
+
+References ui.
+
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a5e2c5668263a06190103ed275a7f5df4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!set\+Plugins@{set\+Plugins}}
+\index{set\+Plugins@{set\+Plugins}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{set\+Plugins(\+Q\+List$<$ c\+Plugin $\ast$ $>$ \&plugins)}{setPlugins(QList< cPlugin * > &plugins)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::set\+Plugins (
+\begin{DoxyParamCaption}
+\item[{Q\+List$<$ {\bf c\+Plugin} $\ast$ $>$ \&}]{plugins}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_options_plugins_ab6ef94ac452b34fad3bfc8b3a2362c53}{}\label{classc_options_plugins_ab6ef94ac452b34fad3bfc8b3a2362c53}
+
+\begin{DoxyParams}{Parameters}
+{\em plugins} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Plugins\+List\+Model, on\+Options\+Plugin\+Tree\+Plugin\+Toggled(), c\+Plugin\+::\+Plugin\+Cap\+DB, c\+Plugin\+::\+Plugin\+Cap\+Export, c\+Plugin\+::\+Plugin\+Cap\+Import, c\+Plugin\+::\+Plugin\+Cap\+None, and ui.
+
+
+
+Referenced by c\+Options\+::on\+Options\+Tree\+Selection\+Changed().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_ab6ef94ac452b34fad3bfc8b3a2362c53_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_ab6ef94ac452b34fad3bfc8b3a2362c53_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!show\+Config\+Dlg@{show\+Config\+Dlg}}
+\index{show\+Config\+Dlg@{show\+Config\+Dlg}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{show\+Config\+Dlg(const Q\+Model\+Index \&index)}{showConfigDlg(const QModelIndex &index)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Options\+Plugins\+::show\+Config\+Dlg (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_options_plugins_a102ea2333b1b8cdb69135dbd2ca10bed}{}\label{classc_options_plugins_a102ea2333b1b8cdb69135dbd2ca10bed}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+
+
+References c\+Plugin\+::capability(), c\+Interface\+::config(), c\+Plugin\+::db\+Interface(), c\+Plugin\+::import\+Interface(), m\+\_\+lp\+Plugins\+List\+Model, c\+Plugin\+::\+Plugin\+Cap\+DB, c\+Plugin\+::\+Plugin\+Cap\+Export, and c\+Plugin\+::\+Plugin\+Cap\+Import.
+
+
+
+Referenced by on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked(), and on\+Options\+Plugin\+Tree\+Double\+Clicked().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a102ea2333b1b8cdb69135dbd2ca10bed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_options_plugins_a102ea2333b1b8cdb69135dbd2ca10bed_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!m\+\_\+lp\+Plugins\+List\+Model@{m\+\_\+lp\+Plugins\+List\+Model}}
+\index{m\+\_\+lp\+Plugins\+List\+Model@{m\+\_\+lp\+Plugins\+List\+Model}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Plugins\+List\+Model}{m_lpPluginsListModel}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Standard\+Item\+Model$\ast$ c\+Options\+Plugins\+::m\+\_\+lp\+Plugins\+List\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_options_plugins_ab32e360c0936198360a2e48a431878da}{}\label{classc_options_plugins_ab32e360c0936198360a2e48a431878da}
+T\+O\+DO\+: describe 
+
+Referenced by init(), on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked(), on\+Options\+Plugin\+Tree\+Double\+Clicked(), on\+Options\+Plugin\+Tree\+Plugin\+Toggled(), set\+Plugins(), and show\+Config\+Dlg().
+
+\index{c\+Options\+Plugins@{c\+Options\+Plugins}!ui@{ui}}
+\index{ui@{ui}!c\+Options\+Plugins@{c\+Options\+Plugins}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::c\+Options\+Plugins$\ast$ c\+Options\+Plugins\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_options_plugins_aa5588423bcff87a624b984653a9cce6a}{}\label{classc_options_plugins_aa5588423bcff87a624b984653a9cce6a}
+T\+O\+DO\+: describe 
+
+Referenced by init(), on\+\_\+m\+\_\+lp\+Button\+Configure\+\_\+clicked(), on\+Options\+Plugin\+Tree\+Plugin\+Toggled(), on\+Options\+Plugin\+Tree\+Selection\+Changed(), set\+Plugins(), and $\sim$c\+Options\+Plugins().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{coptionsplugins_8h}{coptionsplugins.\+h}\item 
+Kooky/\hyperlink{coptionsplugins_8cpp}{coptionsplugins.\+cpp}\end{DoxyCompactItemize}

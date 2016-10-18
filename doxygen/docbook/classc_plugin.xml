@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_plugin">
+<title>cPlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cplugin_8h">&lt;cplugin.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cPlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_plugin__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cPlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_plugin__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737">PluginCap</link> {
+<link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf">PluginCapNone</link>= 0,
+<link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a">PluginCapImport</link>= 1,
+<link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53">PluginCapExport</link>= 2,
+<link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29">PluginCapDB</link>= 3
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QPluginLoader * m_lpPluginLoader</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cImportInterface * m_lpImportInterface</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>cDBInterface * m_lpDBInterface</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QAction * m_lpAction</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_plugin_1af11276446078e0e68e00b7c139bca1bb">cPlugin</link> (
+const QString &amp; szFile)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_plugin_1a38d0e25a6bcd3207902799b783212287">~cPlugin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0">isValid</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_plugin_1a4e67238bd5463a402138f35714d03737">PluginCap</link> <link linkend="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a">capability</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1">pluginName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90">pluginAPIVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55">pluginVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8">setAction</link> (
+QAction * lpAction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QAction * <link linkend="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee">action</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55">pluginFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_import_interface">cImportInterface</link> * <link linkend="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097">importInterface</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_d_b_interface">cDBInterface</link> * <link linkend="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb">dbInterface</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><formalpara><title>Note: </title>
+
+<para></para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 33 of file cplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cplugin.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QPluginLoader* cPlugin::m_lpPluginLoader</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 116 of file cplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>cImportInterface* cPlugin::m_lpImportInterface</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 117 of file cplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>cDBInterface* cPlugin::m_lpDBInterface</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 118 of file cplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QAction* cPlugin::m_lpAction</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 119 of file cplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0">
+                <title>bool cPlugin::isValid ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a">
+                <title>cPlugin::PluginCap cPlugin::capability ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>PluginCap </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1">
+                <title>QString cPlugin::pluginName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90">
+                <title>qint16 cPlugin::pluginAPIVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55">
+                <title>qint16 cPlugin::pluginVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8">
+                <title>void cPlugin::setAction (QAction *lpAction)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>lpAction</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee">
+                <title>QAction * cPlugin::action ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QAction </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55">
+                <title>QString cPlugin::pluginFile ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097">
+                <title>cImportInterface * cPlugin::importInterface ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para><link linkend="classc_import_interface">cImportInterface</link> </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb">
+                <title>cDBInterface * cPlugin::dbInterface ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para><link linkend="classc_d_b_interface">cDBInterface</link> </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

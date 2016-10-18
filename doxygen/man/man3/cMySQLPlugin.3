@@ -1,0 +1,243 @@
+.TH "cMySQLPlugin" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cMySQLPlugin \- MySQL Database Connector Plugin class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmysqlplugin\&.h>\fP
+.PP
+Inherits QObject, and \fBcDBInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "qint16 \fBpluginAPIVersion\fP ()"
+.br
+.RI "\fIReturns the version of the plugin API\&. \fP"
+.ti -1c
+.RI "QString \fBpluginName\fP ()"
+.br
+.RI "\fIReturns the name of the plugin\&. \fP"
+.ti -1c
+.RI "qint16 \fBpluginVersion\fP ()"
+.br
+.RI "\fIreturns the version of the plugin \fP"
+.ti -1c
+.RI "\fBiType\fP \fBpluginType\fP ()"
+.br
+.RI "\fIreturns the type of the plugin\&. \fP"
+.ti -1c
+.RI "bool \fBconnect\fP ()"
+.br
+.RI "\fIconnects to the database\&. \fP"
+.ti -1c
+.RI "bool \fBinit\fP ()"
+.br
+.RI "\fIinitializes default settings for the plugin\&. \fP"
+.ti -1c
+.RI "QString \fBlastError\fP ()"
+.br
+.RI "\fIreturns the last error string\&. \fP"
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.RI "\fIcalls the configuration dialog\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBopen\fP ()"
+.br
+.RI "\fIopens the database\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "QSqlDatabase \fBm_db\fP"
+.br
+.ti -1c
+.RI "QString \fBm_szLastError\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class implements the database connector for MySQL\&. All functions may be overwritten by derriving classes\&.
+.PP
+\fBNote:\fP
+.RS 4
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+$Date: 2016/02/09 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool cMySQLPlugin::config ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool true if the configuration has been changed successfully or false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+References cConfigDialog::database(), cConfigDialog::hostname(), cDBInterface::m_bConnected, m_db, open(), cConfigDialog::password(), pluginName(), cConfigDialog::setDatabase(), cConfigDialog::setHostname(), cConfigDialog::setPassword(), cConfigDialog::setUserName(), and cConfigDialog::userName()\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cMySQLPlugin::connect ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool true on success or false otherwise 
+.RE
+.PP
+
+.PP
+Implements \fBcDBInterface\fP\&.
+.PP
+References m_db, open(), and pluginName()\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cMySQLPlugin::init ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool true if settings where successfully tested or false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcDBInterface\fP\&.
+.PP
+References cDBInterface::m_bConnected, m_db, m_szLastError, and pluginName()\&.
+.PP
+Referenced by pluginType()\&.
+.SS "QString cMySQLPlugin::lastError ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString last error 
+.RE
+.PP
+
+.PP
+References m_szLastError\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cMySQLPlugin::open ()\fC [protected]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool true on success or false otherwise\&. 
+.RE
+.PP
+
+.PP
+References cDBInterface::m_bConnected, m_db, and m_szLastError\&.
+.PP
+Referenced by config(), connect(), and pluginType()\&.
+.SS "qint16 cMySQLPlugin::pluginAPIVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 plugin API version 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SS "QString cMySQLPlugin::pluginName ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString name of the plugin 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+Referenced by config(), connect(), and init()\&.
+.SS "\fBiType\fP cMySQLPlugin::pluginType ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+iType type of the plugin\&.
+.RE
+.PP
+Returns the type of the plugin\&. Possible values are: 
+.PD 0
+
+.IP "\(bu" 2
+\fBcInterface::iTypeDB\fP 
+.br
+ plugin provides DB connector 
+.IP "\(bu" 2
+\fBcInterface::iTypeExport\fP 
+.br
+ plugin provides export capabilities 
+.IP "\(bu" 2
+\fBcInterface::iTypeImport\fP 
+.br
+ plugin provides import capabilities  
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+References config(), connect(), init(), cInterface::iTypeDB, lastError(), and open()\&.
+.SS "qint16 cMySQLPlugin::pluginVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 version of the plugin 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QSqlDatabase cMySQLPlugin::m_db\fC [protected]\fP"
+holds the database connection 
+.PP
+Referenced by config(), connect(), init(), and open()\&.
+.SS "QString cMySQLPlugin::m_szLastError\fC [protected]\fP"
+holds the last error message 
+.PP
+Referenced by init(), lastError(), and open()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

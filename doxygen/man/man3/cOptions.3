@@ -1,0 +1,140 @@
+.TH "cOptions" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cOptions \- This dialog displays all options\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <coptions\&.h>\fP
+.PP
+Inherits QDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcOptions\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~cOptions\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBonOptionsTreeSelectionChanged\fP (const QItemSelection &selected, const QItemSelection &deselected)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cOptions * \fBui\fP"
+.br
+.ti -1c
+.RI "\fBcMainWindow\fP * \fBm_lpMainWindow\fP"
+.br
+.ti -1c
+.RI "QList< \fBcPlugin\fP * > \fBm_pluginList\fP"
+.br
+.ti -1c
+.RI "QStandardItemModel * \fBm_lpOptionsTreeModel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBNote:\fP
+.RS 4
+
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cOptions::cOptions (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References init(), m_lpMainWindow, m_lpOptionsTreeModel, m_pluginList, cMainWindow::pluginList(), and ui\&.
+.SS "cOptions::~cOptions ()"
+
+.PP
+References ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void cOptions::init ()\fC [protected]\fP"
+
+.PP
+References m_lpOptionsTreeModel, onOptionsTreeSelectionChanged(), and ui\&.
+.PP
+Referenced by cOptions()\&.
+.SS "void cOptions::onOptionsTreeSelectionChanged (const QItemSelection & selected, const QItemSelection & deselected)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIselected\fP 
+.br
+\fIdeselected\fP 
+.RE
+.PP
+
+.PP
+References m_lpOptionsTreeModel, m_pluginList, cOptionsPlugins::setPlugins(), and ui\&.
+.PP
+Referenced by init()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBcMainWindow\fP* cOptions::m_lpMainWindow\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cOptions()\&.
+.SS "QStandardItemModel* cOptions::m_lpOptionsTreeModel\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cOptions(), init(), and onOptionsTreeSelectionChanged()\&.
+.SS "QList<\fBcPlugin\fP*> cOptions::m_pluginList\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cOptions(), and onOptionsTreeSelectionChanged()\&.
+.SS "Ui::cOptions* cOptions::ui\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cOptions(), init(), onOptionsTreeSelectionChanged(), and ~cOptions()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

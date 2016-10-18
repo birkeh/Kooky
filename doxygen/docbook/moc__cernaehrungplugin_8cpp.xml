@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="moc__cernaehrungplugin_8cpp">
+    <title>moc_cernaehrungplugin.cpp File Reference</title>
+    <programlisting>#include &quot;cernaehrungplugin.h&quot;</programlisting>
+    <programlisting>#include &lt;QtCore/qbytearray.h&gt;</programlisting>
+    <programlisting>#include &lt;QtCore/qmetatype.h&gt;</programlisting>
+    <programlisting>#include &lt;QtCore/qplugin.h&gt;</programlisting>
+<para>Include dependency diagram for moc_cernaehrungplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="moc__cernaehrungplugin_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for moc_cernaehrungplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="moc__cernaehrungplugin_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structqt__meta__stringdata__c_ernaehrung_plugin__t">qt_meta_stringdata_cErnaehrungPlugin_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="moc__cernaehrungplugin_8cpp_1a75bb9482d242cde0a06c9dbdc6b83abe">QT_MOC_LITERAL</link> Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    offsetof(<link linkend="structqt__meta__stringdata__c_ernaehrung_plugin__t">qt_meta_stringdata_cErnaehrungPlugin_t</link>, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
+    )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static const <link linkend="structqt__meta__stringdata__c_ernaehrung_plugin__t">qt_meta_stringdata_cErnaehrungPlugin_t</link> <link linkend="moc__cernaehrungplugin_8cpp_1adf31064a60000fa2ac258e822bd1c09f">qt_meta_stringdata_cErnaehrungPlugin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static const uint <link linkend="moc__cernaehrungplugin_8cpp_1a21290af10c330ccd6463000eabdbdb83">qt_meta_data_cErnaehrungPlugin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QT_PLUGIN_METADATA_SECTION const uint <link linkend="moc__cernaehrungplugin_8cpp_1a5224d929b42accc7ffdaf4969e5eca8c">qt_section_alignment_dummy</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static QT_PLUGIN_METADATA_SECTION const unsigned char <link linkend="moc__cernaehrungplugin_8cpp_1a1fe1e0e0906a7e8ff66317074cbb5a54">qt_pluginMetaData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/iErnaehrung/moc_cernaehrungplugin.cpp</para>
+    </simplesect>
+</section>

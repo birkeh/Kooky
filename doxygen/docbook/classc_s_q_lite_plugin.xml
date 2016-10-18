@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_s_q_lite_plugin">
+<title>cSQLitePlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="csqliteplugin_8h">&lt;csqliteplugin.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cSQLitePlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_s_q_lite_plugin__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cSQLitePlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_s_q_lite_plugin__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QSqlDatabase m_db</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString m_szLastError</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_s_q_lite_plugin_1abe6689a26729e68d2167eb87e3bc2768">pluginAPIVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4">pluginName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_s_q_lite_plugin_1a680ffa394cab1bd545080c4ea72bd442">pluginVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> <link linkend="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee">pluginType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5">connect</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8">lastError</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d">config</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f">open</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QSqlDatabase cSQLitePlugin::m_db</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 83 of file csqliteplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>csqliteplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QString cSQLitePlugin::m_szLastError</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 84 of file csqliteplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>csqliteplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_s_q_lite_plugin_1abe6689a26729e68d2167eb87e3bc2768">
+                <title>qint16 cSQLitePlugin::pluginAPIVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4">
+                <title>QString cSQLitePlugin::pluginName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a680ffa394cab1bd545080c4ea72bd442">
+                <title>qint16 cSQLitePlugin::pluginVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee">
+                <title>iType cSQLitePlugin::pluginType ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>iType </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5">
+                <title>bool cSQLitePlugin::connect ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0">
+                <title>bool cSQLitePlugin::init ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8">
+                <title>QString cSQLitePlugin::lastError ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d">
+                <title>bool cSQLitePlugin::config ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f">
+                <title>bool cSQLitePlugin::open ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

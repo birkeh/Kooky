@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c1520e63b907081b195081b69f113080" kind="dir">
+    <compoundname>dSQLite</compoundname>
+    <innerfile refid="csqliteplugin_8cpp">csqliteplugin.cpp</innerfile>
+    <innerfile refid="csqliteplugin_8h">csqliteplugin.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dSQLite/"/>
+  </compounddef>
+</doxygen>

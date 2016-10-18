@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_s_q_lite_plugin" kind="class" language="C++" prot="public">
+    <compoundname>cSQLitePlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classc_d_b_interface" prot="public" virt="non-virtual">cDBInterface</basecompoundref>
+    <includes refid="csqliteplugin_8h" local="no">csqliteplugin.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" prot="protected" static="no" mutable="no">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase cSQLitePlugin::m_db</definition>
+        <argsstring></argsstring>
+        <name>m_db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="83" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" compoundref="csqliteplugin_8cpp" startline="8" endline="17">connect</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" compoundref="csqliteplugin_8cpp" startline="19" endline="61">init</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" compoundref="csqliteplugin_8cpp" startline="63" endline="82">open</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString cSQLitePlugin::m_szLastError</definition>
+        <argsstring></argsstring>
+        <name>m_szLastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="84" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" compoundref="csqliteplugin_8cpp" startline="19" endline="61">init</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8" compoundref="csqliteplugin_8cpp" startline="84" endline="87">lastError</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" compoundref="csqliteplugin_8cpp" startline="63" endline="82">open</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1abe6689a26729e68d2167eb87e3bc2768" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cSQLitePlugin::pluginAPIVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginAPIVersion</name>
+        <reimplements refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813">pluginAPIVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="29" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>QString cSQLitePlugin::pluginName</definition>
+        <argsstring>()</argsstring>
+        <name>pluginName</name>
+        <reimplements refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">pluginName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="35" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="35" bodyend="35"/>
+        <referencedby refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" compoundref="csqliteplugin_8cpp" startline="8" endline="17">connect</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" compoundref="csqliteplugin_8cpp" startline="19" endline="61">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a680ffa394cab1bd545080c4ea72bd442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cSQLitePlugin::pluginVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginVersion</name>
+        <reimplements refid="classc_interface_1aadc382036174c2a25bb2c23733830d33">pluginVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="41" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref></type>
+        <definition>iType cSQLitePlugin::pluginType</definition>
+        <argsstring>()</argsstring>
+        <name>pluginType</name>
+        <reimplements refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">pluginType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="47" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="47" bodyend="47"/>
+        <references refid="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d" compoundref="csqliteplugin_8cpp" startline="89" endline="116">config</references>
+        <references refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" compoundref="csqliteplugin_8cpp" startline="8" endline="17">connect</references>
+        <references refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" compoundref="csqliteplugin_8cpp" startline="19" endline="61">init</references>
+        <references refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" compoundref="c_interface_8h" startline="42">cInterface::iTypeDB</references>
+        <references refid="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8" compoundref="csqliteplugin_8cpp" startline="84" endline="87">lastError</references>
+        <references refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" compoundref="csqliteplugin_8cpp" startline="63" endline="82">open</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cSQLitePlugin::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <reimplements refid="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b">connect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="54" column="1" bodyfile="dSQLite/csqliteplugin.cpp" bodystart="8" bodyend="17"/>
+        <references refid="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" compoundref="csqliteplugin_8h" startline="83">m_db</references>
+        <references refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" compoundref="csqliteplugin_8cpp" startline="63" endline="82">open</references>
+        <references refid="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4" compoundref="csqliteplugin_8h" startline="35" endline="35">pluginName</references>
+        <referencedby refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" compoundref="csqliteplugin_8h" startline="47" endline="47">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cSQLitePlugin::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="60" column="1" bodyfile="dSQLite/csqliteplugin.cpp" bodystart="19" bodyend="61"/>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">cDBInterface::m_bConnected</references>
+        <references refid="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" compoundref="csqliteplugin_8h" startline="83">m_db</references>
+        <references refid="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" compoundref="csqliteplugin_8h" startline="84">m_szLastError</references>
+        <references refid="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4" compoundref="csqliteplugin_8h" startline="35" endline="35">pluginName</references>
+        <referencedby refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" compoundref="csqliteplugin_8h" startline="47" endline="47">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cSQLitePlugin::lastError</definition>
+        <argsstring>()</argsstring>
+        <name>lastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="66" column="1" bodyfile="dSQLite/csqliteplugin.cpp" bodystart="84" bodyend="87"/>
+        <references refid="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" compoundref="csqliteplugin_8h" startline="84">m_szLastError</references>
+        <referencedby refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" compoundref="csqliteplugin_8h" startline="47" endline="47">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cSQLitePlugin::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <reimplements refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">config</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="73" column="1" bodyfile="dSQLite/csqliteplugin.cpp" bodystart="89" bodyend="116"/>
+        <referencedby refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" compoundref="csqliteplugin_8h" startline="47" endline="47">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cSQLitePlugin::open</definition>
+        <argsstring>()</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dSQLite/csqliteplugin.h" line="81" column="1" bodyfile="dSQLite/csqliteplugin.cpp" bodystart="63" bodyend="82"/>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">cDBInterface::m_bConnected</references>
+        <references refid="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" compoundref="csqliteplugin_8h" startline="83">m_db</references>
+        <references refid="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" compoundref="csqliteplugin_8h" startline="84">m_szLastError</references>
+        <referencedby refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" compoundref="csqliteplugin_8cpp" startline="8" endline="17">connect</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" compoundref="csqliteplugin_8h" startline="47" endline="47">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="182">
+        <label>cSQLitePlugin</label>
+        <link refid="classc_s_q_lite_plugin"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>QObject</label>
+      </node>
+      <node id="185">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="184">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="186">
+        <label>cSQLitePlugin</label>
+        <link refid="classc_s_q_lite_plugin"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>QObject</label>
+      </node>
+      <node id="189">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="188">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dSQLite/csqliteplugin.h" line="18" column="1" bodyfile="dSQLite/csqliteplugin.h" bodystart="17" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>cDBInterface</name></member>
+      <member refid="classc_s_q_lite_plugin_1a0ebe7b647b44908f2717c86900ac679d" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>config</name></member>
+      <member refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>connect</name></member>
+      <member refid="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>connected</name></member>
+      <member refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>init</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>iType</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>iTypeDB</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>iTypeExport</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>iTypeImport</name></member>
+      <member refid="classc_s_q_lite_plugin_1a559d79aa121a1d04ba89ae3cc641baf8" prot="public" virt="non-virtual"><scope>cSQLitePlugin</scope><name>lastError</name></member>
+      <member refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" prot="protected" virt="non-virtual"><scope>cSQLitePlugin</scope><name>m_bConnected</name></member>
+      <member refid="classc_s_q_lite_plugin_1a3e3b9845869292d92f7d37e1ffa90df5" prot="protected" virt="non-virtual"><scope>cSQLitePlugin</scope><name>m_db</name></member>
+      <member refid="classc_s_q_lite_plugin_1a2f6c0e82b435799bd544d8a1847f4d1a" prot="protected" virt="non-virtual"><scope>cSQLitePlugin</scope><name>m_szLastError</name></member>
+      <member refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" prot="protected" virt="non-virtual"><scope>cSQLitePlugin</scope><name>open</name></member>
+      <member refid="classc_s_q_lite_plugin_1abe6689a26729e68d2167eb87e3bc2768" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_s_q_lite_plugin_1a073f7e6b4fa9804c58bdb4a5a758ffa4" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>pluginName</name></member>
+      <member refid="classc_s_q_lite_plugin_1a1ba9b4a2e7dc962bbc67a89dc928fcee" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>pluginType</name></member>
+      <member refid="classc_s_q_lite_plugin_1a680ffa394cab1bd545080c4ea72bd442" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>pluginVersion</name></member>
+      <member refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" prot="public" virt="virtual"><scope>cSQLitePlugin</scope><name>~cDBInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

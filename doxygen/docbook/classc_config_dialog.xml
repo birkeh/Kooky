@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_config_dialog">
+<title>cConfigDialog class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cconfigdialog_8h">&lt;cconfigdialog.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cConfigDialog</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_config_dialog__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cConfigDialog</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_config_dialog__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ui::cConfigDialog * ui</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bPasswordChanged</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee">cConfigDialog</link> (
+QWidget * parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_config_dialog_1ae88187dcf8dfc433b53b26bd5e54f871">~cConfigDialog</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_config_dialog_1acb0a82e1653578edc43855af17154f24">setHostname</link> (
+const QString &amp; szHostname)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272">setDatabase</link> (
+const QString &amp; szDatabase)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4">setUserName</link> (
+const QString &amp; szUserName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1">setPassword</link> (
+const QString &amp; szPassword)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c">hostname</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935">database</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea">userName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5">password</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class implements basic import functionality for Kooky. All functions may be overwritten by derriving classes.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para>Attempts at zen rarely work.</para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 32 of file cconfigdialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cconfigdialog.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>Ui::cConfigDialog* cConfigDialog::ui</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 128 of file cconfigdialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cconfigdialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool cConfigDialog::m_bPasswordChanged</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 129 of file cconfigdialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cconfigdialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_config_dialog_1aa89869d702a4d9a2dd94086bc8d700ee">
+                <title>cConfigDialog::cConfigDialog (QWidget *parent=0)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>parent</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1acb0a82e1653578edc43855af17154f24">
+                <title>void cConfigDialog::setHostname (const QString &amp;szHostname)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szHostname</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272">
+                <title>void cConfigDialog::setDatabase (const QString &amp;szDatabase)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szDatabase</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4">
+                <title>void cConfigDialog::setUserName (const QString &amp;szUserName)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szUserName</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1">
+                <title>void cConfigDialog::setPassword (const QString &amp;szPassword)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szPassword</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c">
+                <title>QString cConfigDialog::hostname ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935">
+                <title>QString cConfigDialog::database ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea">
+                <title>QString cConfigDialog::userName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5">
+                <title>QString cConfigDialog::password ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

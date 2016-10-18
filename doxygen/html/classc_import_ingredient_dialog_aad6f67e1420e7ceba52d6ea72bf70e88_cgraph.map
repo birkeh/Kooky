@@ -1,0 +1,7 @@
+<map id="cImportIngredientDialog::on_m_lpSearchButton_clicked" name="cImportIngredientDialog::on_m_lpSearchButton_clicked">
+<area shape="rect" id="node2" href="$classc_plugin.html#ac4069636d1b3b0bf5bfa10d6c96ee097" title="cPlugin::importInterface" alt="" coords="231,5,405,32"/>
+<area shape="rect" id="node3" href="$classc_import_interface.html#a8b48a3821674ff15d7eaf4e03c55409f" title="cImportInterface::search" alt="" coords="229,56,407,83"/>
+<area shape="rect" id="node4" href="$classc_message_animate_dialog.html#af6cae719996f9bf2d683f4cfdbd7b985" title="Sets the message of the dialog. " alt="" coords="228,107,408,149"/>
+<area shape="rect" id="node6" href="$classc_message_animate_dialog.html#a60b9bf7a04298fe0ccb98f46b16e9a5e" title="Sets the title of the dialog. " alt="" coords="228,173,408,214"/>
+<area shape="rect" id="node5" href="$classc_message_animate_dialog.html#a09ea517229b2b01be6dc407911628441" title="This function is called twice a second to update the displayed message. " alt="" coords="456,107,636,149"/>
+</map>

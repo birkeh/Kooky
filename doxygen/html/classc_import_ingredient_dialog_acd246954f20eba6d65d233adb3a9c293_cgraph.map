@@ -1,0 +1,17 @@
+<map id="cImportIngredientDialog::init" name="cImportIngredientDialog::init">
+<area shape="rect" id="node2" href="$classc_import_ingredient_dialog.html#a6158a639b7b11973e84ddb3ca7d9aeb6" title="cImportIngredientDialog\l::initIngredientDetails" alt="" coords="228,165,403,207"/>
+<area shape="rect" id="node3" href="$classc_import_ingredient_dialog.html#adf78505fef0d070021878b885fd5a0ea" title="cImportIngredientDialog\l::initIngredientList" alt="" coords="228,231,403,272"/>
+<area shape="rect" id="node4" href="$classc_import_ingredient_dialog.html#a7aaca4be76facdc5c90fd321825a6289" title="cImportIngredientDialog\l::onIngredientListSelectionChanged" alt="" coords="451,231,699,272"/>
+<area shape="rect" id="node5" href="$classc_message_animate_dialog.html#a60b9bf7a04298fe0ccb98f46b16e9a5e" title="Sets the title of the dialog. " alt="" coords="751,5,931,47"/>
+<area shape="rect" id="node6" href="$classc_message_animate_dialog.html#af6cae719996f9bf2d683f4cfdbd7b985" title="Sets the message of the dialog. " alt="" coords="751,71,931,112"/>
+<area shape="rect" id="node8" href="$classc_plugin.html#ac4069636d1b3b0bf5bfa10d6c96ee097" title="cPlugin::importInterface" alt="" coords="754,137,927,163"/>
+<area shape="rect" id="node9" href="$classc_import_interface.html#a728bcb2a636f78bae2fe7e128a18e983" title="cImportInterface::load" alt="" coords="759,187,922,214"/>
+<area shape="rect" id="node10" href="$classc_import_interface.html#a7a8dbe6a164549272d748d2f77aebc42" title="cImportInterface::value" alt="" coords="988,297,1157,323"/>
+<area shape="rect" id="node11" href="$classc_import_ingredient_dialog.html#ae0115db7ba009ecbfcd0af68f4e71e3d" title="cImportIngredientDialog\l::addGroup" alt="" coords="753,289,928,331"/>
+<area shape="rect" id="node12" href="$classc_import_interface.html#a1d31c90d6ef27a2b9edfb99e655120ea" title="cImportInterface::group" alt="" coords="755,406,927,433"/>
+<area shape="rect" id="node14" href="$classc_import_interface.html#a685fafcac4d7194045e6c9e2d84d7981" title="cImportInterface::name" alt="" coords="755,457,927,483"/>
+<area shape="rect" id="node16" href="$classc_import_interface.html#a272c43d684b605f36d36cb20e4039d94" title="cImportInterface::valueStr" alt="" coords="747,355,935,382"/>
+<area shape="rect" id="node7" href="$classc_message_animate_dialog.html#a09ea517229b2b01be6dc407911628441" title="This function is called twice a second to update the displayed message. " alt="" coords="983,71,1163,112"/>
+<area shape="rect" id="node13" href="$classc_ingredient.html#aa0da12658feecfd205c20e3a0335e9b0" title="cIngredient::group" alt="" coords="1003,406,1142,433"/>
+<area shape="rect" id="node15" href="$classc_ingredient.html#a64d6e9c85a6b1527de28ed1f1185be29" title="cIngredient::name" alt="" coords="1003,457,1142,483"/>
+</map>

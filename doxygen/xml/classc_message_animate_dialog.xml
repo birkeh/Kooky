@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_message_animate_dialog" kind="class" language="C++" prot="public">
+    <compoundname>cMessageAnimateDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="cmessageanimatedialog_8h" local="no">cmessageanimatedialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" prot="private" static="no" mutable="no">
+        <type>Ui::cMessageAnimateDialog *</type>
+        <definition>Ui::cMessageAnimateDialog* cMessageAnimateDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User interface of the dialog. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="68" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" compoundref="cmessageanimatedialog_8cpp" startline="5" endline="14">cMessageAnimateDialog</referencedby>
+        <referencedby refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">setMessage</referencedby>
+        <referencedby refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" compoundref="cmessageanimatedialog_8cpp" startline="41" endline="58">update</referencedby>
+        <referencedby refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" compoundref="cmessageanimatedialog_8cpp" startline="16" endline="21">~cMessageAnimateDialog</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString cMessageAnimateDialog::m_szMessage</definition>
+        <argsstring></argsstring>
+        <name>m_szMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message to be displayed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="71" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">setMessage</referencedby>
+        <referencedby refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" compoundref="cmessageanimatedialog_8cpp" startline="41" endline="58">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" prot="protected" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* cMessageAnimateDialog::m_lpTimer</definition>
+        <argsstring></argsstring>
+        <name>m_lpTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timer object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="72" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">setMessage</referencedby>
+        <referencedby refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" compoundref="cmessageanimatedialog_8cpp" startline="16" endline="21">~cMessageAnimateDialog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cMessageAnimateDialog::m_iCount</definition>
+        <argsstring></argsstring>
+        <name>m_iCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of points currently being displayed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="73" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" compoundref="cmessageanimatedialog_8cpp" startline="41" endline="58">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cMessageAnimateDialog::m_iDirection</definition>
+        <argsstring></argsstring>
+        <name>m_iDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase / decrease number of points </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="74" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" compoundref="cmessageanimatedialog_8cpp" startline="41" endline="58">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cMessageAnimateDialog::cMessageAnimateDialog</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cMessageAnimateDialog</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="40" column="1" bodyfile="Kooky/cmessageanimatedialog.cpp" bodystart="5" bodyend="14"/>
+        <references refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" compoundref="cmessageanimatedialog_8h" startline="68">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cMessageAnimateDialog::~cMessageAnimateDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~cMessageAnimateDialog</name>
+        <briefdescription>
+<para>destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="45" column="1" bodyfile="Kooky/cmessageanimatedialog.cpp" bodystart="16" bodyend="21"/>
+        <references refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" compoundref="cmessageanimatedialog_8h" startline="72">m_lpTimer</references>
+        <references refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" compoundref="cmessageanimatedialog_8h" startline="68">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMessageAnimateDialog::setTitle</definition>
+        <argsstring>(const QString &amp;szTitle)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szTitle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the title of the dialog. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szTitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title text </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="52" column="1" bodyfile="Kooky/cmessageanimatedialog.cpp" bodystart="23" bodyend="26"/>
+        <referencedby refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" compoundref="cimportingredientdialog_8cpp" startline="73" endline="105">cImportIngredientDialog::on_m_lpSearchButton_clicked</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">cImportIngredientDialog::onIngredientListSelectionChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMessageAnimateDialog::setMessage</definition>
+        <argsstring>(const QString &amp;szMessage)</argsstring>
+        <name>setMessage</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szMessage</declname>
+        </param>
+        <briefdescription>
+<para>Sets the message of the dialog. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message text </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="58" column="1" bodyfile="Kooky/cmessageanimatedialog.cpp" bodystart="28" bodyend="39"/>
+        <references refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" compoundref="cmessageanimatedialog_8h" startline="72">m_lpTimer</references>
+        <references refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" compoundref="cmessageanimatedialog_8h" startline="71">m_szMessage</references>
+        <references refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" compoundref="cmessageanimatedialog_8h" startline="68">ui</references>
+        <references refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" compoundref="cmessageanimatedialog_8cpp" startline="41" endline="58">update</references>
+        <referencedby refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" compoundref="cimportingredientdialog_8cpp" startline="73" endline="105">cImportIngredientDialog::on_m_lpSearchButton_clicked</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">cImportIngredientDialog::onIngredientListSelectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMessageAnimateDialog::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+<para>This function is called twice a second to update the displayed message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmessageanimatedialog.h" line="65" column="1" bodyfile="Kooky/cmessageanimatedialog.cpp" bodystart="41" bodyend="58"/>
+        <references refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" compoundref="cmessageanimatedialog_8h" startline="73">m_iCount</references>
+        <references refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" compoundref="cmessageanimatedialog_8h" startline="74">m_iDirection</references>
+        <references refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" compoundref="cmessageanimatedialog_8h" startline="71">m_szMessage</references>
+        <references refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" compoundref="cmessageanimatedialog_8h" startline="68">ui</references>
+        <referencedby refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">setMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to display a modal message dialog. </para>    </briefdescription>
+    <detaileddescription>
+<para>Class to display a modal message dialog. Title and message can be configured. The dialog displays the message and adds up to 3 points zwice a second to the message.</para><para><simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>$Date: 2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="156">
+        <label>QDialog</label>
+      </node>
+      <node id="155">
+        <label>cMessageAnimateDialog</label>
+        <link refid="classc_message_animate_dialog"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="158">
+        <label>QDialog</label>
+      </node>
+      <node id="157">
+        <label>cMessageAnimateDialog</label>
+        <link refid="classc_message_animate_dialog"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cmessageanimatedialog.h" line="31" column="1" bodyfile="Kooky/cmessageanimatedialog.h" bodystart="30" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" prot="public" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>cMessageAnimateDialog</name></member>
+      <member refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" prot="protected" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>m_iCount</name></member>
+      <member refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" prot="protected" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>m_iDirection</name></member>
+      <member refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" prot="protected" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>m_lpTimer</name></member>
+      <member refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" prot="protected" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>m_szMessage</name></member>
+      <member refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" prot="public" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>setMessage</name></member>
+      <member refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" prot="public" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>setTitle</name></member>
+      <member refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" prot="private" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>ui</name></member>
+      <member refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" prot="private" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>update</name></member>
+      <member refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" prot="public" virt="non-virtual"><scope>cMessageAnimateDialog</scope><name>~cMessageAnimateDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

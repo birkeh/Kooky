@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_d_b_interface">
+<title>cDBInterface class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cdbinterface_8h">&lt;cdbinterface.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cDBInterface</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_d_b_interface__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cDBInterface</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_d_b_interface__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bConnected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257">cDBInterface</link> (
+)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c">~cDBInterface</link> (
+)<para><emphasis>Destructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b">connect</link> (
+)<para><emphasis>Opens a connection to the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">init</link> (
+)<para><emphasis>Initializes the module with default values.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b">connected</link> (
+)<para><emphasis>Returns the current connection status.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_d_b_interface_1a280fe85549741179ce3a23b9f417c689">lastError</link> (
+)<para><emphasis>Returns the last error message of the last operation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class implements basic interface functionality for all Kooky database connector plugins. All functions may be overwritten by derriving classes.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para></para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 35 of file cdbinterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cdbinterface.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>bool cDBInterface::m_bConnected</title>                
+<para>holds the current connection status. </para>
+
+                <para>Definition at line 79 of file cdbinterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cdbinterface.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b">
+                <title>virtual bool cDBInterface::connect ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>bool true on success, false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">
+                <title>virtual bool cDBInterface::init ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>bool true on success, false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b">
+                <title>bool cDBInterface::connected ()</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>bool true if connected, false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_d_b_interface_1a280fe85549741179ce3a23b9f417c689">
+                <title>QString cDBInterface::lastError ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString error message of the last operation. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

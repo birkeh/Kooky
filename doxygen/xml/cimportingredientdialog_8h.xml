@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cimportingredientdialog_8h" kind="file" language="C++">
+    <compoundname>cimportingredientdialog.h</compoundname>
+    <includes refid="cplugin_8h" local="yes">cplugin.h</includes>
+    <includes local="no">QDialog</includes>
+    <includes local="no">QList</includes>
+    <includes local="no">QStandardItemModel</includes>
+    <includes local="no">QItemSelection</includes>
+    <includedby refid="cimportingredientdialog_8cpp" local="yes">Kooky/cimportingredientdialog.cpp</includedby>
+    <includedby refid="cmainwindow_8cpp" local="yes">Kooky/cmainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="793">
+        <label>QMap</label>
+      </node>
+      <node id="794">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="793" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>QList</label>
+      </node>
+      <node id="799">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="791">
+        <label>QtPlugin</label>
+      </node>
+      <node id="785">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="796">
+        <label>QAction</label>
+      </node>
+      <node id="797">
+        <label>QDialog</label>
+      </node>
+      <node id="789">
+        <label>QDomDocument</label>
+      </node>
+      <node id="786">
+        <label>QDate</label>
+      </node>
+      <node id="790">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="787" relation="include">
+        </childnode>
+      </node>
+      <node id="787">
+        <label>QString</label>
+      </node>
+      <node id="788">
+        <label>QFile</label>
+      </node>
+      <node id="782">
+        <label>Kooky/cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog.h"/>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>QItemSelection</label>
+      </node>
+      <node id="792">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="803">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow_8cpp"/>
+      </node>
+      <node id="802">
+        <label>Kooky/cimportingredientdialog.cpp</label>
+        <link refid="cimportingredientdialog_8cpp"/>
+      </node>
+      <node id="801">
+        <label>Kooky/cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog.h"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_import_ingredient_dialog" prot="public">cImportIngredientDialog</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#ifndef<sp/>CIMPORTINGREDIENTDIALOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIMPORTINGREDIENTDIALOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cplugin_8h" kindref="compound">cplugin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QItemSelection&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ui" kindref="compound">Ui</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classc_import_ingredient_dialog" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QDialog</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setPluginList(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QList&lt;cPlugin*&gt;<sp/>pluginList);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64" refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::cImportIngredientDialog*<sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_m_lpSearchButton_clicked();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_m_lpSearchString_textChanged(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;arg1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientListSelectionChanged(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/>selected,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/>deselected);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80" refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;cPlugin*&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" kindref="member">m_pluginList</ref>;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addGroup(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>group);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initIngredientList();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initIngredientDetails();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CIMPORTINGREDIENTDIALOG_H</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cimportingredientdialog.h"/>
+  </compounddef>
+</doxygen>

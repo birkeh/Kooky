@@ -1,0 +1,23 @@
+<map id="cMainWindow::cMainWindow" name="cMainWindow::cMainWindow">
+<area shape="rect" id="node2" href="$classc_main_window.html#a3cc20776b1fd699783bcb1a0e2a33415" title="Initialized main windows. " alt="" coords="252,409,385,436"/>
+<area shape="rect" id="node3" href="$classc_main_window.html#ac76cac25666ea2a0dc106b7829d560c7" title="Initializes default settings for Kooky. " alt="" coords="445,219,623,261"/>
+<area shape="rect" id="node4" href="$classc_main_window.html#a514f42d460641e3295b40867da99c50b" title="Loads plugins in the given path. " alt="" coords="441,285,627,312"/>
+<area shape="rect" id="node16" href="$classc_main_window.html#a933380437ebf1ee1abd2be9165f76f68" title="Custom contest menu of ingredients list has been requested. " alt="" coords="433,337,635,378"/>
+<area shape="rect" id="node17" href="$classc_main_window.html#a6d1fb1143d310ce85ac4c1924ec9f1f5" title="New ingredient has been requested. " alt="" coords="433,402,635,443"/>
+<area shape="rect" id="node18" href="$classc_main_window.html#a1a0b99b15c690785791074ae0d13131d" title="Import of ingredient has been requested. " alt="" coords="433,467,635,509"/>
+<area shape="rect" id="node21" href="$classc_main_window.html#a4bd73b0f35d28db5c4eb970fb188a3b4" title="Delete of ingredient has been requested. " alt="" coords="433,533,635,574"/>
+<area shape="rect" id="node22" href="$classc_main_window.html#a0dff97e5ba837d5b9ba04f7bde41dd1c" title="Edit of ingredient has been requested. " alt="" coords="433,598,635,639"/>
+<area shape="rect" id="node5" href="$classc_plugin.html#a6bb35e1ecaf5e8f3d40b377d29f873e0" title="cPlugin::isValid" alt="" coords="740,183,856,209"/>
+<area shape="rect" id="node6" href="$classc_plugin.html#a73b42f8c99d83faa8a2fe3ed994937a1" title="cPlugin::pluginName" alt="" coords="961,259,1113,285"/>
+<area shape="rect" id="node8" href="$classc_main_window.html#ab3ff57870f54e4655aef149e9746035a" title="Testing of import trigger raised by import plugins. " alt="" coords="701,285,895,326"/>
+<area shape="rect" id="node9" href="$classc_plugin.html#a9e0a7486edcc64646d9b17686863d2e8" title="cPlugin::setAction" alt="" coords="731,351,865,377"/>
+<area shape="rect" id="node10" href="$classc_main_window.html#a203dfd9cd3c6b69acb33695a576907fa" title="Testing of export trigger raised by export plugins. " alt="" coords="701,402,895,443"/>
+<area shape="rect" id="node11" href="$classc_main_window.html#a70fa99ff98426a5cc888a2de3ea83b07" title="Testing of database trigger raised by database connector plugins. " alt="" coords="683,132,913,159"/>
+<area shape="rect" id="node7" href="$classc_interface.html#a17e5a0cf99317ab45f624e68b4a6ecca" title="Returns the name of the plugin. " alt="" coords="1161,183,1332,209"/>
+<area shape="rect" id="node12" href="$classc_main_window.html#a24aea0791cf5bca5bd044bfbb72ef224" title="Finds a plugin with the given action. " alt="" coords="961,157,1113,184"/>
+<area shape="rect" id="node13" href="$classc_plugin.html#ac2fbd0510573398caf3f5da68da327bb" title="cPlugin::dbInterface" alt="" coords="964,208,1111,235"/>
+<area shape="rect" id="node14" href="$classc_interface.html#a040fbd069a2c2356faeda1c2d9ac88df" title="Calls the configuration dialog (if any). " alt="" coords="972,5,1103,32"/>
+<area shape="rect" id="node15" href="$classc_d_b_interface.html#a8baa6f378fb91dea077b38bd15be12c9" title="Initializes the module with default values. " alt="" coords="972,56,1103,83"/>
+<area shape="rect" id="node19" href="$classc_import_ingredient_dialog.html#ad710be68582d34c43a399b4764c0434a" title="cImportIngredientDialog\l::setPluginList" alt="" coords="711,467,885,509"/>
+<area shape="rect" id="node20" href="$classc_plugin.html#a4e1ee6c29cb94d72b8ddc222dd1e4d5a" title="cPlugin::capability" alt="" coords="970,475,1105,501"/>
+</map>

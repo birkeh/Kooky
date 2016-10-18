@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_options" kind="class" language="C++" prot="public">
+    <compoundname>cOptions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="coptions_8h" local="no">coptions.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_options_1a60bdd139c27b5a5e77c018ff41880995" prot="private" static="no" mutable="no">
+        <type>Ui::cOptions *</type>
+        <definition>Ui::cOptions* cOptions::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="64" column="1" bodyfile="Kooky/coptions.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions</referencedby>
+        <referencedby refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" compoundref="coptions_8cpp" startline="34" endline="45">init</referencedby>
+        <referencedby refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" compoundref="coptions_8cpp" startline="47" endline="64">onOptionsTreeSelectionChanged</referencedby>
+        <referencedby refid="classc_options_1a7bf237a91867bc8875ee3b09cdfa3d1c" compoundref="coptions_8cpp" startline="29" endline="32">~cOptions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_options_1a19b1ed8dd34f5fcde6dd4ac6167f3b42" prot="private" static="no" mutable="no">
+        <type><ref refid="classc_main_window" kindref="compound">cMainWindow</ref> *</type>
+        <definition>cMainWindow* cOptions::m_lpMainWindow</definition>
+        <argsstring></argsstring>
+        <name>m_lpMainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="65" column="1" bodyfile="Kooky/coptions.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_options_1a9891a847c04b7581120a51989ff73328" prot="private" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt;</type>
+        <definition>QList&lt;cPlugin*&gt; cOptions::m_pluginList</definition>
+        <argsstring></argsstring>
+        <name>m_pluginList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="66" column="1" bodyfile="Kooky/coptions.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions</referencedby>
+        <referencedby refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" compoundref="coptions_8cpp" startline="47" endline="64">onOptionsTreeSelectionChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* cOptions::m_lpOptionsTreeModel</definition>
+        <argsstring></argsstring>
+        <name>m_lpOptionsTreeModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="67" column="1" bodyfile="Kooky/coptions.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions</referencedby>
+        <referencedby refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" compoundref="coptions_8cpp" startline="34" endline="45">init</referencedby>
+        <referencedby refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" compoundref="coptions_8cpp" startline="47" endline="64">onOptionsTreeSelectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cOptions::cOptions</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cOptions</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="47" column="1" bodyfile="Kooky/coptions.cpp" bodystart="9" bodyend="27"/>
+        <references refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" compoundref="coptions_8cpp" startline="34" endline="45">init</references>
+        <references refid="classc_options_1a19b1ed8dd34f5fcde6dd4ac6167f3b42" compoundref="coptions_8h" startline="65">m_lpMainWindow</references>
+        <references refid="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" compoundref="coptions_8h" startline="67">m_lpOptionsTreeModel</references>
+        <references refid="classc_options_1a9891a847c04b7581120a51989ff73328" compoundref="coptions_8h" startline="66">m_pluginList</references>
+        <references refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" compoundref="cmainwindow_8cpp" startline="209" endline="212">cMainWindow::pluginList</references>
+        <references refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" compoundref="coptions_8h" startline="64">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_options_1a7bf237a91867bc8875ee3b09cdfa3d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cOptions::~cOptions</definition>
+        <argsstring>()</argsstring>
+        <name>~cOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="52" column="1" bodyfile="Kooky/coptions.cpp" bodystart="29" bodyend="32"/>
+        <references refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" compoundref="coptions_8h" startline="64">ui</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_options_1ac38dce7a12374ec291023a724c8d30ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptions::onOptionsTreeSelectionChanged</definition>
+        <argsstring>(const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</argsstring>
+        <name>onOptionsTreeSelectionChanged</name>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>deselected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deselected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="61" column="1" bodyfile="Kooky/coptions.cpp" bodystart="47" bodyend="64"/>
+        <references refid="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" compoundref="coptions_8h" startline="67">m_lpOptionsTreeModel</references>
+        <references refid="classc_options_1a9891a847c04b7581120a51989ff73328" compoundref="coptions_8h" startline="66">m_pluginList</references>
+        <references refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" compoundref="coptionsplugins_8cpp" startline="34" endline="84">cOptionsPlugins::setPlugins</references>
+        <references refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" compoundref="coptions_8h" startline="64">ui</references>
+        <referencedby refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" compoundref="coptions_8cpp" startline="34" endline="45">init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptions::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptions.h" line="74" column="1" bodyfile="Kooky/coptions.cpp" bodystart="34" bodyend="45"/>
+        <references refid="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" compoundref="coptions_8h" startline="67">m_lpOptionsTreeModel</references>
+        <references refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" compoundref="coptions_8cpp" startline="47" endline="64">onOptionsTreeSelectionChanged</references>
+        <references refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" compoundref="coptions_8h" startline="64">ui</references>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This dialog displays all options. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="168">
+        <label>QDialog</label>
+      </node>
+      <node id="167">
+        <label>cOptions</label>
+        <link refid="classc_options"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="171">
+        <label>cMainWindow</label>
+        <link refid="classc_main_window"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>QMainWindow</label>
+      </node>
+      <node id="170">
+        <label>QDialog</label>
+      </node>
+      <node id="169">
+        <label>cOptions</label>
+        <link refid="classc_options"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>m_lpMainWindow</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/coptions.h" line="38" column="1" bodyfile="Kooky/coptions.h" bodystart="37" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" prot="public" virt="non-virtual"><scope>cOptions</scope><name>cOptions</name></member>
+      <member refid="classc_options_1a2b71f5c334967a6eb3ec85cc20162cf9" prot="protected" virt="non-virtual"><scope>cOptions</scope><name>init</name></member>
+      <member refid="classc_options_1a19b1ed8dd34f5fcde6dd4ac6167f3b42" prot="private" virt="non-virtual"><scope>cOptions</scope><name>m_lpMainWindow</name></member>
+      <member refid="classc_options_1a6f83c5dacdeb7901b900b826640a5f1d" prot="private" virt="non-virtual"><scope>cOptions</scope><name>m_lpOptionsTreeModel</name></member>
+      <member refid="classc_options_1a9891a847c04b7581120a51989ff73328" prot="private" virt="non-virtual"><scope>cOptions</scope><name>m_pluginList</name></member>
+      <member refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" prot="private" virt="non-virtual"><scope>cOptions</scope><name>onOptionsTreeSelectionChanged</name></member>
+      <member refid="classc_options_1a60bdd139c27b5a5e77c018ff41880995" prot="private" virt="non-virtual"><scope>cOptions</scope><name>ui</name></member>
+      <member refid="classc_options_1a7bf237a91867bc8875ee3b09cdfa3d1c" prot="public" virt="non-virtual"><scope>cOptions</scope><name>~cOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

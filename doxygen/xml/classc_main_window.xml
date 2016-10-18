@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_main_window" kind="class" language="C++" prot="public">
+    <compoundname>cMainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="cmainwindow_8h" local="no">cmainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" prot="private" static="no" mutable="no">
+        <type>Ui::cMainWindow *</type>
+        <definition>Ui::cMainWindow* cMainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the main window GUI </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="120" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</referencedby>
+        <referencedby refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</referencedby>
+        <referencedby refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" compoundref="cmainwindow_8cpp" startline="26" endline="35">~cMainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" prot="private" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt;</type>
+        <definition>QList&lt;cPlugin*&gt; cMainWindow::m_pluginList</definition>
+        <argsstring></argsstring>
+        <name>m_pluginList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of loaded plugins </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="121" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</referencedby>
+        <referencedby refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" compoundref="cmainwindow_8cpp" startline="316" endline="321">onIngredientsListImport</referencedby>
+        <referencedby refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" compoundref="cmainwindow_8cpp" startline="199" endline="207">plugin</referencedby>
+        <referencedby refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" compoundref="cmainwindow_8cpp" startline="209" endline="212">pluginList</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1a839ead885151027601d9be7d87aade26" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* cMainWindow::m_lpIngredientsListModel</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>standard item model for ingredients list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="122" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* cMainWindow::m_lpIngredientsListNew</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListNew</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;New Ingredient&quot; Action for ingredients context menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="123" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+        <referencedby refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</referencedby>
+        <referencedby refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" compoundref="cmainwindow_8cpp" startline="26" endline="35">~cMainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* cMainWindow::m_lpIngredientsListImport</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListImport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;Import Ingredient&quot; Action for ingredients context menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="124" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* cMainWindow::m_lpIngredientsListDelete</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListDelete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;Delee Ingredient&quot; Action for ingredients context menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="125" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+        <referencedby refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</referencedby>
+        <referencedby refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" compoundref="cmainwindow_8cpp" startline="26" endline="35">~cMainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* cMainWindow::m_lpIngredientsListEdit</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListEdit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;Edit Ingredient&quot; Action for ingredients context menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="126" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+        <referencedby refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</referencedby>
+        <referencedby refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" compoundref="cmainwindow_8cpp" startline="26" endline="35">~cMainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" prot="private" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* cMainWindow::m_lpIngredientsListMenu</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientsListMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Context menu for ingredients list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="127" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+        <referencedby refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cMainWindow::cMainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cMainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="52" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="19" bodyend="24"/>
+        <references refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_main_window_1a5b40588af59f559083925f3f491da1e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cMainWindow::~cMainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~cMainWindow</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="57" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="26" bodyend="35"/>
+        <references refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" compoundref="cmainwindow_8h" startline="125">m_lpIngredientsListDelete</references>
+        <references refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" compoundref="cmainwindow_8h" startline="126">m_lpIngredientsListEdit</references>
+        <references refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" compoundref="cmainwindow_8h" startline="123">m_lpIngredientsListNew</references>
+        <references refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" compoundref="cmainwindow_8h" startline="120">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_main_window_1ae82e278f9aa88d228cd049392a314251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt;</type>
+        <definition>QList&lt; cPlugin * &gt; cMainWindow::pluginList</definition>
+        <argsstring>()</argsstring>
+        <name>pluginList</name>
+        <briefdescription>
+<para>Returns the list of loaded plugins. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QList&lt;cPlugin *&gt; List of loaded plugins. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="64" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="209" bodyend="212"/>
+        <references refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" compoundref="cmainwindow_8h" startline="121">m_pluginList</references>
+        <referencedby refid="classc_options_1ab10e5433e2eb0ea7ca3ea65746e3c132" compoundref="coptions_8cpp" startline="9" endline="27">cOptions::cOptions</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::pluginImportTriggered</definition>
+        <argsstring>()</argsstring>
+        <name>pluginImportTriggered</name>
+        <briefdescription>
+<para>Testing of import trigger raised by import plugins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="70" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="214" bodyend="252"/>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::pluginExportTriggered</definition>
+        <argsstring>()</argsstring>
+        <name>pluginExportTriggered</name>
+        <briefdescription>
+<para>Testing of export trigger raised by export plugins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="75" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="254" bodyend="256"/>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::pluginDBTriggered</definition>
+        <argsstring>()</argsstring>
+        <name>pluginDBTriggered</name>
+        <briefdescription>
+<para>Testing of database trigger raised by database connector plugins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="80" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="258" bodyend="282"/>
+        <references refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">cInterface::config</references>
+        <references refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" compoundref="cplugin_8cpp" startline="117" endline="120">cPlugin::dbInterface</references>
+        <references refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">cDBInterface::init</references>
+        <references refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" compoundref="cmainwindow_8cpp" startline="199" endline="207">plugin</references>
+        <references refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">cInterface::pluginName</references>
+        <references refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">cPlugin::pluginName</references>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a3345add8cf20de78da3c67080188608d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::on_m_lpMenu_File_Exit_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpMenu_File_Exit_triggered</name>
+        <briefdescription>
+<para>Menu entry &quot;File -&gt; Exit&quot; triggered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="85" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="284" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a39a2aa4bfa1303da62f3599c77be4762" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::on_m_lpMenu_Tools_Options_triggered</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpMenu_Tools_Options_triggered</name>
+        <briefdescription>
+<para>Menu entry &quot;Tools -&gt; Options&quot; triggered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="90" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="288" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::onIngredientsListCustomContextMenu</definition>
+        <argsstring>(const QPoint &amp;point)</argsstring>
+        <name>onIngredientsListCustomContextMenu</name>
+        <param>
+          <type>const QPoint &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Custom contest menu of ingredients list has been requested. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current position of mouse cursor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="97" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="294" bodyend="310"/>
+        <references refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" compoundref="cmainwindow_8h" startline="125">m_lpIngredientsListDelete</references>
+        <references refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" compoundref="cmainwindow_8h" startline="126">m_lpIngredientsListEdit</references>
+        <references refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" compoundref="cmainwindow_8h" startline="127">m_lpIngredientsListMenu</references>
+        <references refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" compoundref="cmainwindow_8h" startline="123">m_lpIngredientsListNew</references>
+        <references refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" compoundref="cmainwindow_8h" startline="120">ui</references>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::onIngredientsListNew</definition>
+        <argsstring>()</argsstring>
+        <name>onIngredientsListNew</name>
+        <briefdescription>
+<para>New ingredient has been requested. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="102" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="312" bodyend="314"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::onIngredientsListImport</definition>
+        <argsstring>()</argsstring>
+        <name>onIngredientsListImport</name>
+        <briefdescription>
+<para>Import of ingredient has been requested. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="107" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="316" bodyend="321"/>
+        <references refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" compoundref="cmainwindow_8h" startline="121">m_pluginList</references>
+        <references refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" compoundref="cimportingredientdialog_8cpp" startline="52" endline="63">cImportIngredientDialog::setPluginList</references>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::onIngredientsListDelete</definition>
+        <argsstring>()</argsstring>
+        <name>onIngredientsListDelete</name>
+        <briefdescription>
+<para>Delete of ingredient has been requested. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="112" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="323" bodyend="325"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::onIngredientsListEdit</definition>
+        <argsstring>()</argsstring>
+        <name>onIngredientsListEdit</name>
+        <briefdescription>
+<para>Edit of ingredient has been requested. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="117" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="327" bodyend="329"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initialized main windows. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="133" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="37" bodyend="75"/>
+        <references refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" compoundref="cmainwindow_8cpp" startline="77" endline="94">initDefaultSettings</references>
+        <references refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">loadPlugins</references>
+        <references refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" compoundref="cmainwindow_8h" startline="125">m_lpIngredientsListDelete</references>
+        <references refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" compoundref="cmainwindow_8h" startline="126">m_lpIngredientsListEdit</references>
+        <references refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" compoundref="cmainwindow_8h" startline="124">m_lpIngredientsListImport</references>
+        <references refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" compoundref="cmainwindow_8h" startline="127">m_lpIngredientsListMenu</references>
+        <references refid="classc_main_window_1a839ead885151027601d9be7d87aade26" compoundref="cmainwindow_8h" startline="122">m_lpIngredientsListModel</references>
+        <references refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" compoundref="cmainwindow_8h" startline="123">m_lpIngredientsListNew</references>
+        <references refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" compoundref="cmainwindow_8cpp" startline="294" endline="310">onIngredientsListCustomContextMenu</references>
+        <references refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" compoundref="cmainwindow_8cpp" startline="323" endline="325">onIngredientsListDelete</references>
+        <references refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" compoundref="cmainwindow_8cpp" startline="327" endline="329">onIngredientsListEdit</references>
+        <references refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" compoundref="cmainwindow_8cpp" startline="316" endline="321">onIngredientsListImport</references>
+        <references refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" compoundref="cmainwindow_8cpp" startline="312" endline="314">onIngredientsListNew</references>
+        <references refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" compoundref="cmainwindow_8h" startline="120">ui</references>
+        <referencedby refid="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" compoundref="cmainwindow_8cpp" startline="19" endline="24">cMainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::initDefaultSettings</definition>
+        <argsstring>()</argsstring>
+        <name>initDefaultSettings</name>
+        <briefdescription>
+<para>Initializes default settings for Kooky. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="138" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="77" bodyend="94"/>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_main_window_1a514f42d460641e3295b40867da99c50b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cMainWindow::loadPlugins</definition>
+        <argsstring>(const QString &amp;szPluginDir)</argsstring>
+        <name>loadPlugins</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szPluginDir</declname>
+        </param>
+        <briefdescription>
+<para>Loads plugins in the given path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szPluginDir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to plugins </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="144" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="96" bodyend="197"/>
+        <references refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" compoundref="cplugin_8cpp" startline="56" endline="59">cPlugin::isValid</references>
+        <references refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" compoundref="cmainwindow_8h" startline="121">m_pluginList</references>
+        <references refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" compoundref="cmainwindow_8cpp" startline="258" endline="282">pluginDBTriggered</references>
+        <references refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" compoundref="cmainwindow_8cpp" startline="254" endline="256">pluginExportTriggered</references>
+        <references refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" compoundref="cmainwindow_8cpp" startline="214" endline="252">pluginImportTriggered</references>
+        <references refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">cPlugin::pluginName</references>
+        <references refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" compoundref="cplugin_8cpp" startline="102" endline="105">cPlugin::setAction</references>
+        <references refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" compoundref="cmainwindow_8h" startline="120">ui</references>
+        <referencedby refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" compoundref="cmainwindow_8cpp" startline="37" endline="75">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classc_plugin" kindref="compound">cPlugin</ref> *</type>
+        <definition>cPlugin * cMainWindow::plugin</definition>
+        <argsstring>(QAction *lpAction)</argsstring>
+        <name>plugin</name>
+        <param>
+          <type>QAction *</type>
+          <declname>lpAction</declname>
+        </param>
+        <briefdescription>
+<para>Finds a plugin with the given action. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lpAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action of the plugin. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classc_plugin" kindref="compound">cPlugin</ref> Plugin corresponding to the action, NULL if not found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cmainwindow.h" line="151" column="1" bodyfile="Kooky/cmainwindow.cpp" bodystart="199" bodyend="207"/>
+        <references refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" compoundref="cmainwindow_8h" startline="121">m_pluginList</references>
+        <referencedby refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" compoundref="cmainwindow_8cpp" startline="258" endline="282">pluginDBTriggered</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the class that implements the main window. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements the main window and main functionality of Kooky.</para><para><simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="145">
+        <label>cMainWindow</label>
+        <link refid="classc_main_window"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>cMainWindow</label>
+        <link refid="classc_main_window"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cmainwindow.h" line="43" column="1" bodyfile="Kooky/cmainwindow.h" bodystart="42" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" prot="public" virt="non-virtual"><scope>cMainWindow</scope><name>cMainWindow</name></member>
+      <member refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>init</name></member>
+      <member refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>initDefaultSettings</name></member>
+      <member refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>loadPlugins</name></member>
+      <member refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListDelete</name></member>
+      <member refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListEdit</name></member>
+      <member refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListImport</name></member>
+      <member refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListMenu</name></member>
+      <member refid="classc_main_window_1a839ead885151027601d9be7d87aade26" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListModel</name></member>
+      <member refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_lpIngredientsListNew</name></member>
+      <member refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>m_pluginList</name></member>
+      <member refid="classc_main_window_1a3345add8cf20de78da3c67080188608d" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>on_m_lpMenu_File_Exit_triggered</name></member>
+      <member refid="classc_main_window_1a39a2aa4bfa1303da62f3599c77be4762" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>on_m_lpMenu_Tools_Options_triggered</name></member>
+      <member refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>onIngredientsListCustomContextMenu</name></member>
+      <member refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>onIngredientsListDelete</name></member>
+      <member refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>onIngredientsListEdit</name></member>
+      <member refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>onIngredientsListImport</name></member>
+      <member refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>onIngredientsListNew</name></member>
+      <member refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>plugin</name></member>
+      <member refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>pluginDBTriggered</name></member>
+      <member refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>pluginExportTriggered</name></member>
+      <member refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>pluginImportTriggered</name></member>
+      <member refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" prot="public" virt="non-virtual"><scope>cMainWindow</scope><name>pluginList</name></member>
+      <member refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" prot="private" virt="non-virtual"><scope>cMainWindow</scope><name>ui</name></member>
+      <member refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" prot="public" virt="non-virtual"><scope>cMainWindow</scope><name>~cMainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

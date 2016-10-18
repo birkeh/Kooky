@@ -1,0 +1,438 @@
+\hypertarget{classc_import_ingredient_dialog}{}\section{c\+Import\+Ingredient\+Dialog Class Reference}
+\label{classc_import_ingredient_dialog}\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+
+
+This dialog imports ingredients based on the selected import plugin.  
+
+
+
+
+{\ttfamily \#include $<$cimportingredientdialog.\+h$>$}
+
+
+
+Inheritance diagram for c\+Import\+Ingredient\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classc_import_ingredient_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Import\+Ingredient\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classc_import_ingredient_dialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_import_ingredient_dialog_a4bea50afa976e55633017756cef4443e}{c\+Import\+Ingredient\+Dialog} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{classc_import_ingredient_dialog_a07b1bee5504a45413b3736d757bf2c5e}{$\sim$c\+Import\+Ingredient\+Dialog} ()
+\item 
+void \hyperlink{classc_import_ingredient_dialog_ad710be68582d34c43a399b4764c0434a}{set\+Plugin\+List} (const Q\+List$<$ \hyperlink{classc_plugin}{c\+Plugin} $\ast$ $>$ plugin\+List)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Standard\+Item $\ast$ \hyperlink{classc_import_ingredient_dialog_ae0115db7ba009ecbfcd0af68f4e71e3d}{add\+Group} (const Q\+String \&group)
+\item 
+void \hyperlink{classc_import_ingredient_dialog_acd246954f20eba6d65d233adb3a9c293}{init} ()
+\item 
+void \hyperlink{classc_import_ingredient_dialog_adf78505fef0d070021878b885fd5a0ea}{init\+Ingredient\+List} ()
+\item 
+void \hyperlink{classc_import_ingredient_dialog_a6158a639b7b11973e84ddb3ca7d9aeb6}{init\+Ingredient\+Details} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ \hyperlink{classc_plugin}{c\+Plugin} $\ast$ $>$ \hyperlink{classc_import_ingredient_dialog_ad5795b238430db474ae852bfbb493578}{m\+\_\+plugin\+List}
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_import_ingredient_dialog_aad6f67e1420e7ceba52d6ea72bf70e88}{on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked} ()
+\item 
+void \hyperlink{classc_import_ingredient_dialog_a2b5fa289051ab3b18e71f7e2cb7573b3}{on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed} (const Q\+String \&arg1)
+\item 
+void \hyperlink{classc_import_ingredient_dialog_a7aaca4be76facdc5c90fd321825a6289}{on\+Ingredient\+List\+Selection\+Changed} (const Q\+Item\+Selection \&selected, const Q\+Item\+Selection \&deselected)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::c\+Import\+Ingredient\+Dialog $\ast$ \hyperlink{classc_import_ingredient_dialog_a80da8aa411eb8da3a692693445e64408}{ui}
+\item 
+Q\+Standard\+Item\+Model $\ast$ \hyperlink{classc_import_ingredient_dialog_a0fe1def4e950a1f06a14f28ff7d9ba6a}{m\+\_\+lp\+Ingredient\+List\+Model}
+\item 
+Q\+Standard\+Item\+Model $\ast$ \hyperlink{classc_import_ingredient_dialog_a9fcdb59fa6c5fc9b65c4db1e43afb3db}{m\+\_\+lp\+Ingredient\+Details\+Model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This dialog imports ingredients based on the selected import plugin.
+
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{c\+Import\+Ingredient\+Dialog(\+Q\+Widget $\ast$parent=0)}{cImportIngredientDialog(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Import\+Ingredient\+Dialog\+::c\+Import\+Ingredient\+Dialog (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classc_import_ingredient_dialog_a4bea50afa976e55633017756cef4443e}{}\label{classc_import_ingredient_dialog_a4bea50afa976e55633017756cef4443e}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+References init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_a4bea50afa976e55633017756cef4443e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!````~c\+Import\+Ingredient\+Dialog@{$\sim$c\+Import\+Ingredient\+Dialog}}
+\index{````~c\+Import\+Ingredient\+Dialog@{$\sim$c\+Import\+Ingredient\+Dialog}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Import\+Ingredient\+Dialog()}{~cImportIngredientDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Import\+Ingredient\+Dialog\+::$\sim$c\+Import\+Ingredient\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_import_ingredient_dialog_a07b1bee5504a45413b3736d757bf2c5e}{}\label{classc_import_ingredient_dialog_a07b1bee5504a45413b3736d757bf2c5e}
+
+
+References ui.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!add\+Group@{add\+Group}}
+\index{add\+Group@{add\+Group}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{add\+Group(const Q\+String \&group)}{addGroup(const QString &group)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Standard\+Item $\ast$ c\+Import\+Ingredient\+Dialog\+::add\+Group (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_ingredient_dialog_ae0115db7ba009ecbfcd0af68f4e71e3d}{}\label{classc_import_ingredient_dialog_ae0115db7ba009ecbfcd0af68f4e71e3d}
+
+\begin{DoxyParams}{Parameters}
+{\em group} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Standard\+Item 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+Ingredient\+Details\+Model.
+
+
+
+Referenced by on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_ae0115db7ba009ecbfcd0af68f4e71e3d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!init@{init}}
+\index{init@{init}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_ingredient_dialog_acd246954f20eba6d65d233adb3a9c293}{}\label{classc_import_ingredient_dialog_acd246954f20eba6d65d233adb3a9c293}
+
+
+References init\+Ingredient\+Details(), init\+Ingredient\+List(), and ui.
+
+
+
+Referenced by c\+Import\+Ingredient\+Dialog().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_acd246954f20eba6d65d233adb3a9c293_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_acd246954f20eba6d65d233adb3a9c293_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!init\+Ingredient\+Details@{init\+Ingredient\+Details}}
+\index{init\+Ingredient\+Details@{init\+Ingredient\+Details}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{init\+Ingredient\+Details()}{initIngredientDetails()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::init\+Ingredient\+Details (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_ingredient_dialog_a6158a639b7b11973e84ddb3ca7d9aeb6}{}\label{classc_import_ingredient_dialog_a6158a639b7b11973e84ddb3ca7d9aeb6}
+
+
+References m\+\_\+lp\+Ingredient\+Details\+Model, and ui.
+
+
+
+Referenced by init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_a6158a639b7b11973e84ddb3ca7d9aeb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!init\+Ingredient\+List@{init\+Ingredient\+List}}
+\index{init\+Ingredient\+List@{init\+Ingredient\+List}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{init\+Ingredient\+List()}{initIngredientList()}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::init\+Ingredient\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_ingredient_dialog_adf78505fef0d070021878b885fd5a0ea}{}\label{classc_import_ingredient_dialog_adf78505fef0d070021878b885fd5a0ea}
+
+
+References m\+\_\+lp\+Ingredient\+List\+Model, on\+Ingredient\+List\+Selection\+Changed(), and ui.
+
+
+
+Referenced by init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_adf78505fef0d070021878b885fd5a0ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_adf78505fef0d070021878b885fd5a0ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked}}
+\index{on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked@{on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked}{on_m_lpSearchButton_clicked}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_import_ingredient_dialog_aad6f67e1420e7ceba52d6ea72bf70e88}{}\label{classc_import_ingredient_dialog_aad6f67e1420e7ceba52d6ea72bf70e88}
+
+
+References c\+Plugin\+::import\+Interface(), m\+\_\+lp\+Ingredient\+List\+Model, c\+Import\+Interface\+::search(), c\+Message\+Animate\+Dialog\+::set\+Message(), c\+Message\+Animate\+Dialog\+::set\+Title(), and ui.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_aad6f67e1420e7ceba52d6ea72bf70e88_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed}}
+\index{on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed@{on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed}{on_m_lpSearchString_textChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{arg1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_import_ingredient_dialog_a2b5fa289051ab3b18e71f7e2cb7573b3}{}\label{classc_import_ingredient_dialog_a2b5fa289051ab3b18e71f7e2cb7573b3}
+
+
+References ui.
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!on\+Ingredient\+List\+Selection\+Changed@{on\+Ingredient\+List\+Selection\+Changed}}
+\index{on\+Ingredient\+List\+Selection\+Changed@{on\+Ingredient\+List\+Selection\+Changed}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{on\+Ingredient\+List\+Selection\+Changed}{onIngredientListSelectionChanged}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\+Item\+Selection \&}]{selected, }
+\item[{const Q\+Item\+Selection \&}]{deselected}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classc_import_ingredient_dialog_a7aaca4be76facdc5c90fd321825a6289}{}\label{classc_import_ingredient_dialog_a7aaca4be76facdc5c90fd321825a6289}
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & \\
+\hline
+{\em deselected} & \\
+\hline
+\end{DoxyParams}
+
+
+References add\+Group(), c\+Import\+Interface\+::group(), c\+Ingredient\+::i\+Ingredient\+Max, c\+Plugin\+::import\+Interface(), c\+Import\+Interface\+::load(), m\+\_\+lp\+Ingredient\+Details\+Model, c\+Import\+Interface\+::name(), c\+Message\+Animate\+Dialog\+::set\+Message(), c\+Message\+Animate\+Dialog\+::set\+Title(), ui, c\+Import\+Interface\+::value(), and c\+Import\+Interface\+::value\+Str().
+
+
+
+Referenced by init\+Ingredient\+List().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_a7aaca4be76facdc5c90fd321825a6289_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_a7aaca4be76facdc5c90fd321825a6289_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!set\+Plugin\+List@{set\+Plugin\+List}}
+\index{set\+Plugin\+List@{set\+Plugin\+List}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{set\+Plugin\+List(const Q\+List$<$ c\+Plugin $\ast$ $>$ plugin\+List)}{setPluginList(const QList< cPlugin * > pluginList)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Import\+Ingredient\+Dialog\+::set\+Plugin\+List (
+\begin{DoxyParamCaption}
+\item[{const Q\+List$<$ {\bf c\+Plugin} $\ast$ $>$}]{plugin\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_import_ingredient_dialog_ad710be68582d34c43a399b4764c0434a}{}\label{classc_import_ingredient_dialog_ad710be68582d34c43a399b4764c0434a}
+
+\begin{DoxyParams}{Parameters}
+{\em plugin\+List} & \\
+\hline
+\end{DoxyParams}
+
+
+References c\+Plugin\+::capability(), m\+\_\+plugin\+List, c\+Plugin\+::\+Plugin\+Cap\+Import, c\+Plugin\+::plugin\+Name(), and ui.
+
+
+
+Referenced by c\+Main\+Window\+::on\+Ingredients\+List\+Import().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_ad710be68582d34c43a399b4764c0434a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_ingredient_dialog_ad710be68582d34c43a399b4764c0434a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!m\+\_\+lp\+Ingredient\+Details\+Model@{m\+\_\+lp\+Ingredient\+Details\+Model}}
+\index{m\+\_\+lp\+Ingredient\+Details\+Model@{m\+\_\+lp\+Ingredient\+Details\+Model}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredient\+Details\+Model}{m_lpIngredientDetailsModel}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Standard\+Item\+Model$\ast$ c\+Import\+Ingredient\+Dialog\+::m\+\_\+lp\+Ingredient\+Details\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_import_ingredient_dialog_a9fcdb59fa6c5fc9b65c4db1e43afb3db}{}\label{classc_import_ingredient_dialog_a9fcdb59fa6c5fc9b65c4db1e43afb3db}
+T\+O\+DO\+: describe 
+
+Referenced by add\+Group(), init\+Ingredient\+Details(), and on\+Ingredient\+List\+Selection\+Changed().
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!m\+\_\+lp\+Ingredient\+List\+Model@{m\+\_\+lp\+Ingredient\+List\+Model}}
+\index{m\+\_\+lp\+Ingredient\+List\+Model@{m\+\_\+lp\+Ingredient\+List\+Model}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Ingredient\+List\+Model}{m_lpIngredientListModel}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Standard\+Item\+Model$\ast$ c\+Import\+Ingredient\+Dialog\+::m\+\_\+lp\+Ingredient\+List\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_import_ingredient_dialog_a0fe1def4e950a1f06a14f28ff7d9ba6a}{}\label{classc_import_ingredient_dialog_a0fe1def4e950a1f06a14f28ff7d9ba6a}
+T\+O\+DO\+: describe 
+
+Referenced by init\+Ingredient\+List(), and on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked().
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!m\+\_\+plugin\+List@{m\+\_\+plugin\+List}}
+\index{m\+\_\+plugin\+List@{m\+\_\+plugin\+List}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{m\+\_\+plugin\+List}{m_pluginList}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<${\bf c\+Plugin}$\ast$$>$ c\+Import\+Ingredient\+Dialog\+::m\+\_\+plugin\+List\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_ingredient_dialog_ad5795b238430db474ae852bfbb493578}{}\label{classc_import_ingredient_dialog_ad5795b238430db474ae852bfbb493578}
+T\+O\+DO\+: describe 
+
+Referenced by set\+Plugin\+List().
+
+\index{c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}!ui@{ui}}
+\index{ui@{ui}!c\+Import\+Ingredient\+Dialog@{c\+Import\+Ingredient\+Dialog}}
+\subsubsection[{\texorpdfstring{ui}{ui}}]{\setlength{\rightskip}{0pt plus 5cm}Ui\+::c\+Import\+Ingredient\+Dialog$\ast$ c\+Import\+Ingredient\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_import_ingredient_dialog_a80da8aa411eb8da3a692693445e64408}{}\label{classc_import_ingredient_dialog_a80da8aa411eb8da3a692693445e64408}
+T\+O\+DO\+: describe 
+
+Referenced by init(), init\+Ingredient\+Details(), init\+Ingredient\+List(), on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked(), on\+\_\+m\+\_\+lp\+Search\+String\+\_\+text\+Changed(), on\+Ingredient\+List\+Selection\+Changed(), set\+Plugin\+List(), and $\sim$c\+Import\+Ingredient\+Dialog().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cimportingredientdialog_8h}{cimportingredientdialog.\+h}\item 
+Kooky/\hyperlink{cimportingredientdialog_8cpp}{cimportingredientdialog.\+cpp}\end{DoxyCompactItemize}

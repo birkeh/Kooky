@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmysqlplugin_8h" kind="file" language="C++">
+    <compoundname>cmysqlplugin.h</compoundname>
+    <includes refid="cdbinterface_8h" local="yes">cdbinterface.h</includes>
+    <includes local="no">QtCore</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QSqlDatabase</includes>
+    <includedby refid="cmysqlplugin_8cpp" local="yes">dMySQL/cmysqlplugin.cpp</includedby>
+    <incdepgraph>
+      <node id="603">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>QObject</label>
+      </node>
+      <node id="606">
+        <label>QtPlugin</label>
+      </node>
+      <node id="608">
+        <label>QtCore</label>
+      </node>
+      <node id="610">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="605">
+        <label>QString</label>
+      </node>
+      <node id="604">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>dMySQL/cmysqlplugin.h</label>
+        <link refid="cmysqlplugin.h"/>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+      </node>
+      <node id="607">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="612">
+        <label>dMySQL/cmysqlplugin.cpp</label>
+        <link refid="cmysqlplugin_8cpp"/>
+      </node>
+      <node id="611">
+        <label>dMySQL/cmysqlplugin.h</label>
+        <link refid="cmysqlplugin.h"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_my_s_q_l_plugin" prot="public">cMySQLPlugin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#ifndef<sp/>CMYSQLPLUGIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMYSQLPLUGIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cdbinterface_8h" kindref="compound">cdbinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlDatabase&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classc_my_s_q_l_plugin" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_my_s_q_l_plugin" kindref="compound">cMySQLPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/></highlight><highlight class="stringliteral">&quot;cMySQLPlugin&quot;</highlight><highlight class="normal"><sp/>FILE<sp/></highlight><highlight class="stringliteral">&quot;dMySQL.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57" refid="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2" kindref="member">pluginAPIVersion</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(1);<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" kindref="member">pluginName</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;MySQL<sp/>DB&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="69" refid="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a" kindref="member">pluginVersion</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(1);<sp/>}</highlight></codeline>
+<codeline lineno="86" refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" kindref="member">pluginType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" kindref="member">cInterface::iTypeDB</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" kindref="member">connect</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" kindref="member">lastError</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" kindref="member">open</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlDatabase<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" kindref="member">m_db</ref>;<sp/></highlight></codeline>
+<codeline lineno="123" refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" kindref="member">m_szLastError</ref>;<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CMYSQLPLUGIN_H</highlight></codeline>
+    </programlisting>
+    <location file="dMySQL/cmysqlplugin.h"/>
+  </compounddef>
+</doxygen>

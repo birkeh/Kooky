@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmdiarea_8cpp" kind="file" language="C++">
+    <compoundname>cmdiarea.cpp</compoundname>
+    <includes refid="cmdiarea_8h" local="yes">cmdiarea.h</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QPainter</includes>
+    <incdepgraph>
+      <node id="962">
+        <label>QSettings</label>
+      </node>
+      <node id="959">
+        <label>cmdiarea.h</label>
+        <link refid="cmdiarea_8h"/>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="960">
+        <label>QMdiArea</label>
+      </node>
+      <node id="961">
+        <label>QImage</label>
+      </node>
+      <node id="963">
+        <label>QPainter</label>
+      </node>
+      <node id="958">
+        <label>Kooky/cmdiarea.cpp</label>
+        <link refid="cmdiarea.cpp"/>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmdiarea_8h" kindref="compound">cmdiarea.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPainter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" refkind="member"><highlight class="normal"><ref refid="classc_mdi_area_1a8638403fcff001f5f707c610ed391525" kindref="member">cMdiArea::cMdiArea</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>QMdiArea(parent)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_mdi_area_1a94875ece3a5f527abcad372d535f0c7f" kindref="member">m_background</ref><sp/><sp/><sp/><sp/>=<sp/>QImage(settings.value(</highlight><highlight class="stringliteral">&quot;program/background&quot;</highlight><highlight class="normal">,<sp/>QVariant(</highlight><highlight class="stringliteral">&quot;:/images/image1&quot;</highlight><highlight class="normal">)).toString());</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_mdi_area_1a0c281fb6a48b3970b60b5329659df88d" kindref="member">cMdiArea::paintEvent</ref>(QPaintEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>QMdiArea::paintEvent(event);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>QPainter<sp/><sp/><sp/><sp/>painter(viewport());</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>QRect<sp/><sp/><sp/><sp/><sp/><sp/><sp/>target<sp/><sp/>=<sp/>this-&gt;rect();</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>QRect<sp/><sp/><sp/><sp/><sp/><sp/><sp/>source<sp/><sp/>=<sp/>m_background.rect();</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>if(!source.width()<sp/>||<sp/>!source.height()<sp/>||<sp/>!m_background.width()<sp/>||<sp/>!m_background.height())</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>target.height()*source.width()/source.height();</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>target.width()*source.height()/source.width();</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>if(w<sp/>&gt;<sp/>target.width())</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.setWidth(w);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>else<sp/>if(h<sp/>&gt;<sp/>target.height())</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.setHeight(h);</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>painter.drawImage(target,<sp/>m_background,<sp/>source);</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cmdiarea.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_m_d_i_area" kind="class" language="C++" prot="public">
+    <compoundname>cMDIArea</compoundname>
+    <includes refid="cmdiarea_8h" local="no">cmdiarea.h</includes>
+    <briefdescription>
+<para>This class overwrites the default MDI area of the main window. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class overwrites the default MDI area of the main window. It also adds the capability to display a background image in the MDI area.</para><para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="Kooky/cmdiarea.h" line="2" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

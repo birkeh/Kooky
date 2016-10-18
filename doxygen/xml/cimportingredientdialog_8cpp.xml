@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cimportingredientdialog_8cpp" kind="file" language="C++">
+    <compoundname>cimportingredientdialog.cpp</compoundname>
+    <includes refid="cimportingredientdialog_8h" local="yes">cimportingredientdialog.h</includes>
+    <includes local="yes">ui_cimportingredientdialog.h</includes>
+    <includes refid="cmessageanimatedialog_8h" local="yes">cmessageanimatedialog.h</includes>
+    <incdepgraph>
+      <node id="770">
+        <label>QMap</label>
+      </node>
+      <node id="771">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>QList</label>
+      </node>
+      <node id="776">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="768">
+        <label>QtPlugin</label>
+      </node>
+      <node id="778">
+        <label>ui_cimportingredientdialog.h</label>
+      </node>
+      <node id="762">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="773">
+        <label>QAction</label>
+      </node>
+      <node id="774">
+        <label>QDialog</label>
+      </node>
+      <node id="758">
+        <label>Kooky/cimportingredientdialog.cpp</label>
+        <link refid="cimportingredientdialog.cpp"/>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>QTimer</label>
+      </node>
+      <node id="766">
+        <label>QDomDocument</label>
+      </node>
+      <node id="779">
+        <label>cmessageanimatedialog.h</label>
+        <link refid="cmessageanimatedialog_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>QDate</label>
+      </node>
+      <node id="767">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>QString</label>
+      </node>
+      <node id="765">
+        <label>QFile</label>
+      </node>
+      <node id="759">
+        <label>cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog_8h"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>QItemSelection</label>
+      </node>
+      <node id="769">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cimportingredientdialog_8h" kindref="compound">cimportingredientdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_cimportingredientdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmessageanimatedialog_8h" kindref="compound">cmessageanimatedialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" refkind="member"><highlight class="normal"><ref refid="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" kindref="member">cImportIngredientDialog::cImportIngredientDialog</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref>),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>m_lpIngredientListModel(0),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>m_lpIngredientDetailsModel(0)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" refkind="member"><highlight class="normal"><ref refid="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" kindref="member">cImportIngredientDialog::~cImportIngredientDialog</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" kindref="member">cImportIngredientDialog::init</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" kindref="member">initIngredientList</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" kindref="member">initIngredientDetails</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" kindref="member">cImportIngredientDialog::initIngredientList</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(0,<sp/>1);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientList-&gt;setModel(<ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientList-&gt;selectionModel(),<sp/>SIGNAL(selectionChanged(QItemSelection,QItemSelection)),<sp/>SLOT(<ref refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" kindref="member">onIngredientListSelectionChanged</ref>(QItemSelection,QItemSelection)));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" kindref="member">cImportIngredientDialog::initIngredientDetails</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(0,<sp/>2);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientDetails-&gt;setModel(<ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>headerLabels<sp/><sp/><sp/><sp/>=<sp/>QStringList()<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;Group/Name&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;Value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;setHorizontalHeaderLabels(headerLabels);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" kindref="member">cImportIngredientDialog::setPluginList</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QList&lt;cPlugin*&gt;<sp/>pluginList)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" kindref="member">m_pluginList</ref><sp/><sp/><sp/><sp/>=<sp/>pluginList;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/><ref refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" kindref="member">m_pluginList</ref>.count();z++)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" kindref="member">m_pluginList</ref>.at(z);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin-&gt;<ref refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" kindref="member">capability</ref>()<sp/>==<sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" kindref="member">cPlugin::PluginCapImport</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSource-&gt;addItem(lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>(),<sp/>QVariant::fromValue(lpPlugin));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSource-&gt;setCurrentIndex(0);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" kindref="member">cImportIngredientDialog::on_m_lpSearchString_textChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;</highlight><highlight class="comment">/*arg1*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSearchString-&gt;text().length())</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSearchButton-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSearchButton-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" kindref="member">cImportIngredientDialog::on_m_lpSearchButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog" kindref="compound">cMessageAnimateDialog</ref>*<sp/><sp/>lpDialog<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog" kindref="compound">cMessageAnimateDialog</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;<ref refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" kindref="member">setTitle</ref>(</highlight><highlight class="stringliteral">&quot;Import<sp/>Ingredient&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;<ref refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" kindref="member">setMessage</ref>(</highlight><highlight class="stringliteral">&quot;Searching&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;show();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>-&gt;removeRows(0,<sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>-&gt;rowCount());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSource-&gt;currentData().value&lt;<ref refid="classc_plugin" kindref="compound">cPlugin</ref>*&gt;();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpPlugin)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>*<sp/><sp/><sp/>lpImport<sp/><sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" kindref="member">importInterface</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpImport)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strList<sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;<ref refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f" kindref="member">search</ref>(<ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSearchString-&gt;text());</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>strList.count();z++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpNew<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(strList.at(z));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" kindref="member">m_lpIngredientListModel</ref>-&gt;appendRow(lpNew);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" kindref="member">cImportIngredientDialog::onIngredientListSelectionChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/></highlight><highlight class="comment">/*selected*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/></highlight><highlight class="comment">/*deselected*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog" kindref="compound">cMessageAnimateDialog</ref>*<sp/><sp/>lpDialog<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog" kindref="compound">cMessageAnimateDialog</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;<ref refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" kindref="member">setTitle</ref>(</highlight><highlight class="stringliteral">&quot;Import<sp/>Ingredient&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;<ref refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" kindref="member">setMessage</ref>(</highlight><highlight class="stringliteral">&quot;Loading&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>lpDialog-&gt;show();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;removeRows(0,<sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;rowCount());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpSource-&gt;currentData().value&lt;<ref refid="classc_plugin" kindref="compound">cPlugin</ref>*&gt;();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpPlugin)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>*<sp/><sp/><sp/>lpImport<sp/><sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" kindref="member">importInterface</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpImport)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientList-&gt;currentIndex().row();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpImport-&gt;<ref refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983" kindref="member">load</ref>(iIndex))</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpImport-&gt;<ref refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983" kindref="member">load</ref>(<ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientList-&gt;currentIndex().row()))</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509" kindref="member">cIngredient::iIngredientMax</ref>;z++)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpImport-&gt;<ref refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42" kindref="member">value</ref>((<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref>)z)<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpParent<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" kindref="member">addGroup</ref>(lpImport-&gt;<ref refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" kindref="member">group</ref>((<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref>)z));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpName<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(lpImport-&gt;<ref refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" kindref="member">name</ref>((<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref>)z));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpValue<sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(lpImport-&gt;<ref refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" kindref="member">valueStr</ref>((<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref>)z));</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpValue-&gt;setTextAlignment(Qt::AlignRight);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpParent-&gt;appendRow(QList&lt;QStandardItem*&gt;()<sp/>&lt;&lt;<sp/>lpName<sp/>&lt;&lt;<sp/>lpValue);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientDetails-&gt;resizeColumnToContents(0);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" kindref="member">ui</ref>-&gt;m_lpIngredientDetails-&gt;resizeColumnToContents(1);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lpDialog;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" refkind="member"><highlight class="normal">QStandardItem*<sp/><ref refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" kindref="member">cImportIngredientDialog::addGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>group)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QStandardItem*&gt;itemList<sp/><sp/><sp/>=<sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;findItems(group);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>itemList.count();z++)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!itemList.at(z)-&gt;parent())</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(itemList.at(z));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItem<sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(group);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" kindref="member">m_lpIngredientDetailsModel</ref>-&gt;appendRow(lpItem);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(lpItem);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cimportingredientdialog.cpp"/>
+  </compounddef>
+</doxygen>

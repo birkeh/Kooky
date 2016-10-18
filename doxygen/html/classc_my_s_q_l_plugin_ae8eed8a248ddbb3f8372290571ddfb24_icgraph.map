@@ -1,0 +1,6 @@
+<map id="cMySQLPlugin::pluginName" name="cMySQLPlugin::pluginName">
+<area shape="rect" id="node2" href="$classc_my_s_q_l_plugin.html#ad8413f2440b3ce4390865bb08d238441" title="calls the configuration dialog. " alt="" coords="256,5,413,32"/>
+<area shape="rect" id="node4" href="$classc_my_s_q_l_plugin.html#a137309c4dea786cc0cbd2d7db9acff11" title="connects to the database. " alt="" coords="249,56,420,83"/>
+<area shape="rect" id="node5" href="$classc_my_s_q_l_plugin.html#ab64cecb567902902ef25fd3cf7346a4c" title="initializes default settings for the plugin. " alt="" coords="265,107,404,133"/>
+<area shape="rect" id="node3" href="$classc_my_s_q_l_plugin.html#a76618f3bd8846fab6e3572e30df6fae7" title="returns the type of the plugin. " alt="" coords="468,56,655,83"/>
+</map>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_bb42744f2a7f9443d09426b2c9103c41" kind="dir">
+    <compoundname>Kooky</compoundname>
+    <innerfile refid="cdbinterface_8cpp">cdbinterface.cpp</innerfile>
+    <innerfile refid="cdbinterface_8h">cdbinterface.h</innerfile>
+    <innerfile refid="cimportingredientdialog_8cpp">cimportingredientdialog.cpp</innerfile>
+    <innerfile refid="cimportingredientdialog_8h">cimportingredientdialog.h</innerfile>
+    <innerfile refid="cimportinterface_8cpp">cimportinterface.cpp</innerfile>
+    <innerfile refid="cimportinterface_8h">cimportinterface.h</innerfile>
+    <innerfile refid="cingredient_8cpp">cingredient.cpp</innerfile>
+    <innerfile refid="cingredient_8h">cingredient.h</innerfile>
+    <innerfile refid="c_interface_8h">cInterface.h</innerfile>
+    <innerfile refid="cmainwindow_8cpp">cmainwindow.cpp</innerfile>
+    <innerfile refid="cmainwindow_8h">cmainwindow.h</innerfile>
+    <innerfile refid="cmdiarea_8cpp">cmdiarea.cpp</innerfile>
+    <innerfile refid="cmdiarea_8h">cmdiarea.h</innerfile>
+    <innerfile refid="cmessageanimatedialog_8cpp">cmessageanimatedialog.cpp</innerfile>
+    <innerfile refid="cmessageanimatedialog_8h">cmessageanimatedialog.h</innerfile>
+    <innerfile refid="coptions_8cpp">coptions.cpp</innerfile>
+    <innerfile refid="coptions_8h">coptions.h</innerfile>
+    <innerfile refid="coptionsplugins_8cpp">coptionsplugins.cpp</innerfile>
+    <innerfile refid="coptionsplugins_8h">coptionsplugins.h</innerfile>
+    <innerfile refid="cplugin_8cpp">cplugin.cpp</innerfile>
+    <innerfile refid="cplugin_8h">cplugin.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kooky/"/>
+  </compounddef>
+</doxygen>

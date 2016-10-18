@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_options_plugins" kind="class" language="C++" prot="public">
+    <compoundname>cOptionsPlugins</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="coptionsplugins_8h" local="no">coptionsplugins.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" prot="private" static="no" mutable="no">
+        <type>Ui::cOptionsPlugins *</type>
+        <definition>Ui::cOptionsPlugins* cOptionsPlugins::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="88" column="1" bodyfile="Kooky/coptionsplugins.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" compoundref="coptionsplugins_8cpp" startline="20" endline="32">init</referencedby>
+        <referencedby refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" compoundref="coptionsplugins_8cpp" startline="120" endline="128">on_m_lpButtonConfigure_clicked</referencedby>
+        <referencedby refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" compoundref="coptionsplugins_8cpp" startline="91" endline="112">onOptionsPluginTreePluginToggled</referencedby>
+        <referencedby refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" compoundref="coptionsplugins_8cpp" startline="86" endline="89">onOptionsPluginTreeSelectionChanged</referencedby>
+        <referencedby refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" compoundref="coptionsplugins_8cpp" startline="34" endline="84">setPlugins</referencedby>
+        <referencedby refid="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" compoundref="coptionsplugins_8cpp" startline="15" endline="18">~cOptionsPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* cOptionsPlugins::m_lpPluginsListModel</definition>
+        <argsstring></argsstring>
+        <name>m_lpPluginsListModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="89" column="1" bodyfile="Kooky/coptionsplugins.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" compoundref="coptionsplugins_8cpp" startline="20" endline="32">init</referencedby>
+        <referencedby refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" compoundref="coptionsplugins_8cpp" startline="120" endline="128">on_m_lpButtonConfigure_clicked</referencedby>
+        <referencedby refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" compoundref="coptionsplugins_8cpp" startline="114" endline="118">onOptionsPluginTreeDoubleClicked</referencedby>
+        <referencedby refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" compoundref="coptionsplugins_8cpp" startline="91" endline="112">onOptionsPluginTreePluginToggled</referencedby>
+        <referencedby refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" compoundref="coptionsplugins_8cpp" startline="34" endline="84">setPlugins</referencedby>
+        <referencedby refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">showConfigDlg</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cOptionsPlugins::cOptionsPlugins</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cOptionsPlugins</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="47" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="8" bodyend="13"/>
+        <references refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" compoundref="coptionsplugins_8cpp" startline="20" endline="32">init</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cOptionsPlugins::~cOptionsPlugins</definition>
+        <argsstring>()</argsstring>
+        <name>~cOptionsPlugins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="52" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="15" bodyend="18"/>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::setPlugins</definition>
+        <argsstring>(QList&lt; cPlugin * &gt; &amp;plugins)</argsstring>
+        <name>setPlugins</name>
+        <param>
+          <type>QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt; &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="59" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="34" bodyend="84"/>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" compoundref="coptionsplugins_8cpp" startline="91" endline="112">onOptionsPluginTreePluginToggled</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" compoundref="cplugin_8h" startline="44">cPlugin::PluginCapDB</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" compoundref="cplugin_8h" startline="43">cPlugin::PluginCapExport</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" compoundref="cplugin_8h" startline="42">cPlugin::PluginCapImport</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" compoundref="cplugin_8h" startline="41">cPlugin::PluginCapNone</references>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+        <referencedby refid="classc_options_1ac38dce7a12374ec291023a724c8d30ac" compoundref="coptions_8cpp" startline="47" endline="64">cOptions::onOptionsTreeSelectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::onOptionsPluginTreeSelectionChanged</definition>
+        <argsstring>(const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</argsstring>
+        <name>onOptionsPluginTreeSelectionChanged</name>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>deselected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deselected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="68" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="86" bodyend="89"/>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+        <referencedby refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" compoundref="coptionsplugins_8cpp" startline="20" endline="32">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::onOptionsPluginTreeDoubleClicked</definition>
+        <argsstring>(const QModelIndex &amp;index)</argsstring>
+        <name>onOptionsPluginTreeDoubleClicked</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="74" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="114" bodyend="118"/>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">showConfigDlg</references>
+        <referencedby refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" compoundref="coptionsplugins_8cpp" startline="20" endline="32">init</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::onOptionsPluginTreePluginToggled</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>onOptionsPluginTreePluginToggled</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="80" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="91" bodyend="112"/>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">cPlugin::pluginName</references>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+        <referencedby refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" compoundref="coptionsplugins_8cpp" startline="34" endline="84">setPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::on_m_lpButtonConfigure_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpButtonConfigure_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="85" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="120" bodyend="128"/>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">showConfigDlg</references>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="96" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="20" bodyend="32"/>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" compoundref="coptionsplugins_8cpp" startline="114" endline="118">onOptionsPluginTreeDoubleClicked</references>
+        <references refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" compoundref="coptionsplugins_8cpp" startline="86" endline="89">onOptionsPluginTreeSelectionChanged</references>
+        <references refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" compoundref="coptionsplugins_8h" startline="88">ui</references>
+        <referencedby refid="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" compoundref="coptionsplugins_8cpp" startline="8" endline="13">cOptionsPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cOptionsPlugins::showConfigDlg</definition>
+        <argsstring>(const QModelIndex &amp;index)</argsstring>
+        <name>showConfigDlg</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/coptionsplugins.h" line="102" column="1" bodyfile="Kooky/coptionsplugins.cpp" bodystart="130" bodyend="162"/>
+        <references refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" compoundref="cplugin_8cpp" startline="61" endline="68">cPlugin::capability</references>
+        <references refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">cInterface::config</references>
+        <references refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" compoundref="cplugin_8cpp" startline="117" endline="120">cPlugin::dbInterface</references>
+        <references refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" compoundref="cplugin_8cpp" startline="112" endline="115">cPlugin::importInterface</references>
+        <references refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" compoundref="coptionsplugins_8h" startline="89">m_lpPluginsListModel</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" compoundref="cplugin_8h" startline="44">cPlugin::PluginCapDB</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" compoundref="cplugin_8h" startline="43">cPlugin::PluginCapExport</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" compoundref="cplugin_8h" startline="42">cPlugin::PluginCapImport</references>
+        <referencedby refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" compoundref="coptionsplugins_8cpp" startline="120" endline="128">on_m_lpButtonConfigure_clicked</referencedby>
+        <referencedby refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" compoundref="coptionsplugins_8cpp" startline="114" endline="118">onOptionsPluginTreeDoubleClicked</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This dialog displays all plugins. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="174">
+        <label>QWidget</label>
+      </node>
+      <node id="173">
+        <label>cOptionsPlugins</label>
+        <link refid="classc_options_plugins"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>QWidget</label>
+      </node>
+      <node id="175">
+        <label>cOptionsPlugins</label>
+        <link refid="classc_options_plugins"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/coptionsplugins.h" line="38" column="1" bodyfile="Kooky/coptionsplugins.h" bodystart="37" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" prot="public" virt="non-virtual"><scope>cOptionsPlugins</scope><name>cOptionsPlugins</name></member>
+      <member refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" prot="protected" virt="non-virtual"><scope>cOptionsPlugins</scope><name>init</name></member>
+      <member refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>m_lpPluginsListModel</name></member>
+      <member refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>on_m_lpButtonConfigure_clicked</name></member>
+      <member refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>onOptionsPluginTreeDoubleClicked</name></member>
+      <member refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>onOptionsPluginTreePluginToggled</name></member>
+      <member refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>onOptionsPluginTreeSelectionChanged</name></member>
+      <member refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" prot="public" virt="non-virtual"><scope>cOptionsPlugins</scope><name>setPlugins</name></member>
+      <member refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" prot="protected" virt="non-virtual"><scope>cOptionsPlugins</scope><name>showConfigDlg</name></member>
+      <member refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" prot="private" virt="non-virtual"><scope>cOptionsPlugins</scope><name>ui</name></member>
+      <member refid="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" prot="public" virt="non-virtual"><scope>cOptionsPlugins</scope><name>~cOptionsPlugins</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

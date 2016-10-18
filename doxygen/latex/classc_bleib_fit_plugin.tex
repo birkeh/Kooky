@@ -1,0 +1,363 @@
+\hypertarget{classc_bleib_fit_plugin}{}\section{c\+Bleib\+Fit\+Plugin Class Reference}
+\label{classc_bleib_fit_plugin}\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+
+
+{\ttfamily \#include $<$cbleibfitplugin.\+h$>$}
+
+
+
+Inheritance diagram for c\+Bleib\+Fit\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classc_bleib_fit_plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Bleib\+Fit\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classc_bleib_fit_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+qint16 \hyperlink{classc_bleib_fit_plugin_aad11be7cf80b28becc6024e3827d4f75}{plugin\+A\+P\+I\+Version} ()
+\item 
+Q\+String \hyperlink{classc_bleib_fit_plugin_aca281bc00f83bc4cd4b620a448825147}{plugin\+Name} ()
+\item 
+qint16 \hyperlink{classc_bleib_fit_plugin_acb4fbabe875079913c8bbbbe7d9089f6}{plugin\+Version} ()
+\item 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \hyperlink{classc_bleib_fit_plugin_af2fc76ea7b59899780c5384721a88ebd}{plugin\+Type} ()
+\item 
+bool \hyperlink{classc_bleib_fit_plugin_a4ae455b66593fa29d82025b084c2639b}{config} ()
+\item 
+Q\+Map$<$ Q\+String, Q\+String $>$ \hyperlink{classc_bleib_fit_plugin_af3db6c6ff6bb28787d67e4cc3e957e90}{details\+Capability} ()
+\item 
+Q\+String\+List \hyperlink{classc_bleib_fit_plugin_a71d3dc9fc52a807e33608f2522c1ca31}{search} (const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=Q\+String(\char`\"{}\char`\"{}))
+\item 
+bool \hyperlink{classc_bleib_fit_plugin_a15e5627fa41d2f079a96267e559fccee}{load} (qint16 i\+Index)
+\item 
+qreal \hyperlink{classc_bleib_fit_plugin_adb3cc6882c32a04d6d9f31961f0b8dca}{value} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)
+\item 
+Q\+String \hyperlink{classc_bleib_fit_plugin_a67b808ffb0884950a8652cc72e8b2d80}{ingredient\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{classc_bleib_fit_plugin_ada1ca6d46ebd839f6f86bfee1ed0abb8}{m\+\_\+sz\+Urls}
+\item 
+Q\+String\+List \hyperlink{classc_bleib_fit_plugin_a255890766758afcab2c358bfb8695a15}{m\+\_\+sz\+Ingredients}
+\item 
+qreal \hyperlink{classc_bleib_fit_plugin_aa9bed63f126286a26ef3b45bfa5fbdcb}{m\+\_\+r\+Values} \mbox{[}\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509}{c\+Ingredient\+::i\+Ingredient\+Max}\mbox{]}
+\item 
+qint16 \hyperlink{classc_bleib_fit_plugin_a381f973f2b98c90e22314a5e1855f3df}{m\+\_\+i\+Loaded\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!config@{config}}
+\index{config@{config}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{config()}{config()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Bleib\+Fit\+Plugin\+::config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_a4ae455b66593fa29d82025b084c2639b}{}\label{classc_bleib_fit_plugin_a4ae455b66593fa29d82025b084c2639b}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{c\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_a4ae455b66593fa29d82025b084c2639b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!details\+Capability@{details\+Capability}}
+\index{details\+Capability@{details\+Capability}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{details\+Capability()}{detailsCapability()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Map$<$ Q\+String, Q\+String $>$ c\+Bleib\+Fit\+Plugin\+::details\+Capability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_af3db6c6ff6bb28787d67e4cc3e957e90}{}\label{classc_bleib_fit_plugin_af3db6c6ff6bb28787d67e4cc3e957e90}
+\begin{DoxyReturn}{Returns}
+Q\+Map$<$\+Q\+String, Q\+String$>$ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_af3db6c6ff6bb28787d67e4cc3e957e90_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!ingredient\+Name@{ingredient\+Name}}
+\index{ingredient\+Name@{ingredient\+Name}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{ingredient\+Name()}{ingredientName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Bleib\+Fit\+Plugin\+::ingredient\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_a67b808ffb0884950a8652cc72e8b2d80}{}\label{classc_bleib_fit_plugin_a67b808ffb0884950a8652cc72e8b2d80}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_af3f569b605787021a919816978f229bc}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_a67b808ffb0884950a8652cc72e8b2d80_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!load@{load}}
+\index{load@{load}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{load(qint16 i\+Index)}{load(qint16 iIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Bleib\+Fit\+Plugin\+::load (
+\begin{DoxyParamCaption}
+\item[{qint16}]{i\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_a15e5627fa41d2f079a96267e559fccee}{}\label{classc_bleib_fit_plugin_a15e5627fa41d2f079a96267e559fccee}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983}{c\+Import\+Interface}.
+
+
+
+References tag\+M\+A\+P\+P\+E\+R\+::key, and tag\+M\+A\+P\+P\+E\+R\+::value.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_a15e5627fa41d2f079a96267e559fccee_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()}{pluginAPIVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Bleib\+Fit\+Plugin\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_aad11be7cf80b28becc6024e3827d4f75}{}\label{classc_bleib_fit_plugin_aad11be7cf80b28becc6024e3827d4f75}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a615b50a526c2d4ca73b13f8991371813}{c\+Interface}.
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Name()}{pluginName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Bleib\+Fit\+Plugin\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_aca281bc00f83bc4cd4b620a448825147}{}\label{classc_bleib_fit_plugin_aca281bc00f83bc4cd4b620a448825147}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{c\+Interface}.
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!plugin\+Type@{plugin\+Type}}
+\index{plugin\+Type@{plugin\+Type}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Type()}{pluginType()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i\+Type} c\+Bleib\+Fit\+Plugin\+::plugin\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_af2fc76ea7b59899780c5384721a88ebd}{}\label{classc_bleib_fit_plugin_af2fc76ea7b59899780c5384721a88ebd}
+\begin{DoxyReturn}{Returns}
+i\+Type 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{c\+Interface}.
+
+
+
+References config(), details\+Capability(), ingredient\+Name(), c\+Interface\+::i\+Type\+Import, load(), search(), and value().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_af2fc76ea7b59899780c5384721a88ebd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Version()}{pluginVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Bleib\+Fit\+Plugin\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_acb4fbabe875079913c8bbbbe7d9089f6}{}\label{classc_bleib_fit_plugin_acb4fbabe875079913c8bbbbe7d9089f6}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_aadc382036174c2a25bb2c23733830d33}{c\+Interface}.
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!search@{search}}
+\index{search@{search}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{search(const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=\+Q\+String(""""))}{search(const QString &szSearch, const QString &szDetails=QString(""))}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Bleib\+Fit\+Plugin\+::search (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Search, }
+\item[{const Q\+String \&}]{sz\+Details = {\ttfamily QString(\char`\"{}\char`\"{})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_a71d3dc9fc52a807e33608f2522c1ca31}{}\label{classc_bleib_fit_plugin_a71d3dc9fc52a807e33608f2522c1ca31}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Search} & \\
+\hline
+{\em sz\+Details} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+String\+List 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f}{c\+Import\+Interface}.
+
+
+
+References c\+Ingredient\+::i\+Ingredient\+Max.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_a71d3dc9fc52a807e33608f2522c1ca31_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!value@{value}}
+\index{value@{value}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{value(c\+Ingredient\+::i\+Ingredient i)}{value(cIngredient::iIngredient i)}}]{\setlength{\rightskip}{0pt plus 5cm}qreal c\+Bleib\+Fit\+Plugin\+::value (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_bleib_fit_plugin_adb3cc6882c32a04d6d9f31961f0b8dca}{}\label{classc_bleib_fit_plugin_adb3cc6882c32a04d6d9f31961f0b8dca}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+qreal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_bleib_fit_plugin_adb3cc6882c32a04d6d9f31961f0b8dca_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}}
+\index{m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+i\+Loaded\+Index}{m_iLoadedIndex}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Bleib\+Fit\+Plugin\+::m\+\_\+i\+Loaded\+Index\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_bleib_fit_plugin_a381f973f2b98c90e22314a5e1855f3df}{}\label{classc_bleib_fit_plugin_a381f973f2b98c90e22314a5e1855f3df}
+T\+O\+DO\+: describe \index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!m\+\_\+r\+Values@{m\+\_\+r\+Values}}
+\index{m\+\_\+r\+Values@{m\+\_\+r\+Values}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+r\+Values}{m_rValues}}]{\setlength{\rightskip}{0pt plus 5cm}qreal c\+Bleib\+Fit\+Plugin\+::m\+\_\+r\+Values\mbox{[}{\bf c\+Ingredient\+::i\+Ingredient\+Max}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_bleib_fit_plugin_aa9bed63f126286a26ef3b45bfa5fbdcb}{}\label{classc_bleib_fit_plugin_aa9bed63f126286a26ef3b45bfa5fbdcb}
+T\+O\+DO\+: describe \index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!m\+\_\+sz\+Ingredients@{m\+\_\+sz\+Ingredients}}
+\index{m\+\_\+sz\+Ingredients@{m\+\_\+sz\+Ingredients}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Ingredients}{m_szIngredients}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Bleib\+Fit\+Plugin\+::m\+\_\+sz\+Ingredients\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_bleib_fit_plugin_a255890766758afcab2c358bfb8695a15}{}\label{classc_bleib_fit_plugin_a255890766758afcab2c358bfb8695a15}
+T\+O\+DO\+: describe \index{c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}!m\+\_\+sz\+Urls@{m\+\_\+sz\+Urls}}
+\index{m\+\_\+sz\+Urls@{m\+\_\+sz\+Urls}!c\+Bleib\+Fit\+Plugin@{c\+Bleib\+Fit\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Urls}{m_szUrls}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Bleib\+Fit\+Plugin\+::m\+\_\+sz\+Urls\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_bleib_fit_plugin_ada1ca6d46ebd839f6f86bfee1ed0abb8}{}\label{classc_bleib_fit_plugin_ada1ca6d46ebd839f6f86bfee1ed0abb8}
+T\+O\+DO\+: describe 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+i\+Bleib\+Fit/\hyperlink{cbleibfitplugin_8h}{cbleibfitplugin.\+h}\item 
+i\+Bleib\+Fit/\hyperlink{cbleibfitplugin_8cpp}{cbleibfitplugin.\+cpp}\end{DoxyCompactItemize}

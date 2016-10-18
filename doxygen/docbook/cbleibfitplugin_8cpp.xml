@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cbleibfitplugin_8cpp">
+    <title>cbleibfitplugin.cpp File Reference</title>
+    <programlisting>#include &quot;cbleibfitplugin.h&quot;</programlisting>
+    <programlisting>#include &lt;QNetworkAccessManager&gt;</programlisting>
+    <programlisting>#include &lt;QNetworkRequest&gt;</programlisting>
+    <programlisting>#include &lt;QNetworkReply&gt;</programlisting>
+    <programlisting>#include &lt;QEventLoop&gt;</programlisting>
+    <programlisting>#include &lt;QMessageBox&gt;</programlisting>
+<para>Include dependency diagram for cbleibfitplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cbleibfitplugin_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cbleibfitplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cbleibfitplugin_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structtag_m_a_p_p_e_r">tagMAPPER</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structtag_m_a_p_p_e_r">tagMAPPER</link>  <link linkend="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f">MAPPER</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f">MAPPER</link> <link linkend="cbleibfitplugin_8cpp_1a2f672fed9a71bbdcf8e2e61e4278dc32">g_ingredientMapper</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/iBleibFit/cbleibfitplugin.cpp</para>
+    </simplesect>
+</section>

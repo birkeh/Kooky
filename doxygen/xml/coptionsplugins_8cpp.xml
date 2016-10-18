@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="coptionsplugins_8cpp" kind="file" language="C++">
+    <compoundname>coptionsplugins.cpp</compoundname>
+    <includes refid="coptionsplugins_8h" local="yes">coptionsplugins.h</includes>
+    <includes local="yes">ui_coptionsplugins.h</includes>
+    <includes local="no">QCheckBox</includes>
+    <includes local="no">QSettings</includes>
+    <incdepgraph>
+      <node id="1045">
+        <label>QMap</label>
+      </node>
+      <node id="1054">
+        <label>QSettings</label>
+      </node>
+      <node id="1046">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>Kooky/coptionsplugins.cpp</label>
+        <link refid="coptionsplugins.cpp"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="1043">
+        <label>QtPlugin</label>
+      </node>
+      <node id="1053">
+        <label>QCheckBox</label>
+      </node>
+      <node id="1034">
+        <label>coptionsplugins.h</label>
+        <link refid="coptionsplugins_8h"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="1048">
+        <label>QAction</label>
+      </node>
+      <node id="1041">
+        <label>QDomDocument</label>
+      </node>
+      <node id="1049">
+        <label>QWidget</label>
+      </node>
+      <node id="1038">
+        <label>QDate</label>
+      </node>
+      <node id="1042">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="1039" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>QString</label>
+      </node>
+      <node id="1040">
+        <label>QFile</label>
+      </node>
+      <node id="1052">
+        <label>ui_coptionsplugins.h</label>
+      </node>
+      <node id="1051">
+        <label>QItemSelection</label>
+      </node>
+      <node id="1044">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="coptionsplugins_8h" kindref="compound">coptionsplugins.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_coptionsplugins.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCheckBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" refkind="member"><highlight class="normal"><ref refid="classc_options_plugins_1a6742f672003c2b9255964f908a6981f2" kindref="member">cOptionsPlugins::cOptionsPlugins</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget(parent),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="classc_options_plugins" kindref="compound">cOptionsPlugins</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" refkind="member"><highlight class="normal"><ref refid="classc_options_plugins_1a4360b27b58c0d10739c6c3bda1c02971" kindref="member">cOptionsPlugins::~cOptionsPlugins</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1acca2bbe1e1858e0038bb72416087687f" kindref="member">cOptionsPlugins::init</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(0,<sp/>4);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;setModel(<ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>headerLabels<sp/><sp/><sp/><sp/>=<sp/>QStringList()<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;Name&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;Version&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;Capability&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>tr(</highlight><highlight class="stringliteral">&quot;File&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setHorizontalHeaderLabels(headerLabels);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;selectionModel(),<sp/>SIGNAL(selectionChanged(QItemSelection,QItemSelection)),<sp/>SLOT(<ref refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" kindref="member">onOptionsPluginTreeSelectionChanged</ref>(QItemSelection,QItemSelection)));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList,<sp/>SIGNAL(doubleClicked(QModelIndex)),<sp/>SLOT(<ref refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" kindref="member">onOptionsPluginTreeDoubleClicked</ref>(QModelIndex)));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1ab6ef94ac452b34fad3bfc8b3a2362c53" kindref="member">cOptionsPlugins::setPlugins</ref>(QList&lt;cPlugin*&gt;<sp/>&amp;plugins)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>plugins.count();z++)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItemNew<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;appendRow(lpItemNew);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QModelIndex<sp/><sp/><sp/><sp/><sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;indexFromItem(lpItemNew);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setData(index,<sp/>QVariant::fromValue(plugins.at(z)),<sp/>Qt::UserRole);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QCheckBox*<sp/><sp/><sp/><sp/><sp/><sp/>lpCheckBox<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QCheckBox(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpCheckBox-&gt;setChecked(settings.value(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/enabled&quot;</highlight><highlight class="normal">).arg(plugins.at(z)-&gt;pluginName()),<sp/>QVariant(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)).toBool());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;setIndexWidget(<ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;index(index.row(),<sp/>0),<sp/>lpCheckBox);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(lpCheckBox,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" kindref="member">onOptionsPluginTreePluginToggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItemText<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(plugins.at(z)-&gt;pluginName());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setItem(index.row(),<sp/>1,<sp/>lpItemText);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItemVersion<sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;%1&quot;</highlight><highlight class="normal">).arg(plugins.at(z)-&gt;pluginVersion()));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpItemVersion-&gt;setTextAlignment(Qt::AlignRight);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setItem(index.row(),<sp/>2,<sp/>lpItemVersion);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(plugins.at(z)-&gt;capability())</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" kindref="member">cPlugin::PluginCapNone</ref>:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" kindref="member">cPlugin::PluginCapExport</ref>:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;export&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" kindref="member">cPlugin::PluginCapImport</ref>:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;import&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" kindref="member">cPlugin::PluginCapDB</ref>:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;database&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szPluginType<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItemType<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(szPluginType);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setItem(index.row(),<sp/>3,<sp/>lpItemType);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/><sp/>lpItemFile<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(plugins.at(z)-&gt;pluginFile());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;setItem(index.row(),<sp/>4,<sp/>lpItemFile);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;resizeColumnToContents(0);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;resizeColumnToContents(1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;resizeColumnToContents(2);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;resizeColumnToContents(3);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;resizeColumnToContents(4);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1a5e2c5668263a06190103ed275a7f5df4" kindref="member">cOptionsPlugins::onOptionsPluginTreeSelectionChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/></highlight><highlight class="comment">/*selected*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QItemSelection&amp;<sp/></highlight><highlight class="comment">/*deselected*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpButtonConfigure-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" kindref="member">cOptionsPlugins::onOptionsPluginTreePluginToggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*b*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject*<sp/><sp/><sp/><sp/>lpSender<sp/><sp/><sp/><sp/>=<sp/>QObject::sender();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox*<sp/><sp/>lpCheckBox<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>QModelIndex<sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;index(0,<sp/>0);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;index.isValid();index<sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;index(index.row()+1,<sp/>0))</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpCheckBox<sp/><sp/>=<sp/>(QCheckBox*)<ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;indexWidget(index);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpCheckBox<sp/>==<sp/>lpSender)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(index.isValid())</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;data(index,<sp/>Qt::UserRole).value&lt;<ref refid="classc_plugin" kindref="compound">cPlugin</ref>*&gt;();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(QString(</highlight><highlight class="stringliteral">&quot;plugins/%1/enabled&quot;</highlight><highlight class="normal">).arg(lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>()),<sp/>QVariant(lpCheckBox-&gt;isChecked()));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1a60d4d685600b74b3bd8b6a3973270db3" kindref="member">cOptionsPlugins::onOptionsPluginTreeDoubleClicked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>index)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>QModelIndex<sp/>selected<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;index(<ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;itemFromIndex(index)-&gt;row(),<sp/>0);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" kindref="member">showConfigDlg</ref>(selected);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1a55f1014d084453544ac054379094ebdb" kindref="member">cOptionsPlugins::on_m_lpButtonConfigure_clicked</ref>()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>QModelIndex<sp/>selected<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;index(<ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;itemFromIndex(<ref refid="classc_options_plugins_1aa5588423bcff87a624b984653a9cce6a" kindref="member">ui</ref>-&gt;m_lpPluginsList-&gt;currentIndex())-&gt;row(),<sp/>0);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!selected.isValid())</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" kindref="member">showConfigDlg</ref>(selected);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" kindref="member">cOptionsPlugins::showConfigDlg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>index)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!index.isValid())</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_options_plugins_1ab32e360c0936198360a2e48a431878da" kindref="member">m_lpPluginsListModel</ref>-&gt;data(index,<sp/>Qt::UserRole).value&lt;<ref refid="classc_plugin" kindref="compound">cPlugin</ref>*&gt;();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpPlugin)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(lpPlugin-&gt;<ref refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" kindref="member">capability</ref>())</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" kindref="member">cPlugin::PluginCapDB</ref>:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface<sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" kindref="member">dbInterface</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpDBInterface)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface-&gt;<ref refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" kindref="member">cPlugin::PluginCapImport</ref>:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>*<sp/><sp/><sp/>lpImportInterface<sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" kindref="member">importInterface</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpImportInterface)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpImportInterface-&gt;<ref refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" kindref="member">cPlugin::PluginCapExport</ref>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/coptionsplugins.cpp"/>
+  </compounddef>
+</doxygen>

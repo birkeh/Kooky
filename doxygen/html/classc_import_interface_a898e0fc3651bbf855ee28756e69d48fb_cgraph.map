@@ -1,0 +1,9 @@
+<map id="cImportInterface::loaded" name="cImportInterface::loaded">
+<area shape="rect" id="node2" href="$classc_import_interface.html#a1d31c90d6ef27a2b9edfb99e655120ea" title="cImportInterface::group" alt="" coords="265,5,437,32"/>
+<area shape="rect" id="node4" href="$classc_import_interface.html#af3f569b605787021a919816978f229bc" title="cImportInterface::ingredientName" alt="" coords="232,56,471,83"/>
+<area shape="rect" id="node5" href="$classc_import_interface.html#a685fafcac4d7194045e6c9e2d84d7981" title="cImportInterface::name" alt="" coords="265,107,437,133"/>
+<area shape="rect" id="node7" href="$classc_import_interface.html#a7a8dbe6a164549272d748d2f77aebc42" title="cImportInterface::value" alt="" coords="519,183,688,209"/>
+<area shape="rect" id="node8" href="$classc_import_interface.html#a272c43d684b605f36d36cb20e4039d94" title="cImportInterface::valueStr" alt="" coords="257,208,445,235"/>
+<area shape="rect" id="node3" href="$classc_ingredient.html#aa0da12658feecfd205c20e3a0335e9b0" title="cIngredient::group" alt="" coords="534,5,673,32"/>
+<area shape="rect" id="node6" href="$classc_ingredient.html#a64d6e9c85a6b1527de28ed1f1185be29" title="cIngredient::name" alt="" coords="534,107,673,133"/>
+</map>

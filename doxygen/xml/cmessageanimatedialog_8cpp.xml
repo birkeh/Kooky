@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmessageanimatedialog_8cpp" kind="file" language="C++">
+    <compoundname>cmessageanimatedialog.cpp</compoundname>
+    <includes refid="cmessageanimatedialog_8h" local="yes">cmessageanimatedialog.h</includes>
+    <includes local="yes">ui_cmessageanimatedialog.h</includes>
+    <incdepgraph>
+      <node id="970">
+        <label>Kooky/cmessageanimatedialog.cpp</label>
+        <link refid="cmessageanimatedialog.cpp"/>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>ui_cmessageanimatedialog.h</label>
+      </node>
+      <node id="972">
+        <label>QDialog</label>
+      </node>
+      <node id="973">
+        <label>QTimer</label>
+      </node>
+      <node id="971">
+        <label>cmessageanimatedialog.h</label>
+        <link refid="cmessageanimatedialog_8h"/>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmessageanimatedialog_8h" kindref="compound">cmessageanimatedialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_cmessageanimatedialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" refkind="member"><highlight class="normal"><ref refid="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca" kindref="member">cMessageAnimateDialog::cMessageAnimateDialog</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="classc_message_animate_dialog" kindref="compound">cMessageAnimateDialog</ref>),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>m_szMessage(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>m_lpTimer(0),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>m_iCount(0),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>m_iDirection(1)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" refkind="member"><highlight class="normal"><ref refid="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47" kindref="member">cMessageAnimateDialog::~cMessageAnimateDialog</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" kindref="member">cMessageAnimateDialog::setTitle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szTitle)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>setWindowTitle(szTitle);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" kindref="member">cMessageAnimateDialog::setMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szMessage)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" kindref="member">m_szMessage</ref><sp/>=<sp/>szMessage;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" kindref="member">ui</ref>-&gt;m_lpText-&gt;setText(<ref refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" kindref="member">m_szMessage</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>,<sp/>SIGNAL(timeout()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" kindref="member">update</ref>()));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a20a1bf68933e455dd515562f63976495" kindref="member">m_lpTimer</ref>-&gt;start(500);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_message_animate_dialog_1a09ea517229b2b01be6dc407911628441" kindref="member">cMessageAnimateDialog::update</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref><sp/><sp/><sp/><sp/>+=<sp/><ref refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" kindref="member">m_iDirection</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref><sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" kindref="member">m_iDirection</ref><sp/><sp/><sp/><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref><sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a3f26bb00ddbedafdfad24c0c3a7fdfdc" kindref="member">m_iDirection</ref><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>sz<sp/><sp/>=<sp/><ref refid="classc_message_animate_dialog_1a4ae818deecaac97f7bb1914bf2dda607" kindref="member">m_szMessage</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/><ref refid="classc_message_animate_dialog_1a0208fa559f41307f125fa7f80b97871a" kindref="member">m_iCount</ref>;z++)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sz.append(</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_message_animate_dialog_1a9975d744633e4f1eb1604128cbfd7b50" kindref="member">ui</ref>-&gt;m_lpText-&gt;setText(sz);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cmessageanimatedialog.cpp"/>
+  </compounddef>
+</doxygen>

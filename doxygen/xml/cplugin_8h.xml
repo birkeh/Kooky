@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cplugin_8h" kind="file" language="C++">
+    <compoundname>cplugin.h</compoundname>
+    <includes refid="cimportinterface_8h" local="yes">cimportinterface.h</includes>
+    <includes refid="cdbinterface_8h" local="yes">cdbinterface.h</includes>
+    <includes local="no">QPluginLoader</includes>
+    <includes local="no">QAction</includes>
+    <includedby refid="cimportingredientdialog_8h" local="yes">Kooky/cimportingredientdialog.h</includedby>
+    <includedby refid="cmainwindow_8h" local="yes">Kooky/cmainwindow.h</includedby>
+    <includedby refid="coptionsplugins_8h" local="yes">Kooky/coptionsplugins.h</includedby>
+    <includedby refid="cplugin_8cpp" local="yes">Kooky/cplugin.cpp</includedby>
+    <incdepgraph>
+      <node id="1104">
+        <label>QMap</label>
+      </node>
+      <node id="1105">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>Kooky/cplugin.h</label>
+        <link refid="cplugin.h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>QtPlugin</label>
+      </node>
+      <node id="1096">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="1107">
+        <label>QAction</label>
+      </node>
+      <node id="1100">
+        <label>QDomDocument</label>
+      </node>
+      <node id="1097">
+        <label>QDate</label>
+      </node>
+      <node id="1101">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>QString</label>
+      </node>
+      <node id="1099">
+        <label>QFile</label>
+      </node>
+      <node id="1103">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1108">
+        <label>Kooky/cplugin.h</label>
+        <link refid="cplugin.h"/>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>Kooky/coptionsplugins.cpp</label>
+        <link refid="coptionsplugins_8cpp"/>
+      </node>
+      <node id="1116">
+        <label>Kooky/coptionsplugins.h</label>
+        <link refid="coptionsplugins_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow_8cpp"/>
+      </node>
+      <node id="1110">
+        <label>Kooky/cimportingredientdialog.cpp</label>
+        <link refid="cimportingredientdialog_8cpp"/>
+      </node>
+      <node id="1109">
+        <label>Kooky/cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog_8h"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>Kooky/cmainwindow.h</label>
+        <link refid="cmainwindow_8h"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>Kooky/coptions.h</label>
+        <link refid="coptions_8h"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>Kooky/coptions.cpp</label>
+        <link refid="coptions_8cpp"/>
+      </node>
+      <node id="1118">
+        <label>Kooky/cplugin.cpp</label>
+        <link refid="cplugin_8cpp"/>
+      </node>
+      <node id="1115">
+        <label>Kooky/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_plugin" prot="public">cPlugin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#ifndef<sp/>CPLUGIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPLUGIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cimportinterface_8h" kindref="compound">cimportinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cdbinterface_8h" kindref="compound">cdbinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPluginLoader&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QAction&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classc_plugin" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_plugin" kindref="compound">cPlugin</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39" refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" kindref="member">PluginCap</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" kindref="member">PluginCapNone</ref><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="42" refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" kindref="member">PluginCapImport</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="43" refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" kindref="member">PluginCapExport</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="44" refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" kindref="member">PluginCapDB</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" kindref="member">cPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szFile);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a38d0e25a6bcd3207902799b783212287" kindref="member">~cPlugin</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" kindref="member">isValid</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" kindref="member">PluginCap</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" kindref="member">capability</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" kindref="member">pluginAPIVersion</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" kindref="member">pluginVersion</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" kindref="member">setAction</ref>(QAction*<sp/>lpAction);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee" kindref="member">action</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55" kindref="member">pluginFile</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>*<sp/><sp/><sp/><ref refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" kindref="member">importInterface</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" kindref="member">dbInterface</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116" refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPluginLoader*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" kindref="member">m_lpPluginLoader</ref>;<sp/></highlight></codeline>
+<codeline lineno="117" refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>*<sp/><sp/><sp/><ref refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" kindref="member">m_lpImportInterface</ref>;<sp/></highlight></codeline>
+<codeline lineno="118" refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" kindref="member">m_lpDBInterface</ref>;<sp/></highlight></codeline>
+<codeline lineno="119" refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" kindref="member">m_lpAction</ref>;<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">Q_DECLARE_METATYPE(<ref refid="classc_plugin" kindref="compound">cPlugin</ref>*)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CPLUGIN_H</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cplugin.h"/>
+  </compounddef>
+</doxygen>

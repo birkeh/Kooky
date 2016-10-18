@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cimportinterface_8h">
+    <title>cimportinterface.h File Reference</title>
+    <programlisting>#include &quot;cingredient.h&quot;</programlisting>
+    <programlisting>#include &quot;cInterface.h&quot;</programlisting>
+    <programlisting>#include &lt;QtPlugin&gt;</programlisting>
+    <programlisting>#include &lt;QString&gt;</programlisting>
+    <programlisting>#include &lt;QStringList&gt;</programlisting>
+    <programlisting>#include &lt;QMap&gt;</programlisting>
+<para>Include dependency diagram for cimportinterface.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cimportinterface_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cimportinterface.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cimportinterface_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_import_interface">cImportInterface</link></para>
+<para><emphasis>Interface class for importing data.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QT_BEGIN_NAMESPACE <link linkend="cimportinterface_8h_1a5e2e6f092a0173e8efde59a0bfd00ede">Q_DECLARE_INTERFACE</link> (
+<link linkend="classc_import_interface">cImportInterface</link> , &quot;WIN-DESIGN.cImportInterface/1.0&quot; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/Kooky/cimportinterface.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group___m_y_s_q_l" kind="group">
+    <compoundname>MYSQL</compoundname>
+    <title>MySQL Database Connector Plugin</title>
+    <innerclass refid="classc_config_dialog" prot="public">cConfigDialog</innerclass>
+    <innerclass refid="classc_my_s_q_l_plugin" prot="public">cMySQLPlugin</innerclass>
+    <briefdescription>
+<para>This module is designed to connect to MySQL Databases. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_bleib_fit_plugin">
+<title>cBleibFitPlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cbleibfitplugin_8h">&lt;cbleibfitplugin.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cBleibFitPlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_bleib_fit_plugin__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cBleibFitPlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_bleib_fit_plugin__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList m_szUrls</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList m_szIngredients</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qreal m_rValues[cIngredient::iIngredientMax]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 m_iLoadedIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_bleib_fit_plugin_1aad11be7cf80b28becc6024e3827d4f75">pluginAPIVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_bleib_fit_plugin_1aca281bc00f83bc4cd4b620a448825147">pluginName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_bleib_fit_plugin_1acb4fbabe875079913c8bbbbe7d9089f6">pluginVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> <link linkend="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd">pluginType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b">config</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QMap&lt; QString, QString &gt; <link linkend="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90">detailsCapability</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QStringList <link linkend="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31">search</link> (
+const QString &amp; szSearch, const QString &amp; szDetails)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee">load</link> (
+qint16 iIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qreal <link linkend="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca">value</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80">ingredientName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QStringList cBleibFitPlugin::m_szUrls</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 89 of file cbleibfitplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cbleibfitplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QStringList cBleibFitPlugin::m_szIngredients</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 90 of file cbleibfitplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cbleibfitplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>qreal cBleibFitPlugin::m_rValues[cIngredient::iIngredientMax]</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 91 of file cbleibfitplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cbleibfitplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>qint16 cBleibFitPlugin::m_iLoadedIndex</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 92 of file cbleibfitplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cbleibfitplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_bleib_fit_plugin_1aad11be7cf80b28becc6024e3827d4f75">
+                <title>qint16 cBleibFitPlugin::pluginAPIVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1aca281bc00f83bc4cd4b620a448825147">
+                <title>QString cBleibFitPlugin::pluginName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1acb4fbabe875079913c8bbbbe7d9089f6">
+                <title>qint16 cBleibFitPlugin::pluginVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd">
+                <title>iType cBleibFitPlugin::pluginType ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>iType </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b">
+                <title>bool cBleibFitPlugin::config ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90">
+                <title>QMap&lt; QString, QString &gt; cBleibFitPlugin::detailsCapability ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QMap&lt;QString, QString&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31">
+                <title>QStringList cBleibFitPlugin::search (const QString &amp;szSearch, const QString &amp;szDetails=QString(&quot;&quot;))</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szSearch</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>szDetails</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>QStringList </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee">
+                <title>bool cBleibFitPlugin::load (qint16 iIndex)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>iIndex</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca">
+                <title>qreal cBleibFitPlugin::value (cIngredient::iIngredient i)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>qreal </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80">
+                <title>QString cBleibFitPlugin::ingredientName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

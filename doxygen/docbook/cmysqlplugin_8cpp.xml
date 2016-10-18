@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cmysqlplugin_8cpp">
+    <title>cmysqlplugin.cpp File Reference</title>
+    <programlisting>#include &quot;cmysqlplugin.h&quot;</programlisting>
+    <programlisting>#include &quot;cconfigdialog.h&quot;</programlisting>
+    <programlisting>#include &lt;QSqlError&gt;</programlisting>
+    <programlisting>#include &lt;QSettings&gt;</programlisting>
+    <programlisting>#include &lt;QSqlQuery&gt;</programlisting>
+    <programlisting>#include &lt;QMessageBox&gt;</programlisting>
+<para>Include dependency diagram for cmysqlplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cmysqlplugin_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cmysqlplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cmysqlplugin_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/dMySQL/cmysqlplugin.cpp</para>
+    </simplesect>
+</section>

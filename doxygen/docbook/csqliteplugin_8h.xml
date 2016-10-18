@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="csqliteplugin_8h">
+    <title>csqliteplugin.h File Reference</title>
+    <programlisting>#include &quot;cdbinterface.h&quot;</programlisting>
+    <programlisting>#include &lt;QtCore&gt;</programlisting>
+    <programlisting>#include &lt;QObject&gt;</programlisting>
+    <programlisting>#include &lt;QString&gt;</programlisting>
+    <programlisting>#include &lt;QSqlDatabase&gt;</programlisting>
+<para>Include dependency diagram for csqliteplugin.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="csqliteplugin_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for csqliteplugin.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="csqliteplugin_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_s_q_lite_plugin">cSQLitePlugin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/dSQLite/csqliteplugin.h</para>
+    </simplesect>
+</section>

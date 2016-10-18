@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_bleib_fit_plugin" kind="class" language="C++" prot="public">
+    <compoundname>cBleibFitPlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classc_import_interface" prot="public" virt="non-virtual">cImportInterface</basecompoundref>
+    <includes refid="cbleibfitplugin_8h" local="no">cbleibfitplugin.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_bleib_fit_plugin_1ada1ca6d46ebd839f6f86bfee1ed0abb8" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList cBleibFitPlugin::m_szUrls</definition>
+        <argsstring></argsstring>
+        <name>m_szUrls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="89" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc_bleib_fit_plugin_1a255890766758afcab2c358bfb8695a15" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList cBleibFitPlugin::m_szIngredients</definition>
+        <argsstring></argsstring>
+        <name>m_szIngredients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="90" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc_bleib_fit_plugin_1aa9bed63f126286a26ef3b45bfa5fbdcb" prot="private" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal cBleibFitPlugin::m_rValues[cIngredient::iIngredientMax]</definition>
+        <argsstring>[cIngredient::iIngredientMax]</argsstring>
+        <name>m_rValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="91" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc_bleib_fit_plugin_1a381f973f2b98c90e22314a5e1855f3df" prot="private" static="no" mutable="no">
+        <type>qint16</type>
+        <definition>qint16 cBleibFitPlugin::m_iLoadedIndex</definition>
+        <argsstring></argsstring>
+        <name>m_iLoadedIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="92" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1aad11be7cf80b28becc6024e3827d4f75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cBleibFitPlugin::pluginAPIVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginAPIVersion</name>
+        <reimplements refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813">pluginAPIVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="27" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1aca281bc00f83bc4cd4b620a448825147" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>QString cBleibFitPlugin::pluginName</definition>
+        <argsstring>()</argsstring>
+        <name>pluginName</name>
+        <reimplements refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">pluginName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="33" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1acb4fbabe875079913c8bbbbe7d9089f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cBleibFitPlugin::pluginVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginVersion</name>
+        <reimplements refid="classc_interface_1aadc382036174c2a25bb2c23733830d33">pluginVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="39" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref></type>
+        <definition>iType cBleibFitPlugin::pluginType</definition>
+        <argsstring>()</argsstring>
+        <name>pluginType</name>
+        <reimplements refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">pluginType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="45" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="45" bodyend="45"/>
+        <references refid="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" compoundref="cbleibfitplugin_8cpp" startline="253" endline="256">config</references>
+        <references refid="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" compoundref="cbleibfitplugin_8cpp" startline="77" endline="81">detailsCapability</references>
+        <references refid="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" compoundref="cbleibfitplugin_8cpp" startline="245" endline="251">ingredientName</references>
+        <references refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" compoundref="c_interface_8h" startline="40">cInterface::iTypeImport</references>
+        <references refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" compoundref="cbleibfitplugin_8cpp" startline="165" endline="236">load</references>
+        <references refid="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" compoundref="cbleibfitplugin_8cpp" startline="84" endline="162">search</references>
+        <references refid="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" compoundref="cbleibfitplugin_8cpp" startline="238" endline="243">value</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cBleibFitPlugin::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <reimplements refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">config</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="52" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="253" bodyend="256"/>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMap&lt; QString, QString &gt;</type>
+        <definition>QMap&lt; QString, QString &gt; cBleibFitPlugin::detailsCapability</definition>
+        <argsstring>()</argsstring>
+        <name>detailsCapability</name>
+        <reimplements refid="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d">detailsCapability</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QMap&lt;QString, QString&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="59" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="77" bodyend="81"/>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QStringList</type>
+        <definition>QStringList cBleibFitPlugin::search</definition>
+        <argsstring>(const QString &amp;szSearch, const QString &amp;szDetails=QString(&quot;&quot;))</argsstring>
+        <name>search</name>
+        <reimplements refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f">search</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szSearch</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szDetails</declname>
+          <defval>QString(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szSearch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QStringList </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="67" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="84" bodyend="162"/>
+        <references refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509" compoundref="cingredient_8h" startline="200">cIngredient::iIngredientMax</references>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cBleibFitPlugin::load</definition>
+        <argsstring>(qint16 iIndex)</argsstring>
+        <name>load</name>
+        <reimplements refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983">load</reimplements>
+        <param>
+          <type>qint16</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="74" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="165" bodyend="236"/>
+        <references refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" compoundref="cbleibfitplugin_8cpp" startline="12">tagMAPPER::key</references>
+        <references refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" compoundref="cbleibfitplugin_8cpp" startline="13">tagMAPPER::value</references>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>qreal</type>
+        <definition>qreal cBleibFitPlugin::value</definition>
+        <argsstring>(cIngredient::iIngredient i)</argsstring>
+        <name>value</name>
+        <reimplements refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42">value</reimplements>
+        <param>
+          <type><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>qreal </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="81" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="238" bodyend="243"/>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString cBleibFitPlugin::ingredientName</definition>
+        <argsstring>()</argsstring>
+        <name>ingredientName</name>
+        <reimplements refid="classc_import_interface_1af3f569b605787021a919816978f229bc">ingredientName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.h" line="87" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="245" bodyend="251"/>
+        <referencedby refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" compoundref="cbleibfitplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="100">
+        <label>QObject</label>
+      </node>
+      <node id="99">
+        <label>cBleibFitPlugin</label>
+        <link refid="classc_bleib_fit_plugin"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="101">
+        <label>cImportInterface</label>
+        <link refid="classc_import_interface"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>QObject</label>
+      </node>
+      <node id="103">
+        <label>cBleibFitPlugin</label>
+        <link refid="classc_bleib_fit_plugin"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="105">
+        <label>cImportInterface</label>
+        <link refid="classc_import_interface"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="iBleibFit/cbleibfitplugin.h" line="16" column="1" bodyfile="iBleibFit/cbleibfitplugin.h" bodystart="15" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>cImportInterface</name></member>
+      <member refid="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>config</name></member>
+      <member refid="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>detailsCapability</name></member>
+      <member refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>group</name></member>
+      <member refid="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>ingredientName</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>iType</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>iTypeDB</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>iTypeExport</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>iTypeImport</name></member>
+      <member refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>load</name></member>
+      <member refid="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>loaded</name></member>
+      <member refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" prot="protected" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>m_bLoaded</name></member>
+      <member refid="classc_bleib_fit_plugin_1a381f973f2b98c90e22314a5e1855f3df" prot="private" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>m_iLoadedIndex</name></member>
+      <member refid="classc_bleib_fit_plugin_1aa9bed63f126286a26ef3b45bfa5fbdcb" prot="private" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>m_rValues</name></member>
+      <member refid="classc_bleib_fit_plugin_1a255890766758afcab2c358bfb8695a15" prot="private" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>m_szIngredients</name></member>
+      <member refid="classc_bleib_fit_plugin_1ada1ca6d46ebd839f6f86bfee1ed0abb8" prot="private" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>m_szUrls</name></member>
+      <member refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>name</name></member>
+      <member refid="classc_bleib_fit_plugin_1aad11be7cf80b28becc6024e3827d4f75" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_bleib_fit_plugin_1aca281bc00f83bc4cd4b620a448825147" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>pluginName</name></member>
+      <member refid="classc_bleib_fit_plugin_1af2fc76ea7b59899780c5384721a88ebd" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>pluginType</name></member>
+      <member refid="classc_bleib_fit_plugin_1acb4fbabe875079913c8bbbbe7d9089f6" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>pluginVersion</name></member>
+      <member refid="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>search</name></member>
+      <member refid="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" prot="public" virt="virtual"><scope>cBleibFitPlugin</scope><name>value</name></member>
+      <member refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" prot="public" virt="non-virtual"><scope>cBleibFitPlugin</scope><name>valueStr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

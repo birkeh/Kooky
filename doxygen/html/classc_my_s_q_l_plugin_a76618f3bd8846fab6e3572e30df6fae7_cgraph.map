@@ -1,0 +1,16 @@
+<map id="cMySQLPlugin::pluginType" name="cMySQLPlugin::pluginType">
+<area shape="rect" id="node2" href="$classc_my_s_q_l_plugin.html#ad8413f2440b3ce4390865bb08d238441" title="calls the configuration dialog. " alt="" coords="248,183,405,209"/>
+<area shape="rect" id="node5" href="$classc_my_s_q_l_plugin.html#a574fa4e2d3e7505defaf9550eb9893ec" title="opens the database. " alt="" coords="489,5,640,32"/>
+<area shape="rect" id="node13" href="$classc_my_s_q_l_plugin.html#a137309c4dea786cc0cbd2d7db9acff11" title="connects to the database. " alt="" coords="241,56,412,83"/>
+<area shape="rect" id="node14" href="$classc_my_s_q_l_plugin.html#ab64cecb567902902ef25fd3cf7346a4c" title="initializes default settings for the plugin. " alt="" coords="257,107,396,133"/>
+<area shape="rect" id="node15" href="$classc_my_s_q_l_plugin.html#a8e175f45e12bf3716af0dd5728710cda" title="returns the last error string. " alt="" coords="240,233,413,260"/>
+<area shape="rect" id="node3" href="$classc_config_dialog.html#a1ab3c4cf07b4bb84624ddfe4395a1935" title="cConfigDialog::database" alt="" coords="476,411,653,437"/>
+<area shape="rect" id="node4" href="$classc_config_dialog.html#a77e56b372e8914cf531d64054cbaea2c" title="cConfigDialog::hostname" alt="" coords="473,461,656,488"/>
+<area shape="rect" id="node6" href="$classc_config_dialog.html#aea1dfbe7eae14e7949a15631ed2df8a5" title="cConfigDialog::password" alt="" coords="476,107,653,133"/>
+<area shape="rect" id="node7" href="$classc_my_s_q_l_plugin.html#ae8eed8a248ddbb3f8372290571ddfb24" title="Returns the name of the plugin. " alt="" coords="467,56,663,83"/>
+<area shape="rect" id="node8" href="$classc_config_dialog.html#abcb15989a34c945128e8624b93b5c272" title="cConfigDialog::setDatabase" alt="" coords="465,157,664,184"/>
+<area shape="rect" id="node9" href="$classc_config_dialog.html#acb0a82e1653578edc43855af17154f24" title="cConfigDialog::setHostname" alt="" coords="463,208,667,235"/>
+<area shape="rect" id="node10" href="$classc_config_dialog.html#a1eecd4be7061043a3ae60473013edfb1" title="cConfigDialog::setPassword" alt="" coords="466,259,663,285"/>
+<area shape="rect" id="node11" href="$classc_config_dialog.html#ae3238bbd8055b58066046840fef448b4" title="cConfigDialog::setUserName" alt="" coords="461,309,668,336"/>
+<area shape="rect" id="node12" href="$classc_config_dialog.html#ad1f4eda37fec241ffbcc158c039accea" title="cConfigDialog::userName" alt="" coords="473,360,657,387"/>
+</map>

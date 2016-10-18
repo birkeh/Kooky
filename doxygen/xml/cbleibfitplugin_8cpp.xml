@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cbleibfitplugin_8cpp" kind="file" language="C++">
+    <compoundname>cbleibfitplugin.cpp</compoundname>
+    <includes refid="cbleibfitplugin_8h" local="yes">cbleibfitplugin.h</includes>
+    <includes local="no">QNetworkAccessManager</includes>
+    <includes local="no">QNetworkRequest</includes>
+    <includes local="no">QNetworkReply</includes>
+    <includes local="no">QEventLoop</includes>
+    <includes local="no">QMessageBox</includes>
+    <incdepgraph>
+      <node id="652">
+        <label>QMap</label>
+      </node>
+      <node id="654">
+        <label>QNetworkRequest</label>
+      </node>
+      <node id="657">
+        <label>QMessageBox</label>
+      </node>
+      <node id="642">
+        <label>QObject</label>
+      </node>
+      <node id="644">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>QtPlugin</label>
+      </node>
+      <node id="639">
+        <label>iBleibFit/cbleibfitplugin.cpp</label>
+        <link refid="cbleibfitplugin.cpp"/>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>QEventLoop</label>
+      </node>
+      <node id="645">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>QtCore</label>
+      </node>
+      <node id="653">
+        <label>QNetworkAccessManager</label>
+      </node>
+      <node id="640">
+        <label>cbleibfitplugin.h</label>
+        <link refid="cbleibfitplugin_8h"/>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>QDomDocument</label>
+      </node>
+      <node id="646">
+        <label>QDate</label>
+      </node>
+      <node id="649">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>QString</label>
+      </node>
+      <node id="647">
+        <label>QFile</label>
+      </node>
+      <node id="651">
+        <label>QStringList</label>
+      </node>
+      <node id="655">
+        <label>QNetworkReply</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtag_m_a_p_p_e_r" prot="public">tagMAPPER</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f" prot="public" static="no">
+        <type>struct <ref refid="structtag_m_a_p_p_e_r" kindref="compound">tagMAPPER</ref></type>
+        <definition>typedef struct tagMAPPER	 MAPPER</definition>
+        <argsstring></argsstring>
+        <name>MAPPER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.cpp" line="14" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cbleibfitplugin_8cpp_1a2f672fed9a71bbdcf8e2e61e4278dc32" prot="public" static="no" mutable="no">
+        <type><ref refid="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f" kindref="member">MAPPER</ref></type>
+        <definition>MAPPER g_ingredientMapper[]</definition>
+        <argsstring>[]</argsstring>
+        <name>g_ingredientMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iBleibFit/cbleibfitplugin.cpp" line="16" column="1" bodyfile="iBleibFit/cbleibfitplugin.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cbleibfitplugin_8h" kindref="compound">cbleibfitplugin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QNetworkAccessManager&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QNetworkRequest&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QNetworkReply&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QEventLoop&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structtag_m_a_p_p_e_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtag_m_a_p_p_e_r" kindref="compound">tagMAPPER</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><ref refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><sp/><sp/><ref refid="cbleibfitplugin_8cpp_1a250823f72ebe6796400fef6f0812002f" kindref="member">MAPPER</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="cbleibfitplugin_8cpp_1a2f672fed9a71bbdcf8e2e61e4278dc32" refkind="member"><highlight class="normal"><ref refid="structtag_m_a_p_p_e_r" kindref="compound">MAPPER</ref><sp/><ref refid="cbleibfitplugin_8cpp_1a2f672fed9a71bbdcf8e2e61e4278dc32" kindref="member">g_ingredientMapper</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Kilokalorien:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a910139fbdcbe825cbd17ab1f8d98bda1" kindref="member">cIngredient::iIngredientCalories</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Kilojoule:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a48d0fa4c3d86c962711ea0ded41e7a93" kindref="member">cIngredient::iIngredientJoule</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Protein:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac3f49bc5d113ba83ea943fe3a31265f7" kindref="member">cIngredient::iIngredientProtein</ref><sp/>},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Fett:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9a2354be9de0652de3c6bb1ae7a33a93" kindref="member">cIngredient::iIngredientFat</ref><sp/>},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Kohlehydrate:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a35bb83890a3eb685973a8707315508df" kindref="member">cIngredient::iIngredientCarbohydrates</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;davon<sp/>Zucker:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a600d648d15d843d36ea211d6e38bbb08" kindref="member">cIngredient::iIngredientSugar</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Ballaststoffe:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af59a88854cae0b1af5fcd2b570d2dd13" kindref="member">cIngredient::iIngredientTotalDietaryFibre</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Ges&amp;auml;ttigte<sp/>Fetts&amp;auml;uren:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a591316fc7fe5c6778775f36bad2a8dca" kindref="member">cIngredient::iIngredientSaturatedfattyacids</ref><sp/>},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Einfach<sp/>unges&amp;auml;ttigte<sp/>Fetts&amp;auml;uren:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a89a1465bb3b76c48ef44cc332e84423a" kindref="member">cIngredient::iIngredientMonounsaturatedfattyacids</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Mehrfach<sp/>unges&amp;auml;ttigte<sp/>Fetts&amp;auml;uren:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aaf4003b09f76c987429d6fea98238467" kindref="member">cIngredient::iIngredientPolyunsaturatedfattyacids</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Cholesterin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a7ec96f96b0f551c1d230179b25616049" kindref="member">cIngredient::iIngredientCholesterol</ref><sp/>},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>A:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a4b16ea58a637ce7b240ab9ad8b6d68a7" kindref="member">cIngredient::iIngredientVitaminARetinol</ref><sp/>},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>C:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8b5e038c3ad0a7605a27630164982864" kindref="member">cIngredient::iIngredientVitaminC</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>D:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a70b8df3c383ad6e9e061bef56c83f8c8" kindref="member">cIngredient::iIngredientVitaminD</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>E:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a7ff27cf0752a8e9fc3e4e358e081755b" kindref="member">cIngredient::iIngredientVitaminEactiv</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>K:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ae1ff727a62d0f163557b5a3dbefe40ce" kindref="member">cIngredient::iIngredientVitaminK</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>B1:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a49f919b43eb5f147736e3133fc4f385d" kindref="member">cIngredient::iIngredientVitaminB1</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>B2:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a2fb127fa831f02a27875c02851db8764" kindref="member">cIngredient::iIngredientVitaminB2</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>B6:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af0156caa11e5353cb687ebc881e80922" kindref="member">cIngredient::iIngredientVitaminB6</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Vitamin<sp/>B12:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0a4de4ebce28077f038baaac5fee9d2f" kindref="member">cIngredient::iIngredientVitaminB12</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Biotin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a52c745c583d4fc8b5194f178ba0834e9" kindref="member">cIngredient::iIngredientBiotin</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Fols&amp;auml;ure:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a881210ff9a4177b7e151ef8085e1751d" kindref="member">cIngredient::iIngredientFolicacid</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Niacin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9d9f987e05a0ffc8644fb4036c6be480" kindref="member">cIngredient::iIngredientNiacinequivalent</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Panthotens&amp;auml;ure:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad7c79dde65210ba6c2e811243ed7829a" kindref="member">cIngredient::iIngredientPantothenicacid</ref><sp/>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Calcium<sp/>(Ca):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a6f3b6c1922e7b292f1222eeb42519447" kindref="member">cIngredient::iIngredientCalcium</ref><sp/>},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Chlor<sp/>(Cl):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8b091180a03701ca24b1e891c0969217" kindref="member">cIngredient::iIngredientChloride</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Kalium<sp/>(K):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28accb496dea754be1236d4bc4e35fa4439" kindref="member">cIngredient::iIngredientPotassium</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Magnesium<sp/>(Mg):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a8987b05ab52c74db67ab9313fe5fe5f6" kindref="member">cIngredient::iIngredientMagnesium</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Natrium<sp/>(Na):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad76591a16a66949039b02da8a61ef378" kindref="member">cIngredient::iIngredientSodium</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Phosphor<sp/>(P):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aae2b5c1c5bb2f26101c055720d4ae8af" kindref="member">cIngredient::iIngredientPhosphorus</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Schwefel<sp/>(S):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a93e3218838a4b5e075b56b95b32deeb9" kindref="member">cIngredient::iIngredientSulphur</ref><sp/>},</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Kupfer<sp/>(Cu):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa575feb1988d88257a3b7a3b40ac32e7" kindref="member">cIngredient::iIngredientCopper</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Eisen<sp/>(Fe):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3aa8d784a3eb5f5e1863750ba938018d" kindref="member">cIngredient::iIngredientIron</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Fluor<sp/>(F):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a6ff2dddeb57d086a2bc058a3a74cdef3" kindref="member">cIngredient::iIngredientFluoride</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Mangan<sp/>(Mn):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac056a0fec98b61404431df043113c982" kindref="member">cIngredient::iIngredientManganese</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Jod<sp/>(J):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ac861571fd28e2df233dacd88324bac6a" kindref="member">cIngredient::iIngredientIodide</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Zink<sp/>(Zn):&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a68b838d89f0fb06d6fd65b62ca20ec9d" kindref="member">cIngredient::iIngredientZinc</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Alanin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a3fb4963f0122e92a809da09f085d5c52" kindref="member">cIngredient::iIngredientAlanine</ref><sp/>},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Arginin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9345328c74371d01848d64548ad7c466" kindref="member">cIngredient::iIngredientArginine</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Aspargin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ab472c81eef7b44522e799032108449be" kindref="member">cIngredient::iIngredientAspartid</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Aspargins&amp;auml;ure:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28afd077d0758072c1f5f0a2d714db3f05b" kindref="member">cIngredient::iIngredientAsparticacid</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Cystein:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a1083401ab5de70a27301732b847718b4" kindref="member">cIngredient::iIngredientCystine</ref><sp/>},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Glutamin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aac8fc02dc3355f64ab71bddf857af745" kindref="member">cIngredient::iIngredientGlutamid</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Glutamins&amp;auml;ure:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28adf74c2decbc70446c48d67e689b7a279" kindref="member">cIngredient::iIngredientGlutamicacid</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Glycerin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28ad6bacbe32835e769cfc90aa6f04f3618" kindref="member">cIngredient::iIngredientGlycerolandLipoides</ref><sp/>},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Histidin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9549bb9630b1221e5bdc1a80293c3f7a" kindref="member">cIngredient::iIngredientHistidine</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Isoleucin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a1ae6ac395f68de753e7adb50356eceb5" kindref="member">cIngredient::iIngredientIsoleucine</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Leucin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aadb4f09db8e42fbbdd881c1f3b3532da" kindref="member">cIngredient::iIngredientLeucine</ref><sp/>},</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Lysin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a9991e7fe09e369b53f52caf24df9af92" kindref="member">cIngredient::iIngredientLysine</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Methionin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a82409d11be70fad72f67c2708ed5d1d9" kindref="member">cIngredient::iIngredientMethionine</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Phenylalanin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a39e996e7f3c8a37e2b5d72ce7798a74d" kindref="member">cIngredient::iIngredientPhenylalanine</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Prolin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5c3a99695101ab5ec03f857de0d95b41" kindref="member">cIngredient::iIngredientProline</ref><sp/>},</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Serin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a59d14f1459dfbbbb77981d2e71421f0c" kindref="member">cIngredient::iIngredientSerine</ref><sp/><sp/>},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Threonin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a5e65797e36f038762724b774c569ddf8" kindref="member">cIngredient::iIngredientThreonine</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Tryptophan:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28aa340d12dc57b915994e32f65077e60db" kindref="member">cIngredient::iIngredientTryptophane</ref><sp/>},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Tyrosin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a353072b963b0f6046faba6bccb92b49d" kindref="member">cIngredient::iIngredientTyrosine</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;td&gt;&lt;b&gt;Valin:&lt;/b&gt;&lt;/td&gt;&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28a0c4c8e1becc5aa57b0cc3984c224f37f" kindref="member">cIngredient::iIngredientValine</ref><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" refkind="member"><highlight class="normal">QMap&lt;QString,<sp/>QString&gt;<sp/><ref refid="classc_bleib_fit_plugin_1af3db6c6ff6bb28787d67e4cc3e957e90" kindref="member">cBleibFitPlugin::detailsCapability</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QString&gt;<sp/><sp/>map;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(map);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//http://www.bleibfit.at/index.php?lebensmittel&amp;food=true&amp;mode=suche&amp;su_begriff=milch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" refkind="member"><highlight class="normal">QStringList<sp/><ref refid="classc_bleib_fit_plugin_1a71d3dc9fc52a807e33608f2522c1ca31" kindref="member">cBleibFitPlugin::search</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szSearch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>m_szUrls.clear();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>m_szIngredients.clear();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(z<sp/>=<sp/>0;z<sp/>&lt;<sp/><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509" kindref="member">cIngredient::iIngredientMax</ref>;z++)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_rValues[z]<sp/><sp/><sp/><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkAccessManager<sp/><sp/><sp/>networkManager;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkRequest<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request(QUrl(QString(</highlight><highlight class="stringliteral">&quot;http://www.bleibfit.at/index.php?lebensmittel&amp;food=true&amp;mode=suche&amp;su_begriff=&quot;</highlight><highlight class="normal">)<sp/>+<sp/>szSearch));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>request.setHeader(QNetworkRequest::ContentTypeHeader,<sp/></highlight><highlight class="stringliteral">&quot;application/x-www-form-urlencoded&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkReply*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply<sp/><sp/><sp/>=<sp/>networkManager.get(request);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>QEventLoop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loop;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject::connect(reply,<sp/>SIGNAL(finished()),<sp/>&amp;loop,<sp/>SLOT(quit()));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>loop.exec();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>QByteArray<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szData<sp/><sp/>=<sp/>reply-&gt;readAll();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>reply;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QByteArray&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>szList<sp/><sp/>=<sp/>szData.split(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(z<sp/>=<sp/>0;z<sp/>&lt;<sp/>szList.count();z++)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;table<sp/>border=\&quot;0\&quot;<sp/>cellpadding=\&quot;2\&quot;<sp/>cellspacing=\&quot;1\&quot;<sp/>width=\&quot;100%\&quot;&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(z<sp/>&gt;=<sp/>szList.count())</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(QStringList());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;z<sp/>&lt;<sp/>szList.count();z++)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;/tr&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;z<sp/>&lt;<sp/>szList.count();z++)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;tr<sp/>bgcolor=&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z++;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szURL;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szIngredient;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;a<sp/>href&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>szLine.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;a<sp/>href&quot;</highlight><highlight class="normal">)+9;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szURL<sp/><sp/><sp/>=<sp/>szLine.mid(pos);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szURL.indexOf(</highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szURL<sp/><sp/><sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;http://www.bleibfit.at/&quot;</highlight><highlight class="normal">)+szURL.left(szURL.indexOf(</highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">)-1);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szURL<sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szIngredient<sp/><sp/><sp/><sp/>=<sp/>szLine.mid(szLine.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;&quot;</highlight><highlight class="normal">)+3);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szIngredient<sp/><sp/><sp/><sp/>=<sp/>szIngredient.left(szIngredient.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;/b&gt;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szIngredient.length())</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_szIngredients.append(szIngredient);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_szUrls.append(szURL);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z++;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(m_szIngredients);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//http://www.bleibfit.at/lebensmittel&amp;food=true&amp;link=buttermilch.phtml?hashID=929deedd0e06667441d7afa4570a12ba</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_bleib_fit_plugin_1a15e5627fa41d2f079a96267e559fccee" kindref="member">cBleibFitPlugin::load</ref>(qint16<sp/>iIndex)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&gt;<sp/>m_szUrls.count())</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkAccessManager<sp/><sp/><sp/>networkManager;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkRequest<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request(QUrl(m_szUrls.at(iIndex)));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>request.setHeader(QNetworkRequest::ContentTypeHeader,<sp/></highlight><highlight class="stringliteral">&quot;application/x-www-form-urlencoded&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>QNetworkReply*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reply<sp/><sp/><sp/>=<sp/>networkManager.get(request);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>QEventLoop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loop;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject::connect(reply,<sp/>SIGNAL(finished()),<sp/>&amp;loop,<sp/>SLOT(quit()));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>loop.exec();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>QByteArray<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szData<sp/><sp/>=<sp/>reply-&gt;readAll();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>reply;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QByteArray&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>szList<sp/><sp/>=<sp/>szData.split(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>szList.count();z++)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;div<sp/>class=\&quot;balken1\&quot;&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;z<sp/>&lt;<sp/>szList.count();z++)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;/table&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&lt;tr&gt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z++;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;y<sp/>&lt;<sp/>(int)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(g_ingredientMapper)/(int)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structtag_m_a_p_p_e_r" kindref="compound">MAPPER</ref>);y++)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(g_ingredientMapper[y].<ref refid="structtag_m_a_p_p_e_r_1a34b0aca2d4ce5c5d2196c087938f31ec" kindref="member">key</ref>))</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z++;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szLine<sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>x<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>szLine.indexOf(</highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">)+1;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>szTmp<sp/><sp/><sp/>=<sp/>szLine.mid(x);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szTmp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>szTmp.left(szTmp.indexOf(</highlight><highlight class="stringliteral">&quot;&lt;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z++;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szLine<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>QString::fromLatin1(szList.at(z));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/>dFactor<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&gt;g&lt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dFactor<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&gt;mg&lt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dFactor<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(szLine.contains(</highlight><highlight class="stringliteral">&quot;&gt;µg&lt;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dFactor<sp/>=<sp/>1000000;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/>dValue<sp/><sp/>=<sp/>szTmp.replace(</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">).toDouble();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_rValues[g_ingredientMapper[y].<ref refid="structtag_m_a_p_p_e_r_1a5cd9d767951123badf7d7dcfcdb86bbb" kindref="member">value</ref>]<sp/><sp/>=<sp/>dValue/dFactor;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>m_bLoaded<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>m_iLoadedIndex<sp/><sp/>=<sp/>iIndex;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" refkind="member"><highlight class="normal">qreal<sp/><ref refid="classc_bleib_fit_plugin_1adb3cc6882c32a04d6d9f31961f0b8dca" kindref="member">cBleibFitPlugin::value</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_bLoaded)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(m_rValues[i]);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" refkind="member"><highlight class="normal">QString<sp/><ref refid="classc_bleib_fit_plugin_1a67b808ffb0884950a8652cc72e8b2d80" kindref="member">cBleibFitPlugin::ingredientName</ref>()</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_bLoaded)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(m_szIngredients.at(m_iLoadedIndex));</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classc_bleib_fit_plugin_1a4ae455b66593fa29d82025b084c2639b" kindref="member">cBleibFitPlugin::config</ref>()</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="iBleibFit/cbleibfitplugin.cpp"/>
+  </compounddef>
+</doxygen>

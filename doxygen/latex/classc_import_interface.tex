@@ -1,0 +1,462 @@
+\hypertarget{classc_import_interface}{}\section{c\+Import\+Interface Class Reference}
+\label{classc_import_interface}\index{c\+Import\+Interface@{c\+Import\+Interface}}
+
+
+Interface class for importing data.  
+
+
+
+
+{\ttfamily \#include $<$cimportinterface.\+h$>$}
+
+
+
+Inheritance diagram for c\+Import\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classc_import_interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Import\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classc_import_interface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_import_interface_a66f54591d75e8aa458e5afb91b3f3177}{c\+Import\+Interface} ()
+\item 
+virtual Q\+Map$<$ Q\+String, Q\+String $>$ \hyperlink{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d}{details\+Capability} ()=0
+\item 
+virtual Q\+String\+List \hyperlink{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f}{search} (const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=Q\+String(\char`\"{}\char`\"{}))=0
+\item 
+virtual bool \hyperlink{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983}{load} (qint16 i\+Index)=0
+\item 
+bool \hyperlink{classc_import_interface_a898e0fc3651bbf855ee28756e69d48fb}{loaded} ()
+\item 
+virtual qreal \hyperlink{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42}{value} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)=0
+\item 
+Q\+String \hyperlink{classc_import_interface_a272c43d684b605f36d36cb20e4039d94}{value\+Str} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)
+\item 
+Q\+String \hyperlink{classc_import_interface_a685fafcac4d7194045e6c9e2d84d7981}{name} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)
+\item 
+Q\+String \hyperlink{classc_import_interface_a1d31c90d6ef27a2b9edfb99e655120ea}{group} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)
+\item 
+virtual Q\+String \hyperlink{classc_import_interface_af3f569b605787021a919816978f229bc}{ingredient\+Name} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classc_import_interface_ae58ec0e6b990aa6624a12af9dc20e8dc}{m\+\_\+b\+Loaded}
+\item 
+qint16 \hyperlink{classc_import_interface_ab18dd3e9cf49a07f23f376362fdf317b}{m\+\_\+i\+Loaded\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements basic import functionality for Kooky. All functions may be overwritten by derriving classes.
+
+\begin{DoxyNote}{Note}
+Attempts at zen rarely work.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+\$\+Date\+: 2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Import\+Interface@{c\+Import\+Interface}!c\+Import\+Interface@{c\+Import\+Interface}}
+\index{c\+Import\+Interface@{c\+Import\+Interface}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{c\+Import\+Interface()}{cImportInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Import\+Interface\+::c\+Import\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classc_import_interface_a66f54591d75e8aa458e5afb91b3f3177}{}\label{classc_import_interface_a66f54591d75e8aa458e5afb91b3f3177}
+
+
+References details\+Capability(), load(), and search().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a66f54591d75e8aa458e5afb91b3f3177_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Import\+Interface@{c\+Import\+Interface}!details\+Capability@{details\+Capability}}
+\index{details\+Capability@{details\+Capability}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{details\+Capability()=0}{detailsCapability()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+Map$<$Q\+String, Q\+String$>$ c\+Import\+Interface\+::details\+Capability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d}{}\label{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d}
+\begin{DoxyReturn}{Returns}
+Q\+Map$<$\+Q\+String, Q\+String$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_bleib_fit_plugin_af3db6c6ff6bb28787d67e4cc3e957e90}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a9fef4cc5e1c59999833ffb4493cfae3e}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Import\+Interface().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!group@{group}}
+\index{group@{group}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{group(c\+Ingredient\+::i\+Ingredient i)}{group(cIngredient::iIngredient i)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Import\+Interface\+::group (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_import_interface_a1d31c90d6ef27a2b9edfb99e655120ea}{}\label{classc_import_interface_a1d31c90d6ef27a2b9edfb99e655120ea}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References c\+Ingredient\+::group().
+
+
+
+Referenced by loaded(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classc_import_interface_a1d31c90d6ef27a2b9edfb99e655120ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a1d31c90d6ef27a2b9edfb99e655120ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!ingredient\+Name@{ingredient\+Name}}
+\index{ingredient\+Name@{ingredient\+Name}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{ingredient\+Name()=0}{ingredientName()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+String c\+Import\+Interface\+::ingredient\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_import_interface_af3f569b605787021a919816978f229bc}{}\label{classc_import_interface_af3f569b605787021a919816978f229bc}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_bleib_fit_plugin_a67b808ffb0884950a8652cc72e8b2d80}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a24c04c0b98fb4186e5b5b012662b39ed}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by loaded().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_af3f569b605787021a919816978f229bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!load@{load}}
+\index{load@{load}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{load(qint16 i\+Index)=0}{load(qint16 iIndex)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool c\+Import\+Interface\+::load (
+\begin{DoxyParamCaption}
+\item[{qint16}]{i\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983}{}\label{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_bleib_fit_plugin_a15e5627fa41d2f079a96267e559fccee}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Import\+Interface(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!loaded@{loaded}}
+\index{loaded@{loaded}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{loaded()}{loaded()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Import\+Interface\+::loaded (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classc_import_interface_a898e0fc3651bbf855ee28756e69d48fb}{}\label{classc_import_interface_a898e0fc3651bbf855ee28756e69d48fb}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+References group(), ingredient\+Name(), m\+\_\+b\+Loaded, name(), value(), and value\+Str().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a898e0fc3651bbf855ee28756e69d48fb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!name@{name}}
+\index{name@{name}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{name(c\+Ingredient\+::i\+Ingredient i)}{name(cIngredient::iIngredient i)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Import\+Interface\+::name (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_import_interface_a685fafcac4d7194045e6c9e2d84d7981}{}\label{classc_import_interface_a685fafcac4d7194045e6c9e2d84d7981}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References c\+Ingredient\+::name().
+
+
+
+Referenced by loaded(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classc_import_interface_a685fafcac4d7194045e6c9e2d84d7981_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a685fafcac4d7194045e6c9e2d84d7981_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!search@{search}}
+\index{search@{search}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{search(const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=\+Q\+String(""""))=0}{search(const QString &szSearch, const QString &szDetails=QString(""))=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+String\+List c\+Import\+Interface\+::search (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Search, }
+\item[{const Q\+String \&}]{sz\+Details = {\ttfamily QString(\char`\"{}\char`\"{})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f}{}\label{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Search} & \\
+\hline
+{\em sz\+Details} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+String\+List 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_bleib_fit_plugin_a71d3dc9fc52a807e33608f2522c1ca31}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_aec19c86cca48415dbef841bc5b3cc15d}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by c\+Import\+Interface(), and c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!value@{value}}
+\index{value@{value}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{value(c\+Ingredient\+::i\+Ingredient i)=0}{value(cIngredient::iIngredient i)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual qreal c\+Import\+Interface\+::value (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42}{}\label{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+qreal 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_bleib_fit_plugin_adb3cc6882c32a04d6d9f31961f0b8dca}{c\+Bleib\+Fit\+Plugin}, and \hyperlink{classc_ernaehrung_plugin_a8b4bb34247562c26687bb33e6369eb25}{c\+Ernaehrung\+Plugin}.
+
+
+
+Referenced by loaded(), c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed(), and value\+Str().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!value\+Str@{value\+Str}}
+\index{value\+Str@{value\+Str}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{value\+Str(c\+Ingredient\+::i\+Ingredient i)}{valueStr(cIngredient::iIngredient i)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Import\+Interface\+::value\+Str (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_import_interface_a272c43d684b605f36d36cb20e4039d94}{}\label{classc_import_interface_a272c43d684b605f36d36cb20e4039d94}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+qreal 
+\end{DoxyReturn}
+
+
+References c\+Ingredient\+::i\+Ingredient\+Calories, c\+Ingredient\+::i\+Ingredient\+Joule, and value().
+
+
+
+Referenced by loaded(), and c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a272c43d684b605f36d36cb20e4039d94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_import_interface_a272c43d684b605f36d36cb20e4039d94_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Import\+Interface@{c\+Import\+Interface}!m\+\_\+b\+Loaded@{m\+\_\+b\+Loaded}}
+\index{m\+\_\+b\+Loaded@{m\+\_\+b\+Loaded}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{m\+\_\+b\+Loaded}{m_bLoaded}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Import\+Interface\+::m\+\_\+b\+Loaded\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_interface_ae58ec0e6b990aa6624a12af9dc20e8dc}{}\label{classc_import_interface_ae58ec0e6b990aa6624a12af9dc20e8dc}
+T\+O\+DO\+: describe 
+
+Referenced by loaded().
+
+\index{c\+Import\+Interface@{c\+Import\+Interface}!m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}}
+\index{m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}!c\+Import\+Interface@{c\+Import\+Interface}}
+\subsubsection[{\texorpdfstring{m\+\_\+i\+Loaded\+Index}{m_iLoadedIndex}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Import\+Interface\+::m\+\_\+i\+Loaded\+Index\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_import_interface_ab18dd3e9cf49a07f23f376362fdf317b}{}\label{classc_import_interface_ab18dd3e9cf49a07f23f376362fdf317b}
+T\+O\+DO\+: describe 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cimportinterface_8h}{cimportinterface.\+h}\item 
+Kooky/\hyperlink{cimportinterface_8cpp}{cimportinterface.\+cpp}\end{DoxyCompactItemize}

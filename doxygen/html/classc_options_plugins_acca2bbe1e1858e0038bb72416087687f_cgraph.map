@@ -1,0 +1,9 @@
+<map id="cOptionsPlugins::init" name="cOptionsPlugins::init">
+<area shape="rect" id="node2" href="$classc_options_plugins.html#a60d4d685600b74b3bd8b6a3973270db3" title="cOptionsPlugins::onOptions\lPluginTreeDoubleClicked" alt="" coords="208,74,404,115"/>
+<area shape="rect" id="node8" href="$classc_options_plugins.html#a5e2c5668263a06190103ed275a7f5df4" title="cOptionsPlugins::onOptions\lPluginTreeSelectionChanged" alt="" coords="204,139,408,181"/>
+<area shape="rect" id="node3" href="$classc_options_plugins.html#a102ea2333b1b8cdb69135dbd2ca10bed" title="cOptionsPlugins::showConfigDlg" alt="" coords="456,81,680,108"/>
+<area shape="rect" id="node4" href="$classc_plugin.html#a4e1ee6c29cb94d72b8ddc222dd1e4d5a" title="cPlugin::capability" alt="" coords="747,5,882,32"/>
+<area shape="rect" id="node5" href="$classc_plugin.html#ac2fbd0510573398caf3f5da68da327bb" title="cPlugin::dbInterface" alt="" coords="741,56,888,83"/>
+<area shape="rect" id="node6" href="$classc_interface.html#a040fbd069a2c2356faeda1c2d9ac88df" title="Calls the configuration dialog (if any). " alt="" coords="749,107,880,133"/>
+<area shape="rect" id="node7" href="$classc_plugin.html#ac4069636d1b3b0bf5bfa10d6c96ee097" title="cPlugin::importInterface" alt="" coords="728,157,901,184"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="cPlugin::capability" name="cPlugin::capability">
+<area shape="rect" id="node2" href="$classc_import_ingredient_dialog.html#ad710be68582d34c43a399b4764c0434a" title="cImportIngredientDialog\l::setPluginList" alt="" coords="213,13,387,55"/>
+<area shape="rect" id="node6" href="$classc_options_plugins.html#a102ea2333b1b8cdb69135dbd2ca10bed" title="cOptionsPlugins::showConfigDlg" alt="" coords="188,86,412,113"/>
+<area shape="rect" id="node3" href="$classc_main_window.html#a1a0b99b15c690785791074ae0d13131d" title="Import of ingredient has been requested. " alt="" coords="460,5,661,47"/>
+<area shape="rect" id="node4" href="$classc_main_window.html#a3cc20776b1fd699783bcb1a0e2a33415" title="Initialized main windows. " alt="" coords="718,13,851,39"/>
+<area shape="rect" id="node5" href="$classc_main_window.html#a04f0ed523c7265f8d8b304e33aaa7d6d" title="Constructor. " alt="" coords="908,13,1107,39"/>
+<area shape="rect" id="node7" href="$classc_options_plugins.html#a55f1014d084453544ac054379094ebdb" title="cOptionsPlugins::on\l_m_lpButtonConfigure\l_clicked" alt="" coords="479,71,643,127"/>
+<area shape="rect" id="node8" href="$classc_options_plugins.html#a60d4d685600b74b3bd8b6a3973270db3" title="cOptionsPlugins::onOptions\lPluginTreeDoubleClicked" alt="" coords="463,152,659,193"/>
+<area shape="rect" id="node9" href="$classc_options_plugins.html#acca2bbe1e1858e0038bb72416087687f" title="cOptionsPlugins::init" alt="" coords="709,159,860,186"/>
+<area shape="rect" id="node10" href="$classc_options_plugins.html#a6742f672003c2b9255964f908a6981f2" title="cOptionsPlugins::cOptions\lPlugins" alt="" coords="914,152,1101,193"/>
+</map>

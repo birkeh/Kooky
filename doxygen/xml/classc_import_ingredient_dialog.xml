@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_import_ingredient_dialog" kind="class" language="C++" prot="public">
+    <compoundname>cImportIngredientDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="cimportingredientdialog_8h" local="no">cimportingredientdialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" prot="private" static="no" mutable="no">
+        <type>Ui::cImportIngredientDialog *</type>
+        <definition>Ui::cImportIngredientDialog* cImportIngredientDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="64" column="1" bodyfile="Kooky/cimportingredientdialog.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" compoundref="cimportingredientdialog_8cpp" startline="21" endline="27">init</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" compoundref="cimportingredientdialog_8cpp" startline="40" endline="50">initIngredientDetails</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" compoundref="cimportingredientdialog_8cpp" startline="29" endline="38">initIngredientList</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" compoundref="cimportingredientdialog_8cpp" startline="73" endline="105">on_m_lpSearchButton_clicked</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" compoundref="cimportingredientdialog_8cpp" startline="65" endline="71">on_m_lpSearchString_textChanged</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">onIngredientListSelectionChanged</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" compoundref="cimportingredientdialog_8cpp" startline="52" endline="63">setPluginList</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" compoundref="cimportingredientdialog_8cpp" startline="16" endline="19">~cImportIngredientDialog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* cImportIngredientDialog::m_lpIngredientListModel</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientListModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="65" column="1" bodyfile="Kooky/cimportingredientdialog.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" compoundref="cimportingredientdialog_8cpp" startline="29" endline="38">initIngredientList</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" compoundref="cimportingredientdialog_8cpp" startline="73" endline="105">on_m_lpSearchButton_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* cImportIngredientDialog::m_lpIngredientDetailsModel</definition>
+        <argsstring></argsstring>
+        <name>m_lpIngredientDetailsModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="66" column="1" bodyfile="Kooky/cimportingredientdialog.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" compoundref="cimportingredientdialog_8cpp" startline="168" endline="179">addGroup</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" compoundref="cimportingredientdialog_8cpp" startline="40" endline="50">initIngredientDetails</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">onIngredientListSelectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt;</type>
+        <definition>QList&lt;cPlugin*&gt; cImportIngredientDialog::m_pluginList</definition>
+        <argsstring></argsstring>
+        <name>m_pluginList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="80" column="1" bodyfile="Kooky/cimportingredientdialog.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" compoundref="cimportingredientdialog_8cpp" startline="52" endline="63">setPluginList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cImportIngredientDialog::cImportIngredientDialog</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>cImportIngredientDialog</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="49" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="7" bodyend="14"/>
+        <references refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" compoundref="cimportingredientdialog_8cpp" startline="21" endline="27">init</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cImportIngredientDialog::~cImportIngredientDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~cImportIngredientDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="54" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="16" bodyend="19"/>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::setPluginList</definition>
+        <argsstring>(const QList&lt; cPlugin * &gt; pluginList)</argsstring>
+        <name>setPluginList</name>
+        <param>
+          <type>const QList&lt; <ref refid="classc_plugin" kindref="compound">cPlugin</ref> * &gt;</type>
+          <declname>pluginList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pluginList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="61" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="52" bodyend="63"/>
+        <references refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" compoundref="cplugin_8cpp" startline="61" endline="68">cPlugin::capability</references>
+        <references refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" compoundref="cimportingredientdialog_8h" startline="80">m_pluginList</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" compoundref="cplugin_8h" startline="42">cPlugin::PluginCapImport</references>
+        <references refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">cPlugin::pluginName</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+        <referencedby refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" compoundref="cmainwindow_8cpp" startline="316" endline="321">cMainWindow::onIngredientsListImport</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::on_m_lpSearchButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_m_lpSearchButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="69" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="73" bodyend="105"/>
+        <references refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" compoundref="cplugin_8cpp" startline="112" endline="115">cPlugin::importInterface</references>
+        <references refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" compoundref="cimportingredientdialog_8h" startline="65">m_lpIngredientListModel</references>
+        <references refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f">cImportInterface::search</references>
+        <references refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">cMessageAnimateDialog::setMessage</references>
+        <references refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" compoundref="cmessageanimatedialog_8cpp" startline="23" endline="26">cMessageAnimateDialog::setTitle</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::on_m_lpSearchString_textChanged</definition>
+        <argsstring>(const QString &amp;arg1)</argsstring>
+        <name>on_m_lpSearchString_textChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="70" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="65" bodyend="71"/>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+      </memberdef>
+      <memberdef kind="slot" id="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::onIngredientListSelectionChanged</definition>
+        <argsstring>(const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</argsstring>
+        <name>onIngredientListSelectionChanged</name>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type>const QItemSelection &amp;</type>
+          <declname>deselected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deselected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="77" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="107" bodyend="166"/>
+        <references refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" compoundref="cimportingredientdialog_8cpp" startline="168" endline="179">addGroup</references>
+        <references refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" compoundref="cimportinterface_8cpp" startline="4" endline="7">cImportInterface::group</references>
+        <references refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28af55d4002286e1c85ff2fecbc7c081509" compoundref="cingredient_8h" startline="200">cIngredient::iIngredientMax</references>
+        <references refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" compoundref="cplugin_8cpp" startline="112" endline="115">cPlugin::importInterface</references>
+        <references refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983">cImportInterface::load</references>
+        <references refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" compoundref="cimportingredientdialog_8h" startline="66">m_lpIngredientDetailsModel</references>
+        <references refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" compoundref="cimportinterface_8cpp" startline="9" endline="12">cImportInterface::name</references>
+        <references refid="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985" compoundref="cmessageanimatedialog_8cpp" startline="28" endline="39">cMessageAnimateDialog::setMessage</references>
+        <references refid="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e" compoundref="cmessageanimatedialog_8cpp" startline="23" endline="26">cMessageAnimateDialog::setTitle</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+        <references refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42">cImportInterface::value</references>
+        <references refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" compoundref="cimportinterface_8cpp" startline="14" endline="33">cImportInterface::valueStr</references>
+        <referencedby refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" compoundref="cimportingredientdialog_8cpp" startline="29" endline="38">initIngredientList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QStandardItem *</type>
+        <definition>QStandardItem * cImportIngredientDialog::addGroup</definition>
+        <argsstring>(const QString &amp;group)</argsstring>
+        <name>addGroup</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QStandardItem </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="88" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="168" bodyend="179"/>
+        <references refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" compoundref="cimportingredientdialog_8h" startline="66">m_lpIngredientDetailsModel</references>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">onIngredientListSelectionChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="93" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="21" bodyend="27"/>
+        <references refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" compoundref="cimportingredientdialog_8cpp" startline="40" endline="50">initIngredientDetails</references>
+        <references refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" compoundref="cimportingredientdialog_8cpp" startline="29" endline="38">initIngredientList</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+        <referencedby refid="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" compoundref="cimportingredientdialog_8cpp" startline="7" endline="14">cImportIngredientDialog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::initIngredientList</definition>
+        <argsstring>()</argsstring>
+        <name>initIngredientList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="98" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="29" bodyend="38"/>
+        <references refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" compoundref="cimportingredientdialog_8h" startline="65">m_lpIngredientListModel</references>
+        <references refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">onIngredientListSelectionChanged</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+        <referencedby refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" compoundref="cimportingredientdialog_8cpp" startline="21" endline="27">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cImportIngredientDialog::initIngredientDetails</definition>
+        <argsstring>()</argsstring>
+        <name>initIngredientDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cimportingredientdialog.h" line="103" column="1" bodyfile="Kooky/cimportingredientdialog.cpp" bodystart="40" bodyend="50"/>
+        <references refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" compoundref="cimportingredientdialog_8h" startline="66">m_lpIngredientDetailsModel</references>
+        <references refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" compoundref="cimportingredientdialog_8h" startline="64">ui</references>
+        <referencedby refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" compoundref="cimportingredientdialog_8cpp" startline="21" endline="27">init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This dialog imports ingredients based on the selected import plugin. </para>    </briefdescription>
+    <detaileddescription>
+<para>This dialog imports ingredients based on the selected import plugin.</para><para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>QDialog</label>
+      </node>
+      <node id="125">
+        <label>cImportIngredientDialog</label>
+        <link refid="classc_import_ingredient_dialog"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="128">
+        <label>QDialog</label>
+      </node>
+      <node id="127">
+        <label>cImportIngredientDialog</label>
+        <link refid="classc_import_ingredient_dialog"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cimportingredientdialog.h" line="40" column="1" bodyfile="Kooky/cimportingredientdialog.h" bodystart="39" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classc_import_ingredient_dialog_1ae0115db7ba009ecbfcd0af68f4e71e3d" prot="protected" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>addGroup</name></member>
+      <member refid="classc_import_ingredient_dialog_1a4bea50afa976e55633017756cef4443e" prot="public" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>cImportIngredientDialog</name></member>
+      <member refid="classc_import_ingredient_dialog_1acd246954f20eba6d65d233adb3a9c293" prot="protected" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>init</name></member>
+      <member refid="classc_import_ingredient_dialog_1a6158a639b7b11973e84ddb3ca7d9aeb6" prot="protected" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>initIngredientDetails</name></member>
+      <member refid="classc_import_ingredient_dialog_1adf78505fef0d070021878b885fd5a0ea" prot="protected" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>initIngredientList</name></member>
+      <member refid="classc_import_ingredient_dialog_1a9fcdb59fa6c5fc9b65c4db1e43afb3db" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>m_lpIngredientDetailsModel</name></member>
+      <member refid="classc_import_ingredient_dialog_1a0fe1def4e950a1f06a14f28ff7d9ba6a" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>m_lpIngredientListModel</name></member>
+      <member refid="classc_import_ingredient_dialog_1ad5795b238430db474ae852bfbb493578" prot="protected" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>m_pluginList</name></member>
+      <member refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>on_m_lpSearchButton_clicked</name></member>
+      <member refid="classc_import_ingredient_dialog_1a2b5fa289051ab3b18e71f7e2cb7573b3" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>on_m_lpSearchString_textChanged</name></member>
+      <member refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>onIngredientListSelectionChanged</name></member>
+      <member refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" prot="public" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>setPluginList</name></member>
+      <member refid="classc_import_ingredient_dialog_1a80da8aa411eb8da3a692693445e64408" prot="private" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>ui</name></member>
+      <member refid="classc_import_ingredient_dialog_1a07b1bee5504a45413b3736d757bf2c5e" prot="public" virt="non-virtual"><scope>cImportIngredientDialog</scope><name>~cImportIngredientDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

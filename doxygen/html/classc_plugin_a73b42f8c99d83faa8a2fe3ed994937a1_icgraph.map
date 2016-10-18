@@ -1,0 +1,13 @@
+<map id="cPlugin::pluginName" name="cPlugin::pluginName">
+<area shape="rect" id="node2" href="$classc_main_window.html#a514f42d460641e3295b40867da99c50b" title="Loads plugins in the given path. " alt="" coords="491,71,678,98"/>
+<area shape="rect" id="node5" href="$classc_options_plugins.html#a41dfaea4a44e2eed173402bcaa42d0d7" title="cOptionsPlugins::onOptions\lPluginTreePluginToggled" alt="" coords="223,173,419,215"/>
+<area shape="rect" id="node10" href="$classc_main_window.html#a70fa99ff98426a5cc888a2de3ea83b07" title="Testing of database trigger raised by database connector plugins. " alt="" coords="205,71,436,98"/>
+<area shape="rect" id="node11" href="$classc_import_ingredient_dialog.html#ad710be68582d34c43a399b4764c0434a" title="cImportIngredientDialog\l::setPluginList" alt="" coords="233,5,408,47"/>
+<area shape="rect" id="node3" href="$classc_main_window.html#a3cc20776b1fd699783bcb1a0e2a33415" title="Initialized main windows. " alt="" coords="786,42,919,69"/>
+<area shape="rect" id="node4" href="$classc_main_window.html#a04f0ed523c7265f8d8b304e33aaa7d6d" title="Constructor. " alt="" coords="1020,42,1219,69"/>
+<area shape="rect" id="node6" href="$classc_options_plugins.html#ab6ef94ac452b34fad3bfc8b3a2362c53" title="cOptionsPlugins::setPlugins" alt="" coords="487,181,683,207"/>
+<area shape="rect" id="node7" href="$classc_options.html#ac38dce7a12374ec291023a724c8d30ac" title="cOptions::onOptionsTreeSelection\lChanged" alt="" coords="733,173,972,215"/>
+<area shape="rect" id="node8" href="$classc_options.html#a2b71f5c334967a6eb3ec85cc20162cf9" title="cOptions::init" alt="" coords="1067,181,1172,207"/>
+<area shape="rect" id="node9" href="$classc_options.html#ab10e5433e2eb0ea7ca3ea65746e3c132" title="cOptions::cOptions" alt="" coords="1267,181,1409,207"/>
+<area shape="rect" id="node12" href="$classc_main_window.html#a1a0b99b15c690785791074ae0d13131d" title="Import of ingredient has been requested. " alt="" coords="484,5,685,47"/>
+</map>

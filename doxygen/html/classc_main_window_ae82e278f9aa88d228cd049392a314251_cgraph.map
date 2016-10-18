@@ -1,0 +1,7 @@
+<map id="cMainWindow::pluginList" name="cMainWindow::pluginList">
+<area shape="rect" id="node2" href="$classc_plugin.html#a73b42f8c99d83faa8a2fe3ed994937a1" title="cPlugin::pluginName" alt="" coords="227,5,368,32"/>
+<area shape="rect" id="node3" href="$classc_plugin.html#ac2fbd0510573398caf3f5da68da327bb" title="cPlugin::dbInterface" alt="" coords="229,56,365,83"/>
+<area shape="rect" id="node4" href="$classc_interface.html#a17e5a0cf99317ab45f624e68b4a6ecca" title="Returns the name of the plugin. " alt="" coords="220,107,375,133"/>
+<area shape="rect" id="node5" href="$classc_interface.html#a040fbd069a2c2356faeda1c2d9ac88df" title="Calls the configuration dialog (if any). " alt="" coords="237,157,357,184"/>
+<area shape="rect" id="node6" href="$classc_d_b_interface.html#a8baa6f378fb91dea077b38bd15be12c9" title="Initializes the module with default values. " alt="" coords="237,208,358,235"/>
+</map>

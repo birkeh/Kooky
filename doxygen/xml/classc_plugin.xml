@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_plugin" kind="class" language="C++" prot="public">
+    <compoundname>cPlugin</compoundname>
+    <includes refid="cplugin_8h" local="no">cplugin.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classc_plugin_1a4e67238bd5463a402138f35714d03737" prot="public" static="no">
+        <name>PluginCap</name>
+        <enumvalue id="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" prot="public">
+          <name>PluginCapNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" prot="public">
+          <name>PluginCapImport</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" prot="public">
+          <name>PluginCapExport</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" prot="public">
+          <name>PluginCapDB</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="40" column="1" bodyfile="Kooky/cplugin.h" bodystart="39" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" prot="private" static="no" mutable="no">
+        <type>QPluginLoader *</type>
+        <definition>QPluginLoader* cPlugin::m_lpPluginLoader</definition>
+        <argsstring></argsstring>
+        <name>m_lpPluginLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="116" column="1" bodyfile="Kooky/cplugin.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" compoundref="cplugin_8cpp" startline="5" endline="48">cPlugin</referencedby>
+        <referencedby refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" compoundref="cplugin_8cpp" startline="56" endline="59">isValid</referencedby>
+        <referencedby refid="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55" compoundref="cplugin_8cpp" startline="97" endline="100">pluginFile</referencedby>
+        <referencedby refid="classc_plugin_1a38d0e25a6bcd3207902799b783212287" compoundref="cplugin_8cpp" startline="50" endline="54">~cPlugin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" prot="private" static="no" mutable="no">
+        <type><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref> *</type>
+        <definition>cImportInterface* cPlugin::m_lpImportInterface</definition>
+        <argsstring></argsstring>
+        <name>m_lpImportInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="117" column="1" bodyfile="Kooky/cplugin.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" compoundref="cplugin_8cpp" startline="61" endline="68">capability</referencedby>
+        <referencedby refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" compoundref="cplugin_8cpp" startline="5" endline="48">cPlugin</referencedby>
+        <referencedby refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" compoundref="cplugin_8cpp" startline="112" endline="115">importInterface</referencedby>
+        <referencedby refid="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" compoundref="cplugin_8cpp" startline="79" endline="86">pluginAPIVersion</referencedby>
+        <referencedby refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">pluginName</referencedby>
+        <referencedby refid="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" compoundref="cplugin_8cpp" startline="88" endline="95">pluginVersion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" prot="private" static="no" mutable="no">
+        <type><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref> *</type>
+        <definition>cDBInterface* cPlugin::m_lpDBInterface</definition>
+        <argsstring></argsstring>
+        <name>m_lpDBInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="118" column="1" bodyfile="Kooky/cplugin.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" compoundref="cplugin_8cpp" startline="61" endline="68">capability</referencedby>
+        <referencedby refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" compoundref="cplugin_8cpp" startline="5" endline="48">cPlugin</referencedby>
+        <referencedby refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" compoundref="cplugin_8cpp" startline="117" endline="120">dbInterface</referencedby>
+        <referencedby refid="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" compoundref="cplugin_8cpp" startline="79" endline="86">pluginAPIVersion</referencedby>
+        <referencedby refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" compoundref="cplugin_8cpp" startline="70" endline="77">pluginName</referencedby>
+        <referencedby refid="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" compoundref="cplugin_8cpp" startline="88" endline="95">pluginVersion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_plugin_1afb4ff0636dc58684867383cbf8408231" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* cPlugin::m_lpAction</definition>
+        <argsstring></argsstring>
+        <name>m_lpAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="119" column="1" bodyfile="Kooky/cplugin.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee" compoundref="cplugin_8cpp" startline="107" endline="110">action</referencedby>
+        <referencedby refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" compoundref="cplugin_8cpp" startline="102" endline="105">setAction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cPlugin::cPlugin</definition>
+        <argsstring>(const QString &amp;szFile)</argsstring>
+        <name>cPlugin</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="47" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="5" bodyend="48"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <references refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" compoundref="cplugin_8h" startline="116">m_lpPluginLoader</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a38d0e25a6bcd3207902799b783212287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cPlugin::~cPlugin</definition>
+        <argsstring>()</argsstring>
+        <name>~cPlugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="52" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="50" bodyend="54"/>
+        <references refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" compoundref="cplugin_8h" startline="116">m_lpPluginLoader</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cPlugin::isValid</definition>
+        <argsstring>()</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="59" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="56" bodyend="59"/>
+        <references refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" compoundref="cplugin_8h" startline="116">m_lpPluginLoader</references>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">cMainWindow::loadPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" kindref="member">PluginCap</ref></type>
+        <definition>cPlugin::PluginCap cPlugin::capability</definition>
+        <argsstring>()</argsstring>
+        <name>capability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>PluginCap </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="65" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="61" bodyend="68"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" compoundref="cplugin_8h" startline="44">PluginCapDB</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" compoundref="cplugin_8h" startline="42">PluginCapImport</references>
+        <references refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" compoundref="cplugin_8h" startline="41">PluginCapNone</references>
+        <referencedby refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" compoundref="cimportingredientdialog_8cpp" startline="52" endline="63">cImportIngredientDialog::setPluginList</referencedby>
+        <referencedby refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">cOptionsPlugins::showConfigDlg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cPlugin::pluginName</definition>
+        <argsstring>()</argsstring>
+        <name>pluginName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="71" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="70" bodyend="77"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <references refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">cInterface::pluginName</references>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">cMainWindow::loadPlugins</referencedby>
+        <referencedby refid="classc_options_plugins_1a41dfaea4a44e2eed173402bcaa42d0d7" compoundref="coptionsplugins_8cpp" startline="91" endline="112">cOptionsPlugins::onOptionsPluginTreePluginToggled</referencedby>
+        <referencedby refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" compoundref="cmainwindow_8cpp" startline="258" endline="282">cMainWindow::pluginDBTriggered</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" compoundref="cimportingredientdialog_8cpp" startline="52" endline="63">cImportIngredientDialog::setPluginList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qint16</type>
+        <definition>qint16 cPlugin::pluginAPIVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginAPIVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="77" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="79" bodyend="86"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <references refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813">cInterface::pluginAPIVersion</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qint16</type>
+        <definition>qint16 cPlugin::pluginVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="83" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="88" bodyend="95"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <references refid="classc_interface_1aadc382036174c2a25bb2c23733830d33">cInterface::pluginVersion</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cPlugin::setAction</definition>
+        <argsstring>(QAction *lpAction)</argsstring>
+        <name>setAction</name>
+        <param>
+          <type>QAction *</type>
+          <declname>lpAction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lpAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="89" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="102" bodyend="105"/>
+        <references refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" compoundref="cplugin_8h" startline="119">m_lpAction</references>
+        <referencedby refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" compoundref="cmainwindow_8cpp" startline="96" endline="197">cMainWindow::loadPlugins</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction *</type>
+        <definition>QAction * cPlugin::action</definition>
+        <argsstring>()</argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QAction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="95" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="107" bodyend="110"/>
+        <references refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" compoundref="cplugin_8h" startline="119">m_lpAction</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cPlugin::pluginFile</definition>
+        <argsstring>()</argsstring>
+        <name>pluginFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="101" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="97" bodyend="100"/>
+        <references refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" compoundref="cplugin_8h" startline="116">m_lpPluginLoader</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref> *</type>
+        <definition>cImportInterface * cPlugin::importInterface</definition>
+        <argsstring>()</argsstring>
+        <name>importInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="108" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="112" bodyend="115"/>
+        <references refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" compoundref="cplugin_8h" startline="117">m_lpImportInterface</references>
+        <referencedby refid="classc_import_ingredient_dialog_1aad6f67e1420e7ceba52d6ea72bf70e88" compoundref="cimportingredientdialog_8cpp" startline="73" endline="105">cImportIngredientDialog::on_m_lpSearchButton_clicked</referencedby>
+        <referencedby refid="classc_import_ingredient_dialog_1a7aaca4be76facdc5c90fd321825a6289" compoundref="cimportingredientdialog_8cpp" startline="107" endline="166">cImportIngredientDialog::onIngredientListSelectionChanged</referencedby>
+        <referencedby refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">cOptionsPlugins::showConfigDlg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref> *</type>
+        <definition>cDBInterface * cPlugin::dbInterface</definition>
+        <argsstring>()</argsstring>
+        <name>dbInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cplugin.h" line="114" column="1" bodyfile="Kooky/cplugin.cpp" bodystart="117" bodyend="120"/>
+        <references refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" compoundref="cplugin_8h" startline="118">m_lpDBInterface</references>
+        <referencedby refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" compoundref="cmainwindow_8cpp" startline="258" endline="282">cMainWindow::pluginDBTriggered</referencedby>
+        <referencedby refid="classc_options_plugins_1a102ea2333b1b8cdb69135dbd2ca10bed" compoundref="coptionsplugins_8cpp" startline="130" endline="162">cOptionsPlugins::showConfigDlg</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class holds data of an plugin. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="178">
+        <label>cPlugin</label>
+        <link refid="classc_plugin"/>
+        <childnode refid="179" relation="usage">
+          <edgelabel>m_lpImportInterface</edgelabel>
+        </childnode>
+        <childnode refid="181" relation="usage">
+          <edgelabel>m_lpDBInterface</edgelabel>
+        </childnode>
+      </node>
+      <node id="180">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="181">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>cImportInterface</label>
+        <link refid="classc_import_interface"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cplugin.h" line="33" column="1" bodyfile="Kooky/cplugin.h" bodystart="32" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classc_plugin_1a26a73caae5c73d08186e0f969d5851ee" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>action</name></member>
+      <member refid="classc_plugin_1a4e1ee6c29cb94d72b8ddc222dd1e4d5a" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>capability</name></member>
+      <member refid="classc_plugin_1af11276446078e0e68e00b7c139bca1bb" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>cPlugin</name></member>
+      <member refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>dbInterface</name></member>
+      <member refid="classc_plugin_1ac4069636d1b3b0bf5bfa10d6c96ee097" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>importInterface</name></member>
+      <member refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>isValid</name></member>
+      <member refid="classc_plugin_1afb4ff0636dc58684867383cbf8408231" prot="private" virt="non-virtual"><scope>cPlugin</scope><name>m_lpAction</name></member>
+      <member refid="classc_plugin_1a0dfe0fca935254e9c8e10766ebbd8cd1" prot="private" virt="non-virtual"><scope>cPlugin</scope><name>m_lpDBInterface</name></member>
+      <member refid="classc_plugin_1a1f8cbfdab1de2df03c301d45ea286be1" prot="private" virt="non-virtual"><scope>cPlugin</scope><name>m_lpImportInterface</name></member>
+      <member refid="classc_plugin_1a48d7a4870299a7fc61375eb84e791d04" prot="private" virt="non-virtual"><scope>cPlugin</scope><name>m_lpPluginLoader</name></member>
+      <member refid="classc_plugin_1a1055ecf4ff0d670e34291e3d5cc48d90" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>PluginCap</name></member>
+      <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>PluginCapDB</name></member>
+      <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>PluginCapExport</name></member>
+      <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>PluginCapImport</name></member>
+      <member refid="classc_plugin_1a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>PluginCapNone</name></member>
+      <member refid="classc_plugin_1a2fccccf8d24d54ddc9a752f1c7332c55" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>pluginFile</name></member>
+      <member refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>pluginName</name></member>
+      <member refid="classc_plugin_1a87bb0058c550e53f528e1197b5f6ac55" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>pluginVersion</name></member>
+      <member refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>setAction</name></member>
+      <member refid="classc_plugin_1a38d0e25a6bcd3207902799b783212287" prot="public" virt="non-virtual"><scope>cPlugin</scope><name>~cPlugin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

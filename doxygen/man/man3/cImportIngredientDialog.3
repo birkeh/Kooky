@@ -1,0 +1,212 @@
+.TH "cImportIngredientDialog" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cImportIngredientDialog \- This dialog imports ingredients based on the selected import plugin\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cimportingredientdialog\&.h>\fP
+.PP
+Inherits QDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcImportIngredientDialog\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~cImportIngredientDialog\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPluginList\fP (const QList< \fBcPlugin\fP * > pluginList)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "QStandardItem * \fBaddGroup\fP (const QString &group)"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitIngredientList\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitIngredientDetails\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "QList< \fBcPlugin\fP * > \fBm_pluginList\fP"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_m_lpSearchButton_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_m_lpSearchString_textChanged\fP (const QString &arg1)"
+.br
+.ti -1c
+.RI "void \fBonIngredientListSelectionChanged\fP (const QItemSelection &selected, const QItemSelection &deselected)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cImportIngredientDialog * \fBui\fP"
+.br
+.ti -1c
+.RI "QStandardItemModel * \fBm_lpIngredientListModel\fP"
+.br
+.ti -1c
+.RI "QStandardItemModel * \fBm_lpIngredientDetailsModel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This dialog imports ingredients based on the selected import plugin\&.
+.PP
+\fBNote:\fP
+.RS 4
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cImportIngredientDialog::cImportIngredientDialog (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References init()\&.
+.SS "cImportIngredientDialog::~cImportIngredientDialog ()"
+
+.PP
+References ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QStandardItem * cImportIngredientDialog::addGroup (const QString & group)\fC [protected]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgroup\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QStandardItem 
+.RE
+.PP
+
+.PP
+References m_lpIngredientDetailsModel\&.
+.PP
+Referenced by onIngredientListSelectionChanged()\&.
+.SS "void cImportIngredientDialog::init ()\fC [protected]\fP"
+
+.PP
+References initIngredientDetails(), initIngredientList(), and ui\&.
+.PP
+Referenced by cImportIngredientDialog()\&.
+.SS "void cImportIngredientDialog::initIngredientDetails ()\fC [protected]\fP"
+
+.PP
+References m_lpIngredientDetailsModel, and ui\&.
+.PP
+Referenced by init()\&.
+.SS "void cImportIngredientDialog::initIngredientList ()\fC [protected]\fP"
+
+.PP
+References m_lpIngredientListModel, onIngredientListSelectionChanged(), and ui\&.
+.PP
+Referenced by init()\&.
+.SS "void cImportIngredientDialog::on_m_lpSearchButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References cPlugin::importInterface(), m_lpIngredientListModel, cImportInterface::search(), cMessageAnimateDialog::setMessage(), cMessageAnimateDialog::setTitle(), and ui\&.
+.SS "void cImportIngredientDialog::on_m_lpSearchString_textChanged (const QString & arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References ui\&.
+.SS "void cImportIngredientDialog::onIngredientListSelectionChanged (const QItemSelection & selected, const QItemSelection & deselected)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIselected\fP 
+.br
+\fIdeselected\fP 
+.RE
+.PP
+
+.PP
+References addGroup(), cImportInterface::group(), cIngredient::iIngredientMax, cPlugin::importInterface(), cImportInterface::load(), m_lpIngredientDetailsModel, cImportInterface::name(), cMessageAnimateDialog::setMessage(), cMessageAnimateDialog::setTitle(), ui, cImportInterface::value(), and cImportInterface::valueStr()\&.
+.PP
+Referenced by initIngredientList()\&.
+.SS "void cImportIngredientDialog::setPluginList (const QList< \fBcPlugin\fP * > pluginList)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpluginList\fP 
+.RE
+.PP
+
+.PP
+References cPlugin::capability(), m_pluginList, cPlugin::PluginCapImport, cPlugin::pluginName(), and ui\&.
+.PP
+Referenced by cMainWindow::onIngredientsListImport()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QStandardItemModel* cImportIngredientDialog::m_lpIngredientDetailsModel\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by addGroup(), initIngredientDetails(), and onIngredientListSelectionChanged()\&.
+.SS "QStandardItemModel* cImportIngredientDialog::m_lpIngredientListModel\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by initIngredientList(), and on_m_lpSearchButton_clicked()\&.
+.SS "QList<\fBcPlugin\fP*> cImportIngredientDialog::m_pluginList\fC [protected]\fP"
+TODO: describe 
+.PP
+Referenced by setPluginList()\&.
+.SS "Ui::cImportIngredientDialog* cImportIngredientDialog::ui\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by init(), initIngredientDetails(), initIngredientList(), on_m_lpSearchButton_clicked(), on_m_lpSearchString_textChanged(), onIngredientListSelectionChanged(), setPluginList(), and ~cImportIngredientDialog()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

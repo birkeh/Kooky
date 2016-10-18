@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structqt__meta__stringdata__c_ernaehrung_plugin__t">
+<title>qt_meta_stringdata_cErnaehrungPlugin_t struct Reference</title>
+<para>Inheritance diagram for qt_meta_stringdata_cErnaehrungPlugin_t</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="structqt__meta__stringdata__c_ernaehrung_plugin__t__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for qt_meta_stringdata_cErnaehrungPlugin_t</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="structqt__meta__stringdata__c_ernaehrung_plugin__t__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QByteArrayData data[1]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>char stringdata[19]</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

@@ -1,0 +1,224 @@
+.TH "cBleibFitPlugin" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cBleibFitPlugin \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cbleibfitplugin\&.h>\fP
+.PP
+Inherits QObject, and \fBcImportInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "qint16 \fBpluginAPIVersion\fP ()"
+.br
+.ti -1c
+.RI "QString \fBpluginName\fP ()"
+.br
+.ti -1c
+.RI "qint16 \fBpluginVersion\fP ()"
+.br
+.ti -1c
+.RI "\fBiType\fP \fBpluginType\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "QMap< QString, QString > \fBdetailsCapability\fP ()"
+.br
+.ti -1c
+.RI "QStringList \fBsearch\fP (const QString &szSearch, const QString &szDetails=QString(''))"
+.br
+.ti -1c
+.RI "bool \fBload\fP (qint16 iIndex)"
+.br
+.ti -1c
+.RI "qreal \fBvalue\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.ti -1c
+.RI "QString \fBingredientName\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QStringList \fBm_szUrls\fP"
+.br
+.ti -1c
+.RI "QStringList \fBm_szIngredients\fP"
+.br
+.ti -1c
+.RI "qreal \fBm_rValues\fP [\fBcIngredient::iIngredientMax\fP]"
+.br
+.ti -1c
+.RI "qint16 \fBm_iLoadedIndex\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "bool cBleibFitPlugin::config ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+Referenced by pluginType()\&.
+.SS "QMap< QString, QString > cBleibFitPlugin::detailsCapability ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QMap<QString, QString> 
+.RE
+.PP
+
+.PP
+Implements \fBcImportInterface\fP\&.
+.PP
+Referenced by pluginType()\&.
+.SS "QString cBleibFitPlugin::ingredientName ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Implements \fBcImportInterface\fP\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cBleibFitPlugin::load (qint16 iIndex)\fC [virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIiIndex\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implements \fBcImportInterface\fP\&.
+.PP
+References tagMAPPER::key, and tagMAPPER::value\&.
+.PP
+Referenced by pluginType()\&.
+.SS "qint16 cBleibFitPlugin::pluginAPIVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SS "QString cBleibFitPlugin::pluginName ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SS "\fBiType\fP cBleibFitPlugin::pluginType ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+iType 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+References config(), detailsCapability(), ingredientName(), cInterface::iTypeImport, load(), search(), and value()\&.
+.SS "qint16 cBleibFitPlugin::pluginVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SS "QStringList cBleibFitPlugin::search (const QString & szSearch, const QString & szDetails = \fCQString('')\fP)\fC [virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszSearch\fP 
+.br
+\fIszDetails\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QStringList 
+.RE
+.PP
+
+.PP
+Implements \fBcImportInterface\fP\&.
+.PP
+References cIngredient::iIngredientMax\&.
+.PP
+Referenced by pluginType()\&.
+.SS "qreal cBleibFitPlugin::value (\fBcIngredient::iIngredient\fP i)\fC [virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qreal 
+.RE
+.PP
+
+.PP
+Implements \fBcImportInterface\fP\&.
+.PP
+Referenced by pluginType()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "qint16 cBleibFitPlugin::m_iLoadedIndex\fC [private]\fP"
+TODO: describe 
+.SS "qreal cBleibFitPlugin::m_rValues[\fBcIngredient::iIngredientMax\fP]\fC [private]\fP"
+TODO: describe 
+.SS "QStringList cBleibFitPlugin::m_szIngredients\fC [private]\fP"
+TODO: describe 
+.SS "QStringList cBleibFitPlugin::m_szUrls\fC [private]\fP"
+TODO: describe 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

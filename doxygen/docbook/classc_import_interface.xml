@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_import_interface">
+<title>cImportInterface class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cimportinterface_8h">&lt;cimportinterface.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cImportInterface</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_import_interface__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cImportInterface</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_import_interface__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 m_iLoadedIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177">cImportInterface</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QMap&lt; QString, QString &gt; <link linkend="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d">detailsCapability</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QStringList <link linkend="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f">search</link> (
+const QString &amp; szSearch, const QString &amp; szDetails)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983">load</link> (
+qint16 iIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb">loaded</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual qreal <link linkend="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42">value</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94">valueStr</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981">name</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea">group</link> (
+<link linkend="classc_ingredient_1acf023723841ec66cd6368a25e3174a28">cIngredient::iIngredient</link> i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QString <link linkend="classc_import_interface_1af3f569b605787021a919816978f229bc">ingredientName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class implements basic import functionality for Kooky. All functions may be overwritten by derriving classes.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para>Attempts at zen rarely work.</para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>$Date: 2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 33 of file cimportinterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cimportinterface.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>bool cImportInterface::m_bLoaded</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 99 of file cimportinterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cimportinterface.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>qint16 cImportInterface::m_iLoadedIndex</title>                
+<para>TODO: describe </para>
+
+                <para>Definition at line 100 of file cimportinterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cimportinterface.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d">
+                <title>virtual QMap&lt;QString, QString&gt; cImportInterface::detailsCapability ()=0</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QMap&lt;QString, QString&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f">
+                <title>virtual QStringList cImportInterface::search (const QString &amp;szSearch, const QString &amp;szDetails=QString(&quot;&quot;))=0</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szSearch</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>szDetails</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>QStringList </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983">
+                <title>virtual bool cImportInterface::load (qint16 iIndex)=0</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>iIndex</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb">
+                <title>bool cImportInterface::loaded ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42">
+                <title>virtual qreal cImportInterface::value (cIngredient::iIngredient i)=0</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>qreal </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94">
+                <title>QString cImportInterface::valueStr (cIngredient::iIngredient i)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>qreal </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981">
+                <title>QString cImportInterface::name (cIngredient::iIngredient i)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea">
+                <title>QString cImportInterface::group (cIngredient::iIngredient i)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>i</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_import_interface_1af3f569b605787021a919816978f229bc">
+                <title>virtual QString cImportInterface::ingredientName ()=0</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

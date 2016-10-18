@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Kooky</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespace_ui.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Module Documentation</title>
+        <xi:include href="group___m_y_s_q_l.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="group___k_o_o_k_y.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="classc_bleib_fit_plugin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_config_dialog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_d_b_interface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_ernaehrung_plugin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_import_ingredient_dialog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_import_interface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_ingredient.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_interface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_main_window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_mdi_area.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_m_d_i_area.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_message_animate_dialog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_my_s_q_l_plugin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_options.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_options_plugins.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_plugin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classc_s_q_lite_plugin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_dialog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_main_window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_mdi_area.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structqt__meta__stringdata__c_ernaehrung_plugin__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_widget.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structtag_g_r_o_u_p_n_a_m_e.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structtag_m_a_p_p_e_r.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structtag_v_a_l_u_e_s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="cconfigdialog_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cconfigdialog_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmysqlplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmysqlplugin_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="csqliteplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="csqliteplugin_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cbleibfitplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cbleibfitplugin_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cernaehrungplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cernaehrungplugin_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="moc__cernaehrungplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cdbinterface_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cdbinterface_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cimportingredientdialog_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cimportingredientdialog_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cimportinterface_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cimportinterface_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cingredient_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cingredient_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="c_interface_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmainwindow_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmainwindow_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmdiarea_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmdiarea_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmessageanimatedialog_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cmessageanimatedialog_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="coptions_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="coptions_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="coptionsplugins_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="coptionsplugins_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cplugin_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="cplugin_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Directory Documentation</title>
+        <xi:include href="dir_9ed999e56751bb499ba9c47b2e71a527.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_c1520e63b907081b195081b69f113080.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_c3eefea8429a54a17a803ea027aebedf.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_764c326d297e784e1611592102f3909a.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_bb42744f2a7f9443d09426b2c9103c41.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

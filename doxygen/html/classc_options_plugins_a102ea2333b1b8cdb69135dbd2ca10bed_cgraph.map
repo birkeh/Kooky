@@ -1,0 +1,6 @@
+<map id="cOptionsPlugins::showConfigDlg" name="cOptionsPlugins::showConfigDlg">
+<area shape="rect" id="node2" href="$classc_plugin.html#a4e1ee6c29cb94d72b8ddc222dd1e4d5a" title="cPlugin::capability" alt="" coords="297,5,431,32"/>
+<area shape="rect" id="node3" href="$classc_interface.html#a040fbd069a2c2356faeda1c2d9ac88df" title="Calls the configuration dialog (if any). " alt="" coords="299,56,429,83"/>
+<area shape="rect" id="node4" href="$classc_plugin.html#ac2fbd0510573398caf3f5da68da327bb" title="cPlugin::dbInterface" alt="" coords="291,107,437,133"/>
+<area shape="rect" id="node5" href="$classc_plugin.html#ac4069636d1b3b0bf5bfa10d6c96ee097" title="cPlugin::importInterface" alt="" coords="277,157,451,184"/>
+</map>

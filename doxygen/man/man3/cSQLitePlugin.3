@@ -1,0 +1,191 @@
+.TH "cSQLitePlugin" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cSQLitePlugin \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <csqliteplugin\&.h>\fP
+.PP
+Inherits QObject, and \fBcDBInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "qint16 \fBpluginAPIVersion\fP ()"
+.br
+.ti -1c
+.RI "QString \fBpluginName\fP ()"
+.br
+.ti -1c
+.RI "qint16 \fBpluginVersion\fP ()"
+.br
+.ti -1c
+.RI "\fBiType\fP \fBpluginType\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconnect\fP ()"
+.br
+.ti -1c
+.RI "bool \fBinit\fP ()"
+.br
+.ti -1c
+.RI "QString \fBlastError\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBopen\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "QSqlDatabase \fBm_db\fP"
+.br
+.ti -1c
+.RI "QString \fBm_szLastError\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "bool cSQLitePlugin::config ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cSQLitePlugin::connect ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implements \fBcDBInterface\fP\&.
+.PP
+References m_db, open(), and pluginName()\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cSQLitePlugin::init ()\fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implements \fBcDBInterface\fP\&.
+.PP
+References cDBInterface::m_bConnected, m_db, m_szLastError, and pluginName()\&.
+.PP
+Referenced by pluginType()\&.
+.SS "QString cSQLitePlugin::lastError ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References m_szLastError\&.
+.PP
+Referenced by pluginType()\&.
+.SS "bool cSQLitePlugin::open ()\fC [protected]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+References cDBInterface::m_bConnected, m_db, and m_szLastError\&.
+.PP
+Referenced by connect(), and pluginType()\&.
+.SS "qint16 cSQLitePlugin::pluginAPIVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SS "QString cSQLitePlugin::pluginName ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+Referenced by connect(), and init()\&.
+.SS "\fBiType\fP cSQLitePlugin::pluginType ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+iType 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.PP
+References config(), connect(), init(), cInterface::iTypeDB, lastError(), and open()\&.
+.SS "qint16 cSQLitePlugin::pluginVersion ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+Implements \fBcInterface\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QSqlDatabase cSQLitePlugin::m_db\fC [protected]\fP"
+TODO: describe 
+.PP
+Referenced by connect(), init(), and open()\&.
+.SS "QString cSQLitePlugin::m_szLastError\fC [protected]\fP"
+TODO: describe 
+.PP
+Referenced by init(), lastError(), and open()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

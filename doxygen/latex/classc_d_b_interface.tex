@@ -1,0 +1,213 @@
+\hypertarget{classc_d_b_interface}{}\section{c\+D\+B\+Interface Class Reference}
+\label{classc_d_b_interface}\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+
+
+This is the base class for all database connector plugins.  
+
+
+
+
+{\ttfamily \#include $<$cdbinterface.\+h$>$}
+
+
+
+Inheritance diagram for c\+D\+B\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classc_d_b_interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+D\+B\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classc_d_b_interface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_d_b_interface_a71fd9c721e72a05983a061ba8348f257}{c\+D\+B\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classc_d_b_interface_a7146e4fb1753d18c5f13908505fb8b4c}{$\sim$c\+D\+B\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b}{connect} ()=0
+\begin{DoxyCompactList}\small\item\em Opens a connection to the database. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9}{init} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes the module with default values. \end{DoxyCompactList}\item 
+bool \hyperlink{classc_d_b_interface_a31ca3accfbd6dd1d2915440a94874b7b}{connected} ()
+\begin{DoxyCompactList}\small\item\em Returns the current connection status. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classc_d_b_interface_a280fe85549741179ce3a23b9f417c689}{last\+Error} ()
+\begin{DoxyCompactList}\small\item\em Returns the last error message of the last operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classc_d_b_interface_a28d4d17206ee596e43e8c433c11c9282}{m\+\_\+b\+Connected}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements basic interface functionality for all Kooky database connector plugins. All functions may be overwritten by derriving classes.
+
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{c\+D\+B\+Interface()}{cDBInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+D\+B\+Interface\+::c\+D\+B\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classc_d_b_interface_a71fd9c721e72a05983a061ba8348f257}{}\label{classc_d_b_interface_a71fd9c721e72a05983a061ba8348f257}
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!````~c\+D\+B\+Interface@{$\sim$c\+D\+B\+Interface}}
+\index{````~c\+D\+B\+Interface@{$\sim$c\+D\+B\+Interface}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{$\sim$c\+D\+B\+Interface()}{~cDBInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual c\+D\+B\+Interface\+::$\sim$c\+D\+B\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_d_b_interface_a7146e4fb1753d18c5f13908505fb8b4c}{}\label{classc_d_b_interface_a7146e4fb1753d18c5f13908505fb8b4c}
+
+
+References connect(), and init().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_d_b_interface_a7146e4fb1753d18c5f13908505fb8b4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!connect@{connect}}
+\index{connect@{connect}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{connect()=0}{connect()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool c\+D\+B\+Interface\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b}{}\label{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+bool true on success, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11}{c\+My\+S\+Q\+L\+Plugin}, and \hyperlink{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5}{c\+S\+Q\+Lite\+Plugin}.
+
+
+
+Referenced by $\sim$c\+D\+B\+Interface().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!connected@{connected}}
+\index{connected@{connected}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{connected()}{connected()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+D\+B\+Interface\+::connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classc_d_b_interface_a31ca3accfbd6dd1d2915440a94874b7b}{}\label{classc_d_b_interface_a31ca3accfbd6dd1d2915440a94874b7b}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+bool true if connected, false otherwise. 
+\end{DoxyReturn}
+
+
+References m\+\_\+b\+Connected.
+
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!init@{init}}
+\index{init@{init}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{init()=0}{init()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool c\+D\+B\+Interface\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9}{}\label{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9}
+\begin{DoxyNote}{Note}
+This function must be derived by the subclass.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+bool true on success, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c}{c\+My\+S\+Q\+L\+Plugin}, and \hyperlink{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0}{c\+S\+Q\+Lite\+Plugin}.
+
+
+
+Referenced by c\+Main\+Window\+::plugin\+D\+B\+Triggered(), and $\sim$c\+D\+B\+Interface().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{last\+Error()}{lastError()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+D\+B\+Interface\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classc_d_b_interface_a280fe85549741179ce3a23b9f417c689}{}\label{classc_d_b_interface_a280fe85549741179ce3a23b9f417c689}
+\begin{DoxyReturn}{Returns}
+Q\+String error message of the last operation. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{c\+D\+B\+Interface@{c\+D\+B\+Interface}!m\+\_\+b\+Connected@{m\+\_\+b\+Connected}}
+\index{m\+\_\+b\+Connected@{m\+\_\+b\+Connected}!c\+D\+B\+Interface@{c\+D\+B\+Interface}}
+\subsubsection[{\texorpdfstring{m\+\_\+b\+Connected}{m_bConnected}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+D\+B\+Interface\+::m\+\_\+b\+Connected\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_d_b_interface_a28d4d17206ee596e43e8c433c11c9282}{}\label{classc_d_b_interface_a28d4d17206ee596e43e8c433c11c9282}
+holds the current connection status. 
+
+Referenced by c\+My\+S\+Q\+L\+Plugin\+::config(), connected(), c\+S\+Q\+Lite\+Plugin\+::init(), c\+My\+S\+Q\+L\+Plugin\+::init(), c\+S\+Q\+Lite\+Plugin\+::open(), and c\+My\+S\+Q\+L\+Plugin\+::open().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cdbinterface_8h}{cdbinterface.\+h}\end{DoxyCompactItemize}

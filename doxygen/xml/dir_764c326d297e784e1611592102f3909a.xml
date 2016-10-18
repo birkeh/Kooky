@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_764c326d297e784e1611592102f3909a" kind="dir">
+    <compoundname>iErnaehrung</compoundname>
+    <innerfile refid="cernaehrungplugin_8cpp">cernaehrungplugin.cpp</innerfile>
+    <innerfile refid="cernaehrungplugin_8h">cernaehrungplugin.h</innerfile>
+    <innerfile refid="moc__cernaehrungplugin_8cpp">moc_cernaehrungplugin.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="iErnaehrung/"/>
+  </compounddef>
+</doxygen>

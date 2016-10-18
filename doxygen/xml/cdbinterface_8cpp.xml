@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cdbinterface_8cpp" kind="file" language="C++">
+    <compoundname>cdbinterface.cpp</compoundname>
+    <includes refid="cdbinterface_8h" local="yes">cdbinterface.h</includes>
+    <incdepgraph>
+      <node id="730">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>QtPlugin</label>
+      </node>
+      <node id="729">
+        <label>Kooky/cdbinterface.cpp</label>
+        <link refid="cdbinterface.cpp"/>
+        <childnode refid="730" relation="include">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>QString</label>
+      </node>
+      <node id="731">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="732" relation="include">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cdbinterface_8h" kindref="compound">cdbinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cdbinterface.cpp"/>
+  </compounddef>
+</doxygen>

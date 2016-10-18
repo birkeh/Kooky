@@ -1,0 +1,12 @@
+<map id="cPlugin::importInterface" name="cPlugin::importInterface">
+<area shape="rect" id="node2" href="$classc_import_ingredient_dialog.html#aad6f67e1420e7ceba52d6ea72bf70e88" title="cImportIngredientDialog\l::on_m_lpSearchButton\l_clicked" alt="" coords="263,5,438,61"/>
+<area shape="rect" id="node3" href="$classc_import_ingredient_dialog.html#a7aaca4be76facdc5c90fd321825a6289" title="cImportIngredientDialog\l::onIngredientListSelectionChanged" alt="" coords="227,86,475,127"/>
+<area shape="rect" id="node7" href="$classc_options_plugins.html#a102ea2333b1b8cdb69135dbd2ca10bed" title="cOptionsPlugins::showConfigDlg" alt="" coords="239,159,463,185"/>
+<area shape="rect" id="node4" href="$classc_import_ingredient_dialog.html#adf78505fef0d070021878b885fd5a0ea" title="cImportIngredientDialog\l::initIngredientList" alt="" coords="533,78,708,119"/>
+<area shape="rect" id="node5" href="$classc_import_ingredient_dialog.html#acd246954f20eba6d65d233adb3a9c293" title="cImportIngredientDialog\l::init" alt="" coords="767,78,941,119"/>
+<area shape="rect" id="node6" href="$classc_import_ingredient_dialog.html#a4bea50afa976e55633017756cef4443e" title="cImportIngredientDialog\l::cImportIngredientDialog" alt="" coords="991,78,1174,119"/>
+<area shape="rect" id="node8" href="$classc_options_plugins.html#a55f1014d084453544ac054379094ebdb" title="cOptionsPlugins::on\l_m_lpButtonConfigure\l_clicked" alt="" coords="539,144,703,200"/>
+<area shape="rect" id="node9" href="$classc_options_plugins.html#a60d4d685600b74b3bd8b6a3973270db3" title="cOptionsPlugins::onOptions\lPluginTreeDoubleClicked" alt="" coords="523,225,719,266"/>
+<area shape="rect" id="node10" href="$classc_options_plugins.html#acca2bbe1e1858e0038bb72416087687f" title="cOptionsPlugins::init" alt="" coords="779,232,929,259"/>
+<area shape="rect" id="node11" href="$classc_options_plugins.html#a6742f672003c2b9255964f908a6981f2" title="cOptionsPlugins::cOptions\lPlugins" alt="" coords="989,225,1176,266"/>
+</map>

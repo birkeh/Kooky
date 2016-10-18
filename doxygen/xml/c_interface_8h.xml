@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="c_interface_8h" kind="file" language="C++">
+    <compoundname>cInterface.h</compoundname>
+    <includes local="no">QString</includes>
+    <includedby refid="cdbinterface_8h" local="yes">Kooky/cdbinterface.h</includedby>
+    <includedby refid="cimportinterface_8h" local="yes">Kooky/cimportinterface.h</includedby>
+    <incdepgraph>
+      <node id="878">
+        <label>QString</label>
+      </node>
+      <node id="877">
+        <label>Kooky/cInterface.h</label>
+        <link refid="cInterface.h"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="903">
+        <label>Kooky/cimportinterface.cpp</label>
+        <link refid="cimportinterface_8cpp"/>
+      </node>
+      <node id="880">
+        <label>Kooky/cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+      </node>
+      <node id="897">
+        <label>Kooky/cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="886">
+        <label>Kooky/cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>Kooky/coptionsplugins.cpp</label>
+        <link refid="coptionsplugins_8cpp"/>
+      </node>
+      <node id="902">
+        <label>iErnaehrung/moc_cernaehrungplugin.cpp</label>
+        <link refid="moc__cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="899">
+        <label>iBleibFit/cbleibfitplugin.cpp</label>
+        <link refid="cbleibfitplugin_8cpp"/>
+      </node>
+      <node id="882">
+        <label>dMySQL/cmysqlplugin.cpp</label>
+        <link refid="cmysqlplugin_8cpp"/>
+      </node>
+      <node id="883">
+        <label>dSQLite/csqliteplugin.h</label>
+        <link refid="csqliteplugin_8h"/>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>Kooky/coptionsplugins.h</label>
+        <link refid="coptionsplugins_8h"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow_8cpp"/>
+      </node>
+      <node id="884">
+        <label>dSQLite/csqliteplugin.cpp</label>
+        <link refid="csqliteplugin_8cpp"/>
+      </node>
+      <node id="898">
+        <label>iBleibFit/cbleibfitplugin.h</label>
+        <link refid="cbleibfitplugin_8h"/>
+        <childnode refid="899" relation="include">
+        </childnode>
+      </node>
+      <node id="888">
+        <label>Kooky/cimportingredientdialog.cpp</label>
+        <link refid="cimportingredientdialog_8cpp"/>
+      </node>
+      <node id="885">
+        <label>Kooky/cdbinterface.cpp</label>
+        <link refid="cdbinterface_8cpp"/>
+      </node>
+      <node id="901">
+        <label>iErnaehrung/cernaehrungplugin.cpp</label>
+        <link refid="cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="900">
+        <label>iErnaehrung/cernaehrungplugin.h</label>
+        <link refid="cernaehrungplugin_8h"/>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>Kooky/cInterface.h</label>
+        <link refid="cInterface.h"/>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>Kooky/cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog_8h"/>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="890">
+        <label>Kooky/cmainwindow.h</label>
+        <link refid="cmainwindow_8h"/>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>Kooky/coptions.h</label>
+        <link refid="coptions_8h"/>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>dMySQL/cmysqlplugin.h</label>
+        <link refid="cmysqlplugin_8h"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>Kooky/coptions.cpp</label>
+        <link refid="coptions_8cpp"/>
+      </node>
+      <node id="896">
+        <label>Kooky/cplugin.cpp</label>
+        <link refid="cplugin_8cpp"/>
+      </node>
+      <node id="893">
+        <label>Kooky/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_interface" prot="public">cInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#ifndef<sp/>CINTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CINTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classc_interface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_interface" kindref="compound">cInterface</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" kindref="member">iTypeImport</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" kindref="member">iTypeExport</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" kindref="member">iTypeDB</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>qint16<sp/><sp/><ref refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813" kindref="member">pluginAPIVersion</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca" kindref="member">pluginName</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>qint16<sp/><sp/><ref refid="classc_interface_1aadc382036174c2a25bb2c23733830d33" kindref="member">pluginVersion</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref><sp/><sp/><sp/><ref refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4" kindref="member">pluginType</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" kindref="member">config</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CINTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cInterface.h"/>
+  </compounddef>
+</doxygen>

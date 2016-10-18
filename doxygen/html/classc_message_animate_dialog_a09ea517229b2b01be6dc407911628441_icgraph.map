@@ -1,0 +1,8 @@
+<map id="cMessageAnimateDialog::update" name="cMessageAnimateDialog::update">
+<area shape="rect" id="node2" href="$classc_message_animate_dialog.html#af6cae719996f9bf2d683f4cfdbd7b985" title="Sets the message of the dialog. " alt="" coords="233,50,413,91"/>
+<area shape="rect" id="node3" href="$classc_import_ingredient_dialog.html#aad6f67e1420e7ceba52d6ea72bf70e88" title="cImportIngredientDialog\l::on_m_lpSearchButton\l_clicked" alt="" coords="498,5,673,61"/>
+<area shape="rect" id="node4" href="$classc_import_ingredient_dialog.html#a7aaca4be76facdc5c90fd321825a6289" title="cImportIngredientDialog\l::onIngredientListSelectionChanged" alt="" coords="461,86,709,127"/>
+<area shape="rect" id="node5" href="$classc_import_ingredient_dialog.html#adf78505fef0d070021878b885fd5a0ea" title="cImportIngredientDialog\l::initIngredientList" alt="" coords="757,86,932,127"/>
+<area shape="rect" id="node6" href="$classc_import_ingredient_dialog.html#acd246954f20eba6d65d233adb3a9c293" title="cImportIngredientDialog\l::init" alt="" coords="980,86,1155,127"/>
+<area shape="rect" id="node7" href="$classc_import_ingredient_dialog.html#a4bea50afa976e55633017756cef4443e" title="cImportIngredientDialog\l::cImportIngredientDialog" alt="" coords="1203,86,1385,127"/>
+</map>

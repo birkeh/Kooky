@@ -1,0 +1,301 @@
+.TH "cMainWindow" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cMainWindow \- This is the class that implements the main window\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmainwindow\&.h>\fP
+.PP
+Inherits QMainWindow\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcMainWindow\fP (QWidget *parent=0)"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "\fB~cMainWindow\fP ()"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "QList< \fBcPlugin\fP * > \fBpluginList\fP ()"
+.br
+.RI "\fIReturns the list of loaded plugins\&. \fP"
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBpluginImportTriggered\fP ()"
+.br
+.RI "\fITesting of import trigger raised by import plugins\&. \fP"
+.ti -1c
+.RI "void \fBpluginExportTriggered\fP ()"
+.br
+.RI "\fITesting of export trigger raised by export plugins\&. \fP"
+.ti -1c
+.RI "void \fBpluginDBTriggered\fP ()"
+.br
+.RI "\fITesting of database trigger raised by database connector plugins\&. \fP"
+.ti -1c
+.RI "void \fBon_m_lpMenu_File_Exit_triggered\fP ()"
+.br
+.RI "\fIMenu entry 'File -> Exit' triggered\&. \fP"
+.ti -1c
+.RI "void \fBon_m_lpMenu_Tools_Options_triggered\fP ()"
+.br
+.RI "\fIMenu entry 'Tools -> Options' triggered\&. \fP"
+.ti -1c
+.RI "void \fBonIngredientsListCustomContextMenu\fP (const QPoint &point)"
+.br
+.RI "\fICustom contest menu of ingredients list has been requested\&. \fP"
+.ti -1c
+.RI "void \fBonIngredientsListNew\fP ()"
+.br
+.RI "\fINew ingredient has been requested\&. \fP"
+.ti -1c
+.RI "void \fBonIngredientsListImport\fP ()"
+.br
+.RI "\fIImport of ingredient has been requested\&. \fP"
+.ti -1c
+.RI "void \fBonIngredientsListDelete\fP ()"
+.br
+.RI "\fIDelete of ingredient has been requested\&. \fP"
+.ti -1c
+.RI "void \fBonIngredientsListEdit\fP ()"
+.br
+.RI "\fIEdit of ingredient has been requested\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.RI "\fIInitialized main windows\&. \fP"
+.ti -1c
+.RI "void \fBinitDefaultSettings\fP ()"
+.br
+.RI "\fIInitializes default settings for Kooky\&. \fP"
+.ti -1c
+.RI "void \fBloadPlugins\fP (const QString &szPluginDir)"
+.br
+.RI "\fILoads plugins in the given path\&. \fP"
+.ti -1c
+.RI "\fBcPlugin\fP * \fBplugin\fP (QAction *lpAction)"
+.br
+.RI "\fIFinds a plugin with the given action\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cMainWindow * \fBui\fP"
+.br
+.ti -1c
+.RI "QList< \fBcPlugin\fP * > \fBm_pluginList\fP"
+.br
+.ti -1c
+.RI "QStandardItemModel * \fBm_lpIngredientsListModel\fP"
+.br
+.ti -1c
+.RI "QAction * \fBm_lpIngredientsListNew\fP"
+.br
+.ti -1c
+.RI "QAction * \fBm_lpIngredientsListImport\fP"
+.br
+.ti -1c
+.RI "QAction * \fBm_lpIngredientsListDelete\fP"
+.br
+.ti -1c
+.RI "QAction * \fBm_lpIngredientsListEdit\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBm_lpIngredientsListMenu\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements the main window and main functionality of Kooky\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cMainWindow::cMainWindow (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References init()\&.
+.SS "cMainWindow::~cMainWindow ()"
+
+.PP
+References m_lpIngredientsListDelete, m_lpIngredientsListEdit, m_lpIngredientsListNew, and ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void cMainWindow::init ()\fC [private]\fP"
+
+.PP
+References initDefaultSettings(), loadPlugins(), m_lpIngredientsListDelete, m_lpIngredientsListEdit, m_lpIngredientsListImport, m_lpIngredientsListMenu, m_lpIngredientsListModel, m_lpIngredientsListNew, onIngredientsListCustomContextMenu(), onIngredientsListDelete(), onIngredientsListEdit(), onIngredientsListImport(), onIngredientsListNew(), and ui\&.
+.PP
+Referenced by cMainWindow()\&.
+.SS "void cMainWindow::initDefaultSettings ()\fC [private]\fP"
+
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::loadPlugins (const QString & szPluginDir)\fC [private]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszPluginDir\fP Path to plugins 
+.RE
+.PP
+
+.PP
+References cPlugin::isValid(), m_pluginList, pluginDBTriggered(), pluginExportTriggered(), pluginImportTriggered(), cPlugin::pluginName(), cPlugin::setAction(), and ui\&.
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::on_m_lpMenu_File_Exit_triggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.SS "void cMainWindow::on_m_lpMenu_Tools_Options_triggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.SS "void cMainWindow::onIngredientsListCustomContextMenu (const QPoint & point)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpoint\fP Current position of mouse cursor\&. 
+.RE
+.PP
+
+.PP
+References m_lpIngredientsListDelete, m_lpIngredientsListEdit, m_lpIngredientsListMenu, m_lpIngredientsListNew, and ui\&.
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::onIngredientsListDelete ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::onIngredientsListEdit ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::onIngredientsListImport ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References m_pluginList, and cImportIngredientDialog::setPluginList()\&.
+.PP
+Referenced by init()\&.
+.SS "void cMainWindow::onIngredientsListNew ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Referenced by init()\&.
+.SS "\fBcPlugin\fP * cMainWindow::plugin (QAction * lpAction)\fC [private]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlpAction\fP Action of the plugin\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBcPlugin\fP Plugin corresponding to the action, NULL if not found\&. 
+.RE
+.PP
+
+.PP
+References m_pluginList\&.
+.PP
+Referenced by pluginDBTriggered()\&.
+.SS "void cMainWindow::pluginDBTriggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References cInterface::config(), cPlugin::dbInterface(), cDBInterface::init(), plugin(), cInterface::pluginName(), and cPlugin::pluginName()\&.
+.PP
+Referenced by loadPlugins()\&.
+.SS "void cMainWindow::pluginExportTriggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Referenced by loadPlugins()\&.
+.SS "void cMainWindow::pluginImportTriggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Referenced by loadPlugins()\&.
+.SS "QList< \fBcPlugin\fP * > cMainWindow::pluginList ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QList<cPlugin *> List of loaded plugins\&. 
+.RE
+.PP
+
+.PP
+References m_pluginList\&.
+.PP
+Referenced by cOptions::cOptions()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QAction* cMainWindow::m_lpIngredientsListDelete\fC [private]\fP"
+'Delee Ingredient' Action for ingredients context menu 
+.PP
+Referenced by init(), onIngredientsListCustomContextMenu(), and ~cMainWindow()\&.
+.SS "QAction* cMainWindow::m_lpIngredientsListEdit\fC [private]\fP"
+'Edit Ingredient' Action for ingredients context menu 
+.PP
+Referenced by init(), onIngredientsListCustomContextMenu(), and ~cMainWindow()\&.
+.SS "QAction* cMainWindow::m_lpIngredientsListImport\fC [private]\fP"
+'Import Ingredient' Action for ingredients context menu 
+.PP
+Referenced by init()\&.
+.SS "QMenu* cMainWindow::m_lpIngredientsListMenu\fC [private]\fP"
+Context menu for ingredients list 
+.PP
+Referenced by init(), and onIngredientsListCustomContextMenu()\&.
+.SS "QStandardItemModel* cMainWindow::m_lpIngredientsListModel\fC [private]\fP"
+standard item model for ingredients list 
+.PP
+Referenced by init()\&.
+.SS "QAction* cMainWindow::m_lpIngredientsListNew\fC [private]\fP"
+'New Ingredient' Action for ingredients context menu 
+.PP
+Referenced by init(), onIngredientsListCustomContextMenu(), and ~cMainWindow()\&.
+.SS "QList<\fBcPlugin\fP*> cMainWindow::m_pluginList\fC [private]\fP"
+List of loaded plugins 
+.PP
+Referenced by loadPlugins(), onIngredientsListImport(), plugin(), and pluginList()\&.
+.SS "Ui::cMainWindow* cMainWindow::ui\fC [private]\fP"
+the main window GUI 
+.PP
+Referenced by init(), loadPlugins(), onIngredientsListCustomContextMenu(), and ~cMainWindow()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

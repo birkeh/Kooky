@@ -1,0 +1,8 @@
+<map id="cInterface" name="cInterface">
+<area shape="rect" id="node2" href="$classc_d_b_interface.html" title="This is the base class for all database connector plugins. " alt="" coords="142,80,246,107"/>
+<area shape="rect" id="node5" href="$classc_import_interface.html" title="Interface class for importing data. " alt="" coords="271,80,397,107"/>
+<area shape="rect" id="node3" href="$classc_my_s_q_l_plugin.html" title="MySQL Database Connector Plugin class. " alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$classc_s_q_lite_plugin.html" title="cSQLitePlugin" alt="" coords="141,155,250,181"/>
+<area shape="rect" id="node6" href="$classc_bleib_fit_plugin.html" title="cBleibFitPlugin" alt="" coords="276,155,389,181"/>
+<area shape="rect" id="node7" href="$classc_ernaehrung_plugin.html" title="cErnaehrungPlugin" alt="" coords="414,155,555,181"/>
+</map>

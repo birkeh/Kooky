@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmainwindow_8h" kind="file" language="C++">
+    <compoundname>cmainwindow.h</compoundname>
+    <includes refid="cplugin_8h" local="yes">cplugin.h</includes>
+    <includes local="no">QList</includes>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">QStandardItemModel</includes>
+    <includedby refid="cmainwindow_8cpp" local="yes">Kooky/cmainwindow.cpp</includedby>
+    <includedby refid="coptions_8h" local="yes">Kooky/coptions.h</includedby>
+    <includedby refid="main_8cpp" local="yes">Kooky/main.cpp</includedby>
+    <incdepgraph>
+      <node id="946">
+        <label>QMap</label>
+      </node>
+      <node id="947">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="937" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>QList</label>
+      </node>
+      <node id="952">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="951">
+        <label>QMainWindow</label>
+      </node>
+      <node id="944">
+        <label>QtPlugin</label>
+      </node>
+      <node id="938">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="949">
+        <label>QAction</label>
+      </node>
+      <node id="942">
+        <label>QDomDocument</label>
+      </node>
+      <node id="939">
+        <label>QDate</label>
+      </node>
+      <node id="943">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>QString</label>
+      </node>
+      <node id="941">
+        <label>QFile</label>
+      </node>
+      <node id="935">
+        <label>Kooky/cmainwindow.h</label>
+        <link refid="cmainwindow.h"/>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="954">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow_8cpp"/>
+      </node>
+      <node id="953">
+        <label>Kooky/cmainwindow.h</label>
+        <link refid="cmainwindow.h"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>Kooky/coptions.h</label>
+        <link refid="coptions_8h"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>Kooky/coptions.cpp</label>
+        <link refid="coptions_8cpp"/>
+      </node>
+      <node id="957">
+        <label>Kooky/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_main_window" prot="public">cMainWindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>CMAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CMAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cplugin_8h" kindref="compound">cplugin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ui" kindref="compound">Ui</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_main_window" kindref="compound">cMainWindow</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classc_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_main_window" kindref="compound">cMainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classc_main_window" kindref="compound">cMainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classc_main_window" kindref="compound">cMainWindow</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;cPlugin*&gt;<sp/><sp/><sp/><sp/><sp/>pluginList();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pluginImportTriggered();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pluginExportTriggered();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pluginDBTriggered();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_m_lpMenu_File_Exit_triggered();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on_m_lpMenu_Tools_Options_triggered();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientsListCustomContextMenu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>point);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientsListNew();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientsListImport();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientsListDelete();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>onIngredientsListEdit();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120" refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::cMainWindow*<sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>;<sp/></highlight></codeline>
+<codeline lineno="121" refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;cPlugin*&gt;<sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>;<sp/></highlight></codeline>
+<codeline lineno="122" refid="classc_main_window_1a839ead885151027601d9be7d87aade26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel*<sp/><ref refid="classc_main_window_1a839ead885151027601d9be7d87aade26" kindref="member">m_lpIngredientsListModel</ref>;<sp/></highlight></codeline>
+<codeline lineno="123" refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>;<sp/></highlight></codeline>
+<codeline lineno="124" refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" kindref="member">m_lpIngredientsListImport</ref>;<sp/></highlight></codeline>
+<codeline lineno="125" refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>;<sp/></highlight></codeline>
+<codeline lineno="126" refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>;<sp/></highlight></codeline>
+<codeline lineno="127" refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>;<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initDefaultSettings();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loadPlugins(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szPluginDir);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plugin(QAction*<sp/>lpAction);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CMAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cmainwindow.h"/>
+  </compounddef>
+</doxygen>

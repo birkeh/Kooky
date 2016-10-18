@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_interface">
+<title>cInterface class Reference</title>
+<para>
+    <programlisting>#include <link linkend="c_interface_8h">&lt;cInterface.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cInterface</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_interface__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cInterface</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_interface__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> {
+<link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a">iTypeImport</link>= 0,
+<link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f">iTypeExport</link>= 1,
+<link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a">iTypeDB</link>= 2
+}</literallayout>
+<para><emphasis>Defines the type of the interface.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual qint16 <link linkend="classc_interface_1a615b50a526c2d4ca73b13f8991371813">pluginAPIVersion</link> (
+)<para><emphasis>Returns the version of the API.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QString <link linkend="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">pluginName</link> (
+)<para><emphasis>Returns the name of the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual qint16 <link linkend="classc_interface_1aadc382036174c2a25bb2c23733830d33">pluginVersion</link> (
+)<para><emphasis>Version of the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> <link linkend="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">pluginType</link> (
+)<para><emphasis>Returns the type of the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">config</link> (
+)<para><emphasis>Calls the configuration dialog (if any).</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class implements basic interface functionality for all Kooky plugins. All functions may be overwritten by derriving classes.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para>Do not subclass this class directly, always use the appropriate subclass: <link linkend="classc_d_b_interface">cDBInterface</link> for database connectors, <link linkend="classc_import_interface">cImportInterface</link> for import plugins and cExportInterface for export plugins.</para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 32 of file cInterface.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cInterface.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="classc_interface_1a615b50a526c2d4ca73b13f8991371813">
+                <title>virtual qint16 cInterface::pluginAPIVersion ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>qint16 version of the API </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">
+                <title>virtual QString cInterface::pluginName ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass. </para>
+<simplesect/>
+<para>The name must be unique and will also be used to store configuration settings.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>QString name of the plugin. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_interface_1aadc382036174c2a25bb2c23733830d33">
+                <title>virtual qint16 cInterface::pluginVersion ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>qint16 version of the plugin. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">
+                <title>virtual iType cInterface::pluginType ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>iType type of the plugin (see enum iType). </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">
+                <title>virtual bool cInterface::config ()=0</title>                
+<para><formalpara><title>Note: </title>
+
+<para>This function must be derived by the subclass.</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>bool true on success, false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

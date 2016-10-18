@@ -1,0 +1,400 @@
+\hypertarget{classc_my_s_q_l_plugin}{}\section{c\+My\+S\+Q\+L\+Plugin Class Reference}
+\label{classc_my_s_q_l_plugin}\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+
+
+My\+S\+QL Database Connector Plugin class.  
+
+
+
+
+{\ttfamily \#include $<$cmysqlplugin.\+h$>$}
+
+
+
+Inheritance diagram for c\+My\+S\+Q\+L\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classc_my_s_q_l_plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+My\+S\+Q\+L\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classc_my_s_q_l_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+qint16 \hyperlink{classc_my_s_q_l_plugin_afbcc9dc99700cecd230b70d0384b0fd2}{plugin\+A\+P\+I\+Version} ()
+\begin{DoxyCompactList}\small\item\em Returns the version of the plugin A\+PI. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classc_my_s_q_l_plugin_ae8eed8a248ddbb3f8372290571ddfb24}{plugin\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the plugin. \end{DoxyCompactList}\item 
+qint16 \hyperlink{classc_my_s_q_l_plugin_af9f85d9af71685b373b114d8d2d98c6a}{plugin\+Version} ()
+\begin{DoxyCompactList}\small\item\em returns the version of the plugin \end{DoxyCompactList}\item 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \hyperlink{classc_my_s_q_l_plugin_a76618f3bd8846fab6e3572e30df6fae7}{plugin\+Type} ()
+\begin{DoxyCompactList}\small\item\em returns the type of the plugin. \end{DoxyCompactList}\item 
+bool \hyperlink{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11}{connect} ()
+\begin{DoxyCompactList}\small\item\em connects to the database. \end{DoxyCompactList}\item 
+bool \hyperlink{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c}{init} ()
+\begin{DoxyCompactList}\small\item\em initializes default settings for the plugin. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{classc_my_s_q_l_plugin_a8e175f45e12bf3716af0dd5728710cda}{last\+Error} ()
+\begin{DoxyCompactList}\small\item\em returns the last error string. \end{DoxyCompactList}\item 
+bool \hyperlink{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441}{config} ()
+\begin{DoxyCompactList}\small\item\em calls the configuration dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classc_my_s_q_l_plugin_a574fa4e2d3e7505defaf9550eb9893ec}{open} ()
+\begin{DoxyCompactList}\small\item\em opens the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Database \hyperlink{classc_my_s_q_l_plugin_ae8eac3baf1f720e5b36315a611a18d50}{m\+\_\+db}
+\item 
+Q\+String \hyperlink{classc_my_s_q_l_plugin_aa59160129f7a5c373fef1cfd0d8e281c}{m\+\_\+sz\+Last\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements the database connector for My\+S\+QL. All functions may be overwritten by derriving classes.
+
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+\$\+Date\+: 2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!config@{config}}
+\index{config@{config}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{config()}{config()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+My\+S\+Q\+L\+Plugin\+::config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441}{}\label{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441}
+\begin{DoxyReturn}{Returns}
+bool true if the configuration has been changed successfully or false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{c\+Interface}.
+
+
+
+References c\+Config\+Dialog\+::database(), c\+Config\+Dialog\+::hostname(), c\+D\+B\+Interface\+::m\+\_\+b\+Connected, m\+\_\+db, open(), c\+Config\+Dialog\+::password(), plugin\+Name(), c\+Config\+Dialog\+::set\+Database(), c\+Config\+Dialog\+::set\+Hostname(), c\+Config\+Dialog\+::set\+Password(), c\+Config\+Dialog\+::set\+User\+Name(), and c\+Config\+Dialog\+::user\+Name().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_ad8413f2440b3ce4390865bb08d238441_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!connect@{connect}}
+\index{connect@{connect}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+My\+S\+Q\+L\+Plugin\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11}{}\label{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11}
+\begin{DoxyReturn}{Returns}
+bool true on success or false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b}{c\+D\+B\+Interface}.
+
+
+
+References m\+\_\+db, open(), and plugin\+Name().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_a137309c4dea786cc0cbd2d7db9acff11_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!init@{init}}
+\index{init@{init}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+My\+S\+Q\+L\+Plugin\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c}{}\label{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c}
+\begin{DoxyReturn}{Returns}
+bool true if settings where successfully tested or false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9}{c\+D\+B\+Interface}.
+
+
+
+References c\+D\+B\+Interface\+::m\+\_\+b\+Connected, m\+\_\+db, m\+\_\+sz\+Last\+Error, and plugin\+Name().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_ab64cecb567902902ef25fd3cf7346a4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{last\+Error()}{lastError()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+My\+S\+Q\+L\+Plugin\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_my_s_q_l_plugin_a8e175f45e12bf3716af0dd5728710cda}{}\label{classc_my_s_q_l_plugin_a8e175f45e12bf3716af0dd5728710cda}
+\begin{DoxyReturn}{Returns}
+Q\+String last error 
+\end{DoxyReturn}
+
+
+References m\+\_\+sz\+Last\+Error.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_a8e175f45e12bf3716af0dd5728710cda_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!open@{open}}
+\index{open@{open}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{open()}{open()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+My\+S\+Q\+L\+Plugin\+::open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_my_s_q_l_plugin_a574fa4e2d3e7505defaf9550eb9893ec}{}\label{classc_my_s_q_l_plugin_a574fa4e2d3e7505defaf9550eb9893ec}
+\begin{DoxyReturn}{Returns}
+bool true on success or false otherwise. 
+\end{DoxyReturn}
+
+
+References c\+D\+B\+Interface\+::m\+\_\+b\+Connected, m\+\_\+db, and m\+\_\+sz\+Last\+Error.
+
+
+
+Referenced by config(), connect(), and plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_a574fa4e2d3e7505defaf9550eb9893ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()}{pluginAPIVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+My\+S\+Q\+L\+Plugin\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_afbcc9dc99700cecd230b70d0384b0fd2}{}\label{classc_my_s_q_l_plugin_afbcc9dc99700cecd230b70d0384b0fd2}
+\begin{DoxyReturn}{Returns}
+qint16 plugin A\+PI version 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a615b50a526c2d4ca73b13f8991371813}{c\+Interface}.
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Name()}{pluginName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+My\+S\+Q\+L\+Plugin\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_ae8eed8a248ddbb3f8372290571ddfb24}{}\label{classc_my_s_q_l_plugin_ae8eed8a248ddbb3f8372290571ddfb24}
+\begin{DoxyReturn}{Returns}
+Q\+String name of the plugin 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{c\+Interface}.
+
+
+
+Referenced by config(), connect(), and init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_ae8eed8a248ddbb3f8372290571ddfb24_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!plugin\+Type@{plugin\+Type}}
+\index{plugin\+Type@{plugin\+Type}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Type()}{pluginType()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i\+Type} c\+My\+S\+Q\+L\+Plugin\+::plugin\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_a76618f3bd8846fab6e3572e30df6fae7}{}\label{classc_my_s_q_l_plugin_a76618f3bd8846fab6e3572e30df6fae7}
+\begin{DoxyReturn}{Returns}
+i\+Type type of the plugin.
+\end{DoxyReturn}
+Returns the type of the plugin. Possible values are\+: 
+\begin{DoxyItemize}
+\item \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a}{c\+Interface\+::i\+Type\+DB} ~\newline
+ plugin provides DB connector 
+\item \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f}{c\+Interface\+::i\+Type\+Export} ~\newline
+ plugin provides export capabilities 
+\item \hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a}{c\+Interface\+::i\+Type\+Import} ~\newline
+ plugin provides import capabilities  
+\end{DoxyItemize}
+
+Implements \hyperlink{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{c\+Interface}.
+
+
+
+References config(), connect(), init(), c\+Interface\+::i\+Type\+DB, last\+Error(), and open().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_my_s_q_l_plugin_a76618f3bd8846fab6e3572e30df6fae7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Version()}{pluginVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+My\+S\+Q\+L\+Plugin\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_my_s_q_l_plugin_af9f85d9af71685b373b114d8d2d98c6a}{}\label{classc_my_s_q_l_plugin_af9f85d9af71685b373b114d8d2d98c6a}
+\begin{DoxyReturn}{Returns}
+qint16 version of the plugin 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_aadc382036174c2a25bb2c23733830d33}{c\+Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!m\+\_\+db@{m\+\_\+db}}
+\index{m\+\_\+db@{m\+\_\+db}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+db}{m_db}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Sql\+Database c\+My\+S\+Q\+L\+Plugin\+::m\+\_\+db\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_my_s_q_l_plugin_ae8eac3baf1f720e5b36315a611a18d50}{}\label{classc_my_s_q_l_plugin_ae8eac3baf1f720e5b36315a611a18d50}
+holds the database connection 
+
+Referenced by config(), connect(), init(), and open().
+
+\index{c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}!m\+\_\+sz\+Last\+Error@{m\+\_\+sz\+Last\+Error}}
+\index{m\+\_\+sz\+Last\+Error@{m\+\_\+sz\+Last\+Error}!c\+My\+S\+Q\+L\+Plugin@{c\+My\+S\+Q\+L\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Last\+Error}{m_szLastError}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+My\+S\+Q\+L\+Plugin\+::m\+\_\+sz\+Last\+Error\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_my_s_q_l_plugin_aa59160129f7a5c373fef1cfd0d8e281c}{}\label{classc_my_s_q_l_plugin_aa59160129f7a5c373fef1cfd0d8e281c}
+holds the last error message 
+
+Referenced by init(), last\+Error(), and open().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+d\+My\+S\+Q\+L/\hyperlink{cmysqlplugin_8h}{cmysqlplugin.\+h}\item 
+d\+My\+S\+Q\+L/\hyperlink{cmysqlplugin_8cpp}{cmysqlplugin.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cmysqlplugin_8h">
+    <title>cmysqlplugin.h File Reference</title>
+    <programlisting>#include &quot;cdbinterface.h&quot;</programlisting>
+    <programlisting>#include &lt;QtCore&gt;</programlisting>
+    <programlisting>#include &lt;QObject&gt;</programlisting>
+    <programlisting>#include &lt;QString&gt;</programlisting>
+    <programlisting>#include &lt;QSqlDatabase&gt;</programlisting>
+<para>Include dependency diagram for cmysqlplugin.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cmysqlplugin_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cmysqlplugin.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cmysqlplugin_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_my_s_q_l_plugin">cMySQLPlugin</link></para>
+<para><emphasis>MySQL Database Connector Plugin class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/dMySQL/cmysqlplugin.h</para>
+    </simplesect>
+</section>

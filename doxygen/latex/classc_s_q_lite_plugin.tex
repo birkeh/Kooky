@@ -1,0 +1,354 @@
+\hypertarget{classc_s_q_lite_plugin}{}\section{c\+S\+Q\+Lite\+Plugin Class Reference}
+\label{classc_s_q_lite_plugin}\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+
+
+{\ttfamily \#include $<$csqliteplugin.\+h$>$}
+
+
+
+Inheritance diagram for c\+S\+Q\+Lite\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classc_s_q_lite_plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+S\+Q\+Lite\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classc_s_q_lite_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+qint16 \hyperlink{classc_s_q_lite_plugin_abe6689a26729e68d2167eb87e3bc2768}{plugin\+A\+P\+I\+Version} ()
+\item 
+Q\+String \hyperlink{classc_s_q_lite_plugin_a073f7e6b4fa9804c58bdb4a5a758ffa4}{plugin\+Name} ()
+\item 
+qint16 \hyperlink{classc_s_q_lite_plugin_a680ffa394cab1bd545080c4ea72bd442}{plugin\+Version} ()
+\item 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \hyperlink{classc_s_q_lite_plugin_a1ba9b4a2e7dc962bbc67a89dc928fcee}{plugin\+Type} ()
+\item 
+bool \hyperlink{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5}{connect} ()
+\item 
+bool \hyperlink{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0}{init} ()
+\item 
+Q\+String \hyperlink{classc_s_q_lite_plugin_a559d79aa121a1d04ba89ae3cc641baf8}{last\+Error} ()
+\item 
+bool \hyperlink{classc_s_q_lite_plugin_a0ebe7b647b44908f2717c86900ac679d}{config} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classc_s_q_lite_plugin_ab826f374afd77f9b0118131eb6ae368f}{open} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Database \hyperlink{classc_s_q_lite_plugin_a3e3b9845869292d92f7d37e1ffa90df5}{m\+\_\+db}
+\item 
+Q\+String \hyperlink{classc_s_q_lite_plugin_a2f6c0e82b435799bd544d8a1847f4d1a}{m\+\_\+sz\+Last\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!config@{config}}
+\index{config@{config}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{config()}{config()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+S\+Q\+Lite\+Plugin\+::config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a0ebe7b647b44908f2717c86900ac679d}{}\label{classc_s_q_lite_plugin_a0ebe7b647b44908f2717c86900ac679d}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{c\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a0ebe7b647b44908f2717c86900ac679d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!connect@{connect}}
+\index{connect@{connect}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+S\+Q\+Lite\+Plugin\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5}{}\label{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_d_b_interface_a1831bb8f93342190f26d83f35b4a988b}{c\+D\+B\+Interface}.
+
+
+
+References m\+\_\+db, open(), and plugin\+Name().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a0a3bef23b97f92e6df13248533cdb3e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!init@{init}}
+\index{init@{init}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+S\+Q\+Lite\+Plugin\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0}{}\label{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_d_b_interface_a8baa6f378fb91dea077b38bd15be12c9}{c\+D\+B\+Interface}.
+
+
+
+References c\+D\+B\+Interface\+::m\+\_\+b\+Connected, m\+\_\+db, m\+\_\+sz\+Last\+Error, and plugin\+Name().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a5ed58193b879741aa561e6b5b24728a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{last\+Error()}{lastError()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+S\+Q\+Lite\+Plugin\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_s_q_lite_plugin_a559d79aa121a1d04ba89ae3cc641baf8}{}\label{classc_s_q_lite_plugin_a559d79aa121a1d04ba89ae3cc641baf8}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References m\+\_\+sz\+Last\+Error.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a559d79aa121a1d04ba89ae3cc641baf8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!open@{open}}
+\index{open@{open}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{open()}{open()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+S\+Q\+Lite\+Plugin\+::open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_s_q_lite_plugin_ab826f374afd77f9b0118131eb6ae368f}{}\label{classc_s_q_lite_plugin_ab826f374afd77f9b0118131eb6ae368f}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+References c\+D\+B\+Interface\+::m\+\_\+b\+Connected, m\+\_\+db, and m\+\_\+sz\+Last\+Error.
+
+
+
+Referenced by connect(), and plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_ab826f374afd77f9b0118131eb6ae368f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()}{pluginAPIVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+S\+Q\+Lite\+Plugin\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_abe6689a26729e68d2167eb87e3bc2768}{}\label{classc_s_q_lite_plugin_abe6689a26729e68d2167eb87e3bc2768}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a615b50a526c2d4ca73b13f8991371813}{c\+Interface}.
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Name()}{pluginName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+S\+Q\+Lite\+Plugin\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a073f7e6b4fa9804c58bdb4a5a758ffa4}{}\label{classc_s_q_lite_plugin_a073f7e6b4fa9804c58bdb4a5a758ffa4}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{c\+Interface}.
+
+
+
+Referenced by connect(), and init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a073f7e6b4fa9804c58bdb4a5a758ffa4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!plugin\+Type@{plugin\+Type}}
+\index{plugin\+Type@{plugin\+Type}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Type()}{pluginType()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i\+Type} c\+S\+Q\+Lite\+Plugin\+::plugin\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a1ba9b4a2e7dc962bbc67a89dc928fcee}{}\label{classc_s_q_lite_plugin_a1ba9b4a2e7dc962bbc67a89dc928fcee}
+\begin{DoxyReturn}{Returns}
+i\+Type 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{c\+Interface}.
+
+
+
+References config(), connect(), init(), c\+Interface\+::i\+Type\+DB, last\+Error(), and open().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_s_q_lite_plugin_a1ba9b4a2e7dc962bbc67a89dc928fcee_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Version()}{pluginVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+S\+Q\+Lite\+Plugin\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_s_q_lite_plugin_a680ffa394cab1bd545080c4ea72bd442}{}\label{classc_s_q_lite_plugin_a680ffa394cab1bd545080c4ea72bd442}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_aadc382036174c2a25bb2c23733830d33}{c\+Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!m\+\_\+db@{m\+\_\+db}}
+\index{m\+\_\+db@{m\+\_\+db}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+db}{m_db}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Sql\+Database c\+S\+Q\+Lite\+Plugin\+::m\+\_\+db\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_s_q_lite_plugin_a3e3b9845869292d92f7d37e1ffa90df5}{}\label{classc_s_q_lite_plugin_a3e3b9845869292d92f7d37e1ffa90df5}
+T\+O\+DO\+: describe 
+
+Referenced by connect(), init(), and open().
+
+\index{c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}!m\+\_\+sz\+Last\+Error@{m\+\_\+sz\+Last\+Error}}
+\index{m\+\_\+sz\+Last\+Error@{m\+\_\+sz\+Last\+Error}!c\+S\+Q\+Lite\+Plugin@{c\+S\+Q\+Lite\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Last\+Error}{m_szLastError}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+S\+Q\+Lite\+Plugin\+::m\+\_\+sz\+Last\+Error\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classc_s_q_lite_plugin_a2f6c0e82b435799bd544d8a1847f4d1a}{}\label{classc_s_q_lite_plugin_a2f6c0e82b435799bd544d8a1847f4d1a}
+T\+O\+DO\+: describe 
+
+Referenced by init(), last\+Error(), and open().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+d\+S\+Q\+Lite/\hyperlink{csqliteplugin_8h}{csqliteplugin.\+h}\item 
+d\+S\+Q\+Lite/\hyperlink{csqliteplugin_8cpp}{csqliteplugin.\+cpp}\end{DoxyCompactItemize}

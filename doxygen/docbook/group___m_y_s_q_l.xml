@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group___m_y_s_q_l">
+    <title>MySQL Database Connector Plugin</title>
+<para>Collaboration diagram for MySQL Database Connector Plugin</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group___m_y_s_q_l.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+
+<para>This module is designed to connect to MySQL Databases. </para>
+        <section>
+            <title>Detailed Description</title>
+        </section>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_config_dialog">cConfigDialog</link></para>
+<para><emphasis>Configuration Dialog for dMySQL.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_my_s_q_l_plugin">cMySQLPlugin</link></para>
+<para><emphasis>MySQL Database Connector Plugin class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

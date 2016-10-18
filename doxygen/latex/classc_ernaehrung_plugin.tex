@@ -1,0 +1,370 @@
+\hypertarget{classc_ernaehrung_plugin}{}\section{c\+Ernaehrung\+Plugin Class Reference}
+\label{classc_ernaehrung_plugin}\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+
+
+{\ttfamily \#include $<$cernaehrungplugin.\+h$>$}
+
+
+
+Inheritance diagram for c\+Ernaehrung\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classc_ernaehrung_plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for c\+Ernaehrung\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classc_ernaehrung_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+qint16 \hyperlink{classc_ernaehrung_plugin_a44195e21ed764afb56bbcb4d64af1f3a}{plugin\+A\+P\+I\+Version} ()
+\item 
+Q\+String \hyperlink{classc_ernaehrung_plugin_a67ea2bef7e9d68fe3705baff59c9fec5}{plugin\+Name} ()
+\item 
+qint16 \hyperlink{classc_ernaehrung_plugin_a9f94e9684b541b55e67b87bff7a0a028}{plugin\+Version} ()
+\item 
+\hyperlink{classc_interface_a41462a3131755963add9ba3026e7d31a}{i\+Type} \hyperlink{classc_ernaehrung_plugin_aadc57be2d4fa422a9cadcbf647926700}{plugin\+Type} ()
+\item 
+bool \hyperlink{classc_ernaehrung_plugin_acbadba8cb20826f22cce60af8f4be98f}{config} ()
+\item 
+Q\+Map$<$ Q\+String, Q\+String $>$ \hyperlink{classc_ernaehrung_plugin_a9fef4cc5e1c59999833ffb4493cfae3e}{details\+Capability} ()
+\item 
+Q\+String\+List \hyperlink{classc_ernaehrung_plugin_aec19c86cca48415dbef841bc5b3cc15d}{search} (const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=Q\+String(\char`\"{}\char`\"{}))
+\item 
+bool \hyperlink{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d}{load} (qint16 i\+Index)
+\item 
+qreal \hyperlink{classc_ernaehrung_plugin_a8b4bb34247562c26687bb33e6369eb25}{value} (\hyperlink{classc_ingredient_acf023723841ec66cd6368a25e3174a28}{c\+Ingredient\+::i\+Ingredient} i)
+\item 
+Q\+String \hyperlink{classc_ernaehrung_plugin_a24c04c0b98fb4186e5b5b012662b39ed}{ingredient\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{classc_ernaehrung_plugin_a58692dcfff3d8f9da462b90fbf12db06}{m\+\_\+sz\+Urls}
+\item 
+Q\+String\+List \hyperlink{classc_ernaehrung_plugin_aa586d90efc11b68dce605fdf1a45910d}{m\+\_\+sz\+Ingredients}
+\item 
+qint16 \hyperlink{classc_ernaehrung_plugin_a947339aef16691c4165c7eb1869d3b7e}{m\+\_\+i\+Loaded\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!config@{config}}
+\index{config@{config}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{config()}{config()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Ernaehrung\+Plugin\+::config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_acbadba8cb20826f22cce60af8f4be98f}{}\label{classc_ernaehrung_plugin_acbadba8cb20826f22cce60af8f4be98f}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a040fbd069a2c2356faeda1c2d9ac88df}{c\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classc_ernaehrung_plugin_acbadba8cb20826f22cce60af8f4be98f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!details\+Capability@{details\+Capability}}
+\index{details\+Capability@{details\+Capability}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{details\+Capability()}{detailsCapability()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Map$<$ Q\+String, Q\+String $>$ c\+Ernaehrung\+Plugin\+::details\+Capability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a9fef4cc5e1c59999833ffb4493cfae3e}{}\label{classc_ernaehrung_plugin_a9fef4cc5e1c59999833ffb4493cfae3e}
+\begin{DoxyReturn}{Returns}
+Q\+Map$<$\+Q\+String, Q\+String$>$ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a4ec2f198f8488e7daf2e93cf637a580d}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classc_ernaehrung_plugin_a9fef4cc5e1c59999833ffb4493cfae3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!ingredient\+Name@{ingredient\+Name}}
+\index{ingredient\+Name@{ingredient\+Name}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{ingredient\+Name()}{ingredientName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Ernaehrung\+Plugin\+::ingredient\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a24c04c0b98fb4186e5b5b012662b39ed}{}\label{classc_ernaehrung_plugin_a24c04c0b98fb4186e5b5b012662b39ed}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_af3f569b605787021a919816978f229bc}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classc_ernaehrung_plugin_a24c04c0b98fb4186e5b5b012662b39ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!load@{load}}
+\index{load@{load}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{load(qint16 i\+Index)}{load(qint16 iIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Ernaehrung\+Plugin\+::load (
+\begin{DoxyParamCaption}
+\item[{qint16}]{i\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d}{}\label{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a728bcb2a636f78bae2fe7e128a18e983}{c\+Import\+Interface}.
+
+
+
+References tag\+V\+A\+L\+U\+E\+S\+::d\+Value, tag\+V\+A\+L\+U\+E\+S\+::sz\+Search, and to\+Value().
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_ernaehrung_plugin_a2d688c0a56bed5b8f233dd5890a96a3d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()}{pluginAPIVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Ernaehrung\+Plugin\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a44195e21ed764afb56bbcb4d64af1f3a}{}\label{classc_ernaehrung_plugin_a44195e21ed764afb56bbcb4d64af1f3a}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a615b50a526c2d4ca73b13f8991371813}{c\+Interface}.
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Name()}{pluginName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Ernaehrung\+Plugin\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a67ea2bef7e9d68fe3705baff59c9fec5}{}\label{classc_ernaehrung_plugin_a67ea2bef7e9d68fe3705baff59c9fec5}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_a17e5a0cf99317ab45f624e68b4a6ecca}{c\+Interface}.
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!plugin\+Type@{plugin\+Type}}
+\index{plugin\+Type@{plugin\+Type}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Type()}{pluginType()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i\+Type} c\+Ernaehrung\+Plugin\+::plugin\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_aadc57be2d4fa422a9cadcbf647926700}{}\label{classc_ernaehrung_plugin_aadc57be2d4fa422a9cadcbf647926700}
+\begin{DoxyReturn}{Returns}
+i\+Type 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_af5e408cdaff527a872ce6d02a96301a4}{c\+Interface}.
+
+
+
+References config(), details\+Capability(), ingredient\+Name(), c\+Interface\+::i\+Type\+Import, load(), search(), and value().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_ernaehrung_plugin_aadc57be2d4fa422a9cadcbf647926700_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Version()}{pluginVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Ernaehrung\+Plugin\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a9f94e9684b541b55e67b87bff7a0a028}{}\label{classc_ernaehrung_plugin_a9f94e9684b541b55e67b87bff7a0a028}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_interface_aadc382036174c2a25bb2c23733830d33}{c\+Interface}.
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!search@{search}}
+\index{search@{search}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{search(const Q\+String \&sz\+Search, const Q\+String \&sz\+Details=\+Q\+String(""""))}{search(const QString &szSearch, const QString &szDetails=QString(""))}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Ernaehrung\+Plugin\+::search (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+Search, }
+\item[{const Q\+String \&}]{sz\+Details = {\ttfamily QString(\char`\"{}\char`\"{})}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_aec19c86cca48415dbef841bc5b3cc15d}{}\label{classc_ernaehrung_plugin_aec19c86cca48415dbef841bc5b3cc15d}
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Search} & \\
+\hline
+{\em sz\+Details} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+String\+List 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a8b48a3821674ff15d7eaf4e03c55409f}{c\+Import\+Interface}.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classc_ernaehrung_plugin_aec19c86cca48415dbef841bc5b3cc15d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!value@{value}}
+\index{value@{value}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{value(c\+Ingredient\+::i\+Ingredient i)}{value(cIngredient::iIngredient i)}}]{\setlength{\rightskip}{0pt plus 5cm}qreal c\+Ernaehrung\+Plugin\+::value (
+\begin{DoxyParamCaption}
+\item[{{\bf c\+Ingredient\+::i\+Ingredient}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classc_ernaehrung_plugin_a8b4bb34247562c26687bb33e6369eb25}{}\label{classc_ernaehrung_plugin_a8b4bb34247562c26687bb33e6369eb25}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+qreal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classc_import_interface_a7a8dbe6a164549272d748d2f77aebc42}{c\+Import\+Interface}.
+
+
+
+References tag\+V\+A\+L\+U\+E\+S\+::d\+Value, and tag\+V\+A\+L\+U\+E\+S\+::i\+Ingredient.
+
+
+
+Referenced by plugin\+Type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classc_ernaehrung_plugin_a8b4bb34247562c26687bb33e6369eb25_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}}
+\index{m\+\_\+i\+Loaded\+Index@{m\+\_\+i\+Loaded\+Index}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+i\+Loaded\+Index}{m_iLoadedIndex}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Ernaehrung\+Plugin\+::m\+\_\+i\+Loaded\+Index\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_ernaehrung_plugin_a947339aef16691c4165c7eb1869d3b7e}{}\label{classc_ernaehrung_plugin_a947339aef16691c4165c7eb1869d3b7e}
+T\+O\+DO\+: describe \index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!m\+\_\+sz\+Ingredients@{m\+\_\+sz\+Ingredients}}
+\index{m\+\_\+sz\+Ingredients@{m\+\_\+sz\+Ingredients}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Ingredients}{m_szIngredients}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Ernaehrung\+Plugin\+::m\+\_\+sz\+Ingredients\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_ernaehrung_plugin_aa586d90efc11b68dce605fdf1a45910d}{}\label{classc_ernaehrung_plugin_aa586d90efc11b68dce605fdf1a45910d}
+T\+O\+DO\+: describe \index{c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}!m\+\_\+sz\+Urls@{m\+\_\+sz\+Urls}}
+\index{m\+\_\+sz\+Urls@{m\+\_\+sz\+Urls}!c\+Ernaehrung\+Plugin@{c\+Ernaehrung\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Urls}{m_szUrls}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List c\+Ernaehrung\+Plugin\+::m\+\_\+sz\+Urls\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_ernaehrung_plugin_a58692dcfff3d8f9da462b90fbf12db06}{}\label{classc_ernaehrung_plugin_a58692dcfff3d8f9da462b90fbf12db06}
+T\+O\+DO\+: describe 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+i\+Ernaehrung/\hyperlink{cernaehrungplugin_8h}{cernaehrungplugin.\+h}\item 
+i\+Ernaehrung/\hyperlink{cernaehrungplugin_8cpp}{cernaehrungplugin.\+cpp}\end{DoxyCompactItemize}

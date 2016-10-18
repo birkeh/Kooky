@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cmainwindow_8cpp" kind="file" language="C++">
+    <compoundname>cmainwindow.cpp</compoundname>
+    <includes refid="cmainwindow_8h" local="yes">cmainwindow.h</includes>
+    <includes local="yes">ui_cmainwindow.h</includes>
+    <includes refid="cimportinterface_8h" local="yes">cimportinterface.h</includes>
+    <includes refid="cingredient_8h" local="yes">cingredient.h</includes>
+    <includes refid="coptions_8h" local="yes">coptions.h</includes>
+    <includes refid="cimportingredientdialog_8h" local="yes">cimportingredientdialog.h</includes>
+    <includes local="no">QPluginLoader</includes>
+    <includes local="no">QDebug</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QDir</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QContextMenuEvent</includes>
+    <incdepgraph>
+      <node id="916">
+        <label>QMap</label>
+      </node>
+      <node id="930">
+        <label>QSettings</label>
+      </node>
+      <node id="929">
+        <label>QMessageBox</label>
+      </node>
+      <node id="933">
+        <label>QContextMenuEvent</label>
+      </node>
+      <node id="917">
+        <label>cdbinterface.h</label>
+        <link refid="cdbinterface_8h"/>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+      </node>
+      <node id="907">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+        <childnode refid="916" relation="include">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>cplugin.h</label>
+        <link refid="cplugin_8h"/>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="919" relation="include">
+        </childnode>
+      </node>
+      <node id="920">
+        <label>QList</label>
+      </node>
+      <node id="922">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="921">
+        <label>QMainWindow</label>
+      </node>
+      <node id="914">
+        <label>QtPlugin</label>
+      </node>
+      <node id="932">
+        <label>QImage</label>
+      </node>
+      <node id="908">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="909" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+      </node>
+      <node id="918">
+        <label>QPluginLoader</label>
+      </node>
+      <node id="904">
+        <label>Kooky/cmainwindow.cpp</label>
+        <link refid="cmainwindow.cpp"/>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="924" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+      </node>
+      <node id="919">
+        <label>QAction</label>
+      </node>
+      <node id="925">
+        <label>QDialog</label>
+      </node>
+      <node id="928">
+        <label>QDebug</label>
+      </node>
+      <node id="912">
+        <label>QDomDocument</label>
+      </node>
+      <node id="909">
+        <label>QDate</label>
+      </node>
+      <node id="913">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="910" relation="include">
+        </childnode>
+      </node>
+      <node id="910">
+        <label>QString</label>
+      </node>
+      <node id="911">
+        <label>QFile</label>
+      </node>
+      <node id="927">
+        <label>cimportingredientdialog.h</label>
+        <link refid="cimportingredientdialog_8h"/>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>QItemSelection</label>
+      </node>
+      <node id="905">
+        <label>cmainwindow.h</label>
+        <link refid="cmainwindow_8h"/>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>coptions.h</label>
+        <link refid="coptions_8h"/>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+      </node>
+      <node id="923">
+        <label>ui_cmainwindow.h</label>
+      </node>
+      <node id="931">
+        <label>QDir</label>
+      </node>
+      <node id="915">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cmainwindow_8h" kindref="compound">cmainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_cmainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cimportinterface_8h" kindref="compound">cimportinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cingredient_8h" kindref="compound">cingredient.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="coptions_8h" kindref="compound">coptions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cimportingredientdialog_8h" kindref="compound">cimportingredientdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPluginLoader&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDir&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QContextMenuEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" refkind="member"><highlight class="normal"><ref refid="classc_main_window_1a04f0ed523c7265f8d8b304e33aaa7d6d" kindref="member">cMainWindow::cMainWindow</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow(parent),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="classc_main_window" kindref="compound">cMainWindow</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" refkind="member"><highlight class="normal"><ref refid="classc_main_window_1a5b40588af59f559083925f3f491da1e1" kindref="member">cMainWindow::~cMainWindow</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a3cc20776b1fd699783bcb1a0e2a33415" kindref="member">cMainWindow::init</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(settings.value(</highlight><highlight class="stringliteral">&quot;program/version&quot;</highlight><highlight class="normal">,<sp/>QVariant(-1.0)).toDouble()<sp/>==<sp/>-1.0)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" kindref="member">initDefaultSettings</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_OS_WIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" kindref="member">loadPlugins</ref>(</highlight><highlight class="stringliteral">&quot;plugins&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" kindref="member">loadPlugins</ref>(</highlight><highlight class="stringliteral">&quot;/data/Projects/QTCreator/Kooky/bin/plugins&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loadPlugins(settings.value(&quot;program/pluginDir&quot;).toString());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a839ead885151027601d9be7d87aade26" kindref="member">m_lpIngredientsListModel</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(0,<sp/>1);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList-&gt;setModel(<ref refid="classc_main_window_1a839ead885151027601d9be7d87aade26" kindref="member">m_lpIngredientsListModel</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList-&gt;setContextMenuPolicy(Qt::CustomContextMenu);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList,<sp/>SIGNAL(customContextMenuRequested(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint<sp/>&amp;)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" kindref="member">onIngredientsListCustomContextMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint<sp/>&amp;)));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMenu(<ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="stringliteral">&quot;&amp;New&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>-&gt;addAction(<ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>,<sp/>SIGNAL(triggered(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" kindref="member">onIngredientsListNew</ref>()));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" kindref="member">m_lpIngredientsListImport</ref><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="stringliteral">&quot;&amp;Import&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>-&gt;addAction(<ref refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" kindref="member">m_lpIngredientsListImport</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_main_window_1ab62a9cfd83899a679715cb0f0acc254d" kindref="member">m_lpIngredientsListImport</ref>,<sp/>SIGNAL(triggered(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" kindref="member">onIngredientsListImport</ref>()));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="stringliteral">&quot;&amp;Delete&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>-&gt;addAction(<ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>,<sp/>SIGNAL(triggered(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" kindref="member">onIngredientsListDelete</ref>()));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="stringliteral">&quot;&amp;Edit&quot;</highlight><highlight class="normal">,<sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>-&gt;addAction(<ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>,<sp/>SIGNAL(triggered(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" kindref="member">onIngredientsListEdit</ref>()));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1ac76cac25666ea2a0dc106b7829d560c7" kindref="member">cMainWindow::initDefaultSettings</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>QDir<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dir;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/version&quot;</highlight><highlight class="normal">,<sp/>QVariant(0.1));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/dataDir&quot;</highlight><highlight class="normal">,<sp/>QVariant(QString(</highlight><highlight class="stringliteral">&quot;%1/.kooky&quot;</highlight><highlight class="normal">).arg(QDir::homePath())));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/pluginDir&quot;</highlight><highlight class="normal">,<sp/>QVariant(QString(</highlight><highlight class="stringliteral">&quot;%1/.kooky/plugins&quot;</highlight><highlight class="normal">).arg(QDir::homePath())));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/receiptDir&quot;</highlight><highlight class="normal">,<sp/>QVariant(QString(</highlight><highlight class="stringliteral">&quot;%1/.kooky/receipts&quot;</highlight><highlight class="normal">).arg(QDir::homePath())));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/ingredientDir&quot;</highlight><highlight class="normal">,<sp/>QVariant(QString(</highlight><highlight class="stringliteral">&quot;%1/.kooky/ingredients&quot;</highlight><highlight class="normal">).arg(QDir::homePath())));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;program/imageDir&quot;</highlight><highlight class="normal">,<sp/>QVariant(QString(</highlight><highlight class="stringliteral">&quot;%1/.kooky/images&quot;</highlight><highlight class="normal">).arg(QDir::homePath())));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>dir.mkpath(settings.value(</highlight><highlight class="stringliteral">&quot;program/dataDir&quot;</highlight><highlight class="normal">).toString());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>dir.mkpath(settings.value(</highlight><highlight class="stringliteral">&quot;program/pluginDir&quot;</highlight><highlight class="normal">).toString());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>dir.mkpath(settings.value(</highlight><highlight class="stringliteral">&quot;program/receiptDir&quot;</highlight><highlight class="normal">).toString());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>dir.mkpath(settings.value(</highlight><highlight class="stringliteral">&quot;program/ingredientDir&quot;</highlight><highlight class="normal">).toString());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>dir.mkpath(settings.value(</highlight><highlight class="stringliteral">&quot;program/imageDir&quot;</highlight><highlight class="normal">).toString());</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a514f42d460641e3295b40867da99c50b" kindref="member">cMainWindow::loadPlugins</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szPluginDir)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>QCoreApplication::addLibraryPath(szPluginDir);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>QDir<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pluginDir(szPluginDir);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_OS_WIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szImportList<sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i*.dll&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szExportList<sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;e*.dll&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szDBList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;d*.dll&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szImportList<sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;libi*.so&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szExportList<sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;libe*.so&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>szDBList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pluginDir.entryList(QStringList()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;libd*.so&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>szImportList.count();z++)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_OS_WIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szImportList.at(z);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szImportList.at(z).mid(3,<sp/>szImportList.at(z).length()-6);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>(szFile);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin-&gt;<ref refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" kindref="member">isValid</ref>())</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/>lpAction<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpMenu_Plugins_Import-&gt;addAction(lpAction);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpAction-&gt;setText(lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(lpAction,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" kindref="member">pluginImportTriggered</ref>()));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpPlugin-&gt;<ref refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" kindref="member">setAction</ref>(lpAction);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.append(lpPlugin);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cImportInterface*<sp/><sp/><sp/>lpImport<sp/><sp/><sp/><sp/>=<sp/>lpPlugin-&gt;importInterface();</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"></highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(!lpPlugin-&gt;pluginName().compare(&quot;import<sp/>Bleib<sp/>Fit&quot;,<sp/>Qt::CaseInsensitive))</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cImportInterface*<sp/><sp/><sp/>lpImport<sp/><sp/><sp/><sp/>=<sp/>lpPlugin-&gt;importInterface();</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strList<sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;search(&quot;milch&quot;);</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;load(2);</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;value(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szIngredientName<sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;ingredientName();</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szName<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;name(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szGroup<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;group(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"></highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(!lpPlugin-&gt;pluginName().compare(&quot;import<sp/>Ernährung&quot;,<sp/>Qt::CaseInsensitive))</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cImportInterface*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpImport<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpPlugin-&gt;importInterface();</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QString&gt;<sp/><sp/>capability<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;detailsCapability();</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;search(&quot;kuhmilch&quot;,<sp/>&quot;bls&quot;);</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;load(2);</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;value(cIngredient::iIngredientCholesterol);</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szIngredientName<sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;ingredientName();</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szName<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;name(cIngredient::iIngredientCholesterol);</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>szGroup<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImport-&gt;group(cIngredient::iIngredientCholesterol);</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>szExportList.count();z++)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_OS_WIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szExportList.at(z);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szExportList.at(z).mid(3,<sp/>szExportList.at(z).length()-6);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>(szFile);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin-&gt;<ref refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" kindref="member">isValid</ref>())</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/>lpAction<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpMenu_Plugins_Export-&gt;addAction(lpAction);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpAction-&gt;setText(lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>());</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(lpAction,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" kindref="member">pluginExportTriggered</ref>()));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpPlugin-&gt;<ref refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" kindref="member">setAction</ref>(lpAction);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.append(lpPlugin);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/>szDBList.count();z++)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_OS_WIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szDBList.at(z);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>szFile<sp/><sp/>=<sp/>szDBList.at(z).mid(3,<sp/>szDBList.at(z).length()-6);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>(szFile);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin-&gt;<ref refid="classc_plugin_1a6bb35e1ecaf5e8f3d40b377d29f873e0" kindref="member">isValid</ref>())</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/>lpAction<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpMenu_Plugins_Database-&gt;addAction(lpAction);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpAction-&gt;setText(lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>());</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(lpAction,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" kindref="member">pluginDBTriggered</ref>()));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpPlugin-&gt;<ref refid="classc_plugin_1a9e0a7486edcc64646d9b17686863d2e8" kindref="member">setAction</ref>(lpAction);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.append(lpPlugin);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" refkind="member"><highlight class="normal"><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><ref refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" kindref="member">cMainWindow::plugin</ref>(QAction*<sp/>lpAction)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0;z<sp/>&lt;<sp/><ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.count();z++)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.at(z)-&gt;action()<sp/>==<sp/>lpAction)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>.at(z));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(0);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" refkind="member"><highlight class="normal">QList&lt;cPlugin*&gt;<sp/><ref refid="classc_main_window_1ae82e278f9aa88d228cd049392a314251" kindref="member">cMainWindow::pluginList</ref>()</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1ab3ff57870f54e4655aef149e9746035a" kindref="member">cMainWindow::pluginImportTriggered</ref>()</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/>settings;</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/><sp/><sp/><sp/>cIngredient<sp/>ingredient(QString(&quot;%1/000001.ingredient&quot;).arg(settings.value(&quot;program/ingredientDir&quot;).toString()));</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/><sp/><sp/><sp/>ingredient.save();</highlight></codeline>
+<codeline lineno="220"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/>lpAction<sp/><sp/><sp/><sp/>=<sp/>qobject_cast&lt;QAction<sp/>*&gt;(sender());</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/><sp/><sp/><sp/>if(lpAction)</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cPlugin*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/>plugin(lpAction);</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(lpPlugin)</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cImportInterface*<sp/><sp/><sp/>lpImportInterface<sp/><sp/><sp/>=<sp/>lpPlugin-&gt;importInterface();</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;pluginName();</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(lpImportInterface)</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>list<sp/><sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;search(&quot;kuhmilch&quot;,<sp/>&quot;bla&quot;);</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"></highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(lpImportInterface-&gt;load(0))</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><sp/><sp/><sp/><sp/>v;</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>str;</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>=<sp/>lpImportInterface-&gt;group(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>=<sp/>lpImportInterface-&gt;name(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;value(cIngredient::iIngredientCarbohydrates);</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;value(cIngredient::iIngredientBreadUnits);</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;value(cIngredient::iIngredientWater);</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;value(cIngredient::iIngredientCholesterol);</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/><sp/><sp/>=<sp/>lpImportInterface-&gt;value(cIngredient::iIngredientCopper);</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a203dfd9cd3c6b69acb33695a576907fa" kindref="member">cMainWindow::pluginExportTriggered</ref>()</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" kindref="member">cMainWindow::pluginDBTriggered</ref>()</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction*<sp/><sp/><sp/><sp/>lpAction<sp/><sp/><sp/><sp/>=<sp/>qobject_cast&lt;QAction<sp/>*&gt;(sender());</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpAction)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_plugin" kindref="compound">cPlugin</ref>*<sp/><sp/><sp/><sp/>lpPlugin<sp/><sp/><sp/><sp/>=<sp/><ref refid="classc_main_window_1a24aea0791cf5bca5bd044bfbb72ef224" kindref="member">plugin</ref>(lpAction);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpPlugin)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>().compare(</highlight><highlight class="stringliteral">&quot;MySQL<sp/>DB&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface<sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" kindref="member">dbInterface</ref>();</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpDBInterface-&gt;<ref refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca" kindref="member">pluginName</ref>();</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpDBInterface)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface-&gt;<ref refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!lpPlugin-&gt;<ref refid="classc_plugin_1a73b42f8c99d83faa8a2fe3ed994937a1" kindref="member">pluginName</ref>().compare(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>DB&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_d_b_interface" kindref="compound">cDBInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface<sp/><sp/><sp/>=<sp/>lpPlugin-&gt;<ref refid="classc_plugin_1ac2fbd0510573398caf3f5da68da327bb" kindref="member">dbInterface</ref>();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lpDBInterface-&gt;<ref refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca" kindref="member">pluginName</ref>();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lpDBInterface)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpDBInterface-&gt;<ref refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classc_main_window_1a3345add8cf20de78da3c67080188608d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a3345add8cf20de78da3c67080188608d" kindref="member">cMainWindow::on_m_lpMenu_File_Exit_triggered</ref>()</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="classc_main_window_1a39a2aa4bfa1303da62f3599c77be4762" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a39a2aa4bfa1303da62f3599c77be4762" kindref="member">cMainWindow::on_m_lpMenu_Tools_Options_triggered</ref>()</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_options" kindref="compound">cOptions</ref><sp/><sp/><sp/><sp/>options(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>options.exec();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a933380437ebf1ee1abd2be9165f76f68" kindref="member">cMainWindow::onIngredientsListCustomContextMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPoint&amp;<sp/>point)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>QModelIndex<sp/>index<sp/><sp/><sp/>=<sp/><ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList-&gt;indexAt(point);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(index.isValid())</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1aff7c0651707a2c73cfdc49d709419f1e" kindref="member">m_lpIngredientsListNew</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a94ed27f09d49c080ad6e1d7235122a78" kindref="member">m_lpIngredientsListDelete</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a13b40e0849a4897ffffe041a825b8452" kindref="member">m_lpIngredientsListEdit</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_main_window_1a67c09407f3fc781eb743a395f86dc44c" kindref="member">m_lpIngredientsListMenu</ref>-&gt;exec(<ref refid="classc_main_window_1a03739e420b7f4f4d85f9c7a373050507" kindref="member">ui</ref>-&gt;m_lpIngredientsList-&gt;mapToGlobal(point));</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a6d1fb1143d310ce85ac4c1924ec9f1f5" kindref="member">cMainWindow::onIngredientsListNew</ref>()</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a1a0b99b15c690785791074ae0d13131d" kindref="member">cMainWindow::onIngredientsListImport</ref>()</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_import_ingredient_dialog" kindref="compound">cImportIngredientDialog</ref><sp/>importIngredientDialog(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>importIngredientDialog.<ref refid="classc_import_ingredient_dialog_1ad710be68582d34c43a399b4764c0434a" kindref="member">setPluginList</ref>(<ref refid="classc_main_window_1ae3d9b84c671559f4ff864f89c7892216" kindref="member">m_pluginList</ref>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>importIngredientDialog.exec();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a4bd73b0f35d28db5c4eb970fb188a3b4" kindref="member">cMainWindow::onIngredientsListDelete</ref>()</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classc_main_window_1a0dff97e5ba837d5b9ba04f7bde41dd1c" kindref="member">cMainWindow::onIngredientsListEdit</ref>()</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kooky/cmainwindow.cpp"/>
+  </compounddef>
+</doxygen>

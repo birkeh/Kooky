@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_ernaehrung_plugin" kind="class" language="C++" prot="public">
+    <compoundname>cErnaehrungPlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classc_import_interface" prot="public" virt="non-virtual">cImportInterface</basecompoundref>
+    <includes refid="cernaehrungplugin_8h" local="no">cernaehrungplugin.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classc_ernaehrung_plugin_1a58692dcfff3d8f9da462b90fbf12db06" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList cErnaehrungPlugin::m_szUrls</definition>
+        <argsstring></argsstring>
+        <name>m_szUrls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="89" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc_ernaehrung_plugin_1aa586d90efc11b68dce605fdf1a45910d" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList cErnaehrungPlugin::m_szIngredients</definition>
+        <argsstring></argsstring>
+        <name>m_szIngredients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="90" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classc_ernaehrung_plugin_1a947339aef16691c4165c7eb1869d3b7e" prot="private" static="no" mutable="no">
+        <type>qint16</type>
+        <definition>qint16 cErnaehrungPlugin::m_iLoadedIndex</definition>
+        <argsstring></argsstring>
+        <name>m_iLoadedIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: describe </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="91" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cErnaehrungPlugin::pluginAPIVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginAPIVersion</name>
+        <reimplements refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813">pluginAPIVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="27" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>QString cErnaehrungPlugin::pluginName</definition>
+        <argsstring>()</argsstring>
+        <name>pluginName</name>
+        <reimplements refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">pluginName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="33" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cErnaehrungPlugin::pluginVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginVersion</name>
+        <reimplements refid="classc_interface_1aadc382036174c2a25bb2c23733830d33">pluginVersion</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="39" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref></type>
+        <definition>iType cErnaehrungPlugin::pluginType</definition>
+        <argsstring>()</argsstring>
+        <name>pluginType</name>
+        <reimplements refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">pluginType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="45" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="45" bodyend="45"/>
+        <references refid="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f" compoundref="cernaehrungplugin_8cpp" startline="343" endline="346">config</references>
+        <references refid="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e" compoundref="cernaehrungplugin_8cpp" startline="183" endline="190">detailsCapability</references>
+        <references refid="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed" compoundref="cernaehrungplugin_8cpp" startline="335" endline="341">ingredientName</references>
+        <references refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" compoundref="c_interface_8h" startline="40">cInterface::iTypeImport</references>
+        <references refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" compoundref="cernaehrungplugin_8cpp" startline="252" endline="320">load</references>
+        <references refid="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d" compoundref="cernaehrungplugin_8cpp" startline="194" endline="241">search</references>
+        <references refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" compoundref="cernaehrungplugin_8cpp" startline="322" endline="333">value</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cErnaehrungPlugin::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <reimplements refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">config</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="52" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="343" bodyend="346"/>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMap&lt; QString, QString &gt;</type>
+        <definition>QMap&lt; QString, QString &gt; cErnaehrungPlugin::detailsCapability</definition>
+        <argsstring>()</argsstring>
+        <name>detailsCapability</name>
+        <reimplements refid="classc_import_interface_1a4ec2f198f8488e7daf2e93cf637a580d">detailsCapability</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QMap&lt;QString, QString&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="59" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="183" bodyend="190"/>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QStringList</type>
+        <definition>QStringList cErnaehrungPlugin::search</definition>
+        <argsstring>(const QString &amp;szSearch, const QString &amp;szDetails=QString(&quot;&quot;))</argsstring>
+        <name>search</name>
+        <reimplements refid="classc_import_interface_1a8b48a3821674ff15d7eaf4e03c55409f">search</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szSearch</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>szDetails</declname>
+          <defval>QString(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szSearch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QStringList </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="67" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="194" bodyend="241"/>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cErnaehrungPlugin::load</definition>
+        <argsstring>(qint16 iIndex)</argsstring>
+        <name>load</name>
+        <reimplements refid="classc_import_interface_1a728bcb2a636f78bae2fe7e128a18e983">load</reimplements>
+        <param>
+          <type>qint16</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="74" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="252" bodyend="320"/>
+        <references refid="structtag_v_a_l_u_e_s_1a725904e5427d2d89fc28bac836ebe270" compoundref="cernaehrungplugin_8cpp" startline="15">tagVALUES::dValue</references>
+        <references refid="structtag_v_a_l_u_e_s_1a1af4ef8b1eb53303b473be2e9dfe4cdf" compoundref="cernaehrungplugin_8cpp" startline="13">tagVALUES::szSearch</references>
+        <references refid="cernaehrungplugin_8cpp_1afb1a8d57387321ded0ace161ae4b5298" compoundref="cernaehrungplugin_8cpp" startline="243" endline="250">toValue</references>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>qreal</type>
+        <definition>qreal cErnaehrungPlugin::value</definition>
+        <argsstring>(cIngredient::iIngredient i)</argsstring>
+        <name>value</name>
+        <reimplements refid="classc_import_interface_1a7a8dbe6a164549272d748d2f77aebc42">value</reimplements>
+        <param>
+          <type><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>qreal </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="81" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="322" bodyend="333"/>
+        <references refid="structtag_v_a_l_u_e_s_1a725904e5427d2d89fc28bac836ebe270" compoundref="cernaehrungplugin_8cpp" startline="15">tagVALUES::dValue</references>
+        <references refid="structtag_v_a_l_u_e_s_1a7ff96fb996a57c44a72cd72be967064e" compoundref="cernaehrungplugin_8cpp" startline="14">tagVALUES::iIngredient</references>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString cErnaehrungPlugin::ingredientName</definition>
+        <argsstring>()</argsstring>
+        <name>ingredientName</name>
+        <reimplements refid="classc_import_interface_1af3f569b605787021a919816978f229bc">ingredientName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.h" line="87" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="335" bodyend="341"/>
+        <referencedby refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" compoundref="cernaehrungplugin_8h" startline="45" endline="45">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="117">
+        <label>cErnaehrungPlugin</label>
+        <link refid="classc_ernaehrung_plugin"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>QObject</label>
+      </node>
+      <node id="120">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="119">
+        <label>cImportInterface</label>
+        <link refid="classc_import_interface"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="121">
+        <label>cErnaehrungPlugin</label>
+        <link refid="classc_ernaehrung_plugin"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>QObject</label>
+      </node>
+      <node id="124">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="123">
+        <label>cImportInterface</label>
+        <link refid="classc_import_interface"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="iErnaehrung/cernaehrungplugin.h" line="16" column="1" bodyfile="iErnaehrung/cernaehrungplugin.h" bodystart="15" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classc_import_interface_1a66f54591d75e8aa458e5afb91b3f3177" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>cImportInterface</name></member>
+      <member refid="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>config</name></member>
+      <member refid="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>detailsCapability</name></member>
+      <member refid="classc_import_interface_1a1d31c90d6ef27a2b9edfb99e655120ea" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>group</name></member>
+      <member refid="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>ingredientName</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>iType</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>iTypeDB</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>iTypeExport</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>iTypeImport</name></member>
+      <member refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>load</name></member>
+      <member refid="classc_import_interface_1a898e0fc3651bbf855ee28756e69d48fb" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>loaded</name></member>
+      <member refid="classc_import_interface_1ae58ec0e6b990aa6624a12af9dc20e8dc" prot="protected" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>m_bLoaded</name></member>
+      <member refid="classc_ernaehrung_plugin_1a947339aef16691c4165c7eb1869d3b7e" prot="private" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>m_iLoadedIndex</name></member>
+      <member refid="classc_ernaehrung_plugin_1aa586d90efc11b68dce605fdf1a45910d" prot="private" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>m_szIngredients</name></member>
+      <member refid="classc_ernaehrung_plugin_1a58692dcfff3d8f9da462b90fbf12db06" prot="private" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>m_szUrls</name></member>
+      <member refid="classc_import_interface_1a685fafcac4d7194045e6c9e2d84d7981" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>name</name></member>
+      <member refid="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>pluginName</name></member>
+      <member refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>pluginType</name></member>
+      <member refid="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>pluginVersion</name></member>
+      <member refid="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>search</name></member>
+      <member refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" prot="public" virt="virtual"><scope>cErnaehrungPlugin</scope><name>value</name></member>
+      <member refid="classc_import_interface_1a272c43d684b605f36d36cb20e4039d94" prot="public" virt="non-virtual"><scope>cErnaehrungPlugin</scope><name>valueStr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

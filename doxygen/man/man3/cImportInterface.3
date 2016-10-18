@@ -1,0 +1,252 @@
+.TH "cImportInterface" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cImportInterface \- Interface class for importing data\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cimportinterface\&.h>\fP
+.PP
+Inherits \fBcInterface\fP\&.
+.PP
+Inherited by \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcImportInterface\fP ()"
+.br
+.ti -1c
+.RI "virtual QMap< QString, QString > \fBdetailsCapability\fP ()=0"
+.br
+.ti -1c
+.RI "virtual QStringList \fBsearch\fP (const QString &szSearch, const QString &szDetails=QString(''))=0"
+.br
+.ti -1c
+.RI "virtual bool \fBload\fP (qint16 iIndex)=0"
+.br
+.ti -1c
+.RI "bool \fBloaded\fP ()"
+.br
+.ti -1c
+.RI "virtual qreal \fBvalue\fP (\fBcIngredient::iIngredient\fP i)=0"
+.br
+.ti -1c
+.RI "QString \fBvalueStr\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.ti -1c
+.RI "QString \fBname\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.ti -1c
+.RI "QString \fBgroup\fP (\fBcIngredient::iIngredient\fP i)"
+.br
+.ti -1c
+.RI "virtual QString \fBingredientName\fP ()=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBm_bLoaded\fP"
+.br
+.ti -1c
+.RI "qint16 \fBm_iLoadedIndex\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class implements basic import functionality for Kooky\&. All functions may be overwritten by derriving classes\&.
+.PP
+\fBNote:\fP
+.RS 4
+Attempts at zen rarely work\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+$Date: 2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cImportInterface::cImportInterface ()\fC [inline]\fP"
+
+.PP
+References detailsCapability(), load(), and search()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual QMap<QString, QString> cImportInterface::detailsCapability ()\fC [pure virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QMap<QString, QString> 
+.RE
+.PP
+
+.PP
+Implemented in \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cImportInterface()\&.
+.SS "QString cImportInterface::group (\fBcIngredient::iIngredient\fP i)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References cIngredient::group()\&.
+.PP
+Referenced by loaded(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SS "virtual QString cImportInterface::ingredientName ()\fC [pure virtual]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+Implemented in \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by loaded()\&.
+.SS "virtual bool cImportInterface::load (qint16 iIndex)\fC [pure virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIiIndex\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Implemented in \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cImportInterface(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SS "bool cImportInterface::loaded ()\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+References group(), ingredientName(), m_bLoaded, name(), value(), and valueStr()\&.
+.SS "QString cImportInterface::name (\fBcIngredient::iIngredient\fP i)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References cIngredient::name()\&.
+.PP
+Referenced by loaded(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SS "virtual QStringList cImportInterface::search (const QString & szSearch, const QString & szDetails = \fCQString('')\fP)\fC [pure virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszSearch\fP 
+.br
+\fIszDetails\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QStringList 
+.RE
+.PP
+
+.PP
+Implemented in \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cImportInterface(), and cImportIngredientDialog::on_m_lpSearchButton_clicked()\&.
+.SS "virtual qreal cImportInterface::value (\fBcIngredient::iIngredient\fP i)\fC [pure virtual]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qreal 
+.RE
+.PP
+
+.PP
+Implemented in \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by loaded(), cImportIngredientDialog::onIngredientListSelectionChanged(), and valueStr()\&.
+.SS "QString cImportInterface::valueStr (\fBcIngredient::iIngredient\fP i)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qreal 
+.RE
+.PP
+
+.PP
+References cIngredient::iIngredientCalories, cIngredient::iIngredientJoule, and value()\&.
+.PP
+Referenced by loaded(), and cImportIngredientDialog::onIngredientListSelectionChanged()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool cImportInterface::m_bLoaded\fC [protected]\fP"
+TODO: describe 
+.PP
+Referenced by loaded()\&.
+.SS "qint16 cImportInterface::m_iLoadedIndex\fC [protected]\fP"
+TODO: describe 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

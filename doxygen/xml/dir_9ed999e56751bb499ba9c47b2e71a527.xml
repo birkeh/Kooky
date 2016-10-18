@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9ed999e56751bb499ba9c47b2e71a527" kind="dir">
+    <compoundname>dMySQL</compoundname>
+    <innerfile refid="cconfigdialog_8cpp">cconfigdialog.cpp</innerfile>
+    <innerfile refid="cconfigdialog_8h">cconfigdialog.h</innerfile>
+    <innerfile refid="cmysqlplugin_8cpp">cmysqlplugin.cpp</innerfile>
+    <innerfile refid="cmysqlplugin_8h">cmysqlplugin.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dMySQL/"/>
+  </compounddef>
+</doxygen>

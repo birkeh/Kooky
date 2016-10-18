@@ -1,0 +1,11 @@
+<map id="cPlugin::dbInterface" name="cPlugin::dbInterface">
+<area shape="rect" id="node2" href="$classc_main_window.html#a70fa99ff98426a5cc888a2de3ea83b07" title="Testing of database trigger raised by database connector plugins. " alt="" coords="200,13,431,40"/>
+<area shape="rect" id="node6" href="$classc_options_plugins.html#a102ea2333b1b8cdb69135dbd2ca10bed" title="cOptionsPlugins::showConfigDlg" alt="" coords="203,71,427,97"/>
+<area shape="rect" id="node3" href="$classc_main_window.html#a514f42d460641e3295b40867da99c50b" title="Loads plugins in the given path. " alt="" coords="483,5,670,32"/>
+<area shape="rect" id="node4" href="$classc_main_window.html#a3cc20776b1fd699783bcb1a0e2a33415" title="Initialized main windows. " alt="" coords="731,5,865,32"/>
+<area shape="rect" id="node5" href="$classc_main_window.html#a04f0ed523c7265f8d8b304e33aaa7d6d" title="Constructor. " alt="" coords="921,5,1120,32"/>
+<area shape="rect" id="node7" href="$classc_options_plugins.html#a55f1014d084453544ac054379094ebdb" title="cOptionsPlugins::on\l_m_lpButtonConfigure\l_clicked" alt="" coords="495,56,659,112"/>
+<area shape="rect" id="node8" href="$classc_options_plugins.html#a60d4d685600b74b3bd8b6a3973270db3" title="cOptionsPlugins::onOptions\lPluginTreeDoubleClicked" alt="" coords="479,137,675,178"/>
+<area shape="rect" id="node9" href="$classc_options_plugins.html#acca2bbe1e1858e0038bb72416087687f" title="cOptionsPlugins::init" alt="" coords="723,144,873,171"/>
+<area shape="rect" id="node10" href="$classc_options_plugins.html#a6742f672003c2b9255964f908a6981f2" title="cOptionsPlugins::cOptions\lPlugins" alt="" coords="927,137,1114,178"/>
+</map>

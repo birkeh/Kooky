@@ -1,0 +1,441 @@
+\hypertarget{classc_plugin}{}\section{c\+Plugin Class Reference}
+\label{classc_plugin}\index{c\+Plugin@{c\+Plugin}}
+
+
+This class holds data of an plugin.  
+
+
+
+
+{\ttfamily \#include $<$cplugin.\+h$>$}
+
+
+
+Collaboration diagram for c\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classc_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737}{Plugin\+Cap} \{ \hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf}{Plugin\+Cap\+None} = 0, 
+\hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a}{Plugin\+Cap\+Import} = 1, 
+\hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53}{Plugin\+Cap\+Export} = 2, 
+\hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29}{Plugin\+Cap\+DB} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classc_plugin_af11276446078e0e68e00b7c139bca1bb}{c\+Plugin} (const Q\+String \&sz\+File)
+\item 
+\hyperlink{classc_plugin_a38d0e25a6bcd3207902799b783212287}{$\sim$c\+Plugin} ()
+\item 
+bool \hyperlink{classc_plugin_a6bb35e1ecaf5e8f3d40b377d29f873e0}{is\+Valid} ()
+\item 
+\hyperlink{classc_plugin_a4e67238bd5463a402138f35714d03737}{Plugin\+Cap} \hyperlink{classc_plugin_a4e1ee6c29cb94d72b8ddc222dd1e4d5a}{capability} ()
+\item 
+Q\+String \hyperlink{classc_plugin_a73b42f8c99d83faa8a2fe3ed994937a1}{plugin\+Name} ()
+\item 
+qint16 \hyperlink{classc_plugin_a1055ecf4ff0d670e34291e3d5cc48d90}{plugin\+A\+P\+I\+Version} ()
+\item 
+qint16 \hyperlink{classc_plugin_a87bb0058c550e53f528e1197b5f6ac55}{plugin\+Version} ()
+\item 
+void \hyperlink{classc_plugin_a9e0a7486edcc64646d9b17686863d2e8}{set\+Action} (Q\+Action $\ast$lp\+Action)
+\item 
+Q\+Action $\ast$ \hyperlink{classc_plugin_a26a73caae5c73d08186e0f969d5851ee}{action} ()
+\item 
+Q\+String \hyperlink{classc_plugin_a2fccccf8d24d54ddc9a752f1c7332c55}{plugin\+File} ()
+\item 
+\hyperlink{classc_import_interface}{c\+Import\+Interface} $\ast$ \hyperlink{classc_plugin_ac4069636d1b3b0bf5bfa10d6c96ee097}{import\+Interface} ()
+\item 
+\hyperlink{classc_d_b_interface}{c\+D\+B\+Interface} $\ast$ \hyperlink{classc_plugin_ac2fbd0510573398caf3f5da68da327bb}{db\+Interface} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Plugin\+Loader $\ast$ \hyperlink{classc_plugin_a48d7a4870299a7fc61375eb84e791d04}{m\+\_\+lp\+Plugin\+Loader}
+\item 
+\hyperlink{classc_import_interface}{c\+Import\+Interface} $\ast$ \hyperlink{classc_plugin_a1f8cbfdab1de2df03c301d45ea286be1}{m\+\_\+lp\+Import\+Interface}
+\item 
+\hyperlink{classc_d_b_interface}{c\+D\+B\+Interface} $\ast$ \hyperlink{classc_plugin_a0dfe0fca935254e9c8e10766ebbd8cd1}{m\+\_\+lp\+D\+B\+Interface}
+\item 
+Q\+Action $\ast$ \hyperlink{classc_plugin_afb4ff0636dc58684867383cbf8408231}{m\+\_\+lp\+Action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Herwig Birke
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2016/02/09 
+\end{DoxyDate}
+
+
+\subsection{Member Enumeration Documentation}
+\index{c\+Plugin@{c\+Plugin}!Plugin\+Cap@{Plugin\+Cap}}
+\index{Plugin\+Cap@{Plugin\+Cap}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{Plugin\+Cap}{PluginCap}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf c\+Plugin\+::\+Plugin\+Cap}}\hypertarget{classc_plugin_a4e67238bd5463a402138f35714d03737}{}\label{classc_plugin_a4e67238bd5463a402138f35714d03737}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Plugin\+Cap\+None@{Plugin\+Cap\+None}!c\+Plugin@{c\+Plugin}}\index{c\+Plugin@{c\+Plugin}!Plugin\+Cap\+None@{Plugin\+Cap\+None}}\item[{\em 
+Plugin\+Cap\+None\hypertarget{classc_plugin_a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf}{}\label{classc_plugin_a4e67238bd5463a402138f35714d03737ac3a90e208bb1491d28dcc07ed68e25bf}
+}]\index{Plugin\+Cap\+Import@{Plugin\+Cap\+Import}!c\+Plugin@{c\+Plugin}}\index{c\+Plugin@{c\+Plugin}!Plugin\+Cap\+Import@{Plugin\+Cap\+Import}}\item[{\em 
+Plugin\+Cap\+Import\hypertarget{classc_plugin_a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a}{}\label{classc_plugin_a4e67238bd5463a402138f35714d03737a69c06633a9ed9e6067c8b6d5dbbaef3a}
+}]\index{Plugin\+Cap\+Export@{Plugin\+Cap\+Export}!c\+Plugin@{c\+Plugin}}\index{c\+Plugin@{c\+Plugin}!Plugin\+Cap\+Export@{Plugin\+Cap\+Export}}\item[{\em 
+Plugin\+Cap\+Export\hypertarget{classc_plugin_a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53}{}\label{classc_plugin_a4e67238bd5463a402138f35714d03737a3774310151f2d7281e4c2f3aa94cfe53}
+}]\index{Plugin\+Cap\+DB@{Plugin\+Cap\+DB}!c\+Plugin@{c\+Plugin}}\index{c\+Plugin@{c\+Plugin}!Plugin\+Cap\+DB@{Plugin\+Cap\+DB}}\item[{\em 
+Plugin\+Cap\+DB\hypertarget{classc_plugin_a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29}{}\label{classc_plugin_a4e67238bd5463a402138f35714d03737a55cc93f4b4029cbacf03053c54862b29}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{c\+Plugin@{c\+Plugin}!c\+Plugin@{c\+Plugin}}
+\index{c\+Plugin@{c\+Plugin}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{c\+Plugin(const Q\+String \&sz\+File)}{cPlugin(const QString &szFile)}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Plugin\+::c\+Plugin (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{sz\+File}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_af11276446078e0e68e00b7c139bca1bb}{}\label{classc_plugin_af11276446078e0e68e00b7c139bca1bb}
+
+
+References m\+\_\+lp\+D\+B\+Interface, m\+\_\+lp\+Import\+Interface, and m\+\_\+lp\+Plugin\+Loader.
+
+\index{c\+Plugin@{c\+Plugin}!````~c\+Plugin@{$\sim$c\+Plugin}}
+\index{````~c\+Plugin@{$\sim$c\+Plugin}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Plugin()}{~cPlugin()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Plugin\+::$\sim$c\+Plugin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a38d0e25a6bcd3207902799b783212287}{}\label{classc_plugin_a38d0e25a6bcd3207902799b783212287}
+
+
+References m\+\_\+lp\+Plugin\+Loader.
+
+
+
+\subsection{Member Function Documentation}
+\index{c\+Plugin@{c\+Plugin}!action@{action}}
+\index{action@{action}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{action()}{action()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action $\ast$ c\+Plugin\+::action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a26a73caae5c73d08186e0f969d5851ee}{}\label{classc_plugin_a26a73caae5c73d08186e0f969d5851ee}
+\begin{DoxyReturn}{Returns}
+Q\+Action 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+Action.
+
+\index{c\+Plugin@{c\+Plugin}!capability@{capability}}
+\index{capability@{capability}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{capability()}{capability()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+Plugin\+::\+Plugin\+Cap} c\+Plugin\+::capability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a4e1ee6c29cb94d72b8ddc222dd1e4d5a}{}\label{classc_plugin_a4e1ee6c29cb94d72b8ddc222dd1e4d5a}
+\begin{DoxyReturn}{Returns}
+Plugin\+Cap 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+D\+B\+Interface, m\+\_\+lp\+Import\+Interface, Plugin\+Cap\+DB, Plugin\+Cap\+Import, and Plugin\+Cap\+None.
+
+
+
+Referenced by c\+Import\+Ingredient\+Dialog\+::set\+Plugin\+List(), and c\+Options\+Plugins\+::show\+Config\+Dlg().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a4e1ee6c29cb94d72b8ddc222dd1e4d5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!db\+Interface@{db\+Interface}}
+\index{db\+Interface@{db\+Interface}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{db\+Interface()}{dbInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+D\+B\+Interface} $\ast$ c\+Plugin\+::db\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_ac2fbd0510573398caf3f5da68da327bb}{}\label{classc_plugin_ac2fbd0510573398caf3f5da68da327bb}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classc_d_b_interface}{c\+D\+B\+Interface} 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+D\+B\+Interface.
+
+
+
+Referenced by c\+Main\+Window\+::plugin\+D\+B\+Triggered(), and c\+Options\+Plugins\+::show\+Config\+Dlg().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_ac2fbd0510573398caf3f5da68da327bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!import\+Interface@{import\+Interface}}
+\index{import\+Interface@{import\+Interface}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{import\+Interface()}{importInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+Import\+Interface} $\ast$ c\+Plugin\+::import\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_ac4069636d1b3b0bf5bfa10d6c96ee097}{}\label{classc_plugin_ac4069636d1b3b0bf5bfa10d6c96ee097}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classc_import_interface}{c\+Import\+Interface} 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+Import\+Interface.
+
+
+
+Referenced by c\+Import\+Ingredient\+Dialog\+::on\+\_\+m\+\_\+lp\+Search\+Button\+\_\+clicked(), c\+Import\+Ingredient\+Dialog\+::on\+Ingredient\+List\+Selection\+Changed(), and c\+Options\+Plugins\+::show\+Config\+Dlg().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_ac4069636d1b3b0bf5bfa10d6c96ee097_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{is\+Valid()}{isValid()}}]{\setlength{\rightskip}{0pt plus 5cm}bool c\+Plugin\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a6bb35e1ecaf5e8f3d40b377d29f873e0}{}\label{classc_plugin_a6bb35e1ecaf5e8f3d40b377d29f873e0}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+Plugin\+Loader.
+
+
+
+Referenced by c\+Main\+Window\+::load\+Plugins().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a6bb35e1ecaf5e8f3d40b377d29f873e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}}
+\index{plugin\+A\+P\+I\+Version@{plugin\+A\+P\+I\+Version}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+A\+P\+I\+Version()}{pluginAPIVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Plugin\+::plugin\+A\+P\+I\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a1055ecf4ff0d670e34291e3d5cc48d90}{}\label{classc_plugin_a1055ecf4ff0d670e34291e3d5cc48d90}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+D\+B\+Interface, m\+\_\+lp\+Import\+Interface, and c\+Interface\+::plugin\+A\+P\+I\+Version().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a1055ecf4ff0d670e34291e3d5cc48d90_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!plugin\+File@{plugin\+File}}
+\index{plugin\+File@{plugin\+File}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+File()}{pluginFile()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Plugin\+::plugin\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a2fccccf8d24d54ddc9a752f1c7332c55}{}\label{classc_plugin_a2fccccf8d24d54ddc9a752f1c7332c55}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+Plugin\+Loader.
+
+\index{c\+Plugin@{c\+Plugin}!plugin\+Name@{plugin\+Name}}
+\index{plugin\+Name@{plugin\+Name}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Name()}{pluginName()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String c\+Plugin\+::plugin\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a73b42f8c99d83faa8a2fe3ed994937a1}{}\label{classc_plugin_a73b42f8c99d83faa8a2fe3ed994937a1}
+\begin{DoxyReturn}{Returns}
+Q\+String 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+D\+B\+Interface, m\+\_\+lp\+Import\+Interface, and c\+Interface\+::plugin\+Name().
+
+
+
+Referenced by c\+Main\+Window\+::load\+Plugins(), c\+Options\+Plugins\+::on\+Options\+Plugin\+Tree\+Plugin\+Toggled(), c\+Main\+Window\+::plugin\+D\+B\+Triggered(), and c\+Import\+Ingredient\+Dialog\+::set\+Plugin\+List().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a73b42f8c99d83faa8a2fe3ed994937a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a73b42f8c99d83faa8a2fe3ed994937a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!plugin\+Version@{plugin\+Version}}
+\index{plugin\+Version@{plugin\+Version}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{plugin\+Version()}{pluginVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}qint16 c\+Plugin\+::plugin\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a87bb0058c550e53f528e1197b5f6ac55}{}\label{classc_plugin_a87bb0058c550e53f528e1197b5f6ac55}
+\begin{DoxyReturn}{Returns}
+qint16 
+\end{DoxyReturn}
+
+
+References m\+\_\+lp\+D\+B\+Interface, m\+\_\+lp\+Import\+Interface, and c\+Interface\+::plugin\+Version().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a87bb0058c550e53f528e1197b5f6ac55_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{c\+Plugin@{c\+Plugin}!set\+Action@{set\+Action}}
+\index{set\+Action@{set\+Action}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{set\+Action(\+Q\+Action $\ast$lp\+Action)}{setAction(QAction *lpAction)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Plugin\+::set\+Action (
+\begin{DoxyParamCaption}
+\item[{Q\+Action $\ast$}]{lp\+Action}
+\end{DoxyParamCaption}
+)}\hypertarget{classc_plugin_a9e0a7486edcc64646d9b17686863d2e8}{}\label{classc_plugin_a9e0a7486edcc64646d9b17686863d2e8}
+
+\begin{DoxyParams}{Parameters}
+{\em lp\+Action} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+lp\+Action.
+
+
+
+Referenced by c\+Main\+Window\+::load\+Plugins().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classc_plugin_a9e0a7486edcc64646d9b17686863d2e8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{c\+Plugin@{c\+Plugin}!m\+\_\+lp\+Action@{m\+\_\+lp\+Action}}
+\index{m\+\_\+lp\+Action@{m\+\_\+lp\+Action}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Action}{m_lpAction}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ c\+Plugin\+::m\+\_\+lp\+Action\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_plugin_afb4ff0636dc58684867383cbf8408231}{}\label{classc_plugin_afb4ff0636dc58684867383cbf8408231}
+T\+O\+DO\+: describe 
+
+Referenced by action(), and set\+Action().
+
+\index{c\+Plugin@{c\+Plugin}!m\+\_\+lp\+D\+B\+Interface@{m\+\_\+lp\+D\+B\+Interface}}
+\index{m\+\_\+lp\+D\+B\+Interface@{m\+\_\+lp\+D\+B\+Interface}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+D\+B\+Interface}{m_lpDBInterface}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+D\+B\+Interface}$\ast$ c\+Plugin\+::m\+\_\+lp\+D\+B\+Interface\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_plugin_a0dfe0fca935254e9c8e10766ebbd8cd1}{}\label{classc_plugin_a0dfe0fca935254e9c8e10766ebbd8cd1}
+T\+O\+DO\+: describe 
+
+Referenced by capability(), c\+Plugin(), db\+Interface(), plugin\+A\+P\+I\+Version(), plugin\+Name(), and plugin\+Version().
+
+\index{c\+Plugin@{c\+Plugin}!m\+\_\+lp\+Import\+Interface@{m\+\_\+lp\+Import\+Interface}}
+\index{m\+\_\+lp\+Import\+Interface@{m\+\_\+lp\+Import\+Interface}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Import\+Interface}{m_lpImportInterface}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf c\+Import\+Interface}$\ast$ c\+Plugin\+::m\+\_\+lp\+Import\+Interface\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_plugin_a1f8cbfdab1de2df03c301d45ea286be1}{}\label{classc_plugin_a1f8cbfdab1de2df03c301d45ea286be1}
+T\+O\+DO\+: describe 
+
+Referenced by capability(), c\+Plugin(), import\+Interface(), plugin\+A\+P\+I\+Version(), plugin\+Name(), and plugin\+Version().
+
+\index{c\+Plugin@{c\+Plugin}!m\+\_\+lp\+Plugin\+Loader@{m\+\_\+lp\+Plugin\+Loader}}
+\index{m\+\_\+lp\+Plugin\+Loader@{m\+\_\+lp\+Plugin\+Loader}!c\+Plugin@{c\+Plugin}}
+\subsubsection[{\texorpdfstring{m\+\_\+lp\+Plugin\+Loader}{m_lpPluginLoader}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Plugin\+Loader$\ast$ c\+Plugin\+::m\+\_\+lp\+Plugin\+Loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classc_plugin_a48d7a4870299a7fc61375eb84e791d04}{}\label{classc_plugin_a48d7a4870299a7fc61375eb84e791d04}
+T\+O\+DO\+: describe 
+
+Referenced by c\+Plugin(), is\+Valid(), plugin\+File(), and $\sim$c\+Plugin().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kooky/\hyperlink{cplugin_8h}{cplugin.\+h}\item 
+Kooky/\hyperlink{cplugin_8cpp}{cplugin.\+cpp}\end{DoxyCompactItemize}

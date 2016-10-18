@@ -1,0 +1,182 @@
+.TH "cInterface" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cInterface \- This is the base class for all plugins\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cInterface\&.h>\fP
+.PP
+Inherited by \fBcDBInterface\fP, and \fBcImportInterface\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBiType\fP { \fBiTypeImport\fP = 0, \fBiTypeExport\fP = 1, \fBiTypeDB\fP = 2 }
+.RI "\fIDefines the type of the interface\&. \fP""
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual qint16 \fBpluginAPIVersion\fP ()=0"
+.br
+.RI "\fIReturns the version of the API\&. \fP"
+.ti -1c
+.RI "virtual QString \fBpluginName\fP ()=0"
+.br
+.RI "\fIReturns the name of the plugin\&. \fP"
+.ti -1c
+.RI "virtual qint16 \fBpluginVersion\fP ()=0"
+.br
+.RI "\fIVersion of the plugin\&. \fP"
+.ti -1c
+.RI "virtual \fBiType\fP \fBpluginType\fP ()=0"
+.br
+.RI "\fIReturns the type of the plugin\&. \fP"
+.ti -1c
+.RI "virtual bool \fBconfig\fP ()=0"
+.br
+.RI "\fICalls the configuration dialog (if any)\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements basic interface functionality for all Kooky plugins\&. All functions may be overwritten by derriving classes\&.
+.PP
+\fBNote:\fP
+.RS 4
+Do not subclass this class directly, always use the appropriate subclass: \fBcDBInterface\fP for database connectors, \fBcImportInterface\fP for import plugins and cExportInterface for export plugins\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBcInterface::iType\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIiTypeImport \fP\fP
+import plugin 
+.TP
+\fB\fIiTypeExport \fP\fP
+export plugin 
+.TP
+\fB\fIiTypeDB \fP\fP
+database connector 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool cInterface::config ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+bool true on success, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, \fBcSQLitePlugin\fP, \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cMainWindow::pluginDBTriggered(), and cOptionsPlugins::showConfigDlg()\&.
+.SS "virtual qint16 cInterface::pluginAPIVersion ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 version of the API 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, \fBcSQLitePlugin\fP, \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cPlugin::pluginAPIVersion()\&.
+.SS "virtual QString cInterface::pluginName ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&. 
+.PP
+The name must be unique and will also be used to store configuration settings\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+QString name of the plugin\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, \fBcSQLitePlugin\fP, \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cMainWindow::pluginDBTriggered(), and cPlugin::pluginName()\&.
+.SS "virtual \fBiType\fP cInterface::pluginType ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+iType type of the plugin (see enum iType)\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, \fBcSQLitePlugin\fP, \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.SS "virtual qint16 cInterface::pluginVersion ()\fC [pure virtual]\fP"
+
+.PP
+\fBNote:\fP
+.RS 4
+This function must be derived by the subclass\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 version of the plugin\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcMySQLPlugin\fP, \fBcSQLitePlugin\fP, \fBcBleibFitPlugin\fP, and \fBcErnaehrungPlugin\fP\&.
+.PP
+Referenced by cPlugin::pluginVersion()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

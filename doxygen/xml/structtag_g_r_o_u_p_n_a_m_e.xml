@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtag_g_r_o_u_p_n_a_m_e" kind="struct" language="C++" prot="public">
+    <compoundname>tagGROUPNAME</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtag_g_r_o_u_p_n_a_m_e_1a9edbd20fb9240c9cfb7692434113b1ce" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString tagGROUPNAME::szName</definition>
+        <argsstring></argsstring>
+        <name>szName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cingredient.cpp" line="10" column="1" bodyfile="Kooky/cingredient.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtag_g_r_o_u_p_n_a_m_e_1a01edd24854885980180ce90800478f59" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString tagGROUPNAME::szGroup</definition>
+        <argsstring></argsstring>
+        <name>szGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cingredient.cpp" line="11" column="1" bodyfile="Kooky/cingredient.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtag_g_r_o_u_p_n_a_m_e_1a5c93bf2c7557248a7080f54200d81cb4" prot="public" static="no" mutable="no">
+        <type><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref></type>
+        <definition>cIngredient::iIngredient tagGROUPNAME::iIngredient</definition>
+        <argsstring></argsstring>
+        <name>iIngredient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cingredient.cpp" line="12" column="1" bodyfile="Kooky/cingredient.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kooky/cingredient.cpp" line="9" column="1" bodyfile="Kooky/cingredient.cpp" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structtag_g_r_o_u_p_n_a_m_e_1a5c93bf2c7557248a7080f54200d81cb4" prot="public" virt="non-virtual"><scope>tagGROUPNAME</scope><name>iIngredient</name></member>
+      <member refid="structtag_g_r_o_u_p_n_a_m_e_1a01edd24854885980180ce90800478f59" prot="public" virt="non-virtual"><scope>tagGROUPNAME</scope><name>szGroup</name></member>
+      <member refid="structtag_g_r_o_u_p_n_a_m_e_1a9edbd20fb9240c9cfb7692434113b1ce" prot="public" virt="non-virtual"><scope>tagGROUPNAME</scope><name>szName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

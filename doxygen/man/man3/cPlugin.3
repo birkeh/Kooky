@@ -1,0 +1,270 @@
+.TH "cPlugin" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cPlugin \- This class holds data of an plugin\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cplugin\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPluginCap\fP { \fBPluginCapNone\fP = 0, \fBPluginCapImport\fP = 1, \fBPluginCapExport\fP = 2, \fBPluginCapDB\fP = 3 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcPlugin\fP (const QString &szFile)"
+.br
+.ti -1c
+.RI "\fB~cPlugin\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisValid\fP ()"
+.br
+.ti -1c
+.RI "\fBPluginCap\fP \fBcapability\fP ()"
+.br
+.ti -1c
+.RI "QString \fBpluginName\fP ()"
+.br
+.ti -1c
+.RI "qint16 \fBpluginAPIVersion\fP ()"
+.br
+.ti -1c
+.RI "qint16 \fBpluginVersion\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAction\fP (QAction *lpAction)"
+.br
+.ti -1c
+.RI "QAction * \fBaction\fP ()"
+.br
+.ti -1c
+.RI "QString \fBpluginFile\fP ()"
+.br
+.ti -1c
+.RI "\fBcImportInterface\fP * \fBimportInterface\fP ()"
+.br
+.ti -1c
+.RI "\fBcDBInterface\fP * \fBdbInterface\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QPluginLoader * \fBm_lpPluginLoader\fP"
+.br
+.ti -1c
+.RI "\fBcImportInterface\fP * \fBm_lpImportInterface\fP"
+.br
+.ti -1c
+.RI "\fBcDBInterface\fP * \fBm_lpDBInterface\fP"
+.br
+.ti -1c
+.RI "QAction * \fBm_lpAction\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBNote:\fP
+.RS 4
+
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBcPlugin::PluginCap\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPluginCapNone \fP\fP
+.TP
+\fB\fIPluginCapImport \fP\fP
+.TP
+\fB\fIPluginCapExport \fP\fP
+.TP
+\fB\fIPluginCapDB \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cPlugin::cPlugin (const QString & szFile)"
+
+.PP
+References m_lpDBInterface, m_lpImportInterface, and m_lpPluginLoader\&.
+.SS "cPlugin::~cPlugin ()"
+
+.PP
+References m_lpPluginLoader\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QAction * cPlugin::action ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QAction 
+.RE
+.PP
+
+.PP
+References m_lpAction\&.
+.SS "\fBcPlugin::PluginCap\fP cPlugin::capability ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+PluginCap 
+.RE
+.PP
+
+.PP
+References m_lpDBInterface, m_lpImportInterface, PluginCapDB, PluginCapImport, and PluginCapNone\&.
+.PP
+Referenced by cImportIngredientDialog::setPluginList(), and cOptionsPlugins::showConfigDlg()\&.
+.SS "\fBcDBInterface\fP * cPlugin::dbInterface ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+\fBcDBInterface\fP 
+.RE
+.PP
+
+.PP
+References m_lpDBInterface\&.
+.PP
+Referenced by cMainWindow::pluginDBTriggered(), and cOptionsPlugins::showConfigDlg()\&.
+.SS "\fBcImportInterface\fP * cPlugin::importInterface ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+\fBcImportInterface\fP 
+.RE
+.PP
+
+.PP
+References m_lpImportInterface\&.
+.PP
+Referenced by cImportIngredientDialog::on_m_lpSearchButton_clicked(), cImportIngredientDialog::onIngredientListSelectionChanged(), and cOptionsPlugins::showConfigDlg()\&.
+.SS "bool cPlugin::isValid ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+References m_lpPluginLoader\&.
+.PP
+Referenced by cMainWindow::loadPlugins()\&.
+.SS "qint16 cPlugin::pluginAPIVersion ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+References m_lpDBInterface, m_lpImportInterface, and cInterface::pluginAPIVersion()\&.
+.SS "QString cPlugin::pluginFile ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References m_lpPluginLoader\&.
+.SS "QString cPlugin::pluginName ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References m_lpDBInterface, m_lpImportInterface, and cInterface::pluginName()\&.
+.PP
+Referenced by cMainWindow::loadPlugins(), cOptionsPlugins::onOptionsPluginTreePluginToggled(), cMainWindow::pluginDBTriggered(), and cImportIngredientDialog::setPluginList()\&.
+.SS "qint16 cPlugin::pluginVersion ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+qint16 
+.RE
+.PP
+
+.PP
+References m_lpDBInterface, m_lpImportInterface, and cInterface::pluginVersion()\&.
+.SS "void cPlugin::setAction (QAction * lpAction)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlpAction\fP 
+.RE
+.PP
+
+.PP
+References m_lpAction\&.
+.PP
+Referenced by cMainWindow::loadPlugins()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QAction* cPlugin::m_lpAction\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by action(), and setAction()\&.
+.SS "\fBcDBInterface\fP* cPlugin::m_lpDBInterface\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by capability(), cPlugin(), dbInterface(), pluginAPIVersion(), pluginName(), and pluginVersion()\&.
+.SS "\fBcImportInterface\fP* cPlugin::m_lpImportInterface\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by capability(), cPlugin(), importInterface(), pluginAPIVersion(), pluginName(), and pluginVersion()\&.
+.SS "QPluginLoader* cPlugin::m_lpPluginLoader\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cPlugin(), isValid(), pluginFile(), and ~cPlugin()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

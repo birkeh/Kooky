@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtag_v_a_l_u_e_s" kind="struct" language="C++" prot="public">
+    <compoundname>tagVALUES</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtag_v_a_l_u_e_s_1a1af4ef8b1eb53303b473be2e9dfe4cdf" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString tagVALUES::szSearch</definition>
+        <argsstring></argsstring>
+        <name>szSearch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.cpp" line="13" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" compoundref="cernaehrungplugin_8cpp" startline="252" endline="320">cErnaehrungPlugin::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtag_v_a_l_u_e_s_1a7ff96fb996a57c44a72cd72be967064e" prot="public" static="no" mutable="no">
+        <type><ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref></type>
+        <definition>cIngredient::iIngredient tagVALUES::iIngredient</definition>
+        <argsstring></argsstring>
+        <name>iIngredient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.cpp" line="14" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" compoundref="cernaehrungplugin_8cpp" startline="322" endline="333">cErnaehrungPlugin::value</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtag_v_a_l_u_e_s_1a725904e5427d2d89fc28bac836ebe270" prot="public" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal tagVALUES::dValue</definition>
+        <argsstring></argsstring>
+        <name>dValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="iErnaehrung/cernaehrungplugin.cpp" line="15" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" compoundref="cernaehrungplugin_8cpp" startline="252" endline="320">cErnaehrungPlugin::load</referencedby>
+        <referencedby refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" compoundref="cernaehrungplugin_8cpp" startline="322" endline="333">cErnaehrungPlugin::value</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="iErnaehrung/cernaehrungplugin.cpp" line="12" column="1" bodyfile="iErnaehrung/cernaehrungplugin.cpp" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structtag_v_a_l_u_e_s_1a725904e5427d2d89fc28bac836ebe270" prot="public" virt="non-virtual"><scope>tagVALUES</scope><name>dValue</name></member>
+      <member refid="structtag_v_a_l_u_e_s_1a7ff96fb996a57c44a72cd72be967064e" prot="public" virt="non-virtual"><scope>tagVALUES</scope><name>iIngredient</name></member>
+      <member refid="structtag_v_a_l_u_e_s_1a1af4ef8b1eb53303b473be2e9dfe4cdf" prot="public" virt="non-virtual"><scope>tagVALUES</scope><name>szSearch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

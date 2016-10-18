@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_message_animate_dialog">
+<title>cMessageAnimateDialog class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cmessageanimatedialog_8h">&lt;cmessageanimatedialog.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cMessageAnimateDialog</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_message_animate_dialog__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cMessageAnimateDialog</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_message_animate_dialog__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ui::cMessageAnimateDialog * ui</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString m_szMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QTimer * m_lpTimer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_iCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_iDirection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca">cMessageAnimateDialog</link> (
+QWidget * parent)<para><emphasis>constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classc_message_animate_dialog_1ab38388f68f789315665dbdee912d3a47">~cMessageAnimateDialog</link> (
+)<para><emphasis>destructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e">setTitle</link> (
+const QString &amp; szTitle)<para><emphasis>Sets the title of the dialog.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985">setMessage</link> (
+const QString &amp; szMessage)<para><emphasis>Sets the message of the dialog.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Class to display a modal message dialog. Title and message can be configured. The dialog displays the message and adds up to 3 points zwice a second to the message.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>$Date: 2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 31 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>Ui::cMessageAnimateDialog* cMessageAnimateDialog::ui</title>                
+<para>User interface of the dialog. </para>
+
+                <para>Definition at line 68 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QString cMessageAnimateDialog::m_szMessage</title>                
+<para>Message to be displayed </para>
+
+                <para>Definition at line 71 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QTimer* cMessageAnimateDialog::m_lpTimer</title>                
+<para>Timer object </para>
+
+                <para>Definition at line 72 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int cMessageAnimateDialog::m_iCount</title>                
+<para>Number of points currently being displayed </para>
+
+                <para>Definition at line 73 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int cMessageAnimateDialog::m_iDirection</title>                
+<para>Increase / decrease number of points </para>
+
+                <para>Definition at line 74 of file cmessageanimatedialog.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmessageanimatedialog.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_message_animate_dialog_1a44afe4f9219101f7ec076e29b950afca">
+                <title>cMessageAnimateDialog::cMessageAnimateDialog (QWidget *parent=0)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>parent</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_message_animate_dialog_1a60b9bf7a04298fe0ccb98f46b16e9a5e">
+                <title>void cMessageAnimateDialog::setTitle (const QString &amp;szTitle)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szTitle</entry>
+                                <entry>
+<para>Title text </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classc_message_animate_dialog_1af6cae719996f9bf2d683f4cfdbd7b985">
+                <title>void cMessageAnimateDialog::setMessage (const QString &amp;szMessage)</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>szMessage</entry>
+                                <entry>
+<para>Message text </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

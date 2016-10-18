@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classc_my_s_q_l_plugin">
+<title>cMySQLPlugin class Reference</title>
+<para>
+    <programlisting>#include <link linkend="cmysqlplugin_8h">&lt;cmysqlplugin.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for cMySQLPlugin</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_my_s_q_l_plugin__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for cMySQLPlugin</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classc_my_s_q_l_plugin__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QSqlDatabase m_db</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString m_szLastError</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2">pluginAPIVersion</link> (
+)<para><emphasis>Returns the version of the plugin API.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24">pluginName</link> (
+)<para><emphasis>Returns the name of the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qint16 <link linkend="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a">pluginVersion</link> (
+)<para><emphasis>returns the version of the plugin</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31a">iType</link> <link linkend="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7">pluginType</link> (
+)<para><emphasis>returns the type of the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11">connect</link> (
+)<para><emphasis>connects to the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c">init</link> (
+)<para><emphasis>initializes default settings for the plugin.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda">lastError</link> (
+)<para><emphasis>returns the last error string.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441">config</link> (
+)<para><emphasis>calls the configuration dialog.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec">open</link> (
+)<para><emphasis>opens the database.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>This class implements the database connector for MySQL. All functions may be overwritten by derriving classes.</para>
+
+<para><formalpara><title>Note: </title>
+
+<para></para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>Herwig Birke</para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0</para>
+</formalpara>
+<formalpara><title>Date: </title>
+
+<para>$Date: 2016/02/09 </para>
+</formalpara>
+</para>
+                <para>Definition at line 46 of file cmysqlplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmysqlplugin.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>QSqlDatabase cMySQLPlugin::m_db</title>                
+<para>holds the database connection </para>
+
+                <para>Definition at line 122 of file cmysqlplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmysqlplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>QString cMySQLPlugin::m_szLastError</title>                
+<para>holds the last error message </para>
+
+                <para>Definition at line 123 of file cmysqlplugin.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>cmysqlplugin.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2">
+                <title>qint16 cMySQLPlugin::pluginAPIVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 plugin API version </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24">
+                <title>QString cMySQLPlugin::pluginName ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString name of the plugin </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a">
+                <title>qint16 cMySQLPlugin::pluginVersion ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>qint16 version of the plugin </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7">
+                <title>iType cMySQLPlugin::pluginType ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>iType type of the plugin.</para>
+</formalpara>
+Returns the type of the plugin. Possible values are: <itemizedlist>
+<listitem>
+
+<para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a">cInterface::iTypeDB</link> 
+<literallayout>
+</literallayout>
+ plugin provides DB connector </para>
+</listitem>
+<listitem>
+
+<para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f">cInterface::iTypeExport</link> 
+<literallayout>
+</literallayout>
+ plugin provides export capabilities </para>
+</listitem>
+<listitem>
+
+<para><link linkend="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a">cInterface::iTypeImport</link> 
+<literallayout>
+</literallayout>
+ plugin provides import capabilities  </para>
+</listitem>
+</itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11">
+                <title>bool cMySQLPlugin::connect ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool true on success or false otherwise </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c">
+                <title>bool cMySQLPlugin::init ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool true if settings where successfully tested or false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda">
+                <title>QString cMySQLPlugin::lastError ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>QString last error </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441">
+                <title>bool cMySQLPlugin::config ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool true if the configuration has been changed successfully or false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec">
+                <title>bool cMySQLPlugin::open ()</title>                
+<para><formalpara><title>Returns: </title>
+
+<para>bool true on success or false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

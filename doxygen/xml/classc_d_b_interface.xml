@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_d_b_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>cDBInterface</compoundname>
+    <basecompoundref refid="classc_interface" prot="public" virt="non-virtual">cInterface</basecompoundref>
+    <derivedcompoundref refid="classc_my_s_q_l_plugin" prot="public" virt="non-virtual">cMySQLPlugin</derivedcompoundref>
+    <derivedcompoundref refid="classc_s_q_lite_plugin" prot="public" virt="non-virtual">cSQLitePlugin</derivedcompoundref>
+    <includes refid="cdbinterface_8h" local="no">cdbinterface.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cDBInterface::m_bConnected</definition>
+        <argsstring></argsstring>
+        <name>m_bConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>holds the current connection status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="79" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">cMySQLPlugin::config</referencedby>
+        <referencedby refid="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" compoundref="cdbinterface_8h" startline="71" endline="71">connected</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0" compoundref="csqliteplugin_8cpp" startline="19" endline="61">cSQLitePlugin::init</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" compoundref="cmysqlplugin_8cpp" startline="22" endline="66">cMySQLPlugin::init</referencedby>
+        <referencedby refid="classc_s_q_lite_plugin_1ab826f374afd77f9b0118131eb6ae368f" compoundref="csqliteplugin_8cpp" startline="63" endline="82">cSQLitePlugin::open</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">cMySQLPlugin::open</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cDBInterface::cDBInterface</definition>
+        <argsstring>()</argsstring>
+        <name>cDBInterface</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="41" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual cDBInterface::~cDBInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~cDBInterface</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="46" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="46" bodyend="46"/>
+        <references refid="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b">connect</references>
+        <references refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">init</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool cDBInterface::connect</definition>
+        <argsstring>()=0</argsstring>
+        <name>connect</name>
+        <reimplementedby refid="classc_s_q_lite_plugin_1a0a3bef23b97f92e6df13248533cdb3e5">connect</reimplementedby>
+        <reimplementedby refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11">connect</reimplementedby>
+        <briefdescription>
+<para>Opens a connection to the database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function must be derived by the subclass.</para></simplesect>
+<simplesect kind="return"><para>bool true on success, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="55" column="1"/>
+        <referencedby refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" compoundref="cdbinterface_8h" startline="46" endline="46">~cDBInterface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool cDBInterface::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classc_s_q_lite_plugin_1a5ed58193b879741aa561e6b5b24728a0">init</reimplementedby>
+        <reimplementedby refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c">init</reimplementedby>
+        <briefdescription>
+<para>Initializes the module with default values. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function must be derived by the subclass.</para></simplesect>
+<simplesect kind="return"><para>bool true on success, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="63" column="1"/>
+        <referencedby refid="classc_main_window_1a70fa99ff98426a5cc888a2de3ea83b07" compoundref="cmainwindow_8cpp" startline="258" endline="282">cMainWindow::pluginDBTriggered</referencedby>
+        <referencedby refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" compoundref="cdbinterface_8h" startline="46" endline="46">~cDBInterface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cDBInterface::connected</definition>
+        <argsstring>()</argsstring>
+        <name>connected</name>
+        <briefdescription>
+<para>Returns the current connection status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function must be derived by the subclass.</para></simplesect>
+<simplesect kind="return"><para>bool true if connected, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="71" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="71" bodyend="71"/>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">m_bConnected</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_d_b_interface_1a280fe85549741179ce3a23b9f417c689" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cDBInterface::lastError</definition>
+        <argsstring>()</argsstring>
+        <name>lastError</name>
+        <briefdescription>
+<para>Returns the last error message of the last operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString error message of the last operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kooky/cdbinterface.h" line="77" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the base class for all database connector plugins. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements basic interface functionality for all Kooky database connector plugins. All functions may be overwritten by derriving classes.</para><para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="114">
+        <label>cSQLitePlugin</label>
+        <link refid="classc_s_q_lite_plugin"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>cMySQLPlugin</label>
+        <link refid="classc_my_s_q_l_plugin"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="111">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="116">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="115">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kooky/cdbinterface.h" line="35" column="1" bodyfile="Kooky/cdbinterface.h" bodystart="34" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>cDBInterface</name></member>
+      <member refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>config</name></member>
+      <member refid="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>connect</name></member>
+      <member refid="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>connected</name></member>
+      <member refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>init</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>iType</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>iTypeDB</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>iTypeExport</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>iTypeImport</name></member>
+      <member refid="classc_d_b_interface_1a280fe85549741179ce3a23b9f417c689" prot="public" virt="non-virtual"><scope>cDBInterface</scope><name>lastError</name></member>
+      <member refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" prot="protected" virt="non-virtual"><scope>cDBInterface</scope><name>m_bConnected</name></member>
+      <member refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>pluginName</name></member>
+      <member refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>pluginType</name></member>
+      <member refid="classc_interface_1aadc382036174c2a25bb2c23733830d33" prot="public" virt="pure-virtual"><scope>cDBInterface</scope><name>pluginVersion</name></member>
+      <member refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" prot="public" virt="virtual"><scope>cDBInterface</scope><name>~cDBInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cernaehrungplugin_8h" kind="file" language="C++">
+    <compoundname>cernaehrungplugin.h</compoundname>
+    <includes local="no">QtCore</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">QString</includes>
+    <includes refid="cimportinterface_8h" local="yes">cimportinterface.h</includes>
+    <includedby refid="cernaehrungplugin_8cpp" local="yes">iErnaehrung/cernaehrungplugin.cpp</includedby>
+    <includedby refid="moc__cernaehrungplugin_8cpp" local="yes">iErnaehrung/moc_cernaehrungplugin.cpp</includedby>
+    <incdepgraph>
+      <node id="707">
+        <label>QMap</label>
+      </node>
+      <node id="697">
+        <label>QObject</label>
+      </node>
+      <node id="699">
+        <label>cimportinterface.h</label>
+        <link refid="cimportinterface_8h"/>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>QtPlugin</label>
+      </node>
+      <node id="700">
+        <label>cingredient.h</label>
+        <link refid="cingredient_8h"/>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>QtCore</label>
+      </node>
+      <node id="703">
+        <label>QDomDocument</label>
+      </node>
+      <node id="695">
+        <label>iErnaehrung/cernaehrungplugin.h</label>
+        <link refid="cernaehrungplugin.h"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>QDate</label>
+      </node>
+      <node id="704">
+        <label>cInterface.h</label>
+        <link refid="c_interface_8h"/>
+        <childnode refid="698" relation="include">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>QString</label>
+      </node>
+      <node id="702">
+        <label>QFile</label>
+      </node>
+      <node id="706">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="710">
+        <label>iErnaehrung/moc_cernaehrungplugin.cpp</label>
+        <link refid="moc__cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="709">
+        <label>iErnaehrung/cernaehrungplugin.cpp</label>
+        <link refid="cernaehrungplugin_8cpp"/>
+      </node>
+      <node id="708">
+        <label>iErnaehrung/cernaehrungplugin.h</label>
+        <link refid="cernaehrungplugin.h"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classc_ernaehrung_plugin" prot="public">cErnaehrungPlugin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CERNAEHRUNG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CERNAEHRUNG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cimportinterface_8h" kindref="compound">cimportinterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classc_ernaehrung_plugin" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classc_ernaehrung_plugin" kindref="compound">cErnaehrungPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classc_import_interface" kindref="compound">cImportInterface</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/></highlight><highlight class="stringliteral">&quot;cErnaehrungPlugin&quot;</highlight><highlight class="normal"><sp/>FILE<sp/></highlight><highlight class="stringliteral">&quot;iErnaehrung.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classc_import_interface" kindref="compound">cImportInterface</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a44195e21ed764afb56bbcb4d64af1f3a" kindref="member">pluginAPIVersion</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(1);<sp/>}</highlight></codeline>
+<codeline lineno="33" refid="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a67ea2bef7e9d68fe3705baff59c9fec5" kindref="member">pluginName</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;import<sp/>Ernährung&quot;</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="39" refid="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a9f94e9684b541b55e67b87bff7a0a028" kindref="member">pluginVersion</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(1);<sp/>}</highlight></codeline>
+<codeline lineno="45" refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1aadc57be2d4fa422a9cadcbf647926700" kindref="member">pluginType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" kindref="member">cInterface::iTypeImport</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1acbadba8cb20826f22cce60af8f4be98f" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QString&gt;<sp/><sp/><ref refid="classc_ernaehrung_plugin_1a9fef4cc5e1c59999833ffb4493cfae3e" kindref="member">detailsCapability</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1aec19c86cca48415dbef841bc5b3cc15d" kindref="member">search</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>szSearch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;szDetails<sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a2d688c0a56bed5b8f233dd5890a96a3d" kindref="member">load</ref>(qint16<sp/>iIndex);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a8b4bb34247562c26687bb33e6369eb25" kindref="member">value</ref>(<ref refid="classc_ingredient_1acf023723841ec66cd6368a25e3174a28" kindref="member">cIngredient::iIngredient</ref><sp/>i);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a24c04c0b98fb4186e5b5b012662b39ed" kindref="member">ingredientName</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classc_ernaehrung_plugin_1a58692dcfff3d8f9da462b90fbf12db06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a58692dcfff3d8f9da462b90fbf12db06" kindref="member">m_szUrls</ref>;<sp/></highlight></codeline>
+<codeline lineno="90" refid="classc_ernaehrung_plugin_1aa586d90efc11b68dce605fdf1a45910d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1aa586d90efc11b68dce605fdf1a45910d" kindref="member">m_szIngredients</ref>;<sp/></highlight></codeline>
+<codeline lineno="91" refid="classc_ernaehrung_plugin_1a947339aef16691c4165c7eb1869d3b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classc_ernaehrung_plugin_1a947339aef16691c4165c7eb1869d3b7e" kindref="member">m_iLoadedIndex</ref>;<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="iErnaehrung/cernaehrungplugin.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,197 @@
+.TH "cOptionsPlugins" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cOptionsPlugins \- This dialog displays all plugins\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <coptionsplugins\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcOptionsPlugins\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~cOptionsPlugins\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPlugins\fP (QList< \fBcPlugin\fP * > &plugins)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBshowConfigDlg\fP (const QModelIndex &index)"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBonOptionsPluginTreeSelectionChanged\fP (const QItemSelection &selected, const QItemSelection &deselected)"
+.br
+.ti -1c
+.RI "void \fBonOptionsPluginTreeDoubleClicked\fP (const QModelIndex &index)"
+.br
+.ti -1c
+.RI "void \fBonOptionsPluginTreePluginToggled\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBon_m_lpButtonConfigure_clicked\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cOptionsPlugins * \fBui\fP"
+.br
+.ti -1c
+.RI "QStandardItemModel * \fBm_lpPluginsListModel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBNote:\fP
+.RS 4
+
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cOptionsPlugins::cOptionsPlugins (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References init()\&.
+.SS "cOptionsPlugins::~cOptionsPlugins ()"
+
+.PP
+References ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void cOptionsPlugins::init ()\fC [protected]\fP"
+
+.PP
+References m_lpPluginsListModel, onOptionsPluginTreeDoubleClicked(), onOptionsPluginTreeSelectionChanged(), and ui\&.
+.PP
+Referenced by cOptionsPlugins()\&.
+.SS "void cOptionsPlugins::on_m_lpButtonConfigure_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References m_lpPluginsListModel, showConfigDlg(), and ui\&.
+.SS "void cOptionsPlugins::onOptionsPluginTreeDoubleClicked (const QModelIndex & index)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
+.PP
+References m_lpPluginsListModel, and showConfigDlg()\&.
+.PP
+Referenced by init()\&.
+.SS "void cOptionsPlugins::onOptionsPluginTreePluginToggled (bool b)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIb\fP 
+.RE
+.PP
+
+.PP
+References m_lpPluginsListModel, cPlugin::pluginName(), and ui\&.
+.PP
+Referenced by setPlugins()\&.
+.SS "void cOptionsPlugins::onOptionsPluginTreeSelectionChanged (const QItemSelection & selected, const QItemSelection & deselected)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIselected\fP 
+.br
+\fIdeselected\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by init()\&.
+.SS "void cOptionsPlugins::setPlugins (QList< \fBcPlugin\fP * > & plugins)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplugins\fP 
+.RE
+.PP
+
+.PP
+References m_lpPluginsListModel, onOptionsPluginTreePluginToggled(), cPlugin::PluginCapDB, cPlugin::PluginCapExport, cPlugin::PluginCapImport, cPlugin::PluginCapNone, and ui\&.
+.PP
+Referenced by cOptions::onOptionsTreeSelectionChanged()\&.
+.SS "void cOptionsPlugins::showConfigDlg (const QModelIndex & index)\fC [protected]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
+.PP
+References cPlugin::capability(), cInterface::config(), cPlugin::dbInterface(), cPlugin::importInterface(), m_lpPluginsListModel, cPlugin::PluginCapDB, cPlugin::PluginCapExport, and cPlugin::PluginCapImport\&.
+.PP
+Referenced by on_m_lpButtonConfigure_clicked(), and onOptionsPluginTreeDoubleClicked()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QStandardItemModel* cOptionsPlugins::m_lpPluginsListModel\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by init(), on_m_lpButtonConfigure_clicked(), onOptionsPluginTreeDoubleClicked(), onOptionsPluginTreePluginToggled(), setPlugins(), and showConfigDlg()\&.
+.SS "Ui::cOptionsPlugins* cOptionsPlugins::ui\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by init(), on_m_lpButtonConfigure_clicked(), onOptionsPluginTreePluginToggled(), onOptionsPluginTreeSelectionChanged(), setPlugins(), and ~cOptionsPlugins()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

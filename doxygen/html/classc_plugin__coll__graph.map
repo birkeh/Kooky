@@ -1,0 +1,5 @@
+<map id="cPlugin" name="cPlugin">
+<area shape="rect" id="node2" href="$classc_import_interface.html" title="Interface class for importing data. " alt="" coords="5,81,132,108"/>
+<area shape="rect" id="node3" href="$classc_interface.html" title="This is the base class for all plugins. " alt="" coords="113,5,198,32"/>
+<area shape="rect" id="node4" href="$classc_d_b_interface.html" title="This is the base class for all database connector plugins. " alt="" coords="162,81,266,108"/>
+</map>

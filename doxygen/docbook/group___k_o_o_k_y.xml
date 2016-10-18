@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group___k_o_o_k_y">
+    <title>Kooky Main Program</title>
+<para>Collaboration diagram for Kooky Main Program</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group___k_o_o_k_y.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+
+<para>This is the main program of Kooky. </para>
+        <section>
+            <title>Detailed Description</title>
+        </section>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_d_b_interface">cDBInterface</link></para>
+<para><emphasis>This is the base class for all database connector plugins.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_import_ingredient_dialog">cImportIngredientDialog</link></para>
+<para><emphasis>This dialog imports ingredients based on the selected import plugin.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_import_interface">cImportInterface</link></para>
+<para><emphasis>Interface class for importing data.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_ingredient">cIngredient</link></para>
+<para><emphasis>This class holds data of an ingredient.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_interface">cInterface</link></para>
+<para><emphasis>This is the base class for all plugins.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_main_window">cMainWindow</link></para>
+<para><emphasis>This is the class that implements the main window.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_m_d_i_area">cMDIArea</link></para>
+<para><emphasis>This class overwrites the default MDI area of the main window.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_message_animate_dialog">cMessageAnimateDialog</link></para>
+<para><emphasis>Class to display a modal message dialog.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_options">cOptions</link></para>
+<para><emphasis>This dialog displays all options.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_options_plugins">cOptionsPlugins</link></para>
+<para><emphasis>This dialog displays all plugins.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classc_plugin">cPlugin</link></para>
+<para><emphasis>This class holds data of an plugin.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

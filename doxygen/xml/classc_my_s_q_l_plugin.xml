@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classc_my_s_q_l_plugin" kind="class" language="C++" prot="public">
+    <compoundname>cMySQLPlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classc_d_b_interface" prot="public" virt="non-virtual">cDBInterface</basecompoundref>
+    <includes refid="cmysqlplugin_8h" local="no">cmysqlplugin.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" prot="protected" static="no" mutable="no">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase cMySQLPlugin::m_db</definition>
+        <argsstring></argsstring>
+        <name>m_db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>holds the database connection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="122" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">config</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" compoundref="cmysqlplugin_8cpp" startline="9" endline="20">connect</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" compoundref="cmysqlplugin_8cpp" startline="22" endline="66">init</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">open</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString cMySQLPlugin::m_szLastError</definition>
+        <argsstring></argsstring>
+        <name>m_szLastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>holds the last error message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="123" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" compoundref="cmysqlplugin_8cpp" startline="22" endline="66">init</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" compoundref="cmysqlplugin_8cpp" startline="89" endline="92">lastError</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">open</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cMySQLPlugin::pluginAPIVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginAPIVersion</name>
+        <reimplements refid="classc_interface_1a615b50a526c2d4ca73b13f8991371813">pluginAPIVersion</reimplements>
+        <briefdescription>
+<para>Returns the version of the plugin API. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 plugin API version </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="57" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>QString cMySQLPlugin::pluginName</definition>
+        <argsstring>()</argsstring>
+        <name>pluginName</name>
+        <reimplements refid="classc_interface_1a17e5a0cf99317ab45f624e68b4a6ecca">pluginName</reimplements>
+        <briefdescription>
+<para>Returns the name of the plugin. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString name of the plugin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="63" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="63" bodyend="63"/>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">config</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" compoundref="cmysqlplugin_8cpp" startline="9" endline="20">connect</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" compoundref="cmysqlplugin_8cpp" startline="22" endline="66">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>qint16</type>
+        <definition>qint16 cMySQLPlugin::pluginVersion</definition>
+        <argsstring>()</argsstring>
+        <name>pluginVersion</name>
+        <reimplements refid="classc_interface_1aadc382036174c2a25bb2c23733830d33">pluginVersion</reimplements>
+        <briefdescription>
+<para>returns the version of the plugin </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>qint16 version of the plugin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="69" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" kindref="member">iType</ref></type>
+        <definition>iType cMySQLPlugin::pluginType</definition>
+        <argsstring>()</argsstring>
+        <name>pluginType</name>
+        <reimplements refid="classc_interface_1af5e408cdaff527a872ce6d02a96301a4">pluginType</reimplements>
+        <briefdescription>
+<para>returns the type of the plugin. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>iType type of the plugin.</para></simplesect>
+Returns the type of the plugin. Possible values are: <itemizedlist>
+<listitem>
+<para><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" kindref="member">cInterface::iTypeDB</ref> <linebreak/>
+ plugin provides DB connector </para></listitem>
+<listitem>
+<para><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" kindref="member">cInterface::iTypeExport</ref> <linebreak/>
+ plugin provides export capabilities </para></listitem>
+<listitem>
+<para><ref refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" kindref="member">cInterface::iTypeImport</ref> <linebreak/>
+ plugin provides import capabilities  </para></listitem>
+</itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="86" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="86" bodyend="86"/>
+        <references refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">config</references>
+        <references refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" compoundref="cmysqlplugin_8cpp" startline="9" endline="20">connect</references>
+        <references refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" compoundref="cmysqlplugin_8cpp" startline="22" endline="66">init</references>
+        <references refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" compoundref="c_interface_8h" startline="42">cInterface::iTypeDB</references>
+        <references refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" compoundref="cmysqlplugin_8cpp" startline="89" endline="92">lastError</references>
+        <references refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">open</references>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cMySQLPlugin::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <reimplements refid="classc_d_b_interface_1a1831bb8f93342190f26d83f35b4a988b">connect</reimplements>
+        <briefdescription>
+<para>connects to the database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool true on success or false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="93" column="1" bodyfile="dMySQL/cmysqlplugin.cpp" bodystart="9" bodyend="20"/>
+        <references refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" compoundref="cmysqlplugin_8h" startline="122">m_db</references>
+        <references refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">open</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" compoundref="cmysqlplugin_8h" startline="63" endline="63">pluginName</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" compoundref="cmysqlplugin_8h" startline="86" endline="86">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cMySQLPlugin::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classc_d_b_interface_1a8baa6f378fb91dea077b38bd15be12c9">init</reimplements>
+        <briefdescription>
+<para>initializes default settings for the plugin. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool true if settings where successfully tested or false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="99" column="1" bodyfile="dMySQL/cmysqlplugin.cpp" bodystart="22" bodyend="66"/>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">cDBInterface::m_bConnected</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" compoundref="cmysqlplugin_8h" startline="122">m_db</references>
+        <references refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" compoundref="cmysqlplugin_8h" startline="123">m_szLastError</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" compoundref="cmysqlplugin_8h" startline="63" endline="63">pluginName</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" compoundref="cmysqlplugin_8h" startline="86" endline="86">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString cMySQLPlugin::lastError</definition>
+        <argsstring>()</argsstring>
+        <name>lastError</name>
+        <briefdescription>
+<para>returns the last error string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>QString last error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="105" column="1" bodyfile="dMySQL/cmysqlplugin.cpp" bodystart="89" bodyend="92"/>
+        <references refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" compoundref="cmysqlplugin_8h" startline="123">m_szLastError</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" compoundref="cmysqlplugin_8h" startline="86" endline="86">pluginType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cMySQLPlugin::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <reimplements refid="classc_interface_1a040fbd069a2c2356faeda1c2d9ac88df">config</reimplements>
+        <briefdescription>
+<para>calls the configuration dialog. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool true if the configuration has been changed successfully or false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="112" column="1" bodyfile="dMySQL/cmysqlplugin.cpp" bodystart="94" bodyend="118"/>
+        <references refid="classc_config_dialog_1a1ab3c4cf07b4bb84624ddfe4395a1935" compoundref="cconfigdialog_8cpp" startline="47" endline="50">cConfigDialog::database</references>
+        <references refid="classc_config_dialog_1a77e56b372e8914cf531d64054cbaea2c" compoundref="cconfigdialog_8cpp" startline="42" endline="45">cConfigDialog::hostname</references>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">cDBInterface::m_bConnected</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" compoundref="cmysqlplugin_8h" startline="122">m_db</references>
+        <references refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" compoundref="cmysqlplugin_8cpp" startline="68" endline="87">open</references>
+        <references refid="classc_config_dialog_1aea1dfbe7eae14e7949a15631ed2df8a5" compoundref="cconfigdialog_8cpp" startline="57" endline="60">cConfigDialog::password</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" compoundref="cmysqlplugin_8h" startline="63" endline="63">pluginName</references>
+        <references refid="classc_config_dialog_1abcb15989a34c945128e8624b93b5c272" compoundref="cconfigdialog_8cpp" startline="26" endline="29">cConfigDialog::setDatabase</references>
+        <references refid="classc_config_dialog_1acb0a82e1653578edc43855af17154f24" compoundref="cconfigdialog_8cpp" startline="21" endline="24">cConfigDialog::setHostname</references>
+        <references refid="classc_config_dialog_1a1eecd4be7061043a3ae60473013edfb1" compoundref="cconfigdialog_8cpp" startline="36" endline="40">cConfigDialog::setPassword</references>
+        <references refid="classc_config_dialog_1ae3238bbd8055b58066046840fef448b4" compoundref="cconfigdialog_8cpp" startline="31" endline="34">cConfigDialog::setUserName</references>
+        <references refid="classc_config_dialog_1ad1f4eda37fec241ffbcc158c039accea" compoundref="cconfigdialog_8cpp" startline="52" endline="55">cConfigDialog::userName</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" compoundref="cmysqlplugin_8h" startline="86" endline="86">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cMySQLPlugin::open</definition>
+        <argsstring>()</argsstring>
+        <name>open</name>
+        <briefdescription>
+<para>opens the database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool true on success or false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dMySQL/cmysqlplugin.h" line="120" column="1" bodyfile="dMySQL/cmysqlplugin.cpp" bodystart="68" bodyend="87"/>
+        <references refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" compoundref="cdbinterface_8h" startline="79">cDBInterface::m_bConnected</references>
+        <references refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" compoundref="cmysqlplugin_8h" startline="122">m_db</references>
+        <references refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" compoundref="cmysqlplugin_8h" startline="123">m_szLastError</references>
+        <referencedby refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" compoundref="cmysqlplugin_8cpp" startline="94" endline="118">config</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" compoundref="cmysqlplugin_8cpp" startline="9" endline="20">connect</referencedby>
+        <referencedby refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" compoundref="cmysqlplugin_8h" startline="86" endline="86">pluginType</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MySQL Database Connector Plugin class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements the database connector for MySQL. All functions may be overwritten by derriving classes.</para><para><simplesect kind="note"><para></para></simplesect>
+<simplesect kind="author"><para>Herwig Birke</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="date"><para>$Date: 2016/02/09 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="160">
+        <label>QObject</label>
+      </node>
+      <node id="159">
+        <label>cMySQLPlugin</label>
+        <link refid="classc_my_s_q_l_plugin"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="161">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="164">
+        <label>QObject</label>
+      </node>
+      <node id="163">
+        <label>cMySQLPlugin</label>
+        <link refid="classc_my_s_q_l_plugin"/>
+        <childnode refid="164" relation="public-inheritance">
+        </childnode>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>cInterface</label>
+        <link refid="classc_interface"/>
+      </node>
+      <node id="165">
+        <label>cDBInterface</label>
+        <link refid="classc_d_b_interface"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dMySQL/cmysqlplugin.h" line="46" column="1" bodyfile="dMySQL/cmysqlplugin.h" bodystart="45" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classc_d_b_interface_1a71fd9c721e72a05983a061ba8348f257" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>cDBInterface</name></member>
+      <member refid="classc_my_s_q_l_plugin_1ad8413f2440b3ce4390865bb08d238441" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>config</name></member>
+      <member refid="classc_my_s_q_l_plugin_1a137309c4dea786cc0cbd2d7db9acff11" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>connect</name></member>
+      <member refid="classc_d_b_interface_1a31ca3accfbd6dd1d2915440a94874b7b" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>connected</name></member>
+      <member refid="classc_my_s_q_l_plugin_1ab64cecb567902902ef25fd3cf7346a4c" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>init</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31a" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>iType</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa242858255f85f84d2c9791f376bf738a" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>iTypeDB</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa4b8e5dcb2c471b3fb96ea37d8263612f" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>iTypeExport</name></member>
+      <member refid="classc_interface_1a41462a3131755963add9ba3026e7d31aa493982726026a437f9042749a76f456a" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>iTypeImport</name></member>
+      <member refid="classc_my_s_q_l_plugin_1a8e175f45e12bf3716af0dd5728710cda" prot="public" virt="non-virtual"><scope>cMySQLPlugin</scope><name>lastError</name></member>
+      <member refid="classc_d_b_interface_1a28d4d17206ee596e43e8c433c11c9282" prot="protected" virt="non-virtual"><scope>cMySQLPlugin</scope><name>m_bConnected</name></member>
+      <member refid="classc_my_s_q_l_plugin_1ae8eac3baf1f720e5b36315a611a18d50" prot="protected" virt="non-virtual"><scope>cMySQLPlugin</scope><name>m_db</name></member>
+      <member refid="classc_my_s_q_l_plugin_1aa59160129f7a5c373fef1cfd0d8e281c" prot="protected" virt="non-virtual"><scope>cMySQLPlugin</scope><name>m_szLastError</name></member>
+      <member refid="classc_my_s_q_l_plugin_1a574fa4e2d3e7505defaf9550eb9893ec" prot="protected" virt="non-virtual"><scope>cMySQLPlugin</scope><name>open</name></member>
+      <member refid="classc_my_s_q_l_plugin_1afbcc9dc99700cecd230b70d0384b0fd2" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>pluginAPIVersion</name></member>
+      <member refid="classc_my_s_q_l_plugin_1ae8eed8a248ddbb3f8372290571ddfb24" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>pluginName</name></member>
+      <member refid="classc_my_s_q_l_plugin_1a76618f3bd8846fab6e3572e30df6fae7" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>pluginType</name></member>
+      <member refid="classc_my_s_q_l_plugin_1af9f85d9af71685b373b114d8d2d98c6a" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>pluginVersion</name></member>
+      <member refid="classc_d_b_interface_1a7146e4fb1753d18c5f13908505fb8b4c" prot="public" virt="virtual"><scope>cMySQLPlugin</scope><name>~cDBInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

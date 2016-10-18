@@ -1,0 +1,268 @@
+.TH "cConfigDialog" 3 "Thu Feb 11 2016" "Kooky" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cConfigDialog \- Configuration Dialog for dMySQL\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cconfigdialog\&.h>\fP
+.PP
+Inherits QDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcConfigDialog\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~cConfigDialog\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetHostname\fP (const QString &szHostname)"
+.br
+.ti -1c
+.RI "void \fBsetDatabase\fP (const QString &szDatabase)"
+.br
+.ti -1c
+.RI "void \fBsetUserName\fP (const QString &szUserName)"
+.br
+.ti -1c
+.RI "void \fBsetPassword\fP (const QString &szPassword)"
+.br
+.ti -1c
+.RI "QString \fBhostname\fP ()"
+.br
+.ti -1c
+.RI "QString \fBdatabase\fP ()"
+.br
+.ti -1c
+.RI "QString \fBuserName\fP ()"
+.br
+.ti -1c
+.RI "QString \fBpassword\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_m_lpTestButton_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_m_lpPassword_textChanged\fP (const QString &arg1)"
+.br
+.ti -1c
+.RI "void \fBon_m_lpPassword2_textChanged\fP (const QString &arg1)"
+.br
+.ti -1c
+.RI "void \fBon_m_lpOKButton_clicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBon_m_lpCancelButton_clicked\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::cConfigDialog * \fBui\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bPasswordChanged\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements basic import functionality for Kooky\&. All functions may be overwritten by derriving classes\&.
+.PP
+\fBNote:\fP
+.RS 4
+Attempts at zen rarely work\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Herwig Birke
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2016/02/09 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "cConfigDialog::cConfigDialog (QWidget * parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparent\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.SS "cConfigDialog::~cConfigDialog ()"
+
+.PP
+References ui\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString cConfigDialog::database ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "QString cConfigDialog::hostname ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "void cConfigDialog::on_m_lpCancelButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.SS "void cConfigDialog::on_m_lpOKButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+References ui\&.
+.SS "void cConfigDialog::on_m_lpPassword2_textChanged (const QString & arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP 
+.RE
+.PP
+
+.PP
+References m_bPasswordChanged, and ui\&.
+.SS "void cConfigDialog::on_m_lpPassword_textChanged (const QString & arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP 
+.RE
+.PP
+
+.PP
+References m_bPasswordChanged, and ui\&.
+.SS "void cConfigDialog::on_m_lpTestButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.SS "QString cConfigDialog::password ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "void cConfigDialog::setDatabase (const QString & szDatabase)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszDatabase\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "void cConfigDialog::setHostname (const QString & szHostname)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszHostname\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "void cConfigDialog::setPassword (const QString & szPassword)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszPassword\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "void cConfigDialog::setUserName (const QString & szUserName)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIszUserName\fP 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SS "QString cConfigDialog::userName ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+QString 
+.RE
+.PP
+
+.PP
+References ui\&.
+.PP
+Referenced by cMySQLPlugin::config()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool cConfigDialog::m_bPasswordChanged\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by on_m_lpPassword2_textChanged(), and on_m_lpPassword_textChanged()\&.
+.SS "Ui::cConfigDialog* cConfigDialog::ui\fC [private]\fP"
+TODO: describe 
+.PP
+Referenced by cConfigDialog(), database(), hostname(), on_m_lpOKButton_clicked(), on_m_lpPassword2_textChanged(), on_m_lpPassword_textChanged(), password(), setDatabase(), setHostname(), setPassword(), setUserName(), userName(), and ~cConfigDialog()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kooky from the source code\&.

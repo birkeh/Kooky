@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="cernaehrungplugin_8cpp">
+    <title>cernaehrungplugin.cpp File Reference</title>
+    <programlisting>#include &quot;cernaehrungplugin.h&quot;</programlisting>
+    <programlisting>#include &lt;QNetworkAccessManager&gt;</programlisting>
+    <programlisting>#include &lt;QNetworkRequest&gt;</programlisting>
+    <programlisting>#include &lt;QNetworkReply&gt;</programlisting>
+    <programlisting>#include &lt;QEventLoop&gt;</programlisting>
+    <programlisting>#include &lt;QMessageBox&gt;</programlisting>
+    <programlisting>#include &lt;QTextDocument&gt;</programlisting>
+<para>Include dependency diagram for cernaehrungplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cernaehrungplugin_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for cernaehrungplugin.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="cernaehrungplugin_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structtag_v_a_l_u_e_s">tagVALUES</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structtag_v_a_l_u_e_s">tagVALUES</link>  <link linkend="cernaehrungplugin_8cpp_1a2990e408ffc5d0b655cfcdd44baf79bb">VALUES</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="cernaehrungplugin_8cpp_1a2990e408ffc5d0b655cfcdd44baf79bb">VALUES</link> <link linkend="cernaehrungplugin_8cpp_1a8ee72542273e948e0e3f6d6d722ffe9b">g_values</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double <link linkend="cernaehrungplugin_8cpp_1afb1a8d57387321ded0ace161ae4b5298">toValue</link> (
+const QString &amp; sz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/birkeh/Documents/Projects/Kooky/iErnaehrung/cernaehrungplugin.cpp</para>
+    </simplesect>
+</section>
