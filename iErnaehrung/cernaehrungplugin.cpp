@@ -219,17 +219,25 @@ QStringList cErnaehrungPlugin::search(const QString& szSearch, const QString& sz
 	delete reply;
 
 	QList<QByteArray>		szList  = szData.split('\n');
+	int						z;
 
-	for(int z = 0;z < szList.count();z++)
+	for(z = 0;z < szList.count();z++)
 	{
 		QString szLine  = QString::fromUtf8(szList.at(z));
-		if(szLine.contains("<li><a href=\"http://www.ernaehrung.de/lebensmittel"))
+		if(szLine.contains("Suchergebnisse"))
+			break;
+	}
+
+	for(;z < szList.count();z++)
+	{
+		QString szLine  = QString::fromUtf8(szList.at(z));
+		if(szLine.contains("<a href=\"http://www.ernaehrung.de/lebensmittel"))
 		{
 			QString	szReply;
 			QString	szURL;
 
-			szURL	= szLine.mid(szLine.indexOf("<li><a")+13);
-			szURL	= szURL.left(szURL.indexOf(">")-1);
+			szURL	= szLine.mid(szLine.indexOf("<a href")+9);
+			szURL	= szURL.left(szURL.indexOf("\""));
 
 			szReply	= szLine.mid(szLine.indexOf("\">")+2);
 			szReply	= szReply.left(szReply.indexOf("<"));

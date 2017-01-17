@@ -56,7 +56,7 @@ void cMainWindow::init()
 
 	ui->setupUi(this);
 
-	loadPlugins("plugins");
+	loadPlugins(QString("%1%2%3").arg(QDir::currentPath()).arg(QDir::separator()).arg("plugins"));
 
 	m_lpIngredientsListModel	= new QStandardItemModel(0, 1);
 	ui->m_lpIngredientsList->setModel(m_lpIngredientsListModel);
@@ -270,7 +270,7 @@ void cMainWindow::pluginImportTriggered()
 	cIngredient	ingredient(QString("%1/000001.ingredient").arg(settings.value("program/ingredientDir").toString()));
 	ingredient.save();
 */
-/*
+
 	QAction*	lpAction	= qobject_cast<QAction *>(sender());
 	if(lpAction)
 	{
@@ -300,7 +300,7 @@ void cMainWindow::pluginImportTriggered()
 			}
 		}
 	}
-*/
+
 }
 
 void cMainWindow::pluginExportTriggered()
