@@ -56,7 +56,8 @@ void cMainWindow::init()
 
 	ui->setupUi(this);
 
-	loadPlugins(QString("%1%2%3").arg(QDir::currentPath()).arg(QDir::separator()).arg("plugins"));
+//	loadPlugins(QString("%1%2%3").arg(QDir::currentPath()).arg(QDir::separator()).arg("plugins"));
+	loadPlugins(QString("%1%2%3").arg(qApp->applicationDirPath()).arg(QDir::separator()).arg("plugins"));
 
 	m_lpIngredientsListModel	= new QStandardItemModel(0, 1);
 	ui->m_lpIngredientsList->setModel(m_lpIngredientsListModel);
