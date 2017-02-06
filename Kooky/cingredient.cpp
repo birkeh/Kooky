@@ -180,12 +180,37 @@ static GROUPNAME			g_groupname[] =
 	{	QString::fromUtf8("average consumption"),				QString::fromUtf8("Others"),						cIngredient::iIngredientaverageconsumption	},
 };
 
-cIngredient::cIngredient(const QString &szIngredientName) :
+cIngredient::cIngredient() :
+	m_szIngredientName(""),
+	m_szIngredientGroup(""),
+	m_iID(-1)
+{
+}
+
+cIngredient::cIngredient(const QString &szIngredientName, const QString& szIngredientGroup) :
 	m_szIngredientName(szIngredientName),
+	m_szIngredientGroup(szIngredientGroup),
 	m_iID(0)
 {
 	for(int z = 0;z < iIngredientMax;z++)
 		m_dValue[z] = -1;
+}
+
+bool cIngredient::load(qint32 iIngredient, cPlugin* lpDB)
+{
+	if(!lpDB)
+		return(false);
+
+	cDBInterface*	lpInterface	= lpDB->dbInterface();
+
+	m_iID				= iIngredient;
+	m_szIngredientName	= lpInterface->name(iIngredient);
+	m_szIngredientGroup	= lpInterface->group(iIngredient);
+
+	for(int z = 0;z < cIngredient::iIngredientMax;z++)
+		m_dValue[z]	= lpInterface->get(iIngredient, z);
+
+	return(true);
 }
 
 bool cIngredient::reload(cPlugin* /*lpDB*/)
@@ -202,7 +227,7 @@ bool cIngredient::save(cPlugin* lpDB)
 
 	lpInterface->beginTransaction();
 
-	qint32	id	= lpInterface->create(m_szIngredientName, "default");
+	qint32	id	= lpInterface->create(m_szIngredientName, m_szIngredientGroup);
 	if(id == -1)
 		return(false);
 
@@ -218,6 +243,16 @@ bool cIngredient::save(cPlugin* lpDB)
 	lpInterface->endTransaction();
 
 	return(true);
+}
+
+QString cIngredient::ingredientName()
+{
+	return(m_szIngredientName);
+}
+
+QString cIngredient::ingredientGroup()
+{
+	return(m_szIngredientGroup);
 }
 
 QString cIngredient::group(cIngredient::iIngredient i)

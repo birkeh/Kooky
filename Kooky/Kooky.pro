@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     cimportingredientdialog.cpp \
     cmessageanimatedialog.cpp \
     cplugininfo.cpp \
-    csplashscreen.cpp
+    csplashscreen.cpp \
+    cingredientwindow.cpp
 
 HEADERS  += cmainwindow.h \
     cimportinterface.h \
@@ -39,14 +40,16 @@ HEADERS  += cmainwindow.h \
     cmessageanimatedialog.h \
     cplugininfo.h \
     typedef.h \
-    csplashscreen.h
+    csplashscreen.h \
+    cingredientwindow.h
 
 FORMS    += cmainwindow.ui \
     coptions.ui \
 	coptionsplugins.ui \
     cimportingredientdialog.ui \
     cmessageanimatedialog.ui \
-    cplugininfo.ui
+    cplugininfo.ui \
+    cingredientwindow.ui
 
 DESTDIR = ../bin
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1124</width>
+    <width>776</width>
     <height>624</height>
    </rect>
   </property>
@@ -37,8 +37,11 @@
            <property name="editTriggers">
             <set>QAbstractItemView::NoEditTriggers</set>
            </property>
-           <attribute name="headerVisible">
+           <property name="headerHidden">
             <bool>false</bool>
+           </property>
+           <attribute name="headerVisible">
+            <bool>true</bool>
            </attribute>
           </widget>
          </item>
@@ -50,14 +53,14 @@
         </attribute>
        </widget>
       </widget>
-      <widget class="cMdiArea" name="m_lpMDIArea">
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
+          <widget class="cMdiArea" name="m_lpMDIArea">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
      </widget>
     </item>
    </layout>
@@ -67,7 +70,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1124</width>
+     <width>776</width>
      <height>21</height>
     </rect>
    </property>

@@ -201,9 +201,16 @@ public:
 		iIngredientMax,
 	};
 
-	cIngredient(const QString& szIngredientName);
+	cIngredient();
+	cIngredient(const QString& szIngredientName, const QString& szIngredientGroup);
 
 	void	setValue(cIngredient::iIngredient i, qreal dValue);
+	/*!
+	 \brief
+
+	 \return bool
+	*/
+	bool	load(qint32 iIngredient, cPlugin* lpDB);
 	/*!
 	 \brief
 
@@ -217,6 +224,8 @@ public:
 	*/
 	bool	save(cPlugin* lpDB);
 
+	QString	ingredientName();
+	QString	ingredientGroup();
 	/*!
 	 \brief
 
@@ -242,6 +251,7 @@ public:
 
 private:
 	QString		m_szIngredientName;
+	QString		m_szIngredientGroup;
 	qint32		m_iID;
 	qreal		m_dValue[iIngredientMax];
 };

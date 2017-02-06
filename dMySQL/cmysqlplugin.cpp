@@ -1,6 +1,8 @@
 #include "cmysqlplugin.h"
 #include "cconfigdialog.h"
 
+#include "cingredient.h"
+
 #include <QSqlError>
 #include <QSettings>
 #include <QSqlQuery>
@@ -267,13 +269,59 @@ bool cMySQLPlugin::set(qint32 id, qint16 ingredientNumber, qreal value)
 	return(existsIngredient(id, ingredientNumber));
 }
 
+QString cMySQLPlugin::name(qint32 id)
+{
+	if(!m_bConnected)
+		return("");
+
+	QSqlQuery	query(m_db);
+	if(!query.exec(QString("SELECT name FROM ingredient WHERE id=%1").arg(id).arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return("");
+	}
+	query.first();
+	return(query.value("name").toString());
+}
+
+QString cMySQLPlugin::group(qint32 id)
+{
+	if(!m_bConnected)
+		return("");
+
+	QSqlQuery	query(m_db);
+	if(!query.exec(QString("SELECT name FROM ingredient, ingredient_group WHERE ingredient.ingredient_group_id=ingredient_group.id AND ingredient.id=%1").arg(id).arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return("");
+	}
+	query.first();
+	return(query.value("name").toString());
+}
+
+qreal cMySQLPlugin::get(qint32 id, qint16 ingredientNumber)
+{
+	if(!m_bConnected)
+		return(-1);
+
+	QSqlQuery	query(m_db);
+	if(!query.exec(QString("SELECT value FROM ingredient_values WHERE ingredient_id=%1 AND ingredient_number=%2").arg(id).arg(ingredientNumber)))
+	{
+		m_szLastError	= query.lastError().text();
+		return(-1);
+	}
+	query.first();
+	return(query.value("value").toReal());
+}
+
 INGREDIENT_LIST cMySQLPlugin::ingredients()
 {
 	if(!m_bConnected)
 		return(INGREDIENT_LIST());
 
 	QSqlQuery	query(m_db);
-	if(!query.exec(QString("SELECT ingredient.name, ingredient_group.name FROM ingredient, ingredient_group WHERE ingredient.ingredient_group_id = ingredient_group.id ORDER BY ingredient_group.name, ingredient.name")))
+//	if(!query.exec(QString("SELECT ingredient.name, ingredient_group.name FROM ingredient, ingredient_group WHERE ingredient.ingredient_group_id = ingredient_group.id ORDER BY ingredient_group.name, ingredient.name")))
+	if(!query.exec(QString(QString("SELECT ingredient.id, ingredient.name, ingredient_group.name, calories.value, carbohydrates.value FROM ingredient, ingredient_group, ingredient_values AS calories, ingredient_values AS carbohydrates WHERE ingredient.ingredient_group_id = ingredient_group.id AND calories.ingredient_id = ingredient.id AND calories.ingredient_number = %1 AND carbohydrates.ingredient_id = ingredient.id AND carbohydrates.ingredient_number = %2 ORDER BY ingredient_group.name, ingredient.name").arg(cIngredient::iIngredientCalories).arg(cIngredient::iIngredientCarbohydrates))))
 	{
 		m_szLastError	= query.lastError().text();
 		return(INGREDIENT_LIST());
@@ -283,8 +331,11 @@ INGREDIENT_LIST cMySQLPlugin::ingredients()
 	while(query.next())
 	{
 		INGREDIENT	i;
-		i.szGroup		= query.value(1).toString();
-		i.szIngredient	= query.value(0).toString();
+		i.iIngredient		= query.value(0).toInt();
+		i.szIngredient		= query.value(1).toString();
+		i.szGroup			= query.value(2).toString();
+		i.dCalories			= query.value(3).toDouble();
+		i.dCarbohydrates	= query.value(4).toDouble();
 		list.append(i);
 	}
 

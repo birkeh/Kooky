@@ -167,6 +167,9 @@ bool cBleibFitPlugin::load(qint16 iIndex)
 	if(iIndex > m_szUrls.count())
 		return(false);
 
+	for(int i = 0;i < cIngredient::iIngredientMax;i++)
+		m_rValues[i] = -1;
+
 	QNetworkAccessManager	networkManager;
 	QNetworkRequest			request(QUrl(m_szUrls.at(iIndex)));
 	request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");

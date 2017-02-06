@@ -59,9 +59,12 @@ public:
 	  *
 	  * \param pluginList
 	  */
-	void							setPluginList(const QList<cPlugin*> pluginList);
+	void							setPluginList(const QList<cPlugin*> pluginList, const QString& szPlugin = QString(""));
 	cIngredient						toIngredient();
 
+	QString							pluginSelected();
+
+	void							setIngredientGroupList(const QStringList ingredientGroupList);
 private:
 	Ui::cImportIngredientDialog*	ui; /*!< TODO: describe */
 	QStandardItemModel*				m_lpIngredientListModel; /*!< TODO: describe */

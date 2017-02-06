@@ -51,7 +51,7 @@ void cImportIngredientDialog::initIngredientDetails()
 	m_lpIngredientDetailsModel->setHorizontalHeaderLabels(headerLabels);
 }
 
-void cImportIngredientDialog::setPluginList(const QList<cPlugin*> pluginList)
+void cImportIngredientDialog::setPluginList(const QList<cPlugin*> pluginList, const QString& szPlugin)
 {
 	m_pluginList	= pluginList;
 
@@ -65,7 +65,27 @@ void cImportIngredientDialog::setPluginList(const QList<cPlugin*> pluginList)
 				ui->m_lpSource->addItem(lpPlugin->pluginName(), QVariant::fromValue(lpPlugin));
 		}
 	}
-	ui->m_lpSource->setCurrentIndex(0);
+	if(ui->m_lpSource->count())
+	{
+		int	index	= ui->m_lpSource->findText(szPlugin);
+		if(index != -1)
+			ui->m_lpSource->setCurrentIndex(index);
+	}
+}
+
+void cImportIngredientDialog::setIngredientGroupList(const QStringList ingredientGroupList)
+{
+	ui->m_lpIngredientGroup->addItems(ingredientGroupList);
+
+	int	index	= ui->m_lpIngredientGroup->findText("default");
+	if(index == -1)
+		index	= 0;
+	ui->m_lpIngredientGroup->setCurrentIndex(index);
+}
+
+QString cImportIngredientDialog::pluginSelected()
+{
+	return(ui->m_lpSource->currentText());
 }
 
 void cImportIngredientDialog::on_m_lpSearchString_textChanged(const QString &/*arg1*/)
@@ -189,17 +209,17 @@ cIngredient cImportIngredientDialog::toIngredient()
 	cPlugin*			lpPlugin	= ui->m_lpSource->currentData().value<cPlugin*>();
 
 	if(!lpPlugin)
-		return(cIngredient(""));
+		return(cIngredient("", ""));
 
 	cImportInterface*	lpImport	= lpPlugin->importInterface();
 	if(!lpImport)
-		return(cIngredient(""));
+		return(cIngredient("", ""));
 
 	if(!lpImport->loaded())
-		return(cIngredient(""));
+		return(cIngredient("", ""));
 
 
-	cIngredient	ingredient(lpImport->ingredientName());
+	cIngredient	ingredient(lpImport->ingredientName(), ui->m_lpIngredientGroup->currentText());
 	for(int z = 0;z < cIngredient::iIngredientMax;z++)
 	{
 		if(lpImport->value((cIngredient::iIngredient)z) != -1)

@@ -129,7 +129,7 @@ private:
 	QMenu*				m_lpIngredientsListMenu; /**< Context menu for ingredients list */
 
 	cPlugin*			m_lpDB;
-
+	QString				m_szLastImportPlugin;
 	/**
 	  * \brief Initialized main windows.
 	  *

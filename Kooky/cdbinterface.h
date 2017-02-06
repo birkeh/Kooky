@@ -83,6 +83,9 @@ public:
 	virtual qint32			create(const QString& szName, const QString& szGroup) = 0;
 	virtual qint32			createGroup(const QString& szGroup) = 0;
 	virtual bool			set(qint32 id, qint16 ingredientNumber, qreal value) = 0;
+	virtual QString			name(qint32 id) = 0;
+	virtual QString			group(qint32 id) = 0;
+	virtual qreal			get(qint32 id, qint16 ingredientNumber) = 0;
 	virtual INGREDIENT_LIST	ingredients() = 0;
 	virtual QStringList		groups() = 0;
 	virtual bool			beginTransaction() = 0;

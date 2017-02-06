@@ -117,6 +117,9 @@ public:
 	qint32					create(const QString& szName, const QString& szGroup);
 	qint32					createGroup(const QString& szGroup);
 	bool					set(qint32 id, qint16 ingredientNumber, qreal value);
+	QString					name(qint32 id);
+	QString					group(qint32 id);
+	qreal					get(qint32 id, qint16 ingredientNumber);
 	INGREDIENT_LIST			ingredients();
 	QStringList				groups();
 	bool					beginTransaction();

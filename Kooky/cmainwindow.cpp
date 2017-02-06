@@ -3,6 +3,8 @@
 #include "cimportinterface.h"
 #include "cingredient.h"
 
+#include "cingredientwindow.h"
+
 #include "typedef.h"
 
 #include "coptions.h"
@@ -19,6 +21,7 @@
 #include <QImage>
 #include <QContextMenuEvent>
 #include <QThread>
+#include <QMdiSubWindow>
 
 
 cMainWindow::cMainWindow(QWidget *parent) :
@@ -30,7 +33,8 @@ cMainWindow::cMainWindow(QWidget *parent) :
 	m_lpIngredientsListDelete(0),
 	m_lpIngredientsListEdit(0),
 	m_lpIngredientsListMenu(0),
-	m_lpDB(0)
+	m_lpDB(0),
+	m_szLastImportPlugin("")
 {
 	QThread::msleep(2000);
 	init();
@@ -56,11 +60,21 @@ void cMainWindow::init()
 
 	ui->setupUi(this);
 
+	ui->m_lpMDIArea->setViewMode(QMdiArea::TabbedView);
+	ui->m_lpMDIArea->setTabsClosable(true);
+	ui->m_lpMDIArea->setTabsMovable(true);
+
 //	loadPlugins(QString("%1%2%3").arg(QDir::currentPath()).arg(QDir::separator()).arg("plugins"));
 	loadPlugins(QString("%1%2%3").arg(qApp->applicationDirPath()).arg(QDir::separator()).arg("plugins"));
 
-	m_lpIngredientsListModel	= new QStandardItemModel(0, 1);
+	m_lpIngredientsListModel	= new QStandardItemModel(0, 3);
+	QStringList	header;
+
 	ui->m_lpIngredientsList->setModel(m_lpIngredientsListModel);
+	header << tr("Ingredient") << tr("Calories") << tr("Carboh.");
+	m_lpIngredientsListModel->setHorizontalHeaderLabels(header);
+	ui->m_lpIngredientsList->header()->setStretchLastSection(false);
+	ui->m_lpIngredientsList->header()->setSectionResizeMode(0, QHeaderView::Stretch);
 
 	connect(ui->m_lpMenu_File_Exit, SIGNAL(triggered(bool)), this, SLOT(menuFileExitTriggered()));
 	connect(ui->m_lpMenu_Tools_Options, SIGNAL(triggered(bool)), this, SLOT(menuToolsOptionsTriggered()));
@@ -256,22 +270,26 @@ void cMainWindow::loadIngredients()
 					lpGroupItem	= new QStandardItem(szOldGroup);
 					m_lpIngredientsListModel->appendRow(lpGroupItem);
 				}
-				QStandardItem*	lpNew	= new QStandardItem(ingredients.at(z).szIngredient);
-				lpGroupItem->appendRow(lpNew);
+				QStandardItem*	lpNew		= new QStandardItem(ingredients.at(z).szIngredient);
+				lpNew->setData(ingredients.at(z).iIngredient);
+				QStandardItem*	lpCalories	= new QStandardItem(QString("%1 kCal").arg(ingredients.at(z).dCalories));
+				QStandardItem*	lpCarbos	= new QStandardItem(QString("%1 g").arg(ingredients.at(z).dCarbohydrates, 0, 'f', 1));
+				lpCalories->setTextAlignment(Qt::AlignRight);
+				lpCarbos->setTextAlignment(Qt::AlignRight);
+				lpGroupItem->appendRow(QList<QStandardItem *>() << lpNew << lpCalories << lpCarbos);
 			}
 		}
 	}
+
 	ui->m_lpIngredientsList->expandAll();
+
+	ui->m_lpIngredientsList->resizeColumnToContents(0);
+	ui->m_lpIngredientsList->resizeColumnToContents(1);
+	ui->m_lpIngredientsList->resizeColumnToContents(2);
 }
 
 void cMainWindow::pluginImportTriggered()
 {
-/*
-	QSettings	settings;
-	cIngredient	ingredient(QString("%1/000001.ingredient").arg(settings.value("program/ingredientDir").toString()));
-	ingredient.save();
-*/
-
 	QAction*	lpAction	= qobject_cast<QAction *>(sender());
 	if(lpAction)
 	{
@@ -316,20 +334,9 @@ void cMainWindow::pluginDBTriggered()
 		cPlugin*	lpPlugin	= plugin(lpAction);
 		if(lpPlugin)
 		{
-			if(!lpPlugin->pluginName().compare("MySQL DB"))
-			{
-				cDBInterface*		lpDBInterface	= lpPlugin->dbInterface();
-				QString				str				= lpDBInterface->pluginName();
-				if(lpDBInterface)
-					lpDBInterface->init();
-			}
-			else if(!lpPlugin->pluginName().compare("SQLite DB"))
-			{
-				cDBInterface*		lpDBInterface	= lpPlugin->dbInterface();
-				QString				str				= lpDBInterface->pluginName();
-				if(lpDBInterface)
-					lpDBInterface->init();
-			}
+			cDBInterface*		lpDBInterface	= lpPlugin->dbInterface();
+			if(lpDBInterface->config())
+				loadIngredients();
 		}
 	}
 }
@@ -391,9 +398,15 @@ void cMainWindow::ingredientsListNewTriggered()
 void cMainWindow::ingredientsListImportTriggered()
 {
 	cImportIngredientDialog	importIngredientDialog(this);
-	importIngredientDialog.setPluginList(m_pluginList);
+	importIngredientDialog.setPluginList(m_pluginList, m_szLastImportPlugin);
+	cDBInterface* lpInterface	= m_lpDB->dbInterface();
+	if(lpInterface)
+		importIngredientDialog.setIngredientGroupList(lpInterface->groups());
+
 	if(importIngredientDialog.exec() == QDialog::Rejected)
 		return;
+
+	m_szLastImportPlugin	= importIngredientDialog.pluginSelected();
 
 	cMessageAnimateDialog*	lpDialog	= new cMessageAnimateDialog(this);
 	lpDialog->setTitle("Import Ingredient");
@@ -413,4 +426,21 @@ void cMainWindow::ingredientsListDeleteTriggered()
 
 void cMainWindow::ingredientsListEditTriggered()
 {
+	QModelIndex	index	= ui->m_lpIngredientsList->currentIndex();
+	if(index.isValid())
+	{
+		QStandardItem*	lpItem		= m_lpIngredientsListModel->itemFromIndex(index);
+		if(!lpItem)
+			return;
+
+		QStandardItem*	lpParent	= lpItem->parent();
+		if(!lpParent)
+			return;
+
+		cIngredientWindow*	lpIngredientWindow	= new cIngredientWindow(this);
+		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
+		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
+		lpIngredientWindow->setIngredient(lpItem->data().toInt(), m_lpDB);
+		lpIngredientWindow->show();
+	}
 }
