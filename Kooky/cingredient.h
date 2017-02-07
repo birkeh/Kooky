@@ -22,6 +22,7 @@
 
 #include <QDate>
 #include <QString>
+#include <QStringList>
 
 
 class cPlugin;
@@ -201,10 +202,23 @@ public:
 		iIngredientMax,
 	};
 
+	enum MEASURE
+	{
+		MEASURE_None		= 0,
+		MEASURE_Weight		= 1,
+		MEASURE_Volume		= 2,
+		MEASURE_Fluid		= 3,
+		MEASURE_Peace		= 4,
+		MEASURE_Calories	= 5,
+		MEASURE_Joule		= 6,
+	};
+
 	cIngredient();
 	cIngredient(const QString& szIngredientName, const QString& szIngredientGroup);
 
 	void	setValue(cIngredient::iIngredient i, qreal dValue);
+	qreal	value(cIngredient::iIngredient i);
+	QString	valueFormatted(cIngredient::iIngredient i);
 	/*!
 	 \brief
 
@@ -226,6 +240,7 @@ public:
 
 	QString	ingredientName();
 	QString	ingredientGroup();
+	QStringList	groups();
 	/*!
 	 \brief
 

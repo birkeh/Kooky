@@ -3,8 +3,10 @@
 
 
 #include "cplugin.h"
+#include "cingredient.h"
 
 #include <QWidget>
+#include <QStandardItemModel>
 
 
 namespace Ui {
@@ -22,10 +24,13 @@ public:
 
 	void	setIngredient(qint32 iIngredient, cPlugin* lpPlugin);
 private:
-	Ui::cIngredientWindow *ui;
+	Ui::cIngredientWindow*	ui;
 
-	cPlugin*	m_lpDBPlugin;
-	qint32		m_iIngredient;
+	cPlugin*				m_lpDBPlugin;
+	qint32					m_iIngredient;
+	cIngredient				m_ingredient;
+	cIngredient				m_ingredientSaved;
+	QStandardItemModel*		m_lpIngredientValuesModel;
 };
 
 #endif // CINGREDIENTWINDOW_H

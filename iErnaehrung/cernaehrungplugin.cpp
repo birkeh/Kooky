@@ -297,11 +297,15 @@ bool cErnaehrungPlugin::load(qint16 iIndex)
 			}
 			else
 			{
+				//QString	szL0	= QString::fromUtf8(szList.at(z));
+				QString	szL0	= szList.at(z);
+
 				for(int i = 0;i < (int)sizeof(g_values)/(int)sizeof(VALUES);i++)
 				{
-					QString	szL0	= QString::fromUtf8(szList.at(z));
-
-					if(szL0.contains(QString::fromUtf8(g_values[i].szSearch.toLatin1().data())))
+					//QString	szL1	= g_values[i].szSearch;
+					//bool x = szL0.contains(szL1);
+					//x = false;
+					if(szL0.contains(g_values[i].szSearch))
 					{
 						dFactor	= 1;
 						QString	szL1	= QString::fromUtf8(szList.at(z+1));
@@ -315,6 +319,7 @@ bool cErnaehrungPlugin::load(qint16 iIndex)
 							dFactor	= 1000000;
 
 						g_values[i].dValue	= toValue(szL1)/dFactor;
+						break;
 					}
 				}
 			}

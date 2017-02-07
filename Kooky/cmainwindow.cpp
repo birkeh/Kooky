@@ -60,9 +60,9 @@ void cMainWindow::init()
 
 	ui->setupUi(this);
 
-	ui->m_lpMDIArea->setViewMode(QMdiArea::TabbedView);
-	ui->m_lpMDIArea->setTabsClosable(true);
-	ui->m_lpMDIArea->setTabsMovable(true);
+//	ui->m_lpMDIArea->setViewMode(QMdiArea::TabbedView);
+//	ui->m_lpMDIArea->setTabsClosable(true);
+//	ui->m_lpMDIArea->setTabsMovable(true);
 
 //	loadPlugins(QString("%1%2%3").arg(QDir::currentPath()).arg(QDir::separator()).arg("plugins"));
 	loadPlugins(QString("%1%2%3").arg(qApp->applicationDirPath()).arg(QDir::separator()).arg("plugins"));
