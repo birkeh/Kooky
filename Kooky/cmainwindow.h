@@ -32,6 +32,7 @@
 #include <QList>
 #include <QMainWindow>
 #include <QStandardItemModel>
+#include <QMdiSubWindow>
 
 
 namespace Ui
@@ -117,6 +118,9 @@ private slots:
 	  *
 	  */
 	void				ingredientsListEditTriggered();
+	void				ingredientsListDoubleClicked(QModelIndex modelIndex);
+	void				updateMenus();
+	void				updateWindowMenu();
 
 private:
 	Ui::cMainWindow*	ui; /**< the main window GUI */
@@ -130,6 +134,15 @@ private:
 
 	cPlugin*			m_lpDB;
 	QString				m_szLastImportPlugin;
+
+	QAction*			m_lpWindowMenuCloseAct;
+	QAction*			m_lpWindowMenuCloseAllAct;
+	QAction*			m_lpWindowMenuTileAct;
+	QAction*			m_lpWindowMenuCascadeAct;
+	QAction*			m_lpWindowMenuNextAct;
+	QAction*			m_lpWindowMenuPreviousAct;
+	QAction*			m_lpWindowMenuSeparatorAct;
+
 	/**
 	  * \brief Initialized main windows.
 	  *
@@ -153,6 +166,7 @@ private:
 	  * \return cPlugin Plugin corresponding to the action, NULL if not found.
 	  */
 	cPlugin*			plugin(QAction* lpAction);
+	QMdiSubWindow*		activeMdiChild() const;
 protected:
 };
 

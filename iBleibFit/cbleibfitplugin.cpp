@@ -98,7 +98,7 @@ QStringList cBleibFitPlugin::search(const QString& szSearch, const QString&)
 	QNetworkReply*			reply   = networkManager.get(request);
 	QEventLoop				loop;
 
-	QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+	QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
 	loop.exec();
 
 	QByteArray				szData  = reply->readAll();
@@ -177,7 +177,7 @@ bool cBleibFitPlugin::load(qint16 iIndex)
 	QNetworkReply*			reply   = networkManager.get(request);
 	QEventLoop				loop;
 
-	QObject::connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+	QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
 	loop.exec();
 
 	QByteArray				szData  = reply->readAll();

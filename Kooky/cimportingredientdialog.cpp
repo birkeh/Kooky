@@ -34,7 +34,7 @@ void cImportIngredientDialog::initIngredientList()
 	{
 		m_lpIngredientListModel		= new QStandardItemModel(0, 1);
 		ui->m_lpIngredientList->setModel(m_lpIngredientListModel);
-		connect(ui->m_lpIngredientList->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onIngredientListSelectionChanged(QItemSelection,QItemSelection)));
+		connect(ui->m_lpIngredientList->selectionModel(), &QItemSelectionModel::selectionChanged, this, &cImportIngredientDialog::onIngredientListSelectionChanged);
 	}
 	m_lpIngredientListModel->clear();
 }

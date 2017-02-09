@@ -53,14 +53,14 @@
         </attribute>
        </widget>
       </widget>
-          <widget class="cMdiArea" name="m_lpMDIArea">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-          </widget>
+      <widget class="cMdiArea" name="m_lpMDIArea">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -105,15 +105,21 @@
     <addaction name="m_lpMenu_Plugins_Export"/>
     <addaction name="m_lpMenu_Plugins_Database"/>
    </widget>
-   <widget class="QMenu" name="menu_Tools">
+   <widget class="QMenu" name="m_lpMenu_Tools">
     <property name="title">
      <string>&amp;Tools</string>
     </property>
     <addaction name="m_lpMenu_Tools_Options"/>
    </widget>
+   <widget class="QMenu" name="m_lpMenu_Window">
+    <property name="title">
+     <string>&amp;Window</string>
+    </property>
+   </widget>
    <addaction name="m_lpMenu_File"/>
    <addaction name="m_lpMenuPlugins"/>
-   <addaction name="menu_Tools"/>
+   <addaction name="m_lpMenu_Tools"/>
+   <addaction name="m_lpMenu_Window"/>
   </widget>
   <widget class="QToolBar" name="m_lpMainToolBar">
    <attribute name="toolBarArea">

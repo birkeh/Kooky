@@ -345,9 +345,22 @@ QString cIngredient::valueFormatted(cIngredient::iIngredient i)
 			}
 		}
 		break;
+	default:
+		str	= QString("%1").arg(dValue);
+		break;
 	}
 
 	return(str);
+}
+
+cIngredient::MEASURE cIngredient::measure(cIngredient::iIngredient i)
+{
+	for(int z = 0;z < (int)sizeof(g_groupname)/(int)sizeof(GROUPNAME);z++)
+	{
+		if(g_groupname[z].iIngredient == i)
+			return(g_groupname[z].measure);
+	}
+	return(cIngredient::MEASURE::MEASURE_None);
 }
 
 void cIngredient::setValue(cIngredient::iIngredient i, qreal dValue)

@@ -22,10 +22,12 @@
 
 #include <QMdiArea>
 #include <QImage>
+#include <QMdiSubWindow>
 
 
 class cMdiArea : public QMdiArea
 {
+	Q_OBJECT
 public:
 	cMdiArea(QWidget * parent = 0);
 private:

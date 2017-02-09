@@ -219,6 +219,7 @@ public:
 	void	setValue(cIngredient::iIngredient i, qreal dValue);
 	qreal	value(cIngredient::iIngredient i);
 	QString	valueFormatted(cIngredient::iIngredient i);
+	MEASURE	measure(cIngredient::iIngredient i);
 	/*!
 	 \brief
 

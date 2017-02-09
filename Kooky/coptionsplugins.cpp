@@ -28,8 +28,8 @@ void cOptionsPlugins::init()
 	QStringList	headerLabels	= QStringList() << tr("") << tr("Name") << tr("Version") << tr("Capability") << tr("File");
 	m_lpPluginsListModel->setHorizontalHeaderLabels(headerLabels);
 
-	connect(ui->m_lpPluginsList->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onOptionsPluginTreeSelectionChanged(QItemSelection,QItemSelection)));
-	connect(ui->m_lpPluginsList, SIGNAL(doubleClicked(QModelIndex)), SLOT(onOptionsPluginTreeDoubleClicked(QModelIndex)));
+	connect(ui->m_lpPluginsList->selectionModel(), &QItemSelectionModel::selectionChanged, this, &cOptionsPlugins::onOptionsPluginTreeSelectionChanged);
+	connect(ui->m_lpPluginsList, &QTreeView::doubleClicked, this, &cOptionsPlugins::onOptionsPluginTreeDoubleClicked);
 }
 
 void cOptionsPlugins::setPlugins(QList<cPlugin*> &plugins)
@@ -45,7 +45,7 @@ void cOptionsPlugins::setPlugins(QList<cPlugin*> &plugins)
 		QCheckBox*		lpCheckBox		= new QCheckBox(this);
 		lpCheckBox->setChecked(settings.value(QString("plugins/%1/enabled").arg(plugins.at(z)->pluginName()), QVariant(false)).toBool());
 		ui->m_lpPluginsList->setIndexWidget(m_lpPluginsListModel->index(index.row(), 0), lpCheckBox);
-		connect(lpCheckBox, SIGNAL(toggled(bool)), this, SLOT(onOptionsPluginTreePluginToggled(bool)));
+		connect(lpCheckBox, &QCheckBox::toggled, this, &cOptionsPlugins::onOptionsPluginTreePluginToggled);
 		QStandardItem*	lpItemText		= new QStandardItem(plugins.at(z)->pluginName());
 		m_lpPluginsListModel->setItem(index.row(), 1, lpItemText);
 		QStandardItem*	lpItemVersion	= new QStandardItem(QString("%1").arg(plugins.at(z)->pluginVersion()));

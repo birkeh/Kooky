@@ -266,7 +266,8 @@ QString cSQLitePlugin::name(qint32 id)
 		m_szLastError	= query.lastError().text();
 		return("");
 	}
-	query.first();
+	if(!query.first())
+		return("");
 	return(query.value("name").toString());
 }
 
@@ -276,12 +277,13 @@ QString cSQLitePlugin::group(qint32 id)
 		return("");
 
 	QSqlQuery	query(m_db);
-	if(!query.exec(QString("SELECT ingredient_group.name FROM ingredient, ingredient_group WHERE ingredient.ingredient_group_id=ingredient_group.id AND ingredient.id=%1").arg(id).arg(id)))
+	if(!query.exec(QString("SELECT ingredient_group.name FROM ingredient, ingredient_group WHERE ingredient.ingredient_group_id=ingredient_group.id AND ingredient.id=%1").arg(id)))
 	{
 		m_szLastError	= query.lastError().text();
 		return("");
 	}
-	query.first();
+	if(!query.first())
+		return("");
 	return(query.value("name").toString());
 }
 
@@ -296,7 +298,8 @@ qreal cSQLitePlugin::get(qint32 id, qint16 ingredientNumber)
 		m_szLastError	= query.lastError().text();
 		return(-1);
 	}
-	query.first();
+	if(!query.first())
+		return(0);
 	return(query.value("value").toReal());
 }
 

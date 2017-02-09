@@ -34,7 +34,7 @@ void cMessageAnimateDialog::setMessage(const QString& szMessage)
 		delete m_lpTimer;
 
 	m_lpTimer = new QTimer(this);
-	connect(m_lpTimer, SIGNAL(timeout()), this, SLOT(update()));
+	connect(m_lpTimer, &QTimer::timeout, this, &cMessageAnimateDialog::update);
 	m_lpTimer->start(500);
 }
 

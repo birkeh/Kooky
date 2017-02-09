@@ -48,7 +48,7 @@ void cOptions::init()
 	ui->m_lpSplitter->setStretchFactor(0, 0);
 	ui->m_lpSplitter->setStretchFactor(1, 1);
 
-	connect(ui->m_lpOptionsTree->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)), SLOT(onOptionsTreeSelectionChanged(QItemSelection,QItemSelection)));
+	connect(ui->m_lpOptionsTree->selectionModel(), &QItemSelectionModel::selectionChanged, this, &cOptions::onOptionsTreeSelectionChanged);
 }
 
 void cOptions::onOptionsTreeSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected)
@@ -87,7 +87,7 @@ void cOptions::onOptionsTreeSelectionChanged(const QItemSelection& selected, con
 		cOptionsPlugins*	lpOptionsPlugins	= new cOptionsPlugins(this);
 		lpOptionsPlugins->setPlugins(m_pluginList);
 		ui->m_lpOptionsScrollArea->setWidget(lpOptionsPlugins);
-		connect(lpOptionsPlugins, SIGNAL(somethingChanged()), this, SLOT(somethingChanged()));
+		connect(lpOptionsPlugins, &cOptionsPlugins::somethingChanged, this, &cOptions::somethingChanged);
 	}
 	else
 	{
@@ -104,7 +104,7 @@ void cOptions::somethingChanged()
 	ui->m_lpButtonBox->button(QDialogButtonBox::Apply)->setEnabled(true);
 }
 
-bool cOptions::saveData(QStandardItem* lpItem)
+bool cOptions::saveData(QStandardItem* /*lpItem*/)
 {
 	return(true);
 }

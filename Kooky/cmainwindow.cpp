@@ -34,7 +34,14 @@ cMainWindow::cMainWindow(QWidget *parent) :
 	m_lpIngredientsListEdit(0),
 	m_lpIngredientsListMenu(0),
 	m_lpDB(0),
-	m_szLastImportPlugin("")
+	m_szLastImportPlugin(""),
+	m_lpWindowMenuCloseAct(0),
+	m_lpWindowMenuCloseAllAct(0),
+	m_lpWindowMenuTileAct(0),
+	m_lpWindowMenuCascadeAct(0),
+	m_lpWindowMenuNextAct(0),
+	m_lpWindowMenuPreviousAct(0),
+	m_lpWindowMenuSeparatorAct(0)
 {
 	QThread::msleep(2000);
 	init();
@@ -76,28 +83,32 @@ void cMainWindow::init()
 	ui->m_lpIngredientsList->header()->setStretchLastSection(false);
 	ui->m_lpIngredientsList->header()->setSectionResizeMode(0, QHeaderView::Stretch);
 
-	connect(ui->m_lpMenu_File_Exit, SIGNAL(triggered(bool)), this, SLOT(menuFileExitTriggered()));
-	connect(ui->m_lpMenu_Tools_Options, SIGNAL(triggered(bool)), this, SLOT(menuToolsOptionsTriggered()));
+	connect(ui->m_lpMenu_File_Exit, &QAction::triggered, this, &cMainWindow::menuFileExitTriggered);
+	connect(ui->m_lpMenu_Tools_Options, &QAction::triggered, this, &cMainWindow::menuToolsOptionsTriggered);
 
 	ui->m_lpIngredientsList->setContextMenuPolicy(Qt::CustomContextMenu);
-	connect(ui->m_lpIngredientsList, SIGNAL(customContextMenuRequested(const QPoint &)), this, SLOT(ingredientsListCustomContextMenu(const QPoint &)));
+	connect(ui->m_lpIngredientsList, &QTreeView::customContextMenuRequested, this, &cMainWindow::ingredientsListCustomContextMenu);
 	m_lpIngredientsListMenu		= new QMenu(ui->m_lpIngredientsList);
 
 	m_lpIngredientsListNew		= new QAction("&New", m_lpIngredientsListMenu);
 	m_lpIngredientsListMenu->addAction(m_lpIngredientsListNew);
-	connect(m_lpIngredientsListNew, SIGNAL(triggered(bool)), this, SLOT(ingredientsListNewTriggered()));
+	connect(m_lpIngredientsListNew, &QAction::triggered, this, &cMainWindow::ingredientsListNewTriggered);
 
 	m_lpIngredientsListImport	= new QAction("&Import", m_lpIngredientsListMenu);
 	m_lpIngredientsListMenu->addAction(m_lpIngredientsListImport);
-	connect(m_lpIngredientsListImport, SIGNAL(triggered(bool)), this, SLOT(ingredientsListImportTriggered()));
+	connect(m_lpIngredientsListImport, &QAction::triggered, this, &cMainWindow::ingredientsListImportTriggered);
 
 	m_lpIngredientsListDelete	= new QAction("&Delete", m_lpIngredientsListMenu);
 	m_lpIngredientsListMenu->addAction(m_lpIngredientsListDelete);
-	connect(m_lpIngredientsListDelete, SIGNAL(triggered(bool)), this, SLOT(ingredientsListDeleteTriggered()));
+	connect(m_lpIngredientsListDelete, &QAction::triggered, this, &cMainWindow::ingredientsListDeleteTriggered);
 
 	m_lpIngredientsListEdit		= new QAction("&Edit", m_lpIngredientsListMenu);
 	m_lpIngredientsListMenu->addAction(m_lpIngredientsListEdit);
-	connect(m_lpIngredientsListEdit, SIGNAL(triggered(bool)), this, SLOT(ingredientsListEditTriggered()));
+	connect(m_lpIngredientsListEdit, &QAction::triggered, this, &cMainWindow::ingredientsListEditTriggered);
+
+	connect(ui->m_lpIngredientsList, &QTreeView::doubleClicked, this, &cMainWindow::ingredientsListDoubleClicked);
+
+	connect(ui->m_lpMDIArea, &cMdiArea::subWindowActivated, this, &cMainWindow::updateMenus);
 
 	bool	bConnected	= false;
 
@@ -137,6 +148,40 @@ void cMainWindow::init()
 			bConnected	= true;
 	}
 	loadIngredients();
+
+	m_lpWindowMenuCloseAct = new QAction(tr("Cl&ose"), this);
+	m_lpWindowMenuCloseAct->setStatusTip(tr("Close the active window"));
+	connect(m_lpWindowMenuCloseAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::closeActiveSubWindow);
+
+	m_lpWindowMenuCloseAllAct = new QAction(tr("Close &All"), this);
+	m_lpWindowMenuCloseAllAct->setStatusTip(tr("Close all the windows"));
+	connect(m_lpWindowMenuCloseAllAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::closeAllSubWindows);
+
+	m_lpWindowMenuTileAct = new QAction(tr("&Tile"), this);
+	m_lpWindowMenuTileAct->setStatusTip(tr("Tile the windows"));
+	connect(m_lpWindowMenuTileAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::tileSubWindows);
+
+	m_lpWindowMenuCascadeAct = new QAction(tr("&Cascade"), this);
+	m_lpWindowMenuCascadeAct->setStatusTip(tr("Cascade the windows"));
+	connect(m_lpWindowMenuCascadeAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::cascadeSubWindows);
+
+	m_lpWindowMenuNextAct = new QAction(tr("Ne&xt"), this);
+	m_lpWindowMenuNextAct->setShortcuts(QKeySequence::NextChild);
+	m_lpWindowMenuNextAct->setStatusTip(tr("Move the focus to the next window"));
+	connect(m_lpWindowMenuNextAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::activateNextSubWindow);
+
+	m_lpWindowMenuPreviousAct = new QAction(tr("Pre&vious"), this);
+	m_lpWindowMenuPreviousAct->setShortcuts(QKeySequence::PreviousChild);
+	m_lpWindowMenuPreviousAct->setStatusTip(tr("Move the focus to the previous window"));
+	connect(m_lpWindowMenuPreviousAct, &QAction::triggered, ui->m_lpMDIArea, &QMdiArea::activatePreviousSubWindow);
+
+	m_lpWindowMenuSeparatorAct = new QAction(this);
+	m_lpWindowMenuSeparatorAct->setSeparator(true);
+
+	connect(ui->m_lpMenu_Window, &QMenu::aboutToShow, this, &cMainWindow::updateWindowMenu);
+
+	updateMenus();
+	updateWindowMenu();
 }
 
 void cMainWindow::initDefaultSettings()
@@ -187,7 +232,7 @@ void cMainWindow::loadPlugins(const QString& szPluginDir)
 			QAction*	lpAction	= new QAction(this);
 			ui->m_lpMenu_Plugins_Import->addAction(lpAction);
 			lpAction->setText(lpPlugin->pluginName());
-			connect(lpAction, SIGNAL(triggered()), this, SLOT(pluginImportTriggered()));
+			connect(lpAction, &QAction::triggered, this, &cMainWindow::pluginImportTriggered);
 			lpPlugin->setAction(lpAction);
 			m_pluginList.append(lpPlugin);
 		}
@@ -206,7 +251,7 @@ void cMainWindow::loadPlugins(const QString& szPluginDir)
 			QAction*	lpAction	= new QAction(this);
 			ui->m_lpMenu_Plugins_Export->addAction(lpAction);
 			lpAction->setText(lpPlugin->pluginName());
-			connect(lpAction, SIGNAL(triggered()), this, SLOT(pluginExportTriggered()));
+			connect(lpAction, &QAction::triggered, this, &cMainWindow::pluginExportTriggered);
 			lpPlugin->setAction(lpAction);
 			m_pluginList.append(lpPlugin);
 		}
@@ -225,7 +270,7 @@ void cMainWindow::loadPlugins(const QString& szPluginDir)
 			QAction*	lpAction	= new QAction(this);
 			ui->m_lpMenu_Plugins_Database->addAction(lpAction);
 			lpAction->setText(lpPlugin->pluginName());
-			connect(lpAction, SIGNAL(triggered()), this, SLOT(pluginDBTriggered()));
+			connect(lpAction, &QAction::triggered, this, &cMainWindow::pluginDBTriggered);
 			lpPlugin->setAction(lpAction);
 			m_pluginList.append(lpPlugin);
 			if(settings.value(QString("plugins/%1/enabled").arg(lpPlugin->pluginName()), QVariant(false)).toBool())
@@ -290,6 +335,7 @@ void cMainWindow::loadIngredients()
 
 void cMainWindow::pluginImportTriggered()
 {
+/*
 	QAction*	lpAction	= qobject_cast<QAction *>(sender());
 	if(lpAction)
 	{
@@ -319,7 +365,7 @@ void cMainWindow::pluginImportTriggered()
 			}
 		}
 	}
-
+*/
 }
 
 void cMainWindow::pluginExportTriggered()
@@ -442,5 +488,91 @@ void cMainWindow::ingredientsListEditTriggered()
 		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
 		lpIngredientWindow->setIngredient(lpItem->data().toInt(), m_lpDB);
 		lpIngredientWindow->show();
+	}
+}
+
+QMdiSubWindow* cMainWindow::activeMdiChild() const
+{
+	if (QMdiSubWindow*	activeSubWindow = ui->m_lpMDIArea->activeSubWindow())
+		return(activeSubWindow);
+	return(0);
+}
+
+void cMainWindow::ingredientsListDoubleClicked(QModelIndex /*modelIndex*/)
+{
+	this->ingredientsListEditTriggered();
+}
+
+void cMainWindow::updateMenus()
+{
+	QMdiSubWindow*	lpActiveChild	= activeMdiChild();
+	bool			hasMdiChild		= (lpActiveChild != 0);
+
+//	saveAct->setEnabled(hasMdiChild);
+//	saveAsAct->setEnabled(hasMdiChild);
+//#ifndef QT_NO_CLIPBOARD
+//	pasteAct->setEnabled(hasMdiChild);
+//#endif
+	m_lpWindowMenuCloseAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuCloseAllAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuTileAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuCascadeAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuNextAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuPreviousAct->setEnabled(hasMdiChild);
+	m_lpWindowMenuSeparatorAct->setVisible(hasMdiChild);
+
+//#ifndef QT_NO_CLIPBOARD
+//	bool hasSelection = (activeMdiChild() &&
+//						 activeMdiChild()->textCursor().hasSelection());
+//	cutAct->setEnabled(hasSelection);
+//	copyAct->setEnabled(hasSelection);
+//#endif
+}
+
+
+class ActiveMdiSubWindowFunctor
+{
+public:
+	explicit ActiveMdiSubWindowFunctor(QMdiArea *mdiArea, QMdiSubWindow *activeWindow) : m_mdiArea(mdiArea), m_activeWindow(activeWindow) {}
+	void operator()() const { m_mdiArea->setActiveSubWindow(m_activeWindow); }
+
+private:
+	QMdiArea*		m_mdiArea;
+	QMdiSubWindow*	m_activeWindow;
+};
+
+void cMainWindow::updateWindowMenu()
+{
+	ui->m_lpMenu_Window->clear();
+
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuCloseAct);
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuCloseAllAct);
+	ui->m_lpMenu_Window->addSeparator();
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuTileAct);
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuCascadeAct);
+	ui->m_lpMenu_Window->addSeparator();
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuNextAct);
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuPreviousAct);
+	ui->m_lpMenu_Window->addAction(m_lpWindowMenuSeparatorAct);
+
+	QList<QMdiSubWindow*>	windowsList	= ui->m_lpMDIArea->subWindowList();
+	m_lpWindowMenuSeparatorAct->setVisible(!windowsList.isEmpty());
+
+	QMdiSubWindow*			lpActiveChild	= activeMdiChild();
+
+	for(int i = 0; i < windowsList.size(); i++)
+	{
+		QMdiSubWindow*	lpMdiSubWindow	= windowsList.at(i);
+
+		QString			str;
+
+		if(i < 9)
+			str = tr("&%1 %2").arg(i + 1).arg(lpMdiSubWindow->windowTitle());
+		else
+			str	= tr("%1 %2").arg(i + 1).arg(lpMdiSubWindow->windowTitle());
+
+		QAction*	lpAction	= ui->m_lpMenu_Window->addAction(str, lpMdiSubWindow, ActiveMdiSubWindowFunctor(ui->m_lpMDIArea, lpMdiSubWindow));
+		lpAction->setCheckable(true);
+		lpAction->setChecked(lpMdiSubWindow == lpActiveChild);
 	}
 }
