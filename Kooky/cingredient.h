@@ -202,15 +202,15 @@ public:
 		iIngredientMax,
 	};
 
-	enum MEASURE
+	enum UNIT
 	{
-		MEASURE_None		= 0,
-		MEASURE_Weight		= 1,
-		MEASURE_Volume		= 2,
-		MEASURE_Fluid		= 3,
-		MEASURE_Peace		= 4,
-		MEASURE_Calories	= 5,
-		MEASURE_Joule		= 6,
+		UNIT_None		= 0,
+		UNIT_Weight		= 1,
+		UNIT_Volume		= 2,
+		UNIT_Fluid		= 3,
+		UNIT_Peace		= 4,
+		UNIT_Calories	= 5,
+		UNIT_Joule		= 6,
 	};
 
 	cIngredient();
@@ -219,7 +219,7 @@ public:
 	void	setValue(cIngredient::iIngredient i, qreal dValue);
 	qreal	value(cIngredient::iIngredient i);
 	QString	valueFormatted(cIngredient::iIngredient i);
-	MEASURE	measure(cIngredient::iIngredient i);
+	UNIT	unit(cIngredient::iIngredient i);
 	/*!
 	 \brief
 
@@ -263,6 +263,27 @@ public:
 		m_iID				= D.m_iID;
 		for(int z = 0;z < iIngredientMax;z++)
 			m_dValue[z]	= D.m_dValue[z];
+	}
+
+	bool			operator==(const cIngredient& D)
+	{
+		if(m_szIngredientName != D.m_szIngredientName)
+			return(false);
+
+		if(m_iID != D.m_iID)
+			return(false);
+
+		for(int z = 0;z < iIngredientMax;z++)
+		{
+			if(m_dValue[z] != D.m_dValue[z])
+				return(false);
+		}
+		return(true);
+	}
+
+	bool			operator!=(const cIngredient& D)
+	{
+		return(!(*this == D));
 	}
 
 private:

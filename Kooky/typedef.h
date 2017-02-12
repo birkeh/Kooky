@@ -11,8 +11,8 @@ typedef struct tagINGREDIENT
 	qint32	iIngredient;
 	QString	szGroup;
 	QString	szIngredient;
-	double	dCalories;
-	double	dCarbohydrates;
+	qreal	dCalories;
+	qreal	dCarbohydrates;
 }	INGREDIENT, *LPINGREDIENT;
 
 typedef QList<INGREDIENT> INGREDIENT_LIST;

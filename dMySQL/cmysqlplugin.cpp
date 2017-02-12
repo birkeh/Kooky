@@ -334,8 +334,8 @@ INGREDIENT_LIST cMySQLPlugin::ingredients()
 		i.iIngredient		= query.value(0).toInt();
 		i.szIngredient		= query.value(1).toString();
 		i.szGroup			= query.value(2).toString();
-		i.dCalories			= query.value(3).toDouble();
-		i.dCarbohydrates	= query.value(4).toDouble();
+		i.dCalories			= query.value(3).toReal();
+		i.dCarbohydrates	= query.value(4).toReal();
 		list.append(i);
 	}
 

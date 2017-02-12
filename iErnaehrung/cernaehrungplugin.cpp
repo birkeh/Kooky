@@ -248,7 +248,7 @@ QStringList cErnaehrungPlugin::search(const QString& szSearch, const QString& sz
 	return(m_szIngredients);
 }
 
-double toValue(const QString& sz)
+qreal toValue(const QString& sz)
 {
 	QString szTmp;
 	szTmp = sz.mid(sz.indexOf("\">")+2);

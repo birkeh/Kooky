@@ -22,7 +22,13 @@ public:
 	explicit cIngredientWindow(QWidget *parent = 0);
 	~cIngredientWindow();
 
-	void	setIngredient(qint32 iIngredient, cPlugin* lpPlugin);
+	void					setIngredient(qint32 iIngredient, cPlugin* lpPlugin);
+	qint32					ingredientID(void);
+
+	bool					isChanged();
+private slots:
+	void					ingredientEdit(const QModelIndex& modelIndex);
+
 private:
 	Ui::cIngredientWindow*	ui;
 

@@ -22,11 +22,18 @@
         <enum>Qt::Horizontal</enum>
        </property>
        <widget class="QTreeView" name="m_lpIngredientList">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
         <attribute name="headerVisible">
          <bool>false</bool>
         </attribute>
        </widget>
-       <widget class="QTreeView" name="m_lpIngredientDetails"/>
+       <widget class="QTreeView" name="m_lpIngredientDetails">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+       </widget>
       </widget>
      </item>
      <item row="0" column="0" colspan="2">

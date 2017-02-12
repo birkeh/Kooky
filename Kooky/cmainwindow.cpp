@@ -316,9 +316,11 @@ void cMainWindow::loadIngredients()
 					m_lpIngredientsListModel->appendRow(lpGroupItem);
 				}
 				QStandardItem*	lpNew		= new QStandardItem(ingredients.at(z).szIngredient);
-				lpNew->setData(ingredients.at(z).iIngredient);
 				QStandardItem*	lpCalories	= new QStandardItem(QString("%1 kCal").arg(ingredients.at(z).dCalories));
 				QStandardItem*	lpCarbos	= new QStandardItem(QString("%1 g").arg(ingredients.at(z).dCarbohydrates, 0, 'f', 1));
+				lpNew->setData(ingredients.at(z).iIngredient);
+				lpCalories->setData(ingredients.at(z).iIngredient);
+				lpCarbos->setData(ingredients.at(z).iIngredient);
 				lpCalories->setTextAlignment(Qt::AlignRight);
 				lpCarbos->setTextAlignment(Qt::AlignRight);
 				lpGroupItem->appendRow(QList<QStandardItem *>() << lpNew << lpCalories << lpCarbos);
@@ -483,10 +485,21 @@ void cMainWindow::ingredientsListEditTriggered()
 		if(!lpParent)
 			return;
 
+		QList<QMdiSubWindow*>	windowsList	= ui->m_lpMDIArea->subWindowList();
+		for(int z = 0;z < windowsList.count();z++)
+		{
+			cIngredientWindow*	lpWidget	= (cIngredientWindow*)windowsList.at(z)->widget();
+			if(lpWidget->ingredientID() == lpItem->data().toInt())
+			{
+				ui->m_lpMDIArea->setActiveSubWindow(windowsList.at(z));
+				return;
+			}
+		}
+
 		cIngredientWindow*	lpIngredientWindow	= new cIngredientWindow(this);
+		lpIngredientWindow->setIngredient(lpItem->data().toInt(), m_lpDB);
 		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
 		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
-		lpIngredientWindow->setIngredient(lpItem->data().toInt(), m_lpDB);
 		lpIngredientWindow->show();
 	}
 }
