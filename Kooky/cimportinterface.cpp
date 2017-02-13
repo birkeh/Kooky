@@ -18,8 +18,6 @@ QString cImportInterface::valueStr(cIngredient::iIngredient i)
 
 	if(i == cIngredient::iIngredientCalories)
 		strValue	= QString("%1 kcal").arg(dValue);
-	else if(i == cIngredient::iIngredientJoule)
-		strValue	= QString("%1 kJ").arg(dValue);
 	else
 	{
 		if(dValue < 0.001)

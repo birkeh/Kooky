@@ -16,7 +16,7 @@ typedef struct tagMAPPER
 MAPPER g_ingredientMapper[]	=
 {
 	{	"<td><b>Kilokalorien:</b></td>",	cIngredient::iIngredientCalories	},
-	{	"<td><b>Kilojoule:</b></td>",	cIngredient::iIngredientJoule	},
+//	{	"<td><b>Kilojoule:</b></td>",	cIngredient::iIngredientJoule	},
 	{	"<td><b>Protein:</b></td>",	cIngredient::iIngredientProtein	},
 	{	"<td><b>Fett:</b></td>",	cIngredient::iIngredientFat	},
 	{	"<td><b>Kohlehydrate:</b></td>",	cIngredient::iIngredientCarbohydrates	},

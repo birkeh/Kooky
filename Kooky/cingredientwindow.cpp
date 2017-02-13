@@ -16,6 +16,9 @@ cIngredientWindow::cIngredientWindow(QWidget *parent) :
 	m_lpIngredientValuesModel	= new QStandardItemModel(0, 2);
 	ui->m_lpIngredientValues->setModel(m_lpIngredientValuesModel);
 
+	ui->m_lpSave->setEnabled(false);
+	ui->m_lpRevert->setEnabled(false);
+
 	connect(ui->m_lpIngredientValues, &QTreeView::doubleClicked, this, &cIngredientWindow::ingredientEdit);
 }
 
@@ -24,16 +27,22 @@ cIngredientWindow::~cIngredientWindow()
 	delete ui;
 }
 
-void cIngredientWindow::setIngredient(qint32 iIngredient, cPlugin* lpPlugin)
+void cIngredientWindow::setIngredient(QStandardItem *lpItem, cPlugin* lpPlugin)
 {
-	m_iIngredient		= iIngredient;
-	m_lpDBPlugin		= lpPlugin;
-	if(!m_ingredientSaved.load(m_iIngredient, m_lpDBPlugin))
-		return;
+	if(lpPlugin)
+	{
+		m_lpItem			= lpItem;
+		m_iIngredient		= lpItem->data().toInt();
+		m_lpDBPlugin		= lpPlugin;
+		if(!m_ingredientSaved.load(m_iIngredient, m_lpDBPlugin))
+			return;
+	}
+
+	m_lpIngredientValuesModel->clear();
+	m_lpIngredientValuesModel->setColumnCount(2);
 
 	m_ingredient		= m_ingredientSaved;
 
-	setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
 	ui->m_lpIngredientName->setText(m_ingredientSaved.ingredientName());
 
 	QStringList	groups	= m_ingredientSaved.groups();
@@ -61,6 +70,11 @@ void cIngredientWindow::setIngredient(qint32 iIngredient, cPlugin* lpPlugin)
 	ui->m_lpIngredientValues->expandAll();
 	ui->m_lpIngredientValues->resizeColumnToContents(0);
 	ui->m_lpIngredientValues->resizeColumnToContents(1);
+
+	setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
+	m_lpItem->setText(QString("%1").arg(m_ingredientSaved.ingredientName()));
+	ui->m_lpSave->setEnabled(false);
+	ui->m_lpRevert->setEnabled(false);
 }
 
 qint32 cIngredientWindow::ingredientID(void)
@@ -94,9 +108,19 @@ void cIngredientWindow::ingredientEdit(const QModelIndex &modelIndex)
 	lpValue->setText(m_ingredient.valueFormatted(iIngredient));
 
 	if(bChanged)
+	{
 		setWindowTitle(QString("<Ingredient> %1*").arg(m_ingredientSaved.ingredientName()));
+		m_lpItem->setText(QString("%1*").arg(m_ingredientSaved.ingredientName()));
+		ui->m_lpSave->setEnabled(true);
+		ui->m_lpRevert->setEnabled(true);
+	}
 	else
+	{
 		setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
+		m_lpItem->setText(QString("%1").arg(m_ingredientSaved.ingredientName()));
+		ui->m_lpSave->setEnabled(false);
+		ui->m_lpRevert->setEnabled(false);
+	}
 }
 
 bool cIngredientWindow::isChanged()
@@ -104,4 +128,27 @@ bool cIngredientWindow::isChanged()
 	if(m_ingredient != m_ingredientSaved)
 		return(true);
 	return(false);
+}
+
+void cIngredientWindow::on_m_lpSave_clicked()
+{
+
+}
+
+void cIngredientWindow::on_m_lpRevert_clicked()
+{
+	setIngredient();
+}
+
+void cIngredientWindow::on_m_lpClose_clicked()
+{
+
+}
+
+void cIngredientWindow::closeEvent(QCloseEvent *event)
+{
+	if(isChanged())
+		event->ignore();
+	else
+		event->accept();
 }

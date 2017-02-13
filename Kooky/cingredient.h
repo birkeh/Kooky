@@ -195,10 +195,9 @@ public:
 		iIngredientBiologicalvalue					= 152,
 		iIngredientFructosefreebreadunits			= 153,
 		iIngredientaverageconsumption				= 154,
-		iIngredientJoule							= 155,
-		iIngredientSugar							= 156,
-		iIngredientAspartid							= 157,
-		iIngredientGlutamid							= 158,
+		iIngredientSugar							= 155,
+		iIngredientAspartid							= 156,
+		iIngredientGlutamid							= 157,
 		iIngredientMax,
 	};
 

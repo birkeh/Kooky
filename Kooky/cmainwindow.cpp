@@ -497,7 +497,7 @@ void cMainWindow::ingredientsListEditTriggered()
 		}
 
 		cIngredientWindow*	lpIngredientWindow	= new cIngredientWindow(this);
-		lpIngredientWindow->setIngredient(lpItem->data().toInt(), m_lpDB);
+		lpIngredientWindow->setIngredient(lpItem, m_lpDB);
 		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
 		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
 		lpIngredientWindow->show();
