@@ -269,6 +269,16 @@ bool cMySQLPlugin::set(qint32 id, qint16 ingredientNumber, qreal value)
 	return(existsIngredient(id, ingredientNumber));
 }
 
+bool cMySQLPlugin::setName(qint32 id, const QString& szName)
+{
+	return(false);
+}
+
+bool cMySQLPlugin::setGroup(qint32 id, const QString& szGroup)
+{
+	return(false);
+}
+
 QString cMySQLPlugin::name(qint32 id)
 {
 	if(!m_bConnected)

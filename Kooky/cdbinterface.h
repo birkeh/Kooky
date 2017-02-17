@@ -83,6 +83,8 @@ public:
 	virtual qint32			create(const QString& szName, const QString& szGroup) = 0;
 	virtual qint32			createGroup(const QString& szGroup) = 0;
 	virtual bool			set(qint32 id, qint16 ingredientNumber, qreal value) = 0;
+	virtual bool			setName(qint32 id, const QString& szName) = 0;
+	virtual bool			setGroup(qint32 id, const QString& szGroup) = 0;
 	virtual QString			name(qint32 id) = 0;
 	virtual QString			group(qint32 id) = 0;
 	virtual qreal			get(qint32 id, qint16 ingredientNumber) = 0;

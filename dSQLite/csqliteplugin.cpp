@@ -243,16 +243,57 @@ bool cSQLitePlugin::set(qint32 id, qint16 ingredientNumber, qreal value)
 	if(!m_bConnected)
 		return(-1);
 
-	if(existsIngredient(id, ingredientNumber) != -1)
-		return(-1);
-
 	QSqlQuery	query(m_db);
-	if(!query.exec(QString("INSERT INTO ingredient_values (ingredient_id, ingredient_number, value) VALUES (%1, %2, %3)").arg(id).arg(ingredientNumber).arg(value)))
+
+	if(existsIngredient(id, ingredientNumber) != -1)
+		query.prepare(QString("UPDATE ingredient_values SET value=%1 WHERE ingredient_id=%2 AND ingredient_number=%3").arg(value).arg(id).arg(ingredientNumber));
+	else
+		query.prepare(QString("INSERT INTO ingredient_values (ingredient_id, ingredient_number, value) VALUES (%1, %2, %3)").arg(id).arg(ingredientNumber).arg(value));
+
+	if(!query.exec())
 	{
 		m_szLastError	= query.lastError().text();
 		return(-1);
 	}
 	return(existsIngredient(id, ingredientNumber));
+}
+
+bool cSQLitePlugin::setName(qint32 id, const QString& szName)
+{
+	if(!m_bConnected)
+		return(false);
+
+	QSqlQuery	query(m_db);
+	if(!query.exec(QString("UPDATE ingredient SET name=\"%1\" WHERE id=%2").arg(szName).arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return("");
+	}
+
+	return(true);
+}
+
+bool cSQLitePlugin::setGroup(qint32 id, const QString& szGroup)
+{
+	if(!m_bConnected)
+		return(false);
+
+	qint32	groupID	= existsGroup(szGroup);
+
+	if(groupID == -1)
+		groupID	= createGroup(szGroup);
+
+	if(groupID == -1)
+		return(false);
+
+	QSqlQuery	query(m_db);
+	if(!query.exec(QString("UPDATE ingredient SET ingredient_group=%1 WHERE id=%2").arg(groupID).arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return("");
+	}
+
+	return(true);
 }
 
 QString cSQLitePlugin::name(qint32 id)

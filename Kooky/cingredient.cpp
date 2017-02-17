@@ -225,16 +225,35 @@ bool cIngredient::save(cPlugin* lpDB)
 
 	lpInterface->beginTransaction();
 
-	qint32	id	= lpInterface->create(m_szIngredientName, m_szIngredientGroup);
-	if(id == -1)
-		return(false);
-
-	for(int z = 0;z < cIngredient::iIngredientMax;z++)
+	if(m_iID == -1)
 	{
-		if(m_dValue[z] != -1)
+		qint32	id	= lpInterface->create(m_szIngredientName, m_szIngredientGroup);
+		if(id == -1)
+			return(false);
+
+		for(int z = 0;z < cIngredient::iIngredientMax;z++)
 		{
-			if(!lpInterface->set(id, z, m_dValue[z]))
-				return(false);
+			if(m_dValue[z] != -1)
+			{
+				if(!lpInterface->set(id, z, m_dValue[z]))
+					return(false);
+			}
+		}
+
+		m_iID	= id;
+	}
+	else
+	{
+		lpInterface->setName(m_iID, m_szIngredientName);
+		lpInterface->setGroup(m_iID, m_szIngredientGroup);
+
+		for(int z = 0;z < cIngredient::iIngredientMax;z++)
+		{
+			if(m_dValue[z] != -1)
+			{
+				if(!lpInterface->set(m_iID, z, m_dValue[z]))
+					return(false);
+			}
 		}
 	}
 

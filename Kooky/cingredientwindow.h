@@ -45,6 +45,7 @@ private:
 	QStandardItemModel*		m_lpIngredientValuesModel;
 	QStandardItem*			m_lpItem;
 
+	void					updateTitle();
 protected:
 	void					closeEvent(QCloseEvent *event);
 };

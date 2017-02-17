@@ -101,26 +101,13 @@ void cIngredientWindow::ingredientEdit(const QModelIndex &modelIndex)
 	value	= ingredientValue.value();
 	m_ingredient.setValue(iIngredient, value);
 
-	bool	bChanged	= isChanged();	// may not be later as it seems to be buggy ...
+	//bool	bChanged	= isChanged();	// may not be later as it seems to be buggy ...
 
 	QStandardItem*				lpParent		= lpCurrentItem->parent();
 	QStandardItem*				lpValue			= lpParent->child(modelIndex.row(), 1);
 	lpValue->setText(m_ingredient.valueFormatted(iIngredient));
 
-	if(bChanged)
-	{
-		setWindowTitle(QString("<Ingredient> %1*").arg(m_ingredientSaved.ingredientName()));
-		m_lpItem->setText(QString("%1*").arg(m_ingredientSaved.ingredientName()));
-		ui->m_lpSave->setEnabled(true);
-		ui->m_lpRevert->setEnabled(true);
-	}
-	else
-	{
-		setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
-		m_lpItem->setText(QString("%1").arg(m_ingredientSaved.ingredientName()));
-		ui->m_lpSave->setEnabled(false);
-		ui->m_lpRevert->setEnabled(false);
-	}
+	updateTitle();
 }
 
 bool cIngredientWindow::isChanged()
@@ -132,12 +119,17 @@ bool cIngredientWindow::isChanged()
 
 void cIngredientWindow::on_m_lpSave_clicked()
 {
+	m_ingredient.save(m_lpDBPlugin);
+	m_ingredientSaved	= m_ingredient;
 
+	updateTitle();
 }
 
 void cIngredientWindow::on_m_lpRevert_clicked()
 {
 	setIngredient();
+
+	updateTitle();
 }
 
 void cIngredientWindow::on_m_lpClose_clicked()
@@ -151,4 +143,22 @@ void cIngredientWindow::closeEvent(QCloseEvent *event)
 		event->ignore();
 	else
 		event->accept();
+}
+
+void cIngredientWindow::updateTitle()
+{
+	if(isChanged())
+	{
+		setWindowTitle(QString("<Ingredient> %1*").arg(m_ingredientSaved.ingredientName()));
+		m_lpItem->setText(QString("%1*").arg(m_ingredientSaved.ingredientName()));
+		ui->m_lpSave->setEnabled(true);
+		ui->m_lpRevert->setEnabled(true);
+	}
+	else
+	{
+		setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
+		m_lpItem->setText(QString("%1").arg(m_ingredientSaved.ingredientName()));
+		ui->m_lpSave->setEnabled(false);
+		ui->m_lpRevert->setEnabled(false);
+	}
 }
