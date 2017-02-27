@@ -167,6 +167,8 @@ private:
 	  */
 	cPlugin*			plugin(QAction* lpAction);
 	QMdiSubWindow*		activeMdiChild() const;
+
+	QStandardItem*		ingredientItemFromID(qint32 id);
 protected:
 };
 

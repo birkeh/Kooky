@@ -25,15 +25,16 @@ public:
 	void					setIngredient(QStandardItem* lpItem = 0, cPlugin* lpPlugin = 0);
 	qint32					ingredientID(void);
 
+	void					setIngredientGroup(const QString& szIngredientGroup);
 	bool					isChanged();
+	void					forceClose();
 private slots:
+	void					nameChanged(const QString& text);
+	void					groupChanged(const QString & text);
 	void					ingredientEdit(const QModelIndex& modelIndex);
-
-	void on_m_lpSave_clicked();
-
-	void on_m_lpRevert_clicked();
-
-	void on_m_lpClose_clicked();
+	void					saveClicked();
+	void					revertClicked();
+	void					closeClicked();
 
 private:
 	Ui::cIngredientWindow*	ui;
@@ -44,9 +45,12 @@ private:
 	cIngredient				m_ingredientSaved;
 	QStandardItemModel*		m_lpIngredientValuesModel;
 	QStandardItem*			m_lpItem;
+	bool					m_bIsInitialized;
 
+	bool					save();
 	void					updateTitle();
 protected:
+	void					checkGroupChanged();
 	void					closeEvent(QCloseEvent *event);
 };
 

@@ -441,6 +441,36 @@ void cMainWindow::ingredientsListCustomContextMenu(const QPoint& point)
 
 void cMainWindow::ingredientsListNewTriggered()
 {
+/*
+	QModelIndex	index	= ui->m_lpIngredientsList->currentIndex();
+	if(index.isValid())
+	{
+		QStandardItem*	lpItem		= m_lpIngredientsListModel->itemFromIndex(index);
+		if(!lpItem)
+			return;
+
+		QStandardItem*	lpParent	= lpItem->parent();
+		if(!lpParent)
+			return;
+
+		QList<QMdiSubWindow*>	windowsList	= ui->m_lpMDIArea->subWindowList();
+		for(int z = 0;z < windowsList.count();z++)
+		{
+			cIngredientWindow*	lpWidget	= (cIngredientWindow*)windowsList.at(z)->widget();
+			if(lpWidget->ingredientID() == lpItem->data().toInt())
+			{
+				ui->m_lpMDIArea->setActiveSubWindow(windowsList.at(z));
+				return;
+			}
+		}
+
+		cIngredientWindow*	lpIngredientWindow	= new cIngredientWindow(this);
+		lpIngredientWindow->setIngredient(ingredientItemFromID(lpItem->data().toInt()), m_lpDB);
+		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
+		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
+		lpIngredientWindow->show();
+	}
+*/
 }
 
 void cMainWindow::ingredientsListImportTriggered()
@@ -450,6 +480,23 @@ void cMainWindow::ingredientsListImportTriggered()
 	cDBInterface* lpInterface	= m_lpDB->dbInterface();
 	if(lpInterface)
 		importIngredientDialog.setIngredientGroupList(lpInterface->groups());
+
+	QModelIndex	index	= ui->m_lpIngredientsList->currentIndex();
+	if(index.isValid())
+	{
+		QString			szGroup;
+		QStandardItem*	lpItem		= m_lpIngredientsListModel->itemFromIndex(index);
+		if(lpItem)
+		{
+			QStandardItem*	lpParent	= lpItem->parent();
+			if(lpParent)
+				szGroup	= lpParent->text();
+			else
+				szGroup	= lpItem->text();
+		}
+		if(!szGroup.isEmpty())
+			importIngredientDialog.setIngredientGroup(szGroup);
+	}
 
 	if(importIngredientDialog.exec() == QDialog::Rejected)
 		return;
@@ -470,6 +517,62 @@ void cMainWindow::ingredientsListImportTriggered()
 
 void cMainWindow::ingredientsListDeleteTriggered()
 {
+	QModelIndex	index	= ui->m_lpIngredientsList->currentIndex();
+	if(index.isValid())
+	{
+		QStandardItem*	lpItem		= m_lpIngredientsListModel->itemFromIndex(index);
+		if(!lpItem)
+			return;
+
+		QStandardItem*	lpParent	= lpItem->parent();
+		if(!lpParent)
+			return;
+
+		lpItem	= ingredientItemFromID(lpItem->data().toInt());
+
+		if(QMessageBox::question(this, "Delete", QString("You are about to delete \"%1\".\nAre you sure?").arg(lpItem->text()), QMessageBox::Yes | QMessageBox::No) == QMessageBox::No)
+			return;
+
+		if(!m_lpDB->dbInterface()->deleteIngredient(lpItem->data().toInt()))
+		{
+			QMessageBox::critical(this, "Error", QString("Error deleting \"%1\"!").arg(lpItem->text()));
+			return;
+		}
+
+		m_lpIngredientsListModel->removeRow(index.row());
+
+		QList<QMdiSubWindow*>	windowsList	= ui->m_lpMDIArea->subWindowList();
+		for(int z = 0;z < windowsList.count();z++)
+		{
+			cIngredientWindow*	lpWidget	= (cIngredientWindow*)windowsList.at(z)->widget();
+			if(lpWidget->ingredientID() == lpItem->data().toInt())
+			{
+				lpWidget->forceClose();
+				return;
+			}
+		}
+	}
+}
+
+QStandardItem* cMainWindow::ingredientItemFromID(qint32 id)
+{
+	for(int z = 0;z < m_lpIngredientsListModel->rowCount();z++)
+	{
+		QStandardItem*	lpItem	= m_lpIngredientsListModel->item(z);
+		if(lpItem->data().toInt() == id)
+			return(lpItem);
+
+		if(lpItem->hasChildren())
+		{
+			for(int y = 0;y < lpItem->rowCount();y++)
+			{
+				QStandardItem*	lpItem1	= lpItem->child(y);
+				if(lpItem1->data().toInt() == id)
+					return(lpItem1);
+			}
+		}
+	}
+	return(0);
 }
 
 void cMainWindow::ingredientsListEditTriggered()
@@ -497,7 +600,7 @@ void cMainWindow::ingredientsListEditTriggered()
 		}
 
 		cIngredientWindow*	lpIngredientWindow	= new cIngredientWindow(this);
-		lpIngredientWindow->setIngredient(lpItem, m_lpDB);
+		lpIngredientWindow->setIngredient(ingredientItemFromID(lpItem->data().toInt()), m_lpDB);
 		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
 		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
 		lpIngredientWindow->show();

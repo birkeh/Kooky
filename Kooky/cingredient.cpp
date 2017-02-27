@@ -188,7 +188,7 @@ cIngredient::cIngredient() :
 cIngredient::cIngredient(const QString &szIngredientName, const QString& szIngredientGroup) :
 	m_szIngredientName(szIngredientName),
 	m_szIngredientGroup(szIngredientGroup),
-	m_iID(0)
+	m_iID(-1)
 {
 	for(int z = 0;z < iIngredientMax;z++)
 		m_dValue[z] = -1;
@@ -219,6 +219,9 @@ bool cIngredient::reload(cPlugin* /*lpDB*/)
 bool cIngredient::save(cPlugin* lpDB)
 {
 	if(!lpDB)
+		return(false);
+
+	if(m_szIngredientName.isEmpty())
 		return(false);
 
 	cDBInterface*	lpInterface	= lpDB->dbInterface();
@@ -262,9 +265,19 @@ bool cIngredient::save(cPlugin* lpDB)
 	return(true);
 }
 
+void cIngredient::setIngredientName(const QString& szIngredientName)
+{
+	m_szIngredientName	= szIngredientName;
+}
+
 QString cIngredient::ingredientName()
 {
 	return(m_szIngredientName);
+}
+
+void cIngredient::setIngredientGroup(const QString& szIngredientGroup)
+{
+	m_szIngredientGroup	= szIngredientGroup;
 }
 
 QString cIngredient::ingredientGroup()

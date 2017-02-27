@@ -73,7 +73,7 @@ void cImportIngredientDialog::setPluginList(const QList<cPlugin*> pluginList, co
 	}
 }
 
-void cImportIngredientDialog::setIngredientGroupList(const QStringList ingredientGroupList)
+void cImportIngredientDialog::setIngredientGroupList(const QStringList &ingredientGroupList)
 {
 	ui->m_lpIngredientGroup->addItems(ingredientGroupList);
 
@@ -81,6 +81,11 @@ void cImportIngredientDialog::setIngredientGroupList(const QStringList ingredien
 	if(index == -1)
 		index	= 0;
 	ui->m_lpIngredientGroup->setCurrentIndex(index);
+}
+
+void cImportIngredientDialog::setIngredientGroup(const QString& szIngredientGroup)
+{
+	ui->m_lpIngredientGroup->setCurrentText(szIngredientGroup);
 }
 
 QString cImportIngredientDialog::pluginSelected()

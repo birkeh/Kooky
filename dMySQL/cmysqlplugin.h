@@ -116,6 +116,7 @@ public:
 	qint32					existsIngredient(qint32 id, qint16 ingredientNumber);
 	qint32					create(const QString& szName, const QString& szGroup);
 	qint32					createGroup(const QString& szGroup);
+	bool					deleteIngredient(qint32 id);
 	bool					set(qint32 id, qint16 ingredientNumber, qreal value);
 	bool					setName(qint32 id, const QString& szName);
 	bool					setGroup(qint32 id, const QString& szGroup);

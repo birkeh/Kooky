@@ -64,7 +64,8 @@ public:
 
 	QString							pluginSelected();
 
-	void							setIngredientGroupList(const QStringList ingredientGroupList);
+	void							setIngredientGroupList(const QStringList& ingredientGroupList);
+	void							setIngredientGroup(const QString& szIngredientGroup);
 private:
 	Ui::cImportIngredientDialog*	ui; /*!< TODO: describe */
 	QStandardItemModel*				m_lpIngredientListModel; /*!< TODO: describe */

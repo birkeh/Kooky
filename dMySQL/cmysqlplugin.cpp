@@ -252,6 +252,28 @@ qint32 cMySQLPlugin::createGroup(const QString& szGroup)
 	return(existsGroup(szGroup));
 }
 
+bool cMySQLPlugin::deleteIngredient(qint32 id)
+{
+	if(!m_bConnected)
+		return(false);
+
+	QSqlQuery	query(m_db);
+
+	if(!query.exec(QString("DELETE FROM ingredient_values WHERE ingredient_id=%1").arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return(false);
+	}
+
+	if(!query.exec(QString("DELETE FROM ingredient WHERE id=%1").arg(id)))
+	{
+		m_szLastError	= query.lastError().text();
+		return(false);
+	}
+
+	return(true);
+}
+
 bool cMySQLPlugin::set(qint32 id, qint16 ingredientNumber, qreal value)
 {
 	if(!m_bConnected)

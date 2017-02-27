@@ -238,7 +238,9 @@ public:
 	*/
 	bool	save(cPlugin* lpDB);
 
+	void	setIngredientName(const QString& szIngredientName);
 	QString	ingredientName();
+	void	setIngredientGroup(const QString& szIngredientGroup);
 	QString	ingredientGroup();
 	QStringList	groups();
 	/*!
@@ -259,6 +261,7 @@ public:
 	void			operator=(const cIngredient& D)
 	{
 		m_szIngredientName	= D.m_szIngredientName;
+		m_szIngredientGroup	= D.m_szIngredientGroup;
 		m_iID				= D.m_iID;
 		for(int z = 0;z < iIngredientMax;z++)
 			m_dValue[z]	= D.m_dValue[z];
@@ -267,6 +270,9 @@ public:
 	bool			operator==(const cIngredient& D)
 	{
 		if(m_szIngredientName != D.m_szIngredientName)
+			return(false);
+
+		if(m_szIngredientGroup != D.m_szIngredientGroup)
 			return(false);
 
 		if(m_iID != D.m_iID)
