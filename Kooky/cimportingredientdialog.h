@@ -62,9 +62,24 @@ public:
 	void							setPluginList(const QList<cPlugin*> pluginList, const QString& szPlugin = QString(""));
 	cIngredient						toIngredient();
 
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString							pluginSelected();
 
+	/*!
+	 \brief
+
+	 \param ingredientGroupList
+	*/
 	void							setIngredientGroupList(const QStringList& ingredientGroupList);
+	/*!
+	 \brief
+
+	 \param szIngredientGroup
+	*/
 	void							setIngredientGroup(const QString& szIngredientGroup);
 private:
 	Ui::cImportIngredientDialog*	ui; /*!< TODO: describe */
@@ -73,6 +88,11 @@ private:
 
 private slots:
 	void							on_m_lpSearchButton_clicked();
+	/*!
+	 \brief
+
+	 \param arg1
+	*/
 	void							on_m_lpSearchString_textChanged(const QString &arg1);
 	/**
 	  * \brief

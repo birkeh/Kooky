@@ -40,6 +40,10 @@ namespace Ui
 	class cMainWindow;
 }
 
+/*!
+ \brief
+
+*/
 class cMainWindow : public QMainWindow
 {
 	Q_OBJECT
@@ -119,7 +123,16 @@ private slots:
 	  */
 	void				ingredientsListEditTriggered();
 	void				ingredientsListDoubleClicked(QModelIndex modelIndex);
+
+	/*!
+	 \brief
+
+	*/
 	void				updateMenus();
+	/*!
+	 \brief
+
+	*/
 	void				updateWindowMenu();
 
 private:
@@ -135,13 +148,13 @@ private:
 	cPlugin*			m_lpDB;
 	QString				m_szLastImportPlugin;
 
-	QAction*			m_lpWindowMenuCloseAct;
-	QAction*			m_lpWindowMenuCloseAllAct;
-	QAction*			m_lpWindowMenuTileAct;
-	QAction*			m_lpWindowMenuCascadeAct;
-	QAction*			m_lpWindowMenuNextAct;
-	QAction*			m_lpWindowMenuPreviousAct;
-	QAction*			m_lpWindowMenuSeparatorAct;
+	QAction*			m_lpWindowMenuCloseAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuCloseAllAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuTileAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuCascadeAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuNextAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuPreviousAct; /*!< TODO: describe */
+	QAction*			m_lpWindowMenuSeparatorAct; /*!< TODO: describe */
 
 	/**
 	  * \brief Initialized main windows.
@@ -168,6 +181,12 @@ private:
 	cPlugin*			plugin(QAction* lpAction);
 	QMdiSubWindow*		activeMdiChild() const;
 
+	/*!
+	 \brief
+
+	 \param id
+	 \return QStandardItem
+	*/
 	QStandardItem*		ingredientItemFromID(qint32 id);
 protected:
 };

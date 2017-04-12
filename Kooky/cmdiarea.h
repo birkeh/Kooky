@@ -25,14 +25,23 @@
 #include <QMdiSubWindow>
 
 
+/*!
+ \brief
+
+*/
 class cMdiArea : public QMdiArea
 {
 	Q_OBJECT
 public:
 	cMdiArea(QWidget * parent = 0);
 private:
-	QImage		m_background;
+	QImage		m_background; /*!< TODO: describe */
 protected:
+	/*!
+	 \brief
+
+	 \param event
+	*/
 	void		paintEvent(QPaintEvent *event);
 };
 

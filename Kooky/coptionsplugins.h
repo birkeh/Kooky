@@ -59,6 +59,10 @@ public:
 	void					setPlugins(QList<cPlugin*>& plugins);
 
 signals:
+	/*!
+	 \brief
+
+	*/
 	void					somethingChanged();
 private slots:
 	/*!

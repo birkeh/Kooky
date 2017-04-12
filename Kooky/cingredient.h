@@ -201,6 +201,10 @@ public:
 		iIngredientMax,
 	};
 
+	/*!
+	 \brief
+
+	*/
 	enum UNIT
 	{
 		UNIT_None		= 0,
@@ -213,11 +217,41 @@ public:
 	};
 
 	cIngredient();
+	/*!
+	 \brief
+
+	 \param szIngredientName
+	 \param szIngredientGroup
+	*/
 	cIngredient(const QString& szIngredientName, const QString& szIngredientGroup);
 
+	/*!
+	 \brief
+
+	 \param i
+	 \param dValue
+	*/
 	void	setValue(cIngredient::iIngredient i, qreal dValue);
+	/*!
+	 \brief
+
+	 \param i
+	 \return qreal
+	*/
 	qreal	value(cIngredient::iIngredient i);
+	/*!
+	 \brief
+
+	 \param i
+	 \return QString
+	*/
 	QString	valueFormatted(cIngredient::iIngredient i);
+	/*!
+	 \brief
+
+	 \param i
+	 \return UNIT
+	*/
 	UNIT	unit(cIngredient::iIngredient i);
 	/*!
 	 \brief
@@ -238,10 +272,36 @@ public:
 	*/
 	bool	save(cPlugin* lpDB);
 
+	qint32	ingredientID();
+	/*!
+	 \brief
+
+	 \param szIngredientName
+	*/
 	void	setIngredientName(const QString& szIngredientName);
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString	ingredientName();
+	/*!
+	 \brief
+
+	 \param szIngredientGroup
+	*/
 	void	setIngredientGroup(const QString& szIngredientGroup);
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString	ingredientGroup();
+	/*!
+	 \brief
+
+	 \return QStringList
+	*/
 	QStringList	groups();
 	/*!
 	 \brief
@@ -267,6 +327,12 @@ public:
 			m_dValue[z]	= D.m_dValue[z];
 	}
 
+	/*!
+	 \brief
+
+	 \param D
+	 \return bool operator
+	*/
 	bool			operator==(const cIngredient& D)
 	{
 		if(m_szIngredientName != D.m_szIngredientName)
@@ -286,16 +352,22 @@ public:
 		return(true);
 	}
 
+	/*!
+	 \brief
+
+	 \param D
+	 \return bool operator
+	*/
 	bool			operator!=(const cIngredient& D)
 	{
 		return(!(*this == D));
 	}
 
 private:
-	QString		m_szIngredientName;
-	QString		m_szIngredientGroup;
-	qint32		m_iID;
-	qreal		m_dValue[iIngredientMax];
+	QString		m_szIngredientName; /*!< TODO: describe */
+	QString		m_szIngredientGroup; /*!< TODO: describe */
+	qint32		m_iID; /*!< TODO: describe */
+	qreal		m_dValue[iIngredientMax]; /*!< TODO: describe */
 };
 
 #endif // CINGREDIENT_H

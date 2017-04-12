@@ -29,6 +29,10 @@
 #include <QMap>
 
 
+/*!
+ \brief
+
+*/
 class cImportInterface : public cInterface
 {
 public:

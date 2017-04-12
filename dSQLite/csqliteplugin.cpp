@@ -309,7 +309,7 @@ bool cSQLitePlugin::setGroup(qint32 id, const QString& szGroup)
 		return(false);
 
 	QSqlQuery	query(m_db);
-	if(!query.exec(QString("UPDATE ingredient SET ingredient_group=%1 WHERE id=%2").arg(groupID).arg(id)))
+	if(!query.exec(QString("UPDATE ingredient SET ingredient_group_id=%1 WHERE id=%2").arg(groupID).arg(id)))
 	{
 		m_szLastError	= query.lastError().text();
 		return("");

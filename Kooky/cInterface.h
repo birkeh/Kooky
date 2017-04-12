@@ -87,9 +87,29 @@ public:
 	virtual bool	config() = 0;
 
 	virtual QString	author() = 0;
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	virtual QString	company() = 0;
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	virtual QString	link() = 0;
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	virtual QString	description() = 0;
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	virtual QString	copyright() = 0;
 protected:
 };

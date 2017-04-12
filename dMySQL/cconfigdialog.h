@@ -28,6 +28,10 @@ namespace Ui {
 class cConfigDialog;
 }
 
+/*!
+ \brief
+
+*/
 class cConfigDialog : public QDialog
 {
 	Q_OBJECT

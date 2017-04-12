@@ -62,8 +62,16 @@ private slots:
 	void				onOptionsTreeSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected);
 	void				on_m_lpButtonBox_clicked(QAbstractButton *button);
 	void				on_m_lpButtonBox_accepted();
+	/*!
+	 \brief
+
+	*/
 	void				on_m_lpButtonBox_rejected();
 
+	/*!
+	 \brief
+
+	*/
 	void				somethingChanged();
 private:
 	Ui::cOptions*		ui; /*!< TODO: describe */
@@ -74,6 +82,12 @@ private:
 
 	QStandardItem*		m_lpPluginRoot;
 
+	/*!
+	 \brief
+
+	 \param lpItem
+	 \return bool
+	*/
 	bool				saveData(QStandardItem *lpItem = 0);
 protected:
 	/*!

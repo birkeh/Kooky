@@ -175,6 +175,7 @@ bool cIngredientWindow::save()
 	}
 
 	m_ingredient.save(m_lpDBPlugin);
+	checkGroupChanged();
 	m_ingredientSaved	= m_ingredient;
 	return(true);
 }
@@ -240,7 +241,6 @@ void cIngredientWindow::updateTitle()
 	{
 		setWindowTitle(QString("<Ingredient> %1*").arg(m_ingredientSaved.ingredientName()));
 		m_lpItem->setText(QString("%1*").arg(m_ingredientSaved.ingredientName()));
-		checkGroupChanged();
 		ui->m_lpSave->setEnabled(true);
 		ui->m_lpRevert->setEnabled(true);
 	}
@@ -248,7 +248,6 @@ void cIngredientWindow::updateTitle()
 	{
 		setWindowTitle(QString("<Ingredient> %1").arg(m_ingredientSaved.ingredientName()));
 		m_lpItem->setText(QString("%1").arg(m_ingredientSaved.ingredientName()));
-		checkGroupChanged();
 		ui->m_lpSave->setEnabled(false);
 		ui->m_lpRevert->setEnabled(false);
 	}
@@ -262,7 +261,6 @@ void cIngredientWindow::checkGroupChanged()
 	if(m_ingredient.ingredientGroup() == m_ingredientSaved.ingredientGroup())
 		return;
 
-	QString					szGroup		= m_ingredient.ingredientGroup();
 	QStandardItem*			lpOldGroup	= m_lpItem->parent();
 	QStandardItemModel*		lpModel		= m_lpItem->model();
 	QList<QStandardItem*>	lpItems		= lpOldGroup->takeRow(lpModel->indexFromItem(m_lpItem).row());
@@ -273,6 +271,7 @@ void cIngredientWindow::checkGroupChanged()
 		if(lpGroup->text() == m_ingredient.ingredientGroup())
 		{
 			lpGroup->insertRow(0, lpItems);
+			lpGroup->sortChildren(0);
 			break;
 		}
 	}

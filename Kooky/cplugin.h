@@ -114,9 +114,29 @@ public:
 	cDBInterface*		dbInterface();
 
 	QString				author();
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString				company();
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString				link();
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString				description();
+	/*!
+	 \brief
+
+	 \return QString
+	*/
 	QString				copyright();
 
 private:

@@ -265,6 +265,11 @@ bool cIngredient::save(cPlugin* lpDB)
 	return(true);
 }
 
+qint32 cIngredient::ingredientID()
+{
+	return(m_iID);
+}
+
 void cIngredient::setIngredientName(const QString& szIngredientName)
 {
 	m_szIngredientName	= szIngredientName;

@@ -27,6 +27,10 @@ namespace Ui {
 class cMessageAnimateDialog;
 }
 
+/*!
+ \brief
+
+*/
 class cMessageAnimateDialog : public QDialog
 {
 	Q_OBJECT

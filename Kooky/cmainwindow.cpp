@@ -298,32 +298,44 @@ void cMainWindow::loadIngredients()
 {
 	m_lpIngredientsListModel->removeRows(0, m_lpIngredientsListModel->rowCount());
 
-	QString			szOldGroup("");
-	QStandardItem*	lpGroupItem	= 0;
-
 	if(m_lpDB)
 	{
 		cDBInterface* lpInterface	= m_lpDB->dbInterface();
 		if(lpInterface)
 		{
-			INGREDIENT_LIST	ingredients	= lpInterface->ingredients();
+			QStringList	groups	= lpInterface->groups();
+
+			for(int z = 0;z < groups.count();z++)
+			{
+				QStandardItem*	lpGroup		= new QStandardItem(groups.at(z));
+
+				m_lpIngredientsListModel->appendRow(lpGroup);
+				lpGroup->setBackground(QBrush(QColor(191, 191, 191)));
+				QFont	font	= lpGroup->font();
+				font.setItalic(true);
+				font.setBold(true);
+				lpGroup->setFont(font);
+				ui->m_lpIngredientsList->setFirstColumnSpanned(z, ui->m_lpIngredientsList->rootIndex(), true);
+			}
+
+			INGREDIENT_LIST			ingredients	= lpInterface->ingredients();
+			QList<QStandardItem*>	lpGroupItem;
+
 			for(int z = 0;z < ingredients.count();z++)
 			{
-				if(ingredients.at(z).szGroup != szOldGroup)
+				lpGroupItem	= m_lpIngredientsListModel->findItems(ingredients.at(z).szGroup);
+				if(lpGroupItem.count())
 				{
-					szOldGroup	= ingredients.at(z).szGroup;
-					lpGroupItem	= new QStandardItem(szOldGroup);
-					m_lpIngredientsListModel->appendRow(lpGroupItem);
+					QStandardItem*	lpNew		= new QStandardItem(ingredients.at(z).szIngredient);
+					QStandardItem*	lpCalories	= new QStandardItem(QString("%1 kCal").arg(ingredients.at(z).dCalories));
+					QStandardItem*	lpCarbos	= new QStandardItem(QString("%1 g").arg(ingredients.at(z).dCarbohydrates, 0, 'f', 1));
+					lpNew->setData(ingredients.at(z).iIngredient);
+					lpCalories->setData(ingredients.at(z).iIngredient);
+					lpCarbos->setData(ingredients.at(z).iIngredient);
+					lpCalories->setTextAlignment(Qt::AlignRight);
+					lpCarbos->setTextAlignment(Qt::AlignRight);
+					lpGroupItem.at(0)->appendRow(QList<QStandardItem *>() << lpNew << lpCalories << lpCarbos);
 				}
-				QStandardItem*	lpNew		= new QStandardItem(ingredients.at(z).szIngredient);
-				QStandardItem*	lpCalories	= new QStandardItem(QString("%1 kCal").arg(ingredients.at(z).dCalories));
-				QStandardItem*	lpCarbos	= new QStandardItem(QString("%1 g").arg(ingredients.at(z).dCarbohydrates, 0, 'f', 1));
-				lpNew->setData(ingredients.at(z).iIngredient);
-				lpCalories->setData(ingredients.at(z).iIngredient);
-				lpCarbos->setData(ingredients.at(z).iIngredient);
-				lpCalories->setTextAlignment(Qt::AlignRight);
-				lpCarbos->setTextAlignment(Qt::AlignRight);
-				lpGroupItem->appendRow(QList<QStandardItem *>() << lpNew << lpCalories << lpCarbos);
 			}
 		}
 	}
@@ -510,7 +522,20 @@ void cMainWindow::ingredientsListImportTriggered()
 
 	cIngredient	ingredient	= importIngredientDialog.toIngredient();
 	ingredient.save(m_lpDB);
-	loadIngredients();
+
+	QList<QStandardItem*>lpGroupItem	= m_lpIngredientsListModel->findItems(ingredient.ingredientGroup());
+	if(lpGroupItem.count())
+	{
+		QStandardItem*	lpNew		= new QStandardItem(ingredient.ingredientName());
+		QStandardItem*	lpCalories	= new QStandardItem(QString("%1 kCal").arg(ingredient.value(cIngredient::iIngredientCalories)));
+		QStandardItem*	lpCarbos	= new QStandardItem(QString("%1 g").arg(ingredient.value(cIngredient::iIngredientCarbohydrates), 0, 'f', 1));
+		lpNew->setData(ingredient.ingredientID());
+		lpCalories->setData(ingredient.ingredientID());
+		lpCarbos->setData(ingredient.ingredientID());
+		lpCalories->setTextAlignment(Qt::AlignRight);
+		lpCarbos->setTextAlignment(Qt::AlignRight);
+		lpGroupItem.at(0)->appendRow(QList<QStandardItem *>() << lpNew << lpCalories << lpCarbos);
+	}
 
 	delete lpDialog;
 }
@@ -603,7 +628,7 @@ void cMainWindow::ingredientsListEditTriggered()
 		lpIngredientWindow->setIngredient(ingredientItemFromID(lpItem->data().toInt()), m_lpDB);
 		QMdiSubWindow*		lpSubWindow			= ui->m_lpMDIArea->addSubWindow(lpIngredientWindow);
 		lpSubWindow->setAttribute(Qt::WA_DeleteOnClose);
-		lpIngredientWindow->show();
+		lpIngredientWindow->showMaximized();
 	}
 }
 

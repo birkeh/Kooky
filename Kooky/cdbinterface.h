@@ -78,20 +78,113 @@ public:
 	QString					lastError() { return(QString("no error")); }
 
 	virtual qint32			exists(const QString& szName, const QString& szGroup) = 0;
+	/*!
+	 \brief
+
+	 \param szGroup
+	 \return qint32
+	*/
 	virtual qint32			existsGroup(const QString& szGroup) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \param ingredientNumber
+	 \return qint32
+	*/
 	virtual qint32			existsIngredient(qint32 id, qint16 ingredientNumber) = 0;
+	/*!
+	 \brief
+
+	 \param szName
+	 \param szGroup
+	 \return qint32
+	*/
 	virtual qint32			create(const QString& szName, const QString& szGroup) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \return bool
+	*/
 	virtual bool			deleteIngredient(qint32 id) = 0;
+	/*!
+	 \brief
+
+	 \param szGroup
+	 \return qint32
+	*/
 	virtual qint32			createGroup(const QString& szGroup) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \param ingredientNumber
+	 \param value
+	 \return bool
+	*/
 	virtual bool			set(qint32 id, qint16 ingredientNumber, qreal value) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \param szName
+	 \return bool
+	*/
 	virtual bool			setName(qint32 id, const QString& szName) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \param szGroup
+	 \return bool
+	*/
 	virtual bool			setGroup(qint32 id, const QString& szGroup) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \return QString
+	*/
 	virtual QString			name(qint32 id) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \return QString
+	*/
 	virtual QString			group(qint32 id) = 0;
+	/*!
+	 \brief
+
+	 \param id
+	 \param ingredientNumber
+	 \return qreal
+	*/
 	virtual qreal			get(qint32 id, qint16 ingredientNumber) = 0;
+	/*!
+	 \brief
+
+	 \return INGREDIENT_LIST
+	*/
 	virtual INGREDIENT_LIST	ingredients() = 0;
+	/*!
+	 \brief
+
+	 \return QStringList
+	*/
 	virtual QStringList		groups() = 0;
+	/*!
+	 \brief
+
+	 \return bool
+	*/
 	virtual bool			beginTransaction() = 0;
+	/*!
+	 \brief
+
+	 \return bool
+	*/
 	virtual bool			endTransaction() = 0;
 protected:
 	bool					m_bConnected; /*!< holds the current connection status. */
